@@ -1,0 +1,18 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: seorilabs-official-service
+  namespace: apps
+  labels:
+    app: seorilabs-official
+    app.kubernetes.io/name: seorilabs-official
+    app.kubernetes.io/component: service
+spec:
+  type: ClusterIP
+  selector:
+    app: seorilabs-official
+  ports:
+    - name: http
+      port: 80
+      targetPort: http
+      protocol: TCP

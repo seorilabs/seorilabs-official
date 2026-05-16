@@ -1,0 +1,15 @@
+{
+	"name": "Seori Labs",
+	"short_name": "Seori Labs",
+	"start_url": "/",
+	"display": "standalone",
+	"background_color": "#f6f8f8",
+	"theme_color": "#f6f8f8",
+	"icons": [
+		{
+			"src": "/favicon.svg",
+			"sizes": "64x64",
+			"type": "image/svg+xml"
+		}
+	]
+}

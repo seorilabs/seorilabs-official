@@ -1,0 +1,10 @@
+.DS_Store
+.git
+.github
+.svelte-kit
+build
+node_modules
+coverage
+playwright-report
+test-results
+README.md

@@ -1,0 +1,101 @@
+name: Build and Deploy
+
+on:
+  push:
+    branches: [main]
+    paths-ignore:
+      - 'README.md'
+
+env:
+  APP_NAME: seorilabs-official
+  REGISTRY: ${{ secrets.DOCKER_REGISTRY }}
+  REGISTRY_USERNAME: ${{ secrets.DOCKER_USERNAME }}
+  REGISTRY_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
+  K8S_SERVER: ${{ secrets.K8S_SERVER }}
+  K8S_TOKEN: ${{ secrets.K8S_TOKEN }}
+  K8S_CA_CERT: ${{ secrets.K8S_CA_CERT }}
+  K8S_NAMESPACE: ${{ secrets.K8S_NAMESPACE || 'apps' }}
+  K8S_CONTAINER_NAME: seorilabs-official
+
+jobs:
+  Check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Type check
+        run: npm run check
+
+      - name: Build
+        run: npm run build
+
+  Docker_Build_And_Push:
+    runs-on: ubuntu-latest
+    needs: Check
+    outputs:
+      image_digest: ${{ steps.docker_build.outputs.digest }}
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up QEMU
+        uses: docker/setup-qemu-action@v3
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+
+      - name: Login to Docker Registry
+        uses: docker/login-action@v3
+        with:
+          registry: ${{ env.REGISTRY }}
+          username: ${{ env.REGISTRY_USERNAME }}
+          password: ${{ env.REGISTRY_PASSWORD }}
+
+      - name: Build and push Docker image
+        id: docker_build
+        uses: docker/build-push-action@v6
+        with:
+          context: .
+          platforms: linux/arm64
+          push: true
+          tags: ${{ env.REGISTRY }}/${{ env.APP_NAME }}:latest
+
+  K8S_Deploy:
+    runs-on: ubuntu-latest
+    needs: Docker_Build_And_Push
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up kubectl
+        run: |
+          curl -LO "https://storage.googleapis.com/kubernetes-release/release/$(curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt)/bin/linux/amd64/kubectl"
+          chmod +x ./kubectl
+          sudo mv ./kubectl /usr/local/bin/kubectl
+
+      - name: Configure Kubernetes
+        run: |
+          echo "${K8S_CA_CERT}" | base64 -d > ca.crt
+          kubectl config set-cluster vzyx-cluster --server="${K8S_SERVER}" --certificate-authority=./ca.crt
+          kubectl config set-credentials github-actions --token="${K8S_TOKEN}"
+          kubectl config set-context default --cluster=vzyx-cluster --user=github-actions --namespace="${K8S_NAMESPACE}"
+          kubectl config use-context default
+
+      - name: Apply manifests
+        run: kubectl apply -f k8s/
+
+      - name: Deploy image digest
+        run: |
+          kubectl set image deployment/${APP_NAME} ${K8S_CONTAINER_NAME}=${REGISTRY}/${APP_NAME}@${{ needs.Docker_Build_And_Push.outputs.image_digest }} -n ${K8S_NAMESPACE}
+          kubectl rollout status deployment/${APP_NAME} -n ${K8S_NAMESPACE}
+          kubectl get pods -l app=${APP_NAME} -n ${K8S_NAMESPACE}
