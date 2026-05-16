@@ -2,25 +2,53 @@ import { content, site, type Locale } from '$lib/content';
 
 export const prerender = true;
 
-const pages: Array<{ locale: Locale; path: string }> = [
-	{ locale: 'ko', path: '/' },
-	{ locale: 'en', path: '/en/' }
+const pageGroups: Array<{ priority: string; pages: Array<{ locale: Locale; path: string }> }> = [
+	{
+		priority: '1.0',
+		pages: [
+			{ locale: 'ko', path: '/' },
+			{ locale: 'en', path: '/en/' }
+		]
+	},
+	{
+		priority: '0.7',
+		pages: [
+			{ locale: 'ko', path: '/privacy/' },
+			{ locale: 'en', path: '/en/privacy/' }
+		]
+	},
+	{
+		priority: '0.7',
+		pages: [
+			{ locale: 'ko', path: '/terms/' },
+			{ locale: 'en', path: '/en/terms/' }
+		]
+	},
+	{
+		priority: '0.7',
+		pages: [
+			{ locale: 'ko', path: '/support/' },
+			{ locale: 'en', path: '/en/support/' }
+		]
+	}
 ];
 
 export function GET() {
 	const updated = new Date().toISOString();
-	const urls = pages
-		.map(({ locale, path }) => {
-			const canonical = `${site.url}${path === '/' ? '/' : path}`;
-			const alternates = pages
-				.map(
-					(page) =>
-						`<xhtml:link rel="alternate" hreflang="${content[page.locale].hreflang}" href="${site.url}${page.path === '/' ? '/' : page.path}" />`
-				)
-				.join('');
+	const urls = pageGroups
+		.flatMap((group) =>
+			group.pages.map(({ path }) => {
+				const canonical = `${site.url}${path === '/' ? '/' : path}`;
+				const alternates = group.pages
+					.map(
+						(page) =>
+							`<xhtml:link rel="alternate" hreflang="${content[page.locale].hreflang}" href="${site.url}${page.path === '/' ? '/' : page.path}" />`
+					)
+					.join('');
 
-			return `<url><loc>${canonical}</loc>${alternates}<lastmod>${updated}</lastmod><changefreq>monthly</changefreq><priority>${locale === 'ko' ? '1.0' : '0.8'}</priority></url>`;
-		})
+				return `<url><loc>${canonical}</loc>${alternates}<lastmod>${updated}</lastmod><changefreq>monthly</changefreq><priority>${group.priority}</priority></url>`;
+			})
+		)
 		.join('');
 
 	return new Response(

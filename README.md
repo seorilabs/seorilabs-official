@@ -55,6 +55,40 @@ k8s/                     Kubernetes Deployment, Service, and Ingress manifests
 .github/workflows/       CI and deployment workflows
 ```
 
+## Legal and Support Pages
+
+The site serves public policy pages that can be used for app store submissions:
+
+```text
+https://www.seorilabs.com/privacy/
+https://www.seorilabs.com/terms/
+https://www.seorilabs.com/support/
+https://www.seorilabs.com/en/privacy/
+https://www.seorilabs.com/en/terms/
+https://www.seorilabs.com/en/support/
+```
+
+Use app-specific policy URLs when an app has different permissions, SDKs, data collection, accounts, payments, ads, analytics, or retention behavior. A recommended structure is:
+
+```text
+https://www.seorilabs.com/apps/{app-name}/privacy/
+https://www.seorilabs.com/apps/{app-name}/support/
+```
+
+Before submitting an app, confirm these details:
+
+- App name and platform
+- App Store / Google Play developer name
+- Contact email for users and privacy requests
+- Data collected directly from users
+- Device permissions requested
+- Third-party SDKs and APIs
+- Analytics, crash reporting, ads, or attribution tools
+- Account, login, payment, subscription, or refund behavior
+- Data retention and deletion process
+- Whether children or minors are an intended audience
+- Countries or regions where the app is distributed
+
 ## Deployment
 
 Deployment is handled by `.github/workflows/deploy.yaml`.

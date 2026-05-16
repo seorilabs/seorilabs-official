@@ -3,15 +3,14 @@
 		ArrowUpRight,
 		Bot,
 		Boxes,
-		Code2,
 		Compass,
-		FlaskConical,
 		Globe2,
 		Mail,
 		Sparkles,
 		Workflow
 	} from '@lucide/svelte';
 	import { content, site, type Locale } from '$lib/content';
+	import { legalNav } from '$lib/legalContent';
 
 	export let locale: Locale;
 
@@ -207,7 +206,12 @@
 			<strong>{site.name}</strong>
 			<span>{c.footer.tagline}</span>
 		</div>
-		<a href={mailHref}>{site.email}</a>
+		<nav aria-label="Legal pages">
+			{#each legalNav[locale] as item}
+				<a href={item.href}>{item.label}</a>
+			{/each}
+			<a href={mailHref}>{site.email}</a>
+		</nav>
 	</footer>
 </div>
 
@@ -769,6 +773,14 @@
 		color: #132027;
 	}
 
+	.site-footer nav {
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+		flex-wrap: wrap;
+		gap: 12px 16px;
+	}
+
 	.site-footer a {
 		font-weight: 800;
 		color: #0f6f8a;
@@ -971,6 +983,10 @@
 		.site-footer {
 			display: grid;
 			gap: 12px;
+		}
+
+		.site-footer nav {
+			justify-content: flex-start;
 		}
 	}
 
