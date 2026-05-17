@@ -43,7 +43,9 @@
 <div class="page" lang={c.lang}>
 	<header class="site-header" aria-label="Primary navigation">
 		<a class="brand" href={locale === 'ko' ? '/' : '/en/'} aria-label={site.name}>
-			<span class="brand-mark">S</span>
+			<span class="brand-mark" aria-hidden="true">
+				<img src="/brand/seori-labs-mark.svg" alt="" width="34" height="34" />
+			</span>
 			<span>{site.name}</span>
 		</a>
 		<nav class="nav-links" aria-label="Sections">
@@ -295,12 +297,14 @@
 		place-items: center;
 		width: 34px;
 		height: 34px;
-		border: 1px solid rgba(19, 32, 39, 0.16);
-		background: rgba(255, 255, 255, 0.74);
-		color: #0f6f8a;
-		font-weight: 900;
 		border-radius: 8px;
-		backdrop-filter: blur(12px);
+		box-shadow: 0 10px 22px rgba(12, 24, 31, 0.12);
+	}
+
+	.brand-mark img {
+		display: block;
+		width: 100%;
+		height: 100%;
 	}
 
 	.nav-links {

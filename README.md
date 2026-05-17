@@ -44,6 +44,14 @@ npm run build
 
 `npm run build` writes the static site to `build/`.
 
+## Brand Assets
+
+The Seori Labs BI/CI package is kept in the repository:
+
+- Brand guide: `docs/brand-guidelines.md`
+- Logo assets: `static/brand/`
+- Website favicon: `static/favicon.svg`
+
 ## Project Structure
 
 ```text
