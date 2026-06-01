@@ -16,10 +16,8 @@ Seori Labs is a software studio focused on product development, automation, AI s
 
 - [SvelteKit](https://svelte.dev/docs/kit) with static adapter
 - TypeScript
-- Nginx static serving
-- Docker image build for `linux/arm64`
-- Kubernetes deployment through GitHub Actions
-- cert-manager / Let's Encrypt TLS through Kubernetes Ingress
+- GitHub Pages static hosting
+- GitHub Actions deployment
 
 ## Local Development
 
@@ -58,8 +56,8 @@ The Seori Labs BI/CI package is kept in the repository:
 src/lib/                 Shared content and homepage component
 src/routes/              Static SvelteKit routes
 static/                  Static assets copied into the final build
-nginx/                   Runtime Nginx config for the container image
-k8s/                     Kubernetes Deployment, Service, and Ingress manifests
+nginx/                   Legacy Nginx config for container hosting
+k8s/                     Legacy Kubernetes manifests
 .github/workflows/       CI and deployment workflows
 ```
 
@@ -99,47 +97,57 @@ Before submitting an app, confirm these details:
 
 ## Deployment
 
-Deployment is handled by `.github/workflows/deploy.yaml`.
+Deployment is handled by `.github/workflows/deploy.yaml` and GitHub Pages.
 
 On pushes to `main`, the workflow:
 
 1. Runs type checks and a production build.
-2. Builds a `linux/arm64` Docker image.
-3. Pushes the image to the configured container registry.
-4. Applies the Kubernetes manifests in `k8s/`.
-5. Updates the Kubernetes Deployment to the pushed image digest.
-6. Waits for rollout completion.
+2. Uploads the generated `build/` directory as a GitHub Pages artifact.
+3. Deploys the artifact to the `github-pages` environment.
 
-The Kubernetes Ingress serves:
+The GitHub Pages site serves:
 
 - `www.seorilabs.com`
 - `seorilabs.com`
 
-TLS is issued through the existing `letsencrypt` ClusterIssuer.
+`static/.nojekyll` is included so GitHub Pages serves SvelteKit's `_app/` assets as regular static files.
 
-## Required GitHub Secrets
+## GitHub Pages Setup
 
-The repository does not store deployment credentials. Configure these secrets in GitHub before pushing to `main`:
+GitHub Pages deployment does not require Docker registry or Kubernetes secrets.
+
+Configure the repository once:
+
+- Repository Settings -> Pages -> Build and deployment -> Source: `GitHub Actions`
+- Repository Settings -> Pages -> Custom domain: `www.seorilabs.com`
+- Enable `Enforce HTTPS` after DNS and certificate provisioning are ready.
+- Optionally verify the `seorilabs.com` domain in the GitHub organization/account settings to reduce takeover risk.
+
+DNS records:
+
+- `www.seorilabs.com`: `CNAME` to `seorilabs.github.io`
+- `seorilabs.com`: `A` records to GitHub Pages
 
 ```text
-DOCKER_REGISTRY
-DOCKER_USERNAME
-DOCKER_PASSWORD
-K8S_SERVER
-K8S_TOKEN
-K8S_CA_CERT
-K8S_NAMESPACE
+185.199.108.153
+185.199.109.153
+185.199.110.153
+185.199.111.153
 ```
 
-Notes:
+If the DNS provider supports `ALIAS` or `ANAME`, the apex `seorilabs.com` can point to `seorilabs.github.io` instead of using `A` records.
 
-- `DOCKER_REGISTRY` should be the registry host only, without `https://`.
-- `K8S_CA_CERT` should be base64-encoded because the workflow decodes it before writing `ca.crt`.
-- `K8S_TOKEN` should belong to a service account with the minimum permissions needed to deploy this app.
-- `K8S_NAMESPACE` is expected to be `apps` for the current deployment setup.
+Optional IPv6 `AAAA` records:
+
+```text
+2606:50c0:8000::153
+2606:50c0:8001::153
+2606:50c0:8002::153
+2606:50c0:8003::153
+```
 
 ## Public Repository Notes
 
-This repository is safe to keep public as long as secrets stay in GitHub Secrets and are not committed to files.
+This repository is safe to keep public as long as secrets stay out of committed files.
 
-The repository may expose non-secret deployment metadata such as Kubernetes resource names, public domains, and workflow structure. Actual registry credentials, Kubernetes tokens, and certificate authority data must remain in GitHub Secrets.
+The repository may expose non-secret deployment metadata such as public domains and workflow structure. Legacy registry credentials, Kubernetes tokens, and certificate authority data must remain outside the repository if Kubernetes hosting is used again.
