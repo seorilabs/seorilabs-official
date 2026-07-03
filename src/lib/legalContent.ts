@@ -26,7 +26,7 @@ export const legalContent: Record<Locale, Record<LegalPageKey, LegalPageContent>
 			description:
 				'서리랩스 웹사이트, 앱, 서비스에 적용되는 개인정보 처리방침입니다. 앱별 데이터 처리가 다른 경우 별도 앱 정책이 우선 적용됩니다.',
 			kicker: 'Privacy Policy',
-			lastUpdated: '2026년 5월 16일',
+			lastUpdated: '2026년 7월 3일',
 			intro:
 				'이 개인정보 처리방침은 서리랩스가 운영하는 웹사이트, 앱, 서비스 중 이 문서로 연결되는 서비스에 적용됩니다. 특정 앱이나 서비스에서 별도 개인정보 처리방침을 제공하는 경우 해당 별도 문서가 우선합니다.',
 			sections: [
@@ -35,7 +35,8 @@ export const legalContent: Record<Locale, Record<LegalPageKey, LegalPageContent>
 					body: [
 						'문의 과정에서 사용자가 직접 제공하는 이름, 이메일 주소, 문의 내용 등의 정보를 수집할 수 있습니다.',
 						'서비스 안정성, 보안, 장애 분석을 위해 IP 주소, 사용자 에이전트, 요청 시간, 접속 경로 등 기본적인 기술 로그가 처리될 수 있습니다.',
-						'앱이 계정, 결제, 위치, 카메라, 사진, 연락처, 광고 식별자, 분석 SDK 등 추가 데이터를 사용하는 경우 앱별 개인정보 처리방침 또는 앱 내 고지에 명시합니다.'
+						'서리랩스 앱·게임은 서비스 개선을 위해 익명 사용 데이터(앱/게임 내 이벤트·상호작용)와 익명 분석 식별자를 Google Firebase/Google Analytics 등 분석 도구로 수집할 수 있습니다. 이 데이터는 특정 개인을 식별하지 않으며 계정·연락처와 연결되지 않고, 광고·추적(ATT) 목적으로 사용되지 않습니다.',
+						'일부 앱은 계정, 결제(인앱결제), 위치, 카메라, 사진, 연락처, 광고 및 광고 식별자 등 추가 데이터를 사용할 수 있으며, 그 경우 해당 앱 스토어의 데이터 안전/App Privacy 표시와 앱 내 고지를 따릅니다.'
 					]
 				},
 				{
@@ -50,6 +51,7 @@ export const legalContent: Record<Locale, Record<LegalPageKey, LegalPageContent>
 					body: [
 						'서리랩스는 개인정보를 판매하지 않습니다.',
 						'서비스 운영에 필요한 범위에서 호스팅, 이메일, 저장소, 배포, 오류 모니터링 등 외부 서비스 제공자가 개인정보를 처리할 수 있습니다.',
+						'분석을 위해 Google(Firebase/Google Analytics)이 익명 분석 데이터를 처리할 수 있습니다. 이는 개인을 식별하지 않으며 광고·추적 목적으로 사용되지 않습니다.',
 						'법령상 요구가 있거나 권리 보호를 위해 필요한 경우 관련 법령에 따라 정보를 제공할 수 있습니다.'
 					]
 				},
@@ -198,7 +200,7 @@ export const legalContent: Record<Locale, Record<LegalPageKey, LegalPageContent>
 			description:
 				'Privacy Policy for Seori Labs websites, apps, and services. Product-specific notices apply first when an app handles data differently.',
 			kicker: 'Privacy Policy',
-			lastUpdated: 'May 16, 2026',
+			lastUpdated: 'July 3, 2026',
 			intro:
 				'This Privacy Policy applies to Seori Labs websites, apps, and services that link to this document. If a specific app or service provides a separate privacy notice, that product-specific notice applies first.',
 			sections: [
@@ -207,7 +209,8 @@ export const legalContent: Record<Locale, Record<LegalPageKey, LegalPageContent>
 					body: [
 						'We may collect information you provide directly, such as your name, email address, and message when you contact us.',
 						'We may process basic technical logs, such as IP address, user agent, request time, and referrer, to keep services reliable and secure.',
-						'If an app uses accounts, payments, location, camera, photos, contacts, advertising identifiers, analytics SDKs, or other additional data, we will describe that in a product-specific notice or in-app disclosure.'
+						'Seori Labs apps and games may collect anonymous usage data (in-app/in-game events and interactions) and an anonymous analytics identifier via analytics tools such as Google Firebase/Google Analytics to improve our services. This data does not identify individuals, is not linked to your account or contacts, and is not used for advertising or tracking (ATT).',
+						'Some apps may use additional data such as accounts, payments (in-app purchases), location, camera, photos, contacts, or advertising and advertising identifiers; in those cases the app store Data safety/App Privacy labels and in-app disclosures apply.'
 					]
 				},
 				{
@@ -222,6 +225,7 @@ export const legalContent: Record<Locale, Record<LegalPageKey, LegalPageContent>
 					body: [
 						'We do not sell personal information.',
 						'Service providers may process information for hosting, email, storage, deployment, error monitoring, and other operational needs.',
+						'For analytics, Google (Firebase/Google Analytics) may process anonymous analytics data. It does not identify individuals and is not used for advertising or tracking.',
 						'We may disclose information when required by law or when necessary to protect rights, safety, or service integrity.'
 					]
 				},
