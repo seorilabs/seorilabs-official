@@ -1,6 +1,7 @@
 import { site, type Locale } from '$lib/content';
 
-export type LegalPageKey = 'privacy' | 'terms' | 'support';
+// privacy는 다국어를 별도로 지원하므로 privacyContent.ts에서 관리한다.
+export type LegalPageKey = 'terms' | 'support';
 
 type LegalSection = {
 	title: string;
@@ -21,79 +22,6 @@ type LegalPageContent = {
 
 export const legalContent: Record<Locale, Record<LegalPageKey, LegalPageContent>> = {
 	ko: {
-		privacy: {
-			title: '개인정보 처리방침',
-			description:
-				'서리랩스 웹사이트, 앱, 서비스에 적용되는 개인정보 처리방침입니다. 앱별 데이터 처리가 다른 경우 별도 앱 정책이 우선 적용됩니다.',
-			kicker: 'Privacy Policy',
-			lastUpdated: '2026년 7월 3일',
-			intro:
-				'이 개인정보 처리방침은 서리랩스가 운영하는 웹사이트, 앱, 서비스 중 이 문서로 연결되는 서비스에 적용됩니다. 특정 앱이나 서비스에서 별도 개인정보 처리방침을 제공하는 경우 해당 별도 문서가 우선합니다.',
-			sections: [
-				{
-					title: '수집하는 정보',
-					body: [
-						'문의 과정에서 사용자가 직접 제공하는 이름, 이메일 주소, 문의 내용 등의 정보를 수집할 수 있습니다.',
-						'서비스 안정성, 보안, 장애 분석을 위해 IP 주소, 사용자 에이전트, 요청 시간, 접속 경로 등 기본적인 기술 로그가 처리될 수 있습니다.',
-						'서리랩스 앱·게임은 서비스 개선을 위해 익명 사용 데이터(앱/게임 내 이벤트·상호작용)와 익명 분석 식별자를 Google Firebase/Google Analytics 등 분석 도구로 수집할 수 있습니다. 이 데이터는 특정 개인을 식별하지 않으며 계정·연락처와 연결되지 않고, 광고·추적(ATT) 목적으로 사용되지 않습니다.',
-						'일부 앱은 계정, 결제(인앱결제), 위치, 카메라, 사진, 연락처, 광고 및 광고 식별자 등 추가 데이터를 사용할 수 있으며, 그 경우 해당 앱 스토어의 데이터 안전/App Privacy 표시와 앱 내 고지를 따릅니다.'
-					]
-				},
-				{
-					title: '정보의 이용 목적',
-					body: [
-						'문의 응답, 프로젝트 상담, 고객 지원, 서비스 운영, 보안 유지, 장애 대응, 법적 의무 준수를 위해 개인정보를 이용합니다.',
-						'앱별로 수집되는 데이터는 해당 앱의 핵심 기능 제공, 품질 개선, 부정 이용 방지 등 고지된 목적 범위에서만 이용합니다.'
-					]
-				},
-				{
-					title: '제3자 제공 및 처리 위탁',
-					body: [
-						'서리랩스는 개인정보를 판매하지 않습니다.',
-						'서비스 운영에 필요한 범위에서 호스팅, 이메일, 저장소, 배포, 오류 모니터링 등 외부 서비스 제공자가 개인정보를 처리할 수 있습니다.',
-						'분석을 위해 Google(Firebase/Google Analytics)이 익명 분석 데이터를 처리할 수 있습니다. 이는 개인을 식별하지 않으며 광고·추적 목적으로 사용되지 않습니다.',
-						'법령상 요구가 있거나 권리 보호를 위해 필요한 경우 관련 법령에 따라 정보를 제공할 수 있습니다.'
-					]
-				},
-				{
-					title: '보관 기간',
-					body: [
-						'문의 기록은 응답과 후속 커뮤니케이션에 필요한 기간 동안 보관합니다.',
-						'기술 로그는 보안, 장애 대응, 운영 안정성을 위해 필요한 기간 동안 보관한 뒤 삭제하거나 비식별화합니다.',
-						'법령상 보관 의무가 있는 정보는 해당 법령에서 정한 기간 동안 보관합니다.'
-					]
-				},
-				{
-					title: '이용자의 권리',
-					body: [
-						'이용자는 본인의 개인정보에 대한 열람, 정정, 삭제, 처리 제한을 요청할 수 있습니다.',
-						'개인정보 관련 요청은 아래 연락처로 보내주세요. 요청 확인을 위해 필요한 최소한의 정보를 확인할 수 있습니다.'
-					]
-				},
-				{
-					title: '아동의 개인정보',
-					body: [
-						'서리랩스의 일반 서비스는 만 13세 미만 아동을 대상으로 하지 않습니다.',
-						'아동을 대상으로 하는 앱이나 서비스가 제공되는 경우 별도 정책과 보호자 동의 절차를 마련합니다.'
-					]
-				},
-				{
-					title: '변경',
-					body: [
-						'개인정보 처리방침이 변경되는 경우 이 페이지의 최종 수정일을 갱신합니다.',
-						'중요한 변경이 있는 경우 서비스 내 공지, 이메일, 또는 웹사이트 공지를 통해 알릴 수 있습니다.'
-					]
-				},
-				{
-					title: '문의',
-					body: [`개인정보 관련 문의: ${site.email}`]
-				}
-			],
-			footerNote:
-				'앱스토어 제출 전에는 실제 앱의 권한, SDK, 데이터 수집 항목과 이 문서가 일치하는지 반드시 확인해야 합니다.',
-			otherLocaleHref: '/en/privacy/',
-			otherLocaleLabel: 'View in English'
-		},
 		terms: {
 			title: '이용약관',
 			description:
@@ -195,79 +123,6 @@ export const legalContent: Record<Locale, Record<LegalPageKey, LegalPageContent>
 		}
 	},
 	en: {
-		privacy: {
-			title: 'Privacy Policy',
-			description:
-				'Privacy Policy for Seori Labs websites, apps, and services. Product-specific notices apply first when an app handles data differently.',
-			kicker: 'Privacy Policy',
-			lastUpdated: 'July 3, 2026',
-			intro:
-				'This Privacy Policy applies to Seori Labs websites, apps, and services that link to this document. If a specific app or service provides a separate privacy notice, that product-specific notice applies first.',
-			sections: [
-				{
-					title: 'Information We Collect',
-					body: [
-						'We may collect information you provide directly, such as your name, email address, and message when you contact us.',
-						'We may process basic technical logs, such as IP address, user agent, request time, and referrer, to keep services reliable and secure.',
-						'Seori Labs apps and games may collect anonymous usage data (in-app/in-game events and interactions) and an anonymous analytics identifier via analytics tools such as Google Firebase/Google Analytics to improve our services. This data does not identify individuals, is not linked to your account or contacts, and is not used for advertising or tracking (ATT).',
-						'Some apps may use additional data such as accounts, payments (in-app purchases), location, camera, photos, contacts, or advertising and advertising identifiers; in those cases the app store Data safety/App Privacy labels and in-app disclosures apply.'
-					]
-				},
-				{
-					title: 'How We Use Information',
-					body: [
-						'We use information to respond to inquiries, provide support, operate services, maintain security, troubleshoot issues, and comply with legal obligations.',
-						'Product-specific data is used only for the stated purposes, such as providing core app features, improving quality, and preventing abuse.'
-					]
-				},
-				{
-					title: 'Sharing and Service Providers',
-					body: [
-						'We do not sell personal information.',
-						'Service providers may process information for hosting, email, storage, deployment, error monitoring, and other operational needs.',
-						'For analytics, Google (Firebase/Google Analytics) may process anonymous analytics data. It does not identify individuals and is not used for advertising or tracking.',
-						'We may disclose information when required by law or when necessary to protect rights, safety, or service integrity.'
-					]
-				},
-				{
-					title: 'Retention',
-					body: [
-						'Contact records are kept for as long as needed to respond and maintain follow-up communication.',
-						'Technical logs are retained only as needed for security, troubleshooting, and operational reliability, then deleted or de-identified.',
-						'Information subject to legal retention requirements is kept for the required period.'
-					]
-				},
-				{
-					title: 'Your Rights',
-					body: [
-						'You may request access, correction, deletion, or restriction of your personal information.',
-						'Send privacy requests to the contact address below. We may need minimal information to verify the request.'
-					]
-				},
-				{
-					title: 'Children',
-					body: [
-						'Our general services are not directed to children under 13.',
-						'If we provide an app or service directed to children, we will provide an appropriate separate policy and parental consent process.'
-					]
-				},
-				{
-					title: 'Changes',
-					body: [
-						'When this policy changes, we will update the last updated date on this page.',
-						'For material changes, we may provide notice in the service, by email, or on our website.'
-					]
-				},
-				{
-					title: 'Contact',
-					body: [`Privacy contact: ${site.email}`]
-				}
-			],
-			footerNote:
-				'Before submitting an app to an app store, verify that this policy matches the app permissions, SDKs, and actual data handling.',
-			otherLocaleHref: '/privacy/',
-			otherLocaleLabel: '한국어로 보기'
-		},
 		terms: {
 			title: 'Terms of Use',
 			description:

@@ -2,4 +2,4 @@
 	import PrivacyPage from '$lib/PrivacyPage.svelte';
 </script>
 
-<PrivacyPage localeKey="en" />
+<PrivacyPage localeKey="zh-tw" />

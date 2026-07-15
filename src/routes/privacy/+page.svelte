@@ -1,5 +1,5 @@
 <script lang="ts">
-	import LegalPage from '$lib/LegalPage.svelte';
+	import PrivacyPage from '$lib/PrivacyPage.svelte';
 </script>
 
-<LegalPage locale="ko" page="privacy" />
+<PrivacyPage localeKey="ko" />

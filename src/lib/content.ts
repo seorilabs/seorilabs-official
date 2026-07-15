@@ -7,6 +7,43 @@ export const site = {
 
 export type Locale = 'ko' | 'en';
 
+// 개인정보 처리방침(privacy)만 다국어를 지원한다. terms/support/home은 ko/en 유지.
+export type PrivacyLocaleKey = 'ko' | 'en' | 'ja' | 'zh' | 'zh-tw' | 'de' | 'fr' | 'es';
+
+export type PrivacyLocaleMeta = {
+	key: PrivacyLocaleKey;
+	// URL 경로 세그먼트(짧은 코드). ko는 접두어 없이 루트(/privacy/).
+	urlPrefix: string;
+	// hreflang / sitemap alternate 용 정식 언어 코드.
+	hreflang: string;
+	// <html lang> 및 <main lang> 속성 값.
+	htmlLang: string;
+	// 언어 전환 chip에 표시할 자국어 라벨.
+	nativeLabel: string;
+};
+
+export const privacyLocales: PrivacyLocaleMeta[] = [
+	{ key: 'ko', urlPrefix: '', hreflang: 'ko-KR', htmlLang: 'ko', nativeLabel: '한국어' },
+	{ key: 'en', urlPrefix: 'en', hreflang: 'en', htmlLang: 'en', nativeLabel: 'English' },
+	{ key: 'ja', urlPrefix: 'ja', hreflang: 'ja', htmlLang: 'ja', nativeLabel: '日本語' },
+	{ key: 'zh', urlPrefix: 'zh', hreflang: 'zh-Hans', htmlLang: 'zh-Hans', nativeLabel: '简体中文' },
+	{
+		key: 'zh-tw',
+		urlPrefix: 'zh-tw',
+		hreflang: 'zh-Hant',
+		htmlLang: 'zh-Hant',
+		nativeLabel: '繁體中文'
+	},
+	{ key: 'de', urlPrefix: 'de', hreflang: 'de-DE', htmlLang: 'de', nativeLabel: 'Deutsch' },
+	{ key: 'fr', urlPrefix: 'fr', hreflang: 'fr-FR', htmlLang: 'fr', nativeLabel: 'Français' },
+	{ key: 'es', urlPrefix: 'es', hreflang: 'es-ES', htmlLang: 'es', nativeLabel: 'Español' }
+];
+
+// privacy 로케일의 /privacy/ 절대 경로. ko는 /privacy/, 그 외는 /{urlPrefix}/privacy/.
+export function privacyPath(prefix: string): string {
+	return prefix ? `/${prefix}/privacy/` : '/privacy/';
+}
+
 type Capability = {
 	title: string;
 	body: string;

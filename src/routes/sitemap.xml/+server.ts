@@ -1,34 +1,34 @@
-import { content, site, type Locale } from '$lib/content';
+import { content, site, privacyLocales, privacyPath } from '$lib/content';
 
 export const prerender = true;
 
-const pageGroups: Array<{ priority: string; pages: Array<{ locale: Locale; path: string }> }> = [
+type SitemapPage = { path: string; hreflang: string };
+
+const pageGroups: Array<{ priority: string; pages: SitemapPage[] }> = [
 	{
 		priority: '1.0',
 		pages: [
-			{ locale: 'ko', path: '/' },
-			{ locale: 'en', path: '/en/' }
+			{ path: '/', hreflang: content.ko.hreflang },
+			{ path: '/en/', hreflang: content.en.hreflang }
+		]
+	},
+	{
+		// privacy는 다국어(ko/en + ja/zh/zh-tw/de/fr/es)를 제공한다.
+		priority: '0.7',
+		pages: privacyLocales.map((l) => ({ path: privacyPath(l.urlPrefix), hreflang: l.hreflang }))
+	},
+	{
+		priority: '0.7',
+		pages: [
+			{ path: '/terms/', hreflang: content.ko.hreflang },
+			{ path: '/en/terms/', hreflang: content.en.hreflang }
 		]
 	},
 	{
 		priority: '0.7',
 		pages: [
-			{ locale: 'ko', path: '/privacy/' },
-			{ locale: 'en', path: '/en/privacy/' }
-		]
-	},
-	{
-		priority: '0.7',
-		pages: [
-			{ locale: 'ko', path: '/terms/' },
-			{ locale: 'en', path: '/en/terms/' }
-		]
-	},
-	{
-		priority: '0.7',
-		pages: [
-			{ locale: 'ko', path: '/support/' },
-			{ locale: 'en', path: '/en/support/' }
+			{ path: '/support/', hreflang: content.ko.hreflang },
+			{ path: '/en/support/', hreflang: content.en.hreflang }
 		]
 	}
 ];
@@ -38,11 +38,11 @@ export function GET() {
 	const urls = pageGroups
 		.flatMap((group) =>
 			group.pages.map(({ path }) => {
-				const canonical = `${site.url}${path === '/' ? '/' : path}`;
+				const canonical = `${site.url}${path}`;
 				const alternates = group.pages
 					.map(
 						(page) =>
-							`<xhtml:link rel="alternate" hreflang="${content[page.locale].hreflang}" href="${site.url}${page.path === '/' ? '/' : page.path}" />`
+							`<xhtml:link rel="alternate" hreflang="${page.hreflang}" href="${site.url}${page.path}" />`
 					)
 					.join('');
 
