@@ -18,6 +18,11 @@ const pageGroups: Array<{ priority: string; pages: SitemapPage[] }> = [
 		pages: privacyLocales.map((l) => ({ path: privacyPath(l.urlPrefix), hreflang: l.hreflang }))
 	},
 	{
+		// 앱별 개인정보 처리방침(함께봄 / BabyNest).
+		priority: '0.6',
+		pages: [{ path: '/babycare/privacy/', hreflang: content.ko.hreflang }]
+	},
+	{
 		priority: '0.7',
 		pages: [
 			{ path: '/terms/', hreflang: content.ko.hreflang },
