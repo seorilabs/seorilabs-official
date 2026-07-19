@@ -24,7 +24,7 @@ export const privacyContent: Record<PrivacyLocaleKey, PrivacyContent> = {
 		description:
 			'서리랩스 웹사이트, 앱, 서비스에 적용되는 개인정보 처리방침입니다. 앱별 데이터 처리가 다른 경우 별도 앱 정책이 우선 적용됩니다.',
 		kicker: 'Privacy Policy',
-		lastUpdated: '2026년 7월 3일',
+		lastUpdated: '2026년 7월 19일',
 		lastUpdatedLabel: '최종 수정일',
 		backLabel: '홈으로',
 		languageLabel: '언어',
@@ -75,7 +75,8 @@ export const privacyContent: Record<PrivacyLocaleKey, PrivacyContent> = {
 				title: '아동의 개인정보',
 				body: [
 					'서리랩스의 일반 서비스는 만 13세 미만 아동을 대상으로 하지 않습니다.',
-					'아동을 대상으로 하는 앱이나 서비스가 제공되는 경우 별도 정책과 보호자 동의 절차를 마련합니다.'
+					'아동을 대상으로 하는 앱이나 서비스가 제공되는 경우 별도 정책과 보호자 동의 절차를 마련합니다.',
+					'일부 앱은 성인 이용자가 자신이 돌보는 사람에 대한 정보(예: 아이의 이름·생년월일, 수유·기저귀·수면 등 돌봄 기록)를 입력하고 초대된 비공개 그룹 내에서 공유할 수 있습니다. 이러한 정보는 성인 양육자가 직접 입력하며, 해당 그룹 내부에서만 보이고, 광고·추적 목적으로 사용되지 않습니다. 구체적인 수집 항목은 각 앱의 스토어 데이터 안전/App Privacy 표시에 고지됩니다.'
 				]
 			},
 			{
@@ -98,7 +99,7 @@ export const privacyContent: Record<PrivacyLocaleKey, PrivacyContent> = {
 		description:
 			'Privacy Policy for Seori Labs websites, apps, and services. Product-specific notices apply first when an app handles data differently.',
 		kicker: 'Privacy Policy',
-		lastUpdated: 'July 3, 2026',
+		lastUpdated: 'July 19, 2026',
 		lastUpdatedLabel: 'Last updated',
 		backLabel: 'Back home',
 		languageLabel: 'Language',
@@ -149,7 +150,8 @@ export const privacyContent: Record<PrivacyLocaleKey, PrivacyContent> = {
 				title: 'Children',
 				body: [
 					'Our general services are not directed to children under 13.',
-					'If we provide an app or service directed to children, we will provide an appropriate separate policy and parental consent process.'
+					'If we provide an app or service directed to children, we will provide an appropriate separate policy and parental consent process.',
+					'Some apps let adult users record and share information about a person in their care — for example, a child’s care records such as name, date of birth, and feeding, diaper, or sleep logs — within a private, invite-only group. Such information is entered by the adult caregiver, is visible only within that group, and is not used for advertising or tracking. The specific data collected is disclosed in each app’s store Data safety / App Privacy labels.'
 				]
 			},
 			{
@@ -172,7 +174,7 @@ export const privacyContent: Record<PrivacyLocaleKey, PrivacyContent> = {
 		description:
 			'Seori Labs のウェブサイト、アプリ、サービスに適用されるプライバシーポリシーです。アプリごとにデータの取り扱いが異なる場合は、個別のアプリポリシーが優先して適用されます。',
 		kicker: 'Privacy Policy',
-		lastUpdated: '2026年7月3日',
+		lastUpdated: '2026年7月19日',
 		lastUpdatedLabel: '最終更新日',
 		backLabel: 'ホームへ',
 		languageLabel: '言語',
@@ -223,7 +225,8 @@ export const privacyContent: Record<PrivacyLocaleKey, PrivacyContent> = {
 				title: '子どものプライバシー',
 				body: [
 					'Seori Labs の一般的なサービスは、13 歳未満の子どもを対象としていません。',
-					'子どもを対象とするアプリまたはサービスを提供する場合は、個別のポリシーおよび保護者の同意手続きを設けます。'
+					'子どもを対象とするアプリまたはサービスを提供する場合は、個別のポリシーおよび保護者の同意手続きを設けます。',
+					'一部のアプリでは、成人の利用者が自分の世話をする人に関する情報（例：子どもの名前・生年月日、授乳・おむつ・睡眠などのケア記録）を入力し、招待制の非公開グループ内で共有できます。こうした情報は成人の養育者が自ら入力し、そのグループ内でのみ表示され、広告や追跡の目的には使用されません。収集する具体的な項目は、各アプリのストアのデータ セーフティ／App Privacy 表示で開示されます。'
 				]
 			},
 			{
@@ -246,7 +249,7 @@ export const privacyContent: Record<PrivacyLocaleKey, PrivacyContent> = {
 		description:
 			'本隐私政策适用于 Seori Labs 的网站、应用和服务。当某款应用对数据的处理方式不同时，将优先适用该应用的单独政策。',
 		kicker: 'Privacy Policy',
-		lastUpdated: '2026年7月3日',
+		lastUpdated: '2026年7月19日',
 		lastUpdatedLabel: '最后更新',
 		backLabel: '返回首页',
 		languageLabel: '语言',
@@ -297,7 +300,8 @@ export const privacyContent: Record<PrivacyLocaleKey, PrivacyContent> = {
 				title: '儿童隐私',
 				body: [
 					'Seori Labs 的一般服务并非面向 13 岁以下的儿童。',
-					'如果我们提供面向儿童的应用或服务，将制定单独的政策和监护人同意流程。'
+					'如果我们提供面向儿童的应用或服务，将制定单独的政策和监护人同意流程。',
+					'部分应用允许成年用户记录并在受邀请的私密群组内共享其所照护对象的信息（例如儿童的姓名、出生日期，以及喂养、换尿布、睡眠等照护记录）。这些信息由成年照护者本人输入，仅在该群组内可见，且不用于广告或追踪。具体收集的数据会在各应用商店的数据安全／App Privacy 标签中披露。'
 				]
 			},
 			{
@@ -319,7 +323,7 @@ export const privacyContent: Record<PrivacyLocaleKey, PrivacyContent> = {
 		description:
 			'本隱私權政策適用於 Seori Labs 的網站、應用程式與服務。當某款應用程式對資料的處理方式不同時，將優先適用該應用程式的個別政策。',
 		kicker: 'Privacy Policy',
-		lastUpdated: '2026年7月3日',
+		lastUpdated: '2026年7月19日',
 		lastUpdatedLabel: '最後更新',
 		backLabel: '返回首頁',
 		languageLabel: '語言',
@@ -370,7 +374,8 @@ export const privacyContent: Record<PrivacyLocaleKey, PrivacyContent> = {
 				title: '兒童隱私',
 				body: [
 					'Seori Labs 的一般服務並非以未滿 13 歲的兒童為對象。',
-					'若我們提供以兒童為對象的應用程式或服務，將另訂個別政策與監護人同意程序。'
+					'若我們提供以兒童為對象的應用程式或服務，將另訂個別政策與監護人同意程序。',
+					'部分應用程式允許成年使用者記錄並於受邀請的私密群組內分享其所照顧對象的資訊（例如兒童的姓名、出生日期，以及餵食、換尿布、睡眠等照護紀錄）。這些資訊由成年照顧者本人輸入，僅於該群組內可見，且不用於廣告或追蹤。具體收集的資料會在各應用程式商店的資料安全／App Privacy 標示中揭露。'
 				]
 			},
 			{
@@ -393,7 +398,7 @@ export const privacyContent: Record<PrivacyLocaleKey, PrivacyContent> = {
 		description:
 			'Datenschutzerklärung für die Websites, Apps und Dienste von Seori Labs. Produktspezifische Hinweise gelten vorrangig, wenn eine App Daten anders verarbeitet.',
 		kicker: 'Privacy Policy',
-		lastUpdated: '3. Juli 2026',
+		lastUpdated: '19. Juli 2026',
 		lastUpdatedLabel: 'Zuletzt aktualisiert',
 		backLabel: 'Zur Startseite',
 		languageLabel: 'Sprache',
@@ -444,7 +449,8 @@ export const privacyContent: Record<PrivacyLocaleKey, PrivacyContent> = {
 				title: 'Daten von Kindern',
 				body: [
 					'Unsere allgemeinen Dienste richten sich nicht an Kinder unter 13 Jahren.',
-					'Sofern wir eine App oder einen Dienst für Kinder anbieten, stellen wir eine geeignete separate Richtlinie und ein Verfahren zur Einwilligung der Erziehungsberechtigten bereit.'
+					'Sofern wir eine App oder einen Dienst für Kinder anbieten, stellen wir eine geeignete separate Richtlinie und ein Verfahren zur Einwilligung der Erziehungsberechtigten bereit.',
+					'In einigen Apps können erwachsene Nutzer Informationen über eine von ihnen betreute Person – zum Beispiel Betreuungsdaten eines Kindes wie Name, Geburtsdatum sowie Fütterungs-, Windel- oder Schlafprotokolle – erfassen und innerhalb einer privaten, nur auf Einladung zugänglichen Gruppe teilen. Diese Informationen werden von der erwachsenen Betreuungsperson selbst eingegeben, sind nur innerhalb dieser Gruppe sichtbar und werden nicht für Werbung oder Tracking verwendet. Welche Daten konkret erhoben werden, wird in den Data-Safety-/App-Privacy-Angaben der jeweiligen App im Store offengelegt.'
 				]
 			},
 			{
@@ -467,7 +473,7 @@ export const privacyContent: Record<PrivacyLocaleKey, PrivacyContent> = {
 		description:
 			'Politique de confidentialité des sites web, applications et services de Seori Labs. Des mentions spécifiques à un produit s’appliquent en priorité lorsqu’une application traite les données différemment.',
 		kicker: 'Privacy Policy',
-		lastUpdated: '3 juillet 2026',
+		lastUpdated: '19 juillet 2026',
 		lastUpdatedLabel: 'Dernière mise à jour',
 		backLabel: 'Accueil',
 		languageLabel: 'Langue',
@@ -518,7 +524,8 @@ export const privacyContent: Record<PrivacyLocaleKey, PrivacyContent> = {
 				title: 'Données des enfants',
 				body: [
 					'Nos services généraux ne s’adressent pas aux enfants de moins de 13 ans.',
-					'Si nous proposons une application ou un service destiné aux enfants, nous mettrons en place une politique distincte appropriée et une procédure de consentement parental.'
+					'Si nous proposons une application ou un service destiné aux enfants, nous mettrons en place une politique distincte appropriée et une procédure de consentement parental.',
+					'Dans certaines applications, les utilisateurs adultes peuvent enregistrer et partager des informations sur une personne dont ils s’occupent — par exemple, les données de soins d’un enfant telles que le nom, la date de naissance et les journaux d’alimentation, de couches ou de sommeil — au sein d’un groupe privé accessible uniquement sur invitation. Ces informations sont saisies par l’aidant adulte lui-même, ne sont visibles qu’au sein de ce groupe et ne sont pas utilisées à des fins publicitaires ou de suivi. Les données précises collectées sont indiquées dans les étiquettes Data safety / App Privacy de chaque application sur le store.'
 				]
 			},
 			{
@@ -541,7 +548,7 @@ export const privacyContent: Record<PrivacyLocaleKey, PrivacyContent> = {
 		description:
 			'Política de privacidad de los sitios web, las aplicaciones y los servicios de Seori Labs. Los avisos específicos de cada producto se aplican con prioridad cuando una aplicación trata los datos de forma diferente.',
 		kicker: 'Privacy Policy',
-		lastUpdated: '3 de julio de 2026',
+		lastUpdated: '19 de julio de 2026',
 		lastUpdatedLabel: 'Última actualización',
 		backLabel: 'Inicio',
 		languageLabel: 'Idioma',
@@ -592,7 +599,8 @@ export const privacyContent: Record<PrivacyLocaleKey, PrivacyContent> = {
 				title: 'Privacidad de los menores',
 				body: [
 					'Nuestros servicios generales no están dirigidos a menores de 13 años.',
-					'Si ofrecemos una aplicación o un servicio dirigido a menores, estableceremos una política independiente adecuada y un procedimiento de consentimiento de los padres o tutores.'
+					'Si ofrecemos una aplicación o un servicio dirigido a menores, estableceremos una política independiente adecuada y un procedimiento de consentimiento de los padres o tutores.',
+					'Algunas aplicaciones permiten que los usuarios adultos registren y compartan información sobre una persona a su cuidado —por ejemplo, los registros de cuidado de un niño, como el nombre, la fecha de nacimiento y los registros de alimentación, pañales o sueño— dentro de un grupo privado al que solo se accede por invitación. Dicha información la introduce la persona cuidadora adulta, solo es visible dentro de ese grupo y no se utiliza con fines publicitarios ni de seguimiento. Los datos concretos que se recopilan se indican en las etiquetas de Data safety / App Privacy de cada aplicación en la tienda.'
 				]
 			},
 			{
