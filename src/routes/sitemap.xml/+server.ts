@@ -30,6 +30,13 @@ const pageGroups: Array<{ priority: string; pages: SitemapPage[] }> = [
 			{ path: '/support/', hreflang: content.ko.hreflang },
 			{ path: '/en/support/', hreflang: content.en.hreflang }
 		]
+	},
+	{
+		priority: '0.8',
+		pages: [
+			{ path: '/apps/lizard-tycoon/privacy/', hreflang: content.ko.hreflang },
+			{ path: '/en/apps/lizard-tycoon/privacy/', hreflang: content.en.hreflang }
+		]
 	}
 ];
 
