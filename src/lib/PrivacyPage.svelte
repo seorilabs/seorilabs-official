@@ -2,14 +2,23 @@
 	import { ArrowLeft, Globe2, Mail } from '@lucide/svelte';
 	import { site, privacyLocales, privacyPath, type PrivacyLocaleKey } from '$lib/content';
 	import { legalNav } from '$lib/legalContent';
-	import { privacyContent } from '$lib/privacyContent';
+	import { privacyContent, type PrivacyContent } from '$lib/privacyContent';
 
 	export let localeKey: PrivacyLocaleKey;
+	export let contentOverride: PrivacyContent | undefined = undefined;
+	export let productSlug = '';
 
 	const meta = privacyLocales.find((l) => l.key === localeKey) ?? privacyLocales[0];
-	const c = privacyContent[localeKey];
+	const c = contentOverride ?? privacyContent[localeKey];
+	const pageLocales = productSlug
+		? privacyLocales.filter((locale) => locale.key === 'ko' || locale.key === 'en')
+		: privacyLocales;
+	const pagePath = (prefix: string) =>
+		productSlug
+			? `${prefix ? `/${prefix}` : ''}/apps/${productSlug}/privacy/`
+			: privacyPath(prefix);
 
-	const canonical = `${site.url}${privacyPath(meta.urlPrefix)}`;
+	const canonical = `${site.url}${pagePath(meta.urlPrefix)}`;
 	const homeHref = localeKey === 'ko' ? '/' : '/en/';
 
 	// 상단 legal 내비게이션. ko/en은 자체 nav, 그 외 언어는 privacy만 자국어 경로로 두고
@@ -31,14 +40,10 @@
 	<meta name="description" content={c.description} />
 	<meta name="theme-color" content="#f6f8f8" />
 	<link rel="canonical" href={canonical} />
-	{#each privacyLocales as loc}
-		<link
-			rel="alternate"
-			hreflang={loc.hreflang}
-			href={`${site.url}${privacyPath(loc.urlPrefix)}`}
-		/>
+	{#each pageLocales as loc}
+		<link rel="alternate" hreflang={loc.hreflang} href={`${site.url}${pagePath(loc.urlPrefix)}`} />
 	{/each}
-	<link rel="alternate" hreflang="x-default" href={`${site.url}/privacy/`} />
+	<link rel="alternate" hreflang="x-default" href={`${site.url}${pagePath('')}`} />
 	<meta property="og:type" content="website" />
 	<meta property="og:site_name" content={site.name} />
 	<meta property="og:title" content={`${c.title} - ${site.name}`} />
@@ -78,10 +83,10 @@
 				<span>{c.languageLabel}</span>
 			</span>
 			<ul>
-				{#each privacyLocales as loc}
+				{#each pageLocales as loc}
 					<li>
 						<a
-							href={privacyPath(loc.urlPrefix)}
+							href={pagePath(loc.urlPrefix)}
 							hreflang={loc.hreflang}
 							lang={loc.htmlLang}
 							class:active={loc.key === localeKey}
