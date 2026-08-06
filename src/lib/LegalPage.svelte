@@ -1,13 +1,24 @@
 <script lang="ts">
 	import { ArrowLeft, Globe2, Mail } from '@lucide/svelte';
 	import { site, type Locale } from '$lib/content';
-	import { legalContent, legalNav, type LegalPageKey } from '$lib/legalContent';
+	import {
+		legalContent,
+		legalNav,
+		type LegalPageContent,
+		type LegalPageKey
+	} from '$lib/legalContent';
 
 	export let locale: Locale;
 	export let page: LegalPageKey;
+	export let contentOverride: LegalPageContent | undefined = undefined;
+	export let canonicalPath: string | undefined = undefined;
+	export let contactHref: string | undefined = undefined;
 
-	const c = legalContent[locale][page];
-	const canonical = `${site.url}${locale === 'ko' ? '' : '/en'}/${page}/`;
+	const c = contentOverride ?? legalContent[locale][page];
+	const pagePath = canonicalPath ?? `${locale === 'ko' ? '' : '/en'}/${page}/`;
+	const canonical = `${site.url}${pagePath}`;
+	const koHref = locale === 'ko' ? pagePath : c.otherLocaleHref;
+	const enHref = locale === 'en' ? pagePath : c.otherLocaleHref;
 	const homeHref = locale === 'ko' ? '/' : '/en/';
 </script>
 
@@ -16,9 +27,9 @@
 	<meta name="description" content={c.description} />
 	<meta name="theme-color" content="#f6f8f8" />
 	<link rel="canonical" href={canonical} />
-	<link rel="alternate" hreflang="ko-KR" href={`${site.url}/${page}/`} />
-	<link rel="alternate" hreflang="en" href={`${site.url}/en/${page}/`} />
-	<link rel="alternate" hreflang="x-default" href={`${site.url}/${page}/`} />
+	<link rel="alternate" hreflang="ko-KR" href={`${site.url}${koHref}`} />
+	<link rel="alternate" hreflang="en" href={`${site.url}${enHref}`} />
+	<link rel="alternate" hreflang="x-default" href={`${site.url}${koHref}`} />
 	<meta property="og:type" content="website" />
 	<meta property="og:site_name" content={site.name} />
 	<meta property="og:title" content={`${c.title} - ${site.name}`} />
@@ -71,7 +82,7 @@
 
 	<section class="legal-note">
 		<p>{c.footerNote}</p>
-		<a href={`mailto:${site.email}`}>
+		<a href={contactHref ?? `mailto:${site.email}`}>
 			<Mail size={18} aria-hidden="true" />
 			<span>{site.email}</span>
 		</a>

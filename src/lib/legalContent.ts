@@ -8,7 +8,7 @@ type LegalSection = {
 	body: string[];
 };
 
-type LegalPageContent = {
+export type LegalPageContent = {
 	title: string;
 	description: string;
 	kicker: string;
