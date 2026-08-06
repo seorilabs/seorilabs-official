@@ -37,6 +37,13 @@ const pageGroups: Array<{ priority: string; pages: SitemapPage[] }> = [
 			{ path: '/apps/lizard-tycoon/privacy/', hreflang: content.ko.hreflang },
 			{ path: '/en/apps/lizard-tycoon/privacy/', hreflang: content.en.hreflang }
 		]
+	},
+	{
+		priority: '0.8',
+		pages: [
+			{ path: '/apps/babycare/account-deletion/', hreflang: content.ko.hreflang },
+			{ path: '/en/apps/babycare/account-deletion/', hreflang: content.en.hreflang }
+		]
 	}
 ];
 
