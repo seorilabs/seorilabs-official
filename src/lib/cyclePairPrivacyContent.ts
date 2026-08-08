@@ -49,7 +49,8 @@ export const cyclePairPrivacyContent: Record<'ko' | 'en', PrivacyContent> = {
 				title: '보관과 삭제',
 				body: [
 					'계정을 삭제하면 서버가 본인 기록, Pair 관계와 파트너 projection, 초대코드, 알림 토큰, 구독 entitlement 문서, 인증 계정을 재귀적으로 삭제합니다. 자세한 절차는 계정 삭제 안내 페이지에서 확인할 수 있습니다.',
-					'초대코드는 만료 후 7일, 확인 완료된 캐시 tombstone은 30일간 보존한 뒤 자동 삭제합니다. 감사 목적의 비식별 Pair tombstone 로그는 90일간 보존합니다. 이 로그에는 건강 기록과 계정 식별자가 포함되지 않습니다.',
+					'초대코드는 만료 후 7일, 확인 완료된 캐시 tombstone은 30일간 보존한 뒤 자동 삭제합니다.',
+					'Pair를 해제하면 해제된 Pair 식별자의 재사용과 잘못된 재연결을 막기 위해 Pair 해제 기록을 보존합니다. 이 기록에는 Pair 식별자, 두 멤버의 계정 식별자, 해제 시각과 해제한 사람만 담기며 건강 기록은 포함되지 않습니다. 계정을 삭제하면 그 계정이 속했던 Pair의 해제 기록도 함께 삭제됩니다.',
 					'백업에 잔존하는 데이터는 삭제 요청일로부터 30일 이내에 파기합니다.',
 					'구독 결제 기록은 전자상거래 등에서의 소비자보호에 관한 법률 등 관계 법령이 정한 기간 동안 보존한 뒤 삭제하거나 비식별화합니다.',
 					`앱을 사용할 수 없는 경우 ${site.email}로 열람·삭제를 요청할 수 있습니다. 타인의 데이터 삭제를 막기 위해 최소한의 본인확인 정보를 요청할 수 있습니다.`
@@ -136,7 +137,8 @@ export const cyclePairPrivacyContent: Record<'ko' | 'en', PrivacyContent> = {
 				title: 'Retention and Deletion',
 				body: [
 					'When you delete your account, the server recursively deletes your entries, the pair relationship and partner projections, invitation codes, notification tokens, subscription entitlement documents, and the authentication account. See the account deletion page for the full procedure.',
-					'Invitation codes are retained for 7 days after expiry and acknowledged cache tombstones for 30 days, then deleted automatically. Non-identifying pair tombstone audit logs are retained for 90 days and contain no health entries or account identifiers.',
+					'Invitation codes are retained for 7 days after expiry and acknowledged cache tombstones for 30 days, then deleted automatically.',
+					'When a pair is unlinked, we retain an unlink record to prevent reuse of the released pair identifier and incorrect re-linking. It contains only the pair identifier, both members’ account identifiers, and the unlink time and actor; it contains no health entries. Deleting your account also deletes the unlink records for pairs your account belonged to.',
 					'Data remaining in backups is destroyed within 30 days of the deletion request.',
 					'Subscription transaction records are retained for the period required by applicable consumer-protection and e-commerce law, then deleted or de-identified.',
 					`If you cannot use the App, send access or deletion requests to ${site.email}. We may request the minimum information needed to verify your identity and prevent deletion of another person’s data.`

@@ -42,7 +42,7 @@ export const cyclePairAccountDeletionContent: Record<Locale, LegalPageContent> =
 				body: [
 					'삭제를 확인하면 서버가 데이터를 재귀적으로 삭제합니다. 삭제 요청 응답이 유실되어도 15분 주기 finalizer가 완료를 보장하며, 완료가 확인되기 전까지 기기에서는 기존 민감정보 접근이 차단됩니다.',
 					'삭제 완료 확인은 기기에만 저장되는 1회성 receipt로 이루어지고 서버에는 receipt의 해시만 남습니다.',
-					'삭제된 Pair 식별자의 재사용을 막기 위해 무작위 Pair ID와 삭제 시각만 담은 비식별 tombstone을 90일간 보존합니다. 이 tombstone에는 계정 식별자와 건강 기록이 포함되지 않습니다.',
+					'계정 삭제 시에는 그 계정이 속했던 Pair의 해제 기록(pairTombstones)도 함께 삭제되므로 삭제 후 서버에 남는 Pair 식별 정보가 없습니다.',
 					'백업에 잔존하는 데이터는 삭제 요청일로부터 30일 이내에 파기합니다.',
 					'구독 결제 기록은 전자상거래 등에서의 소비자보호에 관한 법률 등 관계 법령이 정한 기간 동안 보존한 뒤 삭제하거나 비식별화합니다.'
 				]
@@ -93,7 +93,7 @@ export const cyclePairAccountDeletionContent: Record<Locale, LegalPageContent> =
 				body: [
 					'Once confirmed, the server deletes your data recursively. If the response is lost, a finalizer that runs every 15 minutes guarantees completion, and the device blocks access to previous sensitive data until completion is confirmed.',
 					'Completion is confirmed with a single-use receipt stored only on the device; the server keeps only a hash of that receipt.',
-					'To prevent reuse of a deleted pair identifier, we retain a non-identifying tombstone containing only a random pair ID and deletion time for 90 days. It contains no account identifiers or health entries.',
+					'Account deletion also removes the unlink records for pairs your account belonged to, so no pair-identifying information about you remains on the server afterwards.',
 					'Data remaining in backups is destroyed within 30 days of the deletion request.',
 					'Subscription transaction records are retained for the period required by applicable consumer-protection and e-commerce law, then deleted or de-identified.'
 				]
