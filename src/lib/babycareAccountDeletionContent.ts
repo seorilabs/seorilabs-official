@@ -7,7 +7,7 @@ export const babycareAccountDeletionContent: Record<Locale, LegalPageContent> = 
 		description:
 			'서리랩스 함께봄 앱의 계정과 돌봄 데이터를 앱 안에서 즉시 삭제하거나 이메일로 삭제 요청하는 방법을 안내합니다.',
 		kicker: 'BabyNest Account Deletion',
-		lastUpdated: '2026년 8월 6일',
+		lastUpdated: '2026년 8월 9일',
 		intro:
 			'함께봄: 수유, 기저귀, 아기돌봄 기록 어플은 Seori Labs가 제공합니다. 아래 방법으로 계정과 연결된 데이터를 영구 삭제할 수 있습니다.',
 		sections: [
@@ -41,7 +41,7 @@ export const babycareAccountDeletionContent: Record<Locale, LegalPageContent> = 
 				body: [
 					'앱 안에서 확인한 삭제는 온라인 상태에서 즉시 처리되며 복구할 수 없습니다. 네트워크 응답이 유실되면 앱이 다음 실행에서 삭제를 다시 확인하고 완료할 때까지 기존 캐시를 열지 않습니다.',
 					'삭제된 그룹 식별자의 재사용을 막기 위해 무작위 그룹 ID, 삭제 시각, 삭제 사유만 담은 tombstone을 영구 보존합니다. 이 tombstone에는 계정 ID, 아기 정보, 돌봄 기록이 포함되지 않습니다.',
-					'함께봄은 광고나 인앱결제를 사용하지 않습니다. 법령상 별도 보존 의무가 생기는 거래 기록이 없는 현재 서비스에서는 위 tombstone 외의 앱 계정 데이터를 삭제 후 보존하지 않습니다.'
+					'함께봄은 선택형 비개인화 보상형 광고를 제공하지만 인앱결제는 사용하지 않습니다. 돌봄 기록 원문을 포함하지 않는 제품 분석·보안 로그와 광고 측정 데이터는 Google과 Seori Labs의 표준 보관 기간과 법적 의무에 따라 삭제되거나 비식별화됩니다. 법령상 별도 보존 의무가 생기는 거래 기록이 없는 현재 서비스에서는 위 tombstone 외의 운영 계정·돌봄 데이터를 삭제 후 보존하지 않습니다.'
 				]
 			}
 		],
@@ -55,7 +55,7 @@ export const babycareAccountDeletionContent: Record<Locale, LegalPageContent> = 
 		description:
 			'How to permanently delete your BabyNest account and care data in the app or request deletion by email.',
 		kicker: 'BabyNest Account Deletion',
-		lastUpdated: 'August 6, 2026',
+		lastUpdated: 'August 9, 2026',
 		intro:
 			'BabyNest: Shared Baby Care Log is provided by Seori Labs. Use either option below to permanently delete your account and associated data.',
 		sections: [
@@ -89,7 +89,7 @@ export const babycareAccountDeletionContent: Record<Locale, LegalPageContent> = 
 				body: [
 					'In-app deletion is processed immediately while online and cannot be undone. If the network response is lost, the app verifies and retries deletion on the next launch without reopening the previous cache.',
 					'To prevent reuse of a deleted group identifier, we retain a tombstone containing only a random group ID, deletion time, and deletion reason. It is retained permanently and contains no account ID, baby data, or care logs.',
-					'BabyNest has no advertising or in-app purchases. Under the current service, no app account data other than the non-identifying tombstone is retained after deletion because there are no transaction records subject to a separate legal retention duty.'
+					'BabyNest offers optional non-personalized rewarded advertising but has no in-app purchases. Product analytics, security logs, and advertising measurement data do not contain original care records and are deleted or de-identified under Google and Seori Labs standard retention periods and legal obligations. Under the current service, no operational account or care data other than the non-identifying tombstone is retained after deletion because there are no transaction records subject to a separate legal retention duty.'
 				]
 			}
 		],
