@@ -7,18 +7,18 @@ export const babycarePrivacyContent: Record<'ko' | 'en', PrivacyContent> = {
 		description:
 			'함께봄의 공동 돌봄 기록, 제품 분석, 선택형 보상형 광고 처리에 관한 개인정보 처리방침입니다.',
 		kicker: 'BabyNest Privacy Policy',
-		lastUpdated: '2026년 8월 9일',
+		lastUpdated: '2026년 8월 10일',
 		lastUpdatedLabel: '시행일 및 최종 수정일',
 		backLabel: '서리랩스 홈으로',
 		languageLabel: '언어',
 		intro:
-			'이 방침은 Seori Labs가 제공하는 「함께봄: 수유, 기저귀, 아기돌봄 기록 어플」(패키지명 com.seorilabs.babycare, 이하 “앱”)에 적용됩니다. 앱은 성인 양육자가 아기의 수유·기저귀·수면 기록을 비공개 초대 그룹에서 함께 관리하도록 돕는 비의료 도구입니다. 아동이 직접 가입하거나 이용하는 서비스가 아니며, 의료 진단·처방·치료 판단을 제공하지 않습니다.',
+			'이 방침은 Seori Labs가 제공하는 「함께봄: 수유, 기저귀, 아기돌봄 기록 어플」(패키지명 com.seorilabs.babycare, 이하 “앱”)에 적용됩니다. 앱은 성인 양육자가 아기의 수유·기저귀·수면·체온·복약 기록을 비공개 초대 그룹에서 함께 관리하도록 돕는 비의료 도구입니다. 아동이 직접 가입하거나 이용하는 서비스가 아니며, 의료 진단·처방·치료 판단을 제공하지 않습니다.',
 		sections: [
 			{
 				title: '앱이 처리하는 데이터',
 				body: [
 					'계정과 그룹 정보: 앱이 생성한 사용자 식별자, 양육자 표시 이름, 돌봄 그룹과 멤버십, 초대·합류 이력을 인증과 그룹 내 공유에 사용합니다.',
-					'아기와 돌봄 기록: 성인 양육자가 입력한 아기 이름·생년월일, 수유·기저귀·수면의 값과 시각, 메모, 기록자 정보를 저장합니다. 이 정보는 초대된 현재 그룹 구성원에게만 표시됩니다.',
+					'아기와 돌봄 기록: 성인 양육자가 입력한 아기 이름·생년월일, 수유·기저귀·수면의 값과 시각, 체온 측정값과 측정 부위, 약 이름·분류·주성분·실제 투여량·단위·사용자가 제품 라벨이나 의료진에게 확인한 복약 간격, 메모, 기록자 정보를 저장합니다. 이 정보는 초대된 현재 그룹 구성원에게만 표시됩니다.',
 					'이용·광고 정보: 화면 조회, 온보딩·기록·초대 흐름, 광고 요청·노출·보상 이벤트를 Google Analytics와 Seori Labs Platform Events로 처리합니다. Google Mobile Ads는 앱 상호작용, SDK 진단·성능 정보, 광고 또는 앱 인스턴스·기기 식별자와 IP 기반 대략적 위치를 처리할 수 있습니다.',
 					'수집하지 않는 것: 정밀 위치, 연락처, 사진·마이크, 결제 카드나 은행계좌 정보. 아기 이름·생년월일, 돌봄 메모, 양육자 표시 이름은 분석 또는 광고 이벤트 파라미터로 보내지 않습니다.'
 				]
@@ -86,18 +86,18 @@ export const babycarePrivacyContent: Record<'ko' | 'en', PrivacyContent> = {
 		description:
 			'Privacy Policy for shared care records, product analytics, and optional rewarded advertising in BabyNest.',
 		kicker: 'BabyNest Privacy Policy',
-		lastUpdated: 'August 9, 2026',
+		lastUpdated: 'August 10, 2026',
 		lastUpdatedLabel: 'Effective and last updated',
 		backLabel: 'Back to Seori Labs',
 		languageLabel: 'Language',
 		intro:
-			'This policy applies to “BabyNest: Shared Baby Care Log” (package com.seorilabs.babycare, the “App”), provided by Seori Labs. The App is a non-medical tool for adult caregivers to manage a baby’s feeding, diaper, and sleep records together in a private invitation-only group. It is not designed for children to register or use directly and does not provide medical diagnosis, prescription, or treatment decisions.',
+			'This policy applies to “BabyNest: Shared Baby Care Log” (package com.seorilabs.babycare, the “App”), provided by Seori Labs. The App is a non-medical tool for adult caregivers to manage a baby’s feeding, diaper, sleep, temperature, and medication records together in a private invitation-only group. It is not designed for children to register or use directly and does not provide medical diagnosis, prescription, or treatment decisions.',
 		sections: [
 			{
 				title: 'Data the App Processes',
 				body: [
 					'Account and group data: an App-generated user identifier, caregiver display name, care group, memberships, and invitation or joining history are used for authentication and private group sharing.',
-					'Baby and care records: adult caregivers enter a baby name and date of birth, feeding, diaper, and sleep values and times, notes, and author information. This data is visible only to currently invited members of the care group.',
+					'Baby and care records: adult caregivers enter a baby name and date of birth, feeding, diaper, and sleep values and times, temperature readings and measurement sites, medicine names, categories, active ingredients, actual administered amounts and units, user-entered intervals confirmed from a product label or clinician, notes, and author information. This data is visible only to currently invited members of the care group.',
 					'Usage and advertising data: screen views, onboarding, logging, invitation, ad request, impression, and reward events are processed through Google Analytics and Seori Labs Platform Events. Google Mobile Ads may process app interactions, SDK diagnostics and performance, advertising, app-instance or device identifiers, and approximate location inferred from IP.',
 					'We do not collect precise location, contacts, photos, microphone recordings, payment card, or bank-account data. Baby names and birth dates, care notes, and caregiver display names are never sent as analytics or advertising event parameters.'
 				]
