@@ -1,0 +1,149 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 1080" role="img" aria-labelledby="title desc">
+  <title id="title">Seori Labs complete-name symbol directions</title>
+  <desc id="desc">Three original geometric symbol directions based on the complete Korean name Seori.</desc>
+
+  <rect width="1440" height="1080" fill="#E9EFEF" />
+  <rect x="56" y="48" width="1328" height="984" rx="32" fill="#FFFFFF" />
+
+  <text x="104" y="116" fill="#112128" font-family="Inter, Pretendard, sans-serif" font-size="20" font-weight="800" letter-spacing="2.8">SEORI LABS — COMPLETE NAME STUDY</text>
+  <text x="104" y="176" fill="#112128" font-family="Inter, Pretendard, sans-serif" font-size="48" font-weight="780">두 이름이 아니라, 하나의 ‘서리’.</text>
+  <text x="106" y="218" fill="#52636A" font-family="Inter, Pretendard, sans-serif" font-size="18" font-weight="560">두 음절을 동등하게 유지하면서 하나의 제품 심볼로 압축</text>
+
+  <!-- J: shared stem -->
+  <g transform="translate(88 276)">
+    <rect width="1264" height="216" rx="24" fill="#F7F9F9" stroke="#DCE5E5" />
+    <text x="32" y="42" fill="#0F7D7A" font-family="Inter, Pretendard, sans-serif" font-size="15" font-weight="850" letter-spacing="1.8">J — SHARED STEM</text>
+    <g transform="translate(52 59)">
+      <path d="M4 42 21 8h10l17 34H36L26 21 16 42Z" fill="#112128" />
+      <rect x="7" y="50" width="43" height="8" fill="#112128" />
+      <rect x="42" y="50" width="8" height="23" fill="#112128" />
+      <rect x="7" y="65" width="43" height="8" fill="#112128" />
+      <rect x="7" y="65" width="8" height="23" fill="#112128" />
+      <rect x="7" y="80" width="43" height="8" fill="#112128" />
+      <rect x="68" y="6" width="12" height="82" fill="#112128" />
+      <rect x="53" y="24" width="15" height="12" fill="#58C7C4" />
+    </g>
+    <text x="184" y="117" fill="#112128" font-family="Inter, Pretendard, sans-serif" font-size="43" font-weight="780" letter-spacing="-1.4">Seori Labs</text>
+    <text x="186" y="151" fill="#52636A" font-family="Inter, Pretendard, sans-serif" font-size="16" font-weight="600">서와 리가 하나의 세로축을 공유하는 완성형 이름</text>
+    <g transform="translate(708 38)">
+      <rect width="322" height="140" rx="18" fill="#112128" />
+      <g transform="translate(31 27) scale(.9)">
+        <path d="M4 42 21 8h10l17 34H36L26 21 16 42Z" fill="#F9FBFB" />
+        <rect x="7" y="50" width="43" height="8" fill="#F9FBFB" />
+        <rect x="42" y="50" width="8" height="23" fill="#F9FBFB" />
+        <rect x="7" y="65" width="43" height="8" fill="#F9FBFB" />
+        <rect x="7" y="65" width="8" height="23" fill="#F9FBFB" />
+        <rect x="7" y="80" width="43" height="8" fill="#F9FBFB" />
+        <rect x="68" y="6" width="12" height="82" fill="#F9FBFB" />
+        <rect x="53" y="24" width="15" height="12" fill="#58C7C4" />
+      </g>
+      <text x="128" y="85" fill="#F9FBFB" font-family="Inter, Pretendard, sans-serif" font-size="30" font-weight="780" letter-spacing="-1">Seori Labs</text>
+    </g>
+    <g transform="translate(1084 72)">
+      <rect width="32" height="32" rx="7" fill="#112128" />
+      <g transform="translate(3 2) scale(.33)">
+        <path d="M4 42 21 8h10l17 34H36L26 21 16 42Z" fill="#F9FBFB" />
+        <rect x="7" y="50" width="43" height="8" fill="#F9FBFB" />
+        <rect x="42" y="50" width="8" height="23" fill="#F9FBFB" />
+        <rect x="7" y="65" width="43" height="8" fill="#F9FBFB" />
+        <rect x="7" y="65" width="8" height="23" fill="#F9FBFB" />
+        <rect x="7" y="80" width="43" height="8" fill="#F9FBFB" />
+        <rect x="68" y="6" width="12" height="82" fill="#F9FBFB" />
+        <rect x="53" y="24" width="15" height="12" fill="#58C7C4" />
+      </g>
+      <g transform="translate(55 1) scale(.35)">
+        <path d="M4 42 21 8h10l17 34H36L26 21 16 42Z" fill="#112128" />
+        <rect x="7" y="50" width="43" height="8" fill="#112128" />
+        <rect x="42" y="50" width="8" height="23" fill="#112128" />
+        <rect x="7" y="65" width="43" height="8" fill="#112128" />
+        <rect x="7" y="65" width="8" height="23" fill="#112128" />
+        <rect x="7" y="80" width="43" height="8" fill="#112128" />
+        <rect x="68" y="6" width="12" height="82" fill="#112128" />
+        <rect x="53" y="24" width="15" height="12" fill="#112128" />
+      </g>
+      <text x="0" y="66" fill="#758389" font-family="Inter, Pretendard, sans-serif" font-size="12" font-weight="700">32 / mono</text>
+    </g>
+  </g>
+
+  <!-- K: balanced blocks -->
+  <g transform="translate(88 520)">
+    <rect width="1264" height="216" rx="24" fill="#F7F9F9" stroke="#DCE5E5" />
+    <text x="32" y="42" fill="#0F7D7A" font-family="Inter, Pretendard, sans-serif" font-size="15" font-weight="850" letter-spacing="1.8">K — BALANCED BLOCKS</text>
+    <g transform="translate(47 70)">
+      <path d="M3 69 18 27h9L42 69H31l-9-27-9 27Z" fill="#112128" />
+      <rect x="48" y="22" width="10" height="52" fill="#112128" />
+      <rect x="36" y="43" width="12" height="10" fill="#58C7C4" />
+      <path d="M68 24h31v10H80v8h19v10H68V42h19v-8H68Z" fill="#112128" />
+      <rect x="105" y="22" width="10" height="52" fill="#112128" />
+    </g>
+    <text x="184" y="117" fill="#112128" font-family="Inter, Pretendard, sans-serif" font-size="43" font-weight="780" letter-spacing="-1.4">Seori Labs</text>
+    <text x="186" y="151" fill="#52636A" font-family="Inter, Pretendard, sans-serif" font-size="16" font-weight="600">두 음절을 좌우에 같은 면적으로 보존</text>
+    <g transform="translate(708 38)">
+      <rect width="322" height="140" rx="18" fill="#112128" />
+      <g transform="translate(20 31) scale(.76)">
+        <path d="M3 69 18 27h9L42 69H31l-9-27-9 27Z" fill="#F9FBFB" />
+        <rect x="48" y="22" width="10" height="52" fill="#F9FBFB" />
+        <rect x="36" y="43" width="12" height="10" fill="#58C7C4" />
+        <path d="M68 24h31v10H80v8h19v10H68V42h19v-8H68Z" fill="#F9FBFB" />
+        <rect x="105" y="22" width="10" height="52" fill="#F9FBFB" />
+      </g>
+      <text x="128" y="85" fill="#F9FBFB" font-family="Inter, Pretendard, sans-serif" font-size="30" font-weight="780" letter-spacing="-1">Seori Labs</text>
+    </g>
+    <g transform="translate(1084 72)">
+      <rect width="32" height="32" rx="7" fill="#112128" />
+      <g transform="translate(1 4) scale(.26)">
+        <path d="M3 69 18 27h9L42 69H31l-9-27-9 27Z" fill="#F9FBFB" />
+        <rect x="48" y="22" width="10" height="52" fill="#F9FBFB" />
+        <rect x="36" y="43" width="12" height="10" fill="#58C7C4" />
+        <path d="M68 24h31v10H80v8h19v10H68V42h19v-8H68Z" fill="#F9FBFB" />
+        <rect x="105" y="22" width="10" height="52" fill="#F9FBFB" />
+      </g>
+      <g transform="translate(52 5) scale(.27)">
+        <path d="M3 69 18 27h9L42 69H31l-9-27-9 27Z" fill="#112128" />
+        <rect x="48" y="22" width="10" height="52" fill="#112128" />
+        <rect x="36" y="43" width="12" height="10" fill="#112128" />
+        <path d="M68 24h31v10H80v8h19v10H68V42h19v-8H68Z" fill="#112128" />
+        <rect x="105" y="22" width="10" height="52" fill="#112128" />
+      </g>
+      <text x="0" y="66" fill="#758389" font-family="Inter, Pretendard, sans-serif" font-size="12" font-weight="700">32 / mono</text>
+    </g>
+  </g>
+
+  <!-- L: shared field -->
+  <g transform="translate(88 764)">
+    <rect width="1264" height="216" rx="24" fill="#F7F9F9" stroke="#DCE5E5" />
+    <text x="32" y="42" fill="#0F7D7A" font-family="Inter, Pretendard, sans-serif" font-size="15" font-weight="850" letter-spacing="1.8">L — SHARED FIELD</text>
+    <g transform="translate(48 67)">
+      <path d="M4 74 24 12h12l20 62H43L30 31 17 74Z" fill="#112128" />
+      <path d="M56 12h12v23H55v12h13v27H56V59H34V47h22Z" fill="#58C7C4" />
+      <path d="M68 12h12v62H68Z" fill="#112128" />
+    </g>
+    <text x="184" y="117" fill="#112128" font-family="Inter, Pretendard, sans-serif" font-size="43" font-weight="780" letter-spacing="-1.4">Seori Labs</text>
+    <text x="186" y="151" fill="#52636A" font-family="Inter, Pretendard, sans-serif" font-size="16" font-weight="600">두 음절이 중앙 작업 영역을 함께 점유</text>
+    <g transform="translate(708 38)">
+      <rect width="322" height="140" rx="18" fill="#112128" />
+      <g transform="translate(31 29) scale(.86)">
+        <path d="M4 74 24 12h12l20 62H43L30 31 17 74Z" fill="#F9FBFB" />
+        <path d="M56 12h12v23H55v12h13v27H56V59H34V47h22Z" fill="#58C7C4" />
+        <path d="M68 12h12v62H68Z" fill="#F9FBFB" />
+      </g>
+      <text x="128" y="85" fill="#F9FBFB" font-family="Inter, Pretendard, sans-serif" font-size="30" font-weight="780" letter-spacing="-1">Seori Labs</text>
+    </g>
+    <g transform="translate(1084 72)">
+      <rect width="32" height="32" rx="7" fill="#112128" />
+      <g transform="translate(3 3) scale(.33)">
+        <path d="M4 74 24 12h12l20 62H43L30 31 17 74Z" fill="#F9FBFB" />
+        <path d="M56 12h12v23H55v12h13v27H56V59H34V47h22Z" fill="#58C7C4" />
+        <path d="M68 12h12v62H68Z" fill="#F9FBFB" />
+      </g>
+      <g transform="translate(55 2) scale(.35)">
+        <path d="M4 74 24 12h12l20 62H43L30 31 17 74Z" fill="#112128" />
+        <path d="M56 12h12v23H55v12h13v27H56V59H34V47h22Z" fill="#112128" />
+        <path d="M68 12h12v62H68Z" fill="#112128" />
+      </g>
+      <text x="0" y="66" fill="#758389" font-family="Inter, Pretendard, sans-serif" font-size="12" font-weight="700">32 / mono</text>
+    </g>
+  </g>
+
+  <text x="104" y="1011" fill="#758389" font-family="Inter, Pretendard, sans-serif" font-size="13" font-weight="650">Working study — existing production assets are unchanged</text>
+</svg>
