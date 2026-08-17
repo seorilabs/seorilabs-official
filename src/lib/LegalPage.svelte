@@ -40,7 +40,9 @@
 <main class="legal-page" lang={locale === 'ko' ? 'ko' : 'en'}>
 	<header class="legal-header">
 		<a class="brand" href={homeHref} aria-label={site.name}>
-			<span class="brand-mark">S</span>
+			<span class="brand-mark" aria-hidden="true">
+				<img src="/brand/seori-labs-mark.svg" alt="" width="34" height="34" />
+			</span>
 			<span>{site.name}</span>
 		</a>
 		<nav aria-label="Legal pages">
@@ -146,15 +148,15 @@
 	}
 
 	.brand-mark {
-		display: inline-grid;
-		place-items: center;
+		display: inline-block;
 		width: 34px;
 		height: 34px;
-		border: 1px solid rgba(19, 32, 39, 0.16);
-		background: rgba(255, 255, 255, 0.8);
-		color: #0f6f8a;
-		font-weight: 900;
-		border-radius: 8px;
+	}
+
+	.brand-mark img {
+		display: block;
+		width: 100%;
+		height: 100%;
 	}
 
 	.legal-header nav {

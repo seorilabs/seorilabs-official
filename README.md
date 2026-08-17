@@ -48,7 +48,7 @@ The Seori Labs BI/CI package is kept in the repository:
 
 - Brand guide: `docs/brand-guidelines.md`
 - Logo assets: `static/brand/`
-- Website favicon: `static/favicon.svg`
+- Website favicon: `static/favicon.svg` with PNG and ICO fallbacks
 
 ## Project Structure
 
