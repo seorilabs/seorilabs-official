@@ -19,7 +19,7 @@ export const lizardTycoonPrivacyContent: Record<'ko' | 'en', PrivacyContent> = {
 				body: [
 					'게임 진행 상황과 설정은 이용자의 기기에만 저장되며 Seori Labs 서버로 전송되지 않습니다. 앱을 삭제하면 기기에 저장된 진행 상황도 삭제됩니다.',
 					'서비스 품질을 확인하기 위해 Google Analytics for Firebase로 화면 조회, 탭, 튜토리얼 진행, 도마뱀 돌보기와 같은 앱·게임 내 상호작용 및 앱 인스턴스에 연결된 분석 식별자를 수집합니다. 이름, 이메일, 전화번호 또는 광고 ID와 연결하지 않으며 광고나 교차 앱 추적에 사용하지 않습니다.',
-					'서비스 안정성을 확인하기 위해 릴리스 빌드에서 발생한 GDScript 오류의 앱 내부 파일 경로(res://), 코드 라인, 오류 유형과 허용 목록 오류 분류, 최대 2개의 파일·함수·라인 프레임을 진단 데이터로 처리합니다. 같은 파일·라인은 실행 세션당 1회, 전체 20건으로 제한합니다. 오류 원문, 로컬·멤버 변수, 게임 저장 내용, 기기의 절대 사용자 경로는 수집하지 않습니다.',
+					'서비스 안정성을 확인하기 위해 릴리스 빌드에서 발생한 GDScript 오류의 앱 내부 파일 경로(res://), 코드 라인, 오류 유형과 허용 목록 오류 분류, 최대 2개의 파일·함수·라인 프레임을 진단 데이터로 처리합니다. 같은 파일·라인은 실행 세션당 1회, 실행 세션당 전체 20건으로 제한합니다. 오류 원문, 로컬·멤버 변수, 게임 저장 내용, 기기의 절대 사용자 경로는 수집하지 않습니다.',
 					'Google Play와 Apple App Store에서는 기존 구매 권한 확인과 복원을 위해 Firebase 익명 설치 사용자 ID를 사용합니다. AppsInToss에서는 토스 로그인으로 받은 앱 범위 사용자 키를 서버에서 즉시 SHA-256 처리한 Platform 사용자 식별자를 사용합니다. 원본 사용자 키는 저장하거나 앱에 반환하지 않습니다.',
 					'AppsInToss 토스 로그인 동의 과정에서 토스가 이름을 제공할 수 있지만 Seori Labs는 이름을 기능에 사용하거나 서버에 저장하지 않습니다. 인앱결제를 선택한 경우 마켓·상품 ID, 구매 또는 주문의 거래 참조값과 토큰, 권한·환불 상태 및 처리 시각을 구매 검증과 복원 원장에 저장합니다. 결제 카드번호와 은행계좌 정보는 Seori Labs가 수집하지 않습니다.',
 					'앱은 위치, 연락처, 사진, 동영상, 마이크, 건강 정보 또는 광고 식별자를 수집하지 않습니다.'
@@ -84,7 +84,7 @@ export const lizardTycoonPrivacyContent: Record<'ko' | 'en', PrivacyContent> = {
 				body: [
 					'Game progress and settings are stored only on your device and are not sent to Seori Labs servers. Removing the App also removes this local progress.',
 					'To understand service quality, Google Analytics for Firebase collects screen views, taps, tutorial progress, lizard-care actions, other in-app or gameplay interactions, and an analytics identifier associated with the app instance. We do not link this data to a name, email address, phone number, or advertising ID, and do not use it for advertising or cross-app tracking.',
-					'To monitor reliability, release builds process diagnostic data from GDScript errors: the app-relative file path (res://), code line, error type and allowlisted classification, and up to two file, function, and line frames. We limit reports from the same file and line to once per session and cap each session at 20 reports. We do not collect the raw error message, local or member variables, saved game data, or absolute user paths from the device.',
+					'To monitor reliability, release builds process diagnostic data from GDScript errors: the app-relative file path (res://), code line, error type and allowlisted classification, and up to two stack frames containing file, function, and line information. We limit reports from the same file and line to once per session and cap each session at 20 reports. We do not collect the raw error message, local or member variables, saved game data, or absolute user paths from the device.',
 					'On Google Play and the Apple App Store, the App uses a Firebase anonymous installation user ID to check and restore existing purchase entitlements. On AppsInToss, we immediately transform the app-scoped user key received through Toss Login with SHA-256 and use the result as a Platform user identifier. We do not store the original user key or return it to the App.',
 					'Toss may provide a name during the AppsInToss login consent flow, but Seori Labs does not use it for App features or store it on our servers. If you choose an in-app purchase, we store market and product IDs, transaction references or tokens, entitlement and refund status, and processing timestamps in our purchase-validation and restoration ledger. Seori Labs does not collect payment card or bank details.',
 					'The App does not collect location, contacts, photos, videos, microphone recordings, health data, or advertising identifiers.'
@@ -93,7 +93,7 @@ export const lizardTycoonPrivacyContent: Record<'ko' | 'en', PrivacyContent> = {
 			{
 				title: 'Purposes and Basis of Processing',
 				body: [
-					'Analytics and diagnostic data is processed to monitor reliability and improve App flows and features.',
+					'Analytics and diagnostic data are processed to monitor reliability and improve App flows and features.',
 					'Market-specific pseudonymous user identifiers and purchase data are processed to check and restore paid entitlements, validate purchases, apply refunds, prevent duplicate or fraudulent transactions, and meet legal obligations.',
 					'Optional in-app purchase data is processed only when you use a purchase feature. Analytics collection operates as part of the released App service.'
 				]
