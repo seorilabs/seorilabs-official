@@ -65,6 +65,13 @@ const pageGroups: Array<{ priority: string; pages: SitemapPage[] }> = [
 			{ path: '/apps/cycle-pair/account-deletion/', hreflang: content.ko.hreflang },
 			{ path: '/en/apps/cycle-pair/account-deletion/', hreflang: content.en.hreflang }
 		]
+	},
+	{
+		priority: '0.8',
+		pages: [
+			{ path: '/apps/ungeul/privacy/', hreflang: content.ko.hreflang },
+			{ path: '/en/apps/ungeul/privacy/', hreflang: content.en.hreflang }
+		]
 	}
 ];
 
