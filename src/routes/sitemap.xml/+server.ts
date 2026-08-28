@@ -72,6 +72,13 @@ const pageGroups: Array<{ priority: string; pages: SitemapPage[] }> = [
 			{ path: '/apps/ungeul/privacy/', hreflang: content.ko.hreflang },
 			{ path: '/en/apps/ungeul/privacy/', hreflang: content.en.hreflang }
 		]
+	},
+	{
+		priority: '0.8',
+		pages: [
+			{ path: '/apps/ungeul/terms/', hreflang: content.ko.hreflang },
+			{ path: '/en/apps/ungeul/terms/', hreflang: content.en.hreflang }
+		]
 	}
 ];
 
