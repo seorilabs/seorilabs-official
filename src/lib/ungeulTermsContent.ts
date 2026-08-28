@@ -168,7 +168,7 @@ export const ungeulTermsContent: Record<Locale, LegalPageContent> = {
 				title: 'Your obligations and use restrictions',
 				body: [
 					'Use the App in compliance with applicable law and these terms.',
-					'Unauthorised access to the App or its servers, bypassing entitlements, defeating payment or reward verification, abnormal automated requests, and unauthorised copying or redistribution of content are prohibited.',
+					'Unauthorized access to the App or its servers, bypassing entitlements, defeating payment or reward verification, abnormal automated requests, and unauthorized copying or redistribution of content are prohibited.',
 					'If such activity is identified, Seori Labs may restrict service for the account and revoke improperly obtained entitlements. If you disagree with a restriction, contact us.'
 				]
 			},
@@ -197,9 +197,9 @@ export const ungeulTermsContent: Record<Locale, LegalPageContent> = {
 			{
 				title: 'Changes to these terms and disputes',
 				body: [
-					'When these terms change, the last-updated date on this page is revised. Material changes that are unfavourable to users are announced in the App or on this page before they take effect.',
+					'When these terms change, the last-updated date on this page is revised. Material changes that are unfavorable to users are announced in the App or on this page before they take effect.',
 					'These terms are governed by the laws of the Republic of Korea. In case of a dispute, we will first seek an amicable resolution through the contact below; litigation is brought before the court having jurisdiction under the Korean Civil Procedure Act.',
-					`Service and billing enquiries: ${site.email}`
+					`Service and billing inquiries: ${site.email}`
 				]
 			}
 		],
