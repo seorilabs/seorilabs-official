@@ -13,14 +13,17 @@ concurrency:
   group: static-checks-${{ github.ref }}
   cancel-in-progress: true
 
+permissions:
+  contents: read
+  packages: read
+
 jobs:
   checks:
-    uses: seorilabs/.github/.github/workflows/rn-static-checks.yml@main
-    secrets: inherit
+    uses: seorilabs/.github/.github/workflows/rn-static-checks.yml@9afa357f9ba6c8d6a813c7cec7ad3d35c626bdd5
     with:
       runs_on: ${{ github.event.repository.private && 'seorilabs-rpi-arm64' || 'ubuntu-latest' }}
       package_manager: npm
-      node_version: '22'
+      node_version: '24.16.0'
       check_command: |
         npm run check
         npm run build
