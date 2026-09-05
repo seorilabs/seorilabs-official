@@ -5,7 +5,7 @@ export const jomulPrivacyContent: Record<'ko' | 'en', PrivacyContent> = {
 		title: '조물조물 개인정보처리방침',
 		description: '조물조물 만물 합치기의 아동 대상 개인정보 처리 안내',
 		kicker: 'Jomul Privacy Policy',
-		lastUpdated: '2026-09-05',
+		lastUpdated: '2026-09-06',
 		lastUpdatedLabel: '최종 수정일',
 		backLabel: '서리랩스 홈으로',
 		languageLabel: '언어',
@@ -46,6 +46,7 @@ export const jomulPrivacyContent: Record<'ko' | 'en', PrivacyContent> = {
 			{
 				title: '보관, 진행 삭제와 보호자의 권리',
 				body: [
+					'진행 백업과 온라인 식별자는 게임 기능을 제공하는 동안 보관하며 아래 삭제 기능이나 보호자 요청으로 삭제할 수 있습니다. 문의 기록은 답변과 후속 연락에 필요한 기간, 기술 로그는 보안·장애 대응·운영 안정성에 필요한 기간 동안 보관한 뒤 삭제하거나 비식별화합니다. 법령상 보관 의무가 있는 정보는 해당 법령의 기간을 적용합니다.',
 					'기기의 진행·설정은 앱 내 진행 삭제 또는 앱 제거 시 삭제됩니다. 앱 제거만으로 서버 데이터가 삭제되지는 않습니다. 설정의 진행 지우기는 부모 게이트 뒤에서 백업, Platform 사용자 매핑과 Firebase 사용자 삭제를 요청합니다. 연결 실패 시 온라인 삭제가 완료되지 않았음을 표시하며 다시 시도할 수 있습니다.',
 					'보호자는 cs@seorilabs.com으로 데이터 열람·정정·삭제 및 처리 중단을 요청할 수 있습니다. 확인에 필요한 경우 앱에 표시되는 지원 코드를 요청할 수 있으며 비밀번호나 인증 토큰을 보내지 마세요. 광고 제공자가 처리하는 데이터는 해당 제공자의 보관·삭제 정책도 적용됩니다.',
 					'진행 삭제가 이미 전송된 모든 분석·광고·보안 기록을 즉시 삭제한다는 뜻은 아닙니다. 해당 기록에 대한 요청은 위 연락처로 접수합니다.'
@@ -66,7 +67,7 @@ export const jomulPrivacyContent: Record<'ko' | 'en', PrivacyContent> = {
 		title: 'Jomul Privacy Policy',
 		description: 'Data practices for the child-directed Jomul puzzle game.',
 		kicker: 'Jomul Privacy Policy',
-		lastUpdated: '2026-09-05',
+		lastUpdated: '2026-09-06',
 		lastUpdatedLabel: 'Last updated',
 		backLabel: 'Back home',
 		languageLabel: 'Language',
@@ -107,6 +108,7 @@ export const jomulPrivacyContent: Record<'ko' | 'en', PrivacyContent> = {
 			{
 				title: 'Storage, deletion and parental rights',
 				body: [
+					'Progress backups and online identifiers are retained while providing game functionality and can be deleted using the reset function or a parental request. Contact records are kept as needed for responses and follow-up. Technical logs are kept as needed for security, troubleshooting and operational reliability, then deleted or de-identified. Legally required records are retained for the period required by law.',
 					'Local progress and settings are removed by resetting progress or uninstalling the app. Uninstalling alone does not delete server data. Reset progress, behind the parental gate, requests deletion of the backup, Platform identity mapping and Firebase user. Online deletion failures are shown and can be retried.',
 					'Parents can request access, correction, deletion or cessation of processing at cs@seorilabs.com. We may request the app support code to locate records. Do not send passwords or authentication tokens. Ad provider data is also subject to its retention and deletion policies.',
 					'Resetting progress does not imply immediate deletion of all previously sent analytics, advertising or security records. Contact us for requests concerning those records.'
