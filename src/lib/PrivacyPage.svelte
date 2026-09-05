@@ -76,6 +76,9 @@
 		<p class="kicker">{c.kicker}</p>
 		<h1>{c.title}</h1>
 		<p class="intro">{c.intro}</p>
+		{#each c.sections.filter((section) => section.id) as section}
+			<p><a href={`#${section.id}`}>{section.title}</a></p>
+		{/each}
 		<div class="meta-row">
 			<span>{c.lastUpdatedLabel}: {c.lastUpdated}</span>
 		</div>
@@ -104,7 +107,7 @@
 
 	<section class="legal-content" aria-label={c.title}>
 		{#each c.sections as section}
-			<article>
+			<article id={section.id}>
 				<h2>{section.title}</h2>
 				{#each section.body as paragraph}
 					<p>{paragraph}</p>

@@ -44,7 +44,8 @@ export const jomulPrivacyContent: Record<'ko' | 'en', PrivacyContent> = {
 				]
 			},
 			{
-				title: '보관, 진행 삭제와 보호자의 권리',
+				id: 'delete-data',
+				title: '계정·데이터 삭제 요청과 보관 안내',
 				body: [
 					'진행 백업과 온라인 식별자는 게임 기능을 제공하는 동안 보관하며 아래 삭제 기능이나 보호자 요청으로 삭제할 수 있습니다. 문의 기록은 답변과 후속 연락에 필요한 기간, 기술 로그는 보안·장애 대응·운영 안정성에 필요한 기간 동안 보관한 뒤 삭제하거나 비식별화합니다. 법령상 보관 의무가 있는 정보는 해당 법령의 기간을 적용합니다.',
 					'기기의 진행·설정은 앱 내 진행 삭제 또는 앱 제거 시 삭제됩니다. 앱 제거만으로 서버 데이터가 삭제되지는 않습니다. 설정의 진행 지우기는 부모 게이트 뒤에서 백업, Platform 사용자 매핑과 Firebase 사용자 삭제를 요청합니다. 연결 실패 시 온라인 삭제가 완료되지 않았음을 표시하며 다시 시도할 수 있습니다.',
@@ -106,7 +107,8 @@ export const jomulPrivacyContent: Record<'ko' | 'en', PrivacyContent> = {
 				]
 			},
 			{
-				title: 'Storage, deletion and parental rights',
+				id: 'delete-data',
+				title: 'Request account and data deletion; retention information',
 				body: [
 					'Progress backups and online identifiers are retained while providing game functionality and can be deleted using the reset function or a parental request. Contact records are kept as needed for responses and follow-up. Technical logs are kept as needed for security, troubleshooting and operational reliability, then deleted or de-identified. Legally required records are retained for the period required by law.',
 					'Local progress and settings are removed by resetting progress or uninstalling the app. Uninstalling alone does not delete server data. Reset progress, behind the parental gate, requests deletion of the backup, Platform identity mapping and Firebase user. Online deletion failures are shown and can be retried.',

@@ -1,6 +1,7 @@
 import { site, type PrivacyLocaleKey } from '$lib/content';
 
 type PrivacySection = {
+	id?: string;
 	title: string;
 	body: string[];
 };
