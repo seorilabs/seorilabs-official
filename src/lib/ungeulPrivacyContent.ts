@@ -7,7 +7,7 @@ export const ungeulPrivacyContent: Record<'ko' | 'en', PrivacyContent> = {
 		description:
 			'운글의 기기 내 사주 입력 정보, 가명 인증 및 풀이 콘텐츠 처리에 관한 개인정보 처리방침입니다.',
 		kicker: 'Ungeul Privacy Policy',
-		lastUpdated: '2026년 9월 6일',
+		lastUpdated: '2026년 9월 7일',
 		lastUpdatedLabel: '시행일 및 최종 수정일',
 		backLabel: '서리랩스 홈으로',
 		languageLabel: '언어',
@@ -25,7 +25,7 @@ export const ungeulPrivacyContent: Record<'ko' | 'en', PrivacyContent> = {
 					'열람권 구매와 복원에는 계정 연결이 필요합니다. Android는 카카오, iOS는 카카오 또는 Apple, AppsInToss 버전은 토스 로그인을 사용합니다. 연결 제공자가 발급한 계정 식별자는 가명 처리해 보관하며, 제공자의 이름·이메일 등 프로필 정보는 앱 기능에 사용하지 않습니다.',
 					'Android와 iOS 앱에서는 Google AdMob 보상형 광고를 제공합니다. 광고 요청과 노출 과정에서 AdMob이 기기 정보와 광고 식별자를 처리할 수 있으며, 지역 규정에 따라 앱이 광고 개인정보 동의(UMP) 화면을 표시하고 이후에도 설정에서 선택을 바꿀 수 있습니다. AppsInToss 버전에는 광고가 없습니다.',
 					'앱 개선을 위해 Google Analytics for Firebase로 실행·세션·열람 흐름 등의 사용 이벤트와 가명 앱 설치 또는 브라우저 식별자, 앱·기기 정보 및 대략적인 지역 정보를 처리합니다. 네이티브 SDK는 구매 상품·가격·통화·수량 및 광고 측정 이벤트를 자동 수집할 수 있습니다. GA4에는 원본 사주 입력, 파생 명식, 로그인 계정 ID와 피드백 응답 내용을 보내지 않습니다.',
-					'홈의 분석 전송 끄기를 선택하면 이후 GA4와 앱 행동 분석 전송을 중단합니다. 선택은 기기에 저장되며 다시 켜도 거부 중의 대기 이벤트는 재전송하지 않습니다. GA4의 광고 ID·광고 개인화 기능은 비활성화하며 분석 선택을 광고 동의로 사용하지 않습니다.',
+					'앱 실행 시 GA4와 앱 행동 분석을 항상 수집하며, 앱 안에 분석 전송을 끄는 설정은 제공하지 않습니다. GA4의 광고 ID·광고 개인화 기능은 비활성화하고 광고 개인정보 선택은 별도로 처리합니다.',
 					'위치 권한, 연락처, 사진, 동영상, 마이크와 건강 정보는 수집하지 않습니다.'
 				]
 			},
@@ -50,7 +50,7 @@ export const ungeulPrivacyContent: Record<'ko' | 'en', PrivacyContent> = {
 				body: [
 					'기기 내 프로필과 원본 입력 정보는 이용자가 프로필 또는 앱을 삭제할 때 제거됩니다.',
 					'가명 인증 정보, 콘텐츠 요청과 보안·진단 로그는 앱 기능 제공, 장애 대응, 부정 이용 방지와 법적 의무에 필요한 기간 동안 보관한 뒤 삭제하거나 비식별화합니다. 각 클라우드 서비스의 설정된 보관 기간도 적용됩니다.',
-					'분석 전송을 끄면 이후 수집을 중단하며 이미 수집된 데이터를 즉시 삭제하는 것은 아닙니다. GA4 이벤트와 사용자 데이터에는 속성의 보관 설정이 적용되고, 통계 보고서와 BigQuery 내보내기에는 별도 보관 설정이 적용될 수 있습니다.',
+					'GA4 이벤트와 사용자 데이터에는 속성의 보관 설정이 적용되고, 통계 보고서와 BigQuery 내보내기에는 별도 보관 설정이 적용될 수 있습니다. 분석 데이터의 삭제 요청은 아래 문의처로 접수할 수 있습니다.',
 					`가명 서버 데이터의 열람 또는 삭제를 요청하려면 ${site.email}로 문의해 주세요. 다른 이용자의 데이터 보호를 위해 앱 설치와 요청에 관한 최소한의 확인을 요청할 수 있습니다.`
 				]
 			},
@@ -78,7 +78,7 @@ export const ungeulPrivacyContent: Record<'ko' | 'en', PrivacyContent> = {
 		description:
 			'Privacy Policy for on-device birth-profile inputs, pseudonymous authentication, and reading-content processing in Ungeul.',
 		kicker: 'Ungeul Privacy Policy',
-		lastUpdated: 'September 6, 2026',
+		lastUpdated: 'September 7, 2026',
 		lastUpdatedLabel: 'Effective and last updated',
 		backLabel: 'Back to Seori Labs',
 		languageLabel: 'Language',
@@ -96,7 +96,7 @@ export const ungeulPrivacyContent: Record<'ko' | 'en', PrivacyContent> = {
 					'Buying and restoring reading tickets requires a linked account: Kakao on Android, Kakao or Apple on iOS, and Toss Login in the AppsInToss version. Account identifiers issued by these providers are stored in pseudonymous form, and provider profile data such as name or email is not used for App functionality.',
 					'The Android and iOS apps serve Google AdMob rewarded ads. AdMob may process device information and advertising identifiers when requesting and showing an ad. Where local rules require it, the App shows an ad privacy (UMP) consent screen, and the choice can be changed later in settings. The AppsInToss version serves no ads.',
 					'To improve the App, Google Analytics for Firebase processes usage events such as launches, sessions, and reading flows, pseudonymous app-installation or browser identifiers, app/device information, and approximate region. Native SDKs may automatically measure purchased products, prices, currencies, quantities, and advertising events. GA4 does not receive original birth inputs, derived charts, login-account IDs, or feedback answers.',
-					'Select Turn analytics off on the home screen to stop subsequent GA4 and App usage-event collection. The choice is saved on the device, and queued events from the opted-out period are not replayed when collection is re-enabled. GA4 advertising-identifier collection and ad personalization are disabled; analytics choices are not treated as advertising consent.',
+					'GA4 and App usage analytics are collected whenever the App runs. The App does not provide a setting to turn analytics off. GA4 advertising-identifier collection and ad personalization are disabled, and advertising privacy choices are handled separately.',
 					'The App does not collect location permission data, contacts, photos, videos, microphone data, or health data.'
 				]
 			},
@@ -121,7 +121,7 @@ export const ungeulPrivacyContent: Record<'ko' | 'en', PrivacyContent> = {
 				body: [
 					'On-device profiles and original inputs are removed when the user deletes the profile or the App.',
 					'Pseudonymous authentication information, content requests, and security/diagnostic logs are retained only as needed for App functionality, incident response, abuse prevention, and legal obligations, and are then deleted or de-identified. Configured retention periods of the relevant cloud services also apply.',
-					'Turning analytics off stops subsequent collection and does not immediately erase previously collected data. GA4 event and user data follow property retention settings; aggregate reports and BigQuery exports may follow separate retention settings.',
+					'GA4 event and user data follow property retention settings; aggregate reports and BigQuery exports may follow separate retention settings. Analytics data deletion requests can be sent to the contact below.',
 					`To request access to or deletion of pseudonymous server data, contact ${site.email}. We may request minimal information about the App installation and request to protect other users’ data.`
 				]
 			},
