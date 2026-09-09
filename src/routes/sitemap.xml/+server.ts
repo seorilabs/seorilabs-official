@@ -34,6 +34,13 @@ const pageGroups: Array<{ priority: string; pages: SitemapPage[] }> = [
 	{
 		priority: '0.8',
 		pages: [
+			{ path: '/apps/lord-ledger/privacy/', hreflang: content.ko.hreflang },
+			{ path: '/en/apps/lord-ledger/privacy/', hreflang: content.en.hreflang }
+		]
+	},
+	{
+		priority: '0.8',
+		pages: [
 			{ path: '/apps/matgo/privacy/', hreflang: content.ko.hreflang },
 			{ path: '/en/apps/matgo/privacy/', hreflang: content.en.hreflang }
 		]
