@@ -1,6 +1,11 @@
 <script lang="ts">
-	import PrivacyPage from '$lib/PrivacyPage.svelte';
+	import LegalDocPage from '$lib/legal/LegalDocPage.svelte';
 	import { babycarePrivacyContent } from '$lib/babycarePrivacyContent';
 </script>
 
-<PrivacyPage localeKey="en" contentOverride={babycarePrivacyContent.en} productSlug="babycare" />
+<LegalDocPage
+	locale="en"
+	content={babycarePrivacyContent.en}
+	docKind="privacy"
+	productSlug="babycare"
+/>

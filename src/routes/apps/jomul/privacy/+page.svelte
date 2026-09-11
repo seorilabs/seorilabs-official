@@ -1,6 +1,6 @@
 <script lang="ts">
-	import PrivacyPage from '$lib/PrivacyPage.svelte';
+	import LegalDocPage from '$lib/legal/LegalDocPage.svelte';
 	import { jomulPrivacyContent } from '$lib/jomulPrivacyContent';
 </script>
 
-<PrivacyPage localeKey="ko" contentOverride={jomulPrivacyContent.ko} productSlug="jomul" />
+<LegalDocPage locale="ko" content={jomulPrivacyContent.ko} docKind="privacy" productSlug="jomul" />

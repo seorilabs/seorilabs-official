@@ -1,11 +1,6 @@
 <script lang="ts">
-	import LegalPage from '$lib/LegalPage.svelte';
+	import LegalDocPage from '$lib/legal/LegalDocPage.svelte';
 	import { ungeulTermsContent } from '$lib/ungeulTermsContent';
 </script>
 
-<LegalPage
-	locale="ko"
-	page="terms"
-	contentOverride={ungeulTermsContent.ko}
-	canonicalPath="/apps/ungeul/terms/"
-/>
+<LegalDocPage locale="ko" content={ungeulTermsContent.ko} docKind="terms" productSlug="ungeul" />

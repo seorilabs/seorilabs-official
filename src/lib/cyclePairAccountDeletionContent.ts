@@ -48,10 +48,7 @@ export const cyclePairAccountDeletionContent: Record<Locale, LegalPageContent> =
 				]
 			}
 		],
-		footerNote:
-			'삭제 요청을 보내면 본인 확인과 처리 결과 안내에 필요한 최소한의 정보만 사용합니다.',
-		otherLocaleHref: '/en/apps/cycle-pair/account-deletion/',
-		otherLocaleLabel: 'View in English'
+		footerNote: '삭제 요청을 보내면 본인 확인과 처리 결과 안내에 필요한 최소한의 정보만 사용합니다.'
 	},
 	en: {
 		title: 'Cycle Pair Account and Data Deletion',
@@ -100,8 +97,6 @@ export const cyclePairAccountDeletionContent: Record<Locale, LegalPageContent> =
 			}
 		],
 		footerNote:
-			'We use only the minimum information needed to verify a deletion request and communicate the outcome.',
-		otherLocaleHref: '/apps/cycle-pair/account-deletion/',
-		otherLocaleLabel: '한국어로 보기'
+			'We use only the minimum information needed to verify a deletion request and communicate the outcome.'
 	}
 };

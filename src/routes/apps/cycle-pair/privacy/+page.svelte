@@ -1,6 +1,11 @@
 <script lang="ts">
-	import PrivacyPage from '$lib/PrivacyPage.svelte';
+	import LegalDocPage from '$lib/legal/LegalDocPage.svelte';
 	import { cyclePairPrivacyContent } from '$lib/cyclePairPrivacyContent';
 </script>
 
-<PrivacyPage localeKey="ko" contentOverride={cyclePairPrivacyContent.ko} productSlug="cycle-pair" />
+<LegalDocPage
+	locale="ko"
+	content={cyclePairPrivacyContent.ko}
+	docKind="privacy"
+	productSlug="cycle-pair"
+/>

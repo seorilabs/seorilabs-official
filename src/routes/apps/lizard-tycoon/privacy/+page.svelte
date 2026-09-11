@@ -1,10 +1,11 @@
 <script lang="ts">
-	import PrivacyPage from '$lib/PrivacyPage.svelte';
+	import LegalDocPage from '$lib/legal/LegalDocPage.svelte';
 	import { lizardTycoonPrivacyContent } from '$lib/lizardTycoonPrivacyContent';
 </script>
 
-<PrivacyPage
-	localeKey="ko"
-	contentOverride={lizardTycoonPrivacyContent.ko}
+<LegalDocPage
+	locale="ko"
+	content={lizardTycoonPrivacyContent.ko}
+	docKind="privacy"
 	productSlug="lizard-tycoon"
 />

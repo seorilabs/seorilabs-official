@@ -1,6 +1,6 @@
 <script lang="ts">
-	import PrivacyPage from '$lib/PrivacyPage.svelte';
+	import LegalDocPage from '$lib/legal/LegalDocPage.svelte';
 	import { matgoPrivacyContent } from '$lib/matgoPrivacyContent';
 </script>
 
-<PrivacyPage localeKey="en" contentOverride={matgoPrivacyContent.en} productSlug="matgo" />
+<LegalDocPage locale="en" content={matgoPrivacyContent.en} docKind="privacy" productSlug="matgo" />
