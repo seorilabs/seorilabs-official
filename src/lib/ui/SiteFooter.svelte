@@ -12,6 +12,12 @@
 	<div class="identity">
 		<strong>{site.name}</strong>
 		<span>{tagline}</span>
+		<!-- 아동 그림책 임프린트. 별도 도메인으로 운영한다. -->
+		<a class="imprint" href="https://seoritales.com/">
+			{locale === 'ko'
+				? 'Seori Tales — 전래동화 그림책'
+				: 'Seori Tales — Korean folktales for children'}
+		</a>
 	</div>
 	<nav aria-label={locale === 'ko' ? '법적 고지' : 'Legal'}>
 		{#each legalNav[locale] as item (item.href)}
@@ -43,6 +49,10 @@
 
 	.identity strong {
 		color: var(--c-text-strong);
+	}
+
+	.imprint:hover {
+		color: var(--c-accent);
 	}
 
 	nav {

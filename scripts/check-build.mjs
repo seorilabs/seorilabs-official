@@ -1,5 +1,5 @@
 /**
- * 빌드 산출물의 head 태그를 검사한다.
+ * 빌드 산출물을 검사한다. head 태그와, 모든 페이지가 지켜야 하는 불변식.
  *
  * prerender 크롤러는 루트 상대 링크만 따라가고 절대 URL은 큐에 넣지 않는다.
  * 따라서 canonical, hreflang, og:image가 404를 가리켜도 빌드는 조용히 통과한다.
@@ -33,6 +33,14 @@ function resolvesInBuild(url) {
 	return existsSync(join(buildDir, path));
 }
 
+/**
+ * 색인되는 모든 페이지에 있어야 하는 링크.
+ * 임프린트 사이트는 별도 도메인이라 자체 링크로는 크롤러가 도달하지 못한다.
+ * 푸터를 손보다 링크가 빠지면 화면상 티가 나지 않으므로 여기서 막는다.
+ * noindex 페이지(정적 404 등)는 크롤러 발견에 기여하지 않아 제외한다.
+ */
+const REQUIRED_ON_EVERY_PAGE = [{ name: 'Seori Tales', href: 'https://seoritales.com/' }];
+
 const errors = [];
 const pages = htmlFiles(buildDir);
 
@@ -62,6 +70,13 @@ for (const file of pages) {
 	for (const [, href] of head.matchAll(/<link[^>]*rel="alternate"[^>]*href="([^"]*)"/g)) {
 		if (!resolvesInBuild(href)) {
 			errors.push(`${rel}: hreflang이 빌드에 없는 주소를 가리킵니다 -> ${href}`);
+		}
+	}
+
+	for (const link of REQUIRED_ON_EVERY_PAGE) {
+		if (noindex) continue;
+		if (!html.includes(`href="${link.href}"`)) {
+			errors.push(`${rel}: ${link.name} 링크가 없습니다 -> ${link.href}`);
 		}
 	}
 
