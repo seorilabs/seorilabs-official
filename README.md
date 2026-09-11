@@ -141,6 +141,39 @@ If a path really has to change, update the store console first, then the script.
 - Whether children or minors are an intended audience
 - Countries or regions where the app is distributed
 
+## Search Engine Registration
+
+Google Search Console ownership is verified by `static/google2e62fa60f6f170e1.html`.
+
+Naver and Bing are **not registered yet**. Most of this site's audience searches on
+Naver, so that gap matters more than it looks.
+
+To add one, get the verification file or meta tag from the console, then:
+
+```text
+static/naver<hash>.html      Naver Search Advisor (네이버 서치어드바이저)
+static/BingSiteAuth.xml      Bing Webmaster Tools
+```
+
+Drop the file in `static/` exactly as issued — it is copied to the site root
+verbatim. `scripts/check-build.mjs` skips files that contain no `<html>` tag, so a
+plain-text verification file will not trip the validators.
+
+After verification, submit `https://www.seorilabs.com/sitemap.xml` in each console.
+
+### Search terms
+
+A product's `name` in the registry is its **store listing name** and stays exact —
+store review approved that string. The landing page's `metaTitle` and
+`metaDescription` in `src/lib/products/copy/{slug}.ts` are separate on purpose: that
+is where the phrases people actually type belong.
+
+Keeping them identical loses generic queries. `내 도마뱀 키우기` is the product name;
+`도마뱀 키우기 게임` is what someone searching for the genre types. The `<h1>` keeps the
+store name for brand matches, and the `<title>` carries the generic phrase.
+
+Write them as sentences a person would read. Do not stack keywords.
+
 ## Deployment
 
 Deployment is handled by `.github/workflows/deploy.yaml` and GitHub Pages.

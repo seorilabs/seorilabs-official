@@ -22,6 +22,9 @@ const shot = (file: string, alt: string, en = false): LandingMedia => ({
  */
 export const lizardTycoonLanding: AppLandingSet = {
 	ko: {
+		metaTitle: '내 도마뱀 키우기 - 광고 없는 픽셀 도마뱀 키우기 게임',
+		metaDescription:
+			'먹이를 주고 온도를 맞추고 교감하며 도마뱀을 돌보는 도마뱀 키우기 게임. 교배와 유전으로 모프와 무늬를 모으는 파충류 육성 시뮬레이션입니다. 광고 없음, 오프라인 돌봄 가능, 전체이용가.',
 		kicker: '픽셀 테라리움 육성 게임',
 		title: '내 도마뱀 키우기 : 픽셀 테라리움 육성',
 		lead: '작은 픽셀 테라리움에서 도마뱀 한 마리를 돌보는 것부터 시작합니다. 먹이를 주고, 온도를 맞추고, 청소하고, 교감하고, 관찰하면서 가족을 늘려가는 육성 게임입니다. 광고가 없고, 며칠 못 들어와도 도마뱀이 죽지 않습니다.',
@@ -104,7 +107,7 @@ export const lizardTycoonLanding: AppLandingSet = {
 					},
 					{
 						title: '종 12가지',
-						body: '기본 6종으로 시작해 프리미엄 종까지 모두 12종입니다. 사막, 정글, 숲 서식 환경으로 나뉘고 필요한 돌봄이 달라집니다.'
+						body: '기본 6종으로 시작해 프리미엄 종까지 모두 12종입니다. 사막, 정글, 숲 서식 환경으로 나뉘고 필요한 돌봄이 달라지는 파충류 육성 시뮬레이션입니다.'
 					},
 					{
 						title: '성격 5가지',
@@ -119,10 +122,10 @@ export const lizardTycoonLanding: AppLandingSet = {
 			{
 				kind: 'audience',
 				id: 'for-you',
-				title: '이런 걸 찾고 있었다면',
+				title: '도마뱀 키우기 게임을 찾고 계셨다면',
 				items: [
 					{
-						title: '광고 없는 키우기 게임',
+						title: '광고 없는 도마뱀 키우기 게임',
 						body: '배너도, 전면 광고도, 보상형 광고도 넣지 않았습니다.'
 					},
 					{
@@ -134,8 +137,8 @@ export const lizardTycoonLanding: AppLandingSet = {
 						body: '먹이 주기, 온도 맞추기, 청소, 교감, 관찰은 인터넷 없이 동작합니다.'
 					},
 					{
-						title: '파충류와 모프를 좋아하는 분',
-						body: '레오파드 게코, 크레스티드 게코, 데이 게코, 토케이 게코, 스킨크처럼 실제로 키우는 종을 픽셀로 옮겼습니다.'
+						title: '파충류 육성 시뮬레이션을 찾는 분',
+						body: '레오파드 게코, 크레스티드 게코, 데이 게코, 토케이 게코, 스킨크처럼 실제로 키우는 종을 픽셀로 옮겼습니다. 종마다 필요한 온도와 서식 환경이 다릅니다.'
 					},
 					{
 						title: '기록을 남기는 걸 좋아하는 분',
@@ -205,6 +208,14 @@ export const lizardTycoonLanding: AppLandingSet = {
 			{
 				q: '교배와 유전은 어떻게 작동하나요?',
 				a: '성체가 된 두 마리를 교배하면 알이 생기고, 부화한 개체는 부모의 모프를 물려받습니다. 같은 유전자를 두 개 모으면 교배로만 나오는 슈퍼폼이 나옵니다.'
+			},
+			{
+				q: '다마고치처럼 돌보는 게임인가요?',
+				a: '돌보는 방식은 비슷합니다. 다만 한 마리로 끝나지 않고 교배와 유전으로 식구를 늘려가며, 오래 비워둬도 도마뱀이 죽지 않는다는 점이 다릅니다.'
+			},
+			{
+				q: '실제 파충류 종이 나오나요?',
+				a: '레오파드 게코, 크레스티드 게코, 데이 게코, 토케이 게코, 스킨크처럼 실제로 키우는 종을 픽셀로 옮겼습니다. 다만 게임이며 실제 사육 정보를 제공하지는 않습니다.'
 			}
 		],
 		support: {
@@ -216,6 +227,9 @@ export const lizardTycoonLanding: AppLandingSet = {
 	},
 
 	en: {
+		metaTitle: 'Lizard Terrarium - A pixel lizard care game with no ads',
+		metaDescription:
+			'Feed, warm, clean, and bond with lizards in a pixel terrarium. Breed for morphs and patterns in this reptile care simulator. No ads, offline care, rated 3+.',
 		kicker: 'Pixel terrarium care game',
 		title: 'Lizard Terrarium',
 		lead: 'It starts with one lizard in a tiny pixel terrarium. Feed it, get the temperature right, clean up, bond, observe, and slowly grow a family. There are no ads, and your lizards do not die while you are away.',
@@ -322,10 +336,10 @@ export const lizardTycoonLanding: AppLandingSet = {
 			{
 				kind: 'audience',
 				id: 'for-you',
-				title: 'If this is what you were looking for',
+				title: 'If you were looking for a lizard care game',
 				items: [
 					{
-						title: 'A care game with no ads',
+						title: 'A lizard care game with no ads',
 						body: 'No banners, no interstitials, no rewarded video.'
 					},
 					{
@@ -337,8 +351,8 @@ export const lizardTycoonLanding: AppLandingSet = {
 						body: 'Feeding, warmth, cleaning, bonding, and observing all run offline.'
 					},
 					{
-						title: 'If you like reptiles and morphs',
-						body: 'Leopard geckos, crested geckos, day geckos, tokay geckos, and skinks - real species, drawn in pixels.'
+						title: 'If you want a reptile simulator',
+						body: 'Leopard geckos, crested geckos, day geckos, tokay geckos, and skinks - real species, drawn in pixels, each needing its own warmth and habitat.'
 					},
 					{
 						title: 'If you like keeping a record',
@@ -402,6 +416,14 @@ export const lizardTycoonLanding: AppLandingSet = {
 			{
 				q: 'How does breeding and inheritance work?',
 				a: "Breed two mature lizards and you get an egg; the hatchling inherits its parents' morphs. Collect two copies of the same allele and a super form appears that only breeding can produce."
+			},
+			{
+				q: 'Is it like a virtual pet game?',
+				a: 'The care loop is similar. The difference is that it does not stop at one lizard - you breed for a family - and your lizards do not die while you are away.'
+			},
+			{
+				q: 'Are these real reptile species?',
+				a: 'Leopard geckos, crested geckos, day geckos, tokay geckos, and skinks are drawn from real species. It is a game, though, and not a husbandry guide.'
 			}
 		],
 		support: {

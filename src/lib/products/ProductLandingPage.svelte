@@ -57,8 +57,8 @@
 </script>
 
 <Seo
-	title={`${c.title} - ${site.name}`}
-	description={product.description?.[locale] ?? product.tagline[locale]}
+	title={c.metaTitle}
+	description={c.metaDescription}
 	{path}
 	{locale}
 	alternates={[
