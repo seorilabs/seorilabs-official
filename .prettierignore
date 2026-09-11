@@ -3,3 +3,8 @@ node_modules
 build
 dist
 package-lock.json
+
+# 검색엔진 소유권 확인 파일. 발급된 내용 그대로 서빙해야 하므로 포맷하지 않는다.
+static/google*.html
+static/naver*.html
+static/BingSiteAuth.xml
