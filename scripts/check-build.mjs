@@ -41,6 +41,8 @@ for (const file of pages) {
 	const html = readFileSync(file, 'utf8');
 	// Search Console 소유권 검증 파일처럼 문서가 아닌 정적 파일은 건너뛴다.
 	if (!html.includes('<html')) continue;
+	// noindex 페이지는 색인 대상이 아니라 canonical과 공유 이미지를 요구하지 않는다.
+	const noindex = /<meta[^>]*name="robots"[^>]*content="[^"]*noindex/.test(html);
 	const head = /<head>([\s\S]*?)<\/head>/.exec(html)?.[1] ?? '';
 
 	if (html.includes('%lang%')) {
@@ -50,13 +52,11 @@ for (const file of pages) {
 	const lang = /<html lang="([^"]*)"/.exec(html)?.[1];
 	if (!lang) errors.push(`${rel}: <html lang> 이 없습니다`);
 
-	for (const tag of ['canonical']) {
-		const href = new RegExp(`<link[^>]*rel="${tag}"[^>]*href="([^"]*)"`).exec(head)?.[1];
-		if (!href) {
-			errors.push(`${rel}: ${tag} 링크가 없습니다`);
-		} else if (!resolvesInBuild(href)) {
-			errors.push(`${rel}: canonical이 빌드에 없는 주소를 가리킵니다 -> ${href}`);
-		}
+	const canonical = /<link[^>]*rel="canonical"[^>]*href="([^"]*)"/.exec(head)?.[1];
+	if (!canonical) {
+		if (!noindex) errors.push(`${rel}: canonical 링크가 없습니다`);
+	} else if (!resolvesInBuild(canonical)) {
+		errors.push(`${rel}: canonical이 빌드에 없는 주소를 가리킵니다 -> ${canonical}`);
 	}
 
 	for (const [, href] of head.matchAll(/<link[^>]*rel="alternate"[^>]*href="([^"]*)"/g)) {
@@ -67,7 +67,7 @@ for (const file of pages) {
 
 	const ogImage = /<meta[^>]*property="og:image"[^>]*content="([^"]*)"/.exec(head)?.[1];
 	if (!ogImage) {
-		errors.push(`${rel}: og:image가 없습니다`);
+		if (!noindex) errors.push(`${rel}: og:image가 없습니다`);
 	} else if (!resolvesInBuild(ogImage)) {
 		errors.push(`${rel}: og:image 파일이 없습니다 -> ${ogImage}`);
 	}
