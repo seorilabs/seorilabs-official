@@ -145,13 +145,13 @@ If a path really has to change, update the store console first, then the script.
 
 Google Search Console ownership is verified by `static/google2e62fa60f6f170e1.html`.
 
-Naver and Bing are **not registered yet**. Most of this site's audience searches on
-Naver, so that gap matters more than it looks.
+Naver Search Advisor ownership is verified by
+`static/naver87563770d4049cce9eabfc6cbf3c987a.html`.
 
-To add one, get the verification file or meta tag from the console, then:
+Bing is not registered yet. To add it, get the verification file from the console
+and drop it in `static/`:
 
 ```text
-static/naver<hash>.html      Naver Search Advisor (네이버 서치어드바이저)
 static/BingSiteAuth.xml      Bing Webmaster Tools
 ```
 
