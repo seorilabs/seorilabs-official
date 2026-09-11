@@ -1,0 +1,59 @@
+/*
+ * 사이트 전역 스타일과 디자인 토큰.
+ * 색상 값은 기존 컴포넌트에서 하드코딩되어 있던 것을 그대로 옮긴 것이다.
+ * 브랜드 토큰(docs/brand-guidelines.md)과 실사용 색이 일부 다르며, 정리는 별도 과제다.
+ */
+
+:root {
+	/* 브랜드 토큰 — docs/brand-guidelines.md */
+	--c-ink: #112128;
+	--c-signal: #58c7c4;
+	--c-paper: #f9fbfb;
+	--c-frost: #eef2f2;
+	--c-muted: #52636a;
+
+	/* 사이트 실사용 색 */
+	--c-surface: #f6f8f8;
+	--c-surface-alt: #eef4f3;
+	--c-text: #182126;
+	--c-text-strong: #132027;
+	--c-accent: #0f6f8a;
+	--c-accent-strong: #17576a;
+	--c-accent-light: #74d6d5;
+
+	--r-sm: 8px;
+	--container: 1120px;
+
+	--font-sans:
+		Inter, Pretendard, 'Apple SD Gothic Neo', 'Noto Sans KR', ui-sans-serif, system-ui,
+		-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+html {
+	color: var(--c-text);
+	background: var(--c-surface);
+	font-family: var(--font-sans);
+	scroll-behavior: smooth;
+	overflow-x: hidden;
+}
+
+body {
+	margin: 0;
+	min-width: 320px;
+	overflow-x: hidden;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+button,
+input,
+textarea {
+	font: inherit;
+}

@@ -1,5 +1,6 @@
 <script lang="ts">
-	import PrivacyPage from '$lib/PrivacyPage.svelte';
+	import LegalDocPage from '$lib/legal/LegalDocPage.svelte';
+	import { privacyContent } from '$lib/privacyContent';
 </script>
 
-<PrivacyPage localeKey="fr" />
+<LegalDocPage locale="fr" content={privacyContent['fr']} docKind="privacy" />

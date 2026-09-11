@@ -1,5 +1,6 @@
 <script lang="ts">
-	import LegalPage from '$lib/LegalPage.svelte';
+	import LegalDocPage from '$lib/legal/LegalDocPage.svelte';
+	import { legalContent } from '$lib/legalContent';
 </script>
 
-<LegalPage locale="en" page="support" />
+<LegalDocPage locale="en" content={legalContent.en.support} docKind="support" />

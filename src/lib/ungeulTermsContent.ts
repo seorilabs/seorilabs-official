@@ -101,9 +101,7 @@ export const ungeulTermsContent: Record<Locale, LegalPageContent> = {
 			}
 		],
 		footerNote:
-			'이 앱별 약관은 서리랩스 공통 이용약관보다 우선하며, 개인정보 처리는 운글 개인정보 처리방침을 따릅니다.',
-		otherLocaleHref: '/en/apps/ungeul/terms/',
-		otherLocaleLabel: 'View in English'
+			'이 앱별 약관은 서리랩스 공통 이용약관보다 우선하며, 개인정보 처리는 운글 개인정보 처리방침을 따릅니다.'
 	},
 	en: {
 		title: 'Ungeul Terms of Service',
@@ -204,8 +202,6 @@ export const ungeulTermsContent: Record<Locale, LegalPageContent> = {
 			}
 		],
 		footerNote:
-			'These app-specific terms prevail over the general Seori Labs Terms of Use. Personal data handling follows the Ungeul Privacy Policy.',
-		otherLocaleHref: '/apps/ungeul/terms/',
-		otherLocaleLabel: '한국어로 보기'
+			'These app-specific terms prevail over the general Seori Labs Terms of Use. Personal data handling follows the Ungeul Privacy Policy.'
 	}
 };

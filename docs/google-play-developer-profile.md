@@ -13,8 +13,8 @@
 
 ### Default - English (United States) - en-US
 
-Seori Labs builds useful software experiments across product development, workflow automation, and practical AI systems.
+Seori Labs builds and operates its own mobile games and everyday apps. We handle design, development, store submission, updates, and support in one team.
 
 ### Korean - ko-KR
 
-서리랩스는 제품 개발, 업무 자동화, 실용적인 AI 시스템을 통해 작지만 쓸모 있는 소프트웨어 실험을 만듭니다.
+서리랩스는 모바일 게임과 생활 앱을 직접 만들어 서비스합니다. 기획, 개발, 스토어 등록, 업데이트, 문의 응대를 한 팀에서 합니다.

@@ -16,8 +16,6 @@ export type LegalPageContent = {
 	intro: string;
 	sections: LegalSection[];
 	footerNote: string;
-	otherLocaleHref: string;
-	otherLocaleLabel: string;
 };
 
 export const legalContent: Record<Locale, Record<LegalPageKey, LegalPageContent>> = {
@@ -72,9 +70,7 @@ export const legalContent: Record<Locale, Record<LegalPageKey, LegalPageContent>
 				}
 			],
 			footerNote:
-				'상용 앱, 유료 서비스, 구독, 환불 정책이 포함되는 경우 앱별 또는 서비스별 약관을 별도로 두는 것이 좋습니다.',
-			otherLocaleHref: '/en/terms/',
-			otherLocaleLabel: 'View in English'
+				'상용 앱, 유료 서비스, 구독, 환불 정책이 포함되는 경우 앱별 또는 서비스별 약관을 별도로 두는 것이 좋습니다.'
 		},
 		support: {
 			title: '고객지원',
@@ -116,10 +112,7 @@ export const legalContent: Record<Locale, Record<LegalPageKey, LegalPageContent>
 					]
 				}
 			],
-			footerNote:
-				'앱별 지원 URL이 필요한 경우 /apps/{app-name}/support/ 형태로 확장할 수 있습니다.',
-			otherLocaleHref: '/en/support/',
-			otherLocaleLabel: 'View in English'
+			footerNote: '앱별 지원 URL이 필요한 경우 /apps/{app-name}/support/ 형태로 확장할 수 있습니다.'
 		}
 	},
 	en: {
@@ -173,9 +166,7 @@ export const legalContent: Record<Locale, Record<LegalPageKey, LegalPageContent>
 				}
 			],
 			footerNote:
-				'For commercial apps, paid services, subscriptions, or refund policies, product-specific terms are recommended.',
-			otherLocaleHref: '/terms/',
-			otherLocaleLabel: '한국어로 보기'
+				'For commercial apps, paid services, subscriptions, or refund policies, product-specific terms are recommended.'
 		},
 		support: {
 			title: 'Support',
@@ -218,9 +209,7 @@ export const legalContent: Record<Locale, Record<LegalPageKey, LegalPageContent>
 				}
 			],
 			footerNote:
-				'When app-specific support URLs are needed, this can expand to /apps/{app-name}/support/.',
-			otherLocaleHref: '/support/',
-			otherLocaleLabel: '한국어로 보기'
+				'When app-specific support URLs are needed, this can expand to /apps/{app-name}/support/.'
 		}
 	}
 };
@@ -229,11 +218,13 @@ export const legalNav: Record<Locale, Array<{ label: string; href: string }>> = 
 	ko: [
 		{ label: '개인정보 처리방침', href: '/privacy/' },
 		{ label: '이용약관', href: '/terms/' },
-		{ label: '고객지원', href: '/support/' }
+		{ label: '고객지원', href: '/support/' },
+		{ label: '법적 고지', href: '/legal/' }
 	],
 	en: [
 		{ label: 'Privacy', href: '/en/privacy/' },
 		{ label: 'Terms', href: '/en/terms/' },
-		{ label: 'Support', href: '/en/support/' }
+		{ label: 'Support', href: '/en/support/' },
+		{ label: 'Legal', href: '/en/legal/' }
 	]
 };

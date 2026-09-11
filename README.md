@@ -2,7 +2,7 @@
 
 Official static website for **Seori Labs**.
 
-Seori Labs is a software studio focused on product development, automation, AI systems, and practical experiments that create new value.
+Seori Labs builds and operates its own mobile games and everyday apps, published on Google Play, the Apple App Store, and AppsInToss.
 
 ## Website
 
@@ -35,12 +35,21 @@ http://127.0.0.1:5173/
 ## Quality Checks
 
 ```sh
-npm run lint
-npm run check
-npm run build
+npm run lint     # prettier
+npm run check    # svelte-check + registry validation
+npm run build    # static build, then the build validators below
 ```
 
-`npm run build` writes the static site to `build/`.
+`npm run build` writes the static site to `build/` and then runs:
+
+- `scripts/check-urls.mjs` — every externally referenced URL still resolves
+- `scripts/check-registry.mjs` — registry paths, assets, and dates are sound
+- `scripts/check-build.mjs` — `<html lang>`, canonical, hreflang, `og:image`,
+  and sitemap entries point at pages that actually exist
+
+The last one matters because SvelteKit's prerender crawler only follows
+root-relative links. A typo in an absolute canonical, hreflang, or `og:image`
+URL will not fail the build on its own.
 
 ## Brand Assets
 
@@ -53,35 +62,72 @@ The Seori Labs BI/CI package is kept in the repository:
 ## Project Structure
 
 ```text
-src/lib/                 Shared content and homepage component
-src/routes/              Static SvelteKit routes
+src/lib/products/        Product registry, apps index, landing pages
+src/lib/legal/           Legal document index and shared metadata
+src/lib/seo/             Shared Seo component and JSON-LD builders
+src/lib/ui/              Site header, footer, product card, store links
+src/lib/i18n/            Path to locale resolution
+src/routes/              Static SvelteKit routes (thin wrappers)
+src/hooks.server.ts      Replaces %lang% in app.html per locale
+scripts/                 Build-time validators run by npm run check and postbuild
 static/                  Static assets copied into the final build
-nginx/                   Legacy Nginx config for container hosting
-k8s/                     Legacy Kubernetes manifests
 .github/workflows/       CI and deployment workflows
 ```
 
+## Product Registry
+
+`src/lib/products/registry.ts` is the single source of truth for products. The
+homepage product section, `/apps/`, product landing pages, `/legal/`, and
+`sitemap.xml` are all derived from it.
+
+Adding a new app:
+
+1. Add one entry to `registry.ts`. Use the live store listing name and short
+   description; do not rewrite them, or the site will disagree with what store
+   review approved.
+2. Add `static/products/{slug}/icon-256.webp`.
+3. Write the product privacy policy content file and its `ko`/`en` routes, then
+   reference them from the entry's `legal` array.
+4. For a full landing page, set `hasLanding: true`, add
+   `src/lib/products/copy/{slug}.ts`, and register it in `landings.ts`.
+
+The apps index card, homepage card, `/legal/` row, and sitemap entries follow
+automatically. `npm run check` fails if a referenced path or asset is missing.
+
 ## Legal and Support Pages
 
-The site serves public policy pages that can be used for app store submissions:
+The site serves public policy pages used for app store submissions. `/legal/`
+lists every one of them.
 
 ```text
-https://www.seorilabs.com/privacy/
+https://www.seorilabs.com/privacy/          also ja, zh, zh-tw, de, fr, es
 https://www.seorilabs.com/terms/
 https://www.seorilabs.com/support/
-https://www.seorilabs.com/en/privacy/
-https://www.seorilabs.com/en/terms/
-https://www.seorilabs.com/en/support/
+https://www.seorilabs.com/legal/
 ```
 
-Use app-specific policy URLs when an app has different permissions, SDKs, data collection, accounts, payments, ads, analytics, or retention behavior. A recommended structure is:
+Products with their own data handling, payments, accounts, or ads carry their own
+documents:
 
 ```text
-https://www.seorilabs.com/apps/{app-name}/privacy/
-https://www.seorilabs.com/apps/{app-name}/support/
+https://www.seorilabs.com/apps/{slug}/                    product landing
+https://www.seorilabs.com/apps/{slug}/privacy/            product privacy policy
+https://www.seorilabs.com/apps/{slug}/account-deletion/   Google Play deletion URL
+https://www.seorilabs.com/apps/{slug}/terms/              only when it differs
 ```
 
-Before submitting an app, confirm these details:
+English mirrors live under `/en/`.
+
+### URLs that must not move
+
+Store consoles reference these addresses. Moving one breaks an app's store
+listing, so `scripts/check-urls.mjs` fails the build if any of them disappears
+from `build/`. The list in that script is deliberately a literal — deriving it
+from the registry would let a registry typo pass unnoticed.
+
+If a path really has to change, update the store console first, then the script.
+
+### Before submitting an app
 
 - App name and platform
 - App Store / Google Play developer name
