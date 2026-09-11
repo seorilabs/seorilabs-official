@@ -34,6 +34,12 @@ export type LandingSection =
 	| { kind: 'changelog'; id: string; title: string; version: string; bullets: string[] };
 
 export type AppLanding = {
+	/**
+	 * 검색 결과에 노출되는 제목. h1은 스토어 등록명을 그대로 쓰고, 여기에는
+	 * 사람이 실제로 치는 질의를 자연스럽게 담는다. 둘을 같게 두면 일반 질의를 놓친다.
+	 */
+	metaTitle: string;
+	metaDescription: string;
 	kicker: string;
 	title: string;
 	lead: string;
