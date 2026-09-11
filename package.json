@@ -7,10 +7,11 @@
 		"dev": "vite dev",
 		"build": "vite build",
 		"preview": "vite preview",
-		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
+		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json && node scripts/check-registry.mjs",
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
 		"lint": "prettier --check .",
-		"format": "prettier --write ."
+		"format": "prettier --write .",
+		"postbuild": "node scripts/check-urls.mjs && node scripts/check-registry.mjs && node scripts/check-build.mjs"
 	},
 	"dependencies": {
 		"@lucide/svelte": "^1.16.0"
