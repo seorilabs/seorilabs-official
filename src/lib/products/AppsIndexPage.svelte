@@ -4,7 +4,7 @@
 	import { appsIndexContent } from '$lib/products/appsIndexContent';
 	import { liveProducts, upcomingProducts } from '$lib/products/derive';
 	import { breadcrumbSchema } from '$lib/seo/jsonld';
-	import { absoluteUrl } from '$lib/seo/urls';
+	import { absoluteUrl, ogImage } from '$lib/seo/urls';
 	import Seo from '$lib/seo/Seo.svelte';
 	import ProductCard from '$lib/ui/ProductCard.svelte';
 	import SiteFooter from '$lib/ui/SiteFooter.svelte';
@@ -42,6 +42,7 @@
 		{ hreflang: 'en', path: '/en/apps/' }
 	]}
 	xDefaultPath="/apps/"
+	image={ogImage(locale === 'ko' ? '/og/apps-1200x630.png' : '/og/apps-en-1200x630.png', c.title)}
 	jsonLd={[
 		breadcrumbSchema([
 			{ name: site.name, path: homeHref(locale) },

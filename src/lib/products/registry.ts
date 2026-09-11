@@ -40,7 +40,13 @@ export const products: Product[] = [
 			{ kind: 'app-store', appId: '6786516830' },
 			{ kind: 'apps-in-toss' }
 		],
-		media: { icon: '/products/lizard-tycoon/icon-256.webp' },
+		media: {
+			icon: '/products/lizard-tycoon/icon-256.webp',
+			ogImage: {
+				ko: '/og/lizard-tycoon-1200x630.png',
+				en: '/og/lizard-tycoon-en-1200x630.png'
+			}
+		},
 		legal: [
 			{
 				kind: 'privacy',

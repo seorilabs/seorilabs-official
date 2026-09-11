@@ -6,7 +6,7 @@
 	import { channelUrl } from '$lib/products/storeLinks';
 	import type { Product } from '$lib/products/types';
 	import { breadcrumbSchema, ORGANIZATION_ID } from '$lib/seo/jsonld';
-	import { absoluteUrl } from '$lib/seo/urls';
+	import { absoluteUrl, ogImage } from '$lib/seo/urls';
 	import Seo from '$lib/seo/Seo.svelte';
 	import SiteFooter from '$lib/ui/SiteFooter.svelte';
 	import SiteHeader from '$lib/ui/SiteHeader.svelte';
@@ -66,6 +66,7 @@
 		{ hreflang: 'en', path: `/en/apps/${product.slug}/` }
 	]}
 	xDefaultPath={`/apps/${product.slug}/`}
+	image={product.media.ogImage ? ogImage(product.media.ogImage[locale], c.title) : undefined}
 	jsonLd={[
 		breadcrumbSchema([
 			{ name: site.name, path: homeHref(locale) },

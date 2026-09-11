@@ -14,7 +14,7 @@
 
 <article class="card">
 	{#if product.media.icon}
-		<img class="icon" src={product.media.icon} alt="" width="64" height="64" loading="lazy" />
+		<img class="icon" src={product.media.icon} alt="" width="56" height="56" loading="lazy" />
 	{/if}
 	<div class="body">
 		<h3>
@@ -43,7 +43,7 @@
 	.card {
 		display: grid;
 		grid-template-columns: auto minmax(0, 1fr);
-		gap: 18px;
+		gap: 16px;
 		padding: 22px;
 		border: 1px solid rgba(19, 32, 39, 0.1);
 		border-radius: var(--r-sm);
@@ -51,9 +51,10 @@
 	}
 
 	.icon {
-		width: 64px;
-		height: 64px;
-		border-radius: 14px;
+		width: 56px;
+		height: 56px;
+		border-radius: 13px;
+		image-rendering: pixelated;
 	}
 
 	h3 {

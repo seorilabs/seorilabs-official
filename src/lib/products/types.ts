@@ -46,6 +46,6 @@ export type Product = {
 	/** 제품별 특성 배지. 광고 정책은 앱마다 다르므로 공통 기본값을 두지 않는다. */
 	badges: Record<Locale, string[]>;
 	channels: StoreChannel[];
-	media: { icon?: string; ogImage?: string };
+	media: { icon?: string; ogImage?: Record<Locale, string> };
 	legal: LegalDocRef[];
 };

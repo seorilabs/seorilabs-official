@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { ArrowUpRight } from '@lucide/svelte';
 	import type { Locale } from '$lib/content';
+	import { josa } from '$lib/i18n/josa';
 	import { CHANNEL_LABEL, channelUrl } from '$lib/products/storeLinks';
 	import type { StoreChannel } from '$lib/products/types';
 
@@ -37,7 +38,7 @@
 	<p class="toss-note">
 		<span class="chip">{CHANNEL_LABEL['apps-in-toss']}</span>
 		{locale === 'ko'
-			? `토스 앱에서 '${productName}'을 검색하면 설치 없이 바로 플레이할 수 있습니다.`
+			? `토스 앱에서 '${productName}'${josa(productName, '을', '를')} 검색하면 설치 없이 바로 플레이할 수 있습니다.`
 			: `Search for "${productName}" inside the Toss app to play without installing.`}
 	</p>
 {/if}
@@ -52,15 +53,16 @@
 	.store-link {
 		display: inline-flex;
 		align-items: center;
-		gap: 6px;
-		min-height: 38px;
-		padding: 0 14px;
+		gap: 5px;
+		min-height: 36px;
+		padding: 0 11px;
 		border: 1px solid rgba(19, 32, 39, 0.16);
 		border-radius: var(--r-sm);
 		background: #fff;
 		color: var(--c-text-strong);
-		font-size: 0.88rem;
+		font-size: 0.85rem;
 		font-weight: 700;
+		white-space: nowrap;
 	}
 
 	.store-link:hover {

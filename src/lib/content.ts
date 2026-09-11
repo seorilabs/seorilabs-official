@@ -2,7 +2,7 @@ export const site = {
 	name: 'Seori Labs',
 	url: 'https://www.seorilabs.com',
 	email: 'cs@seorilabs.com',
-	image: '/images/hero-lab.png'
+	image: '/og/home-1200x630.png'
 };
 
 export type Locale = 'ko' | 'en';
@@ -44,39 +44,15 @@ export function privacyPath(prefix: string): string {
 	return prefix ? `/${prefix}/privacy/` : '/privacy/';
 }
 
-type Capability = {
-	title: string;
-	body: string;
-	icon: 'product' | 'automation' | 'ai';
-};
-
-type Step = {
-	title: string;
-	body: string;
-};
-
-type Lab = {
-	kicker: string;
+type HowItem = {
 	title: string;
 	body: string;
 };
 
 type HomeContent = {
-	locale: Locale;
-	lang: string;
 	hreflang: string;
 	metaTitle: string;
 	metaDescription: string;
-	nav: {
-		vision: string;
-		capabilities: string;
-		approach: string;
-		labs: string;
-		contact: string;
-		languageLabel: string;
-		languageHref: string;
-		languageText: string;
-	};
 	hero: {
 		eyebrow: string;
 		title: string;
@@ -85,34 +61,34 @@ type HomeContent = {
 		secondaryCta: string;
 		keywords: string[];
 	};
-	vision: {
-		kicker: string;
-		title: string;
-		body: string;
-		proofs: Array<{ value: string; label: string }>;
-	};
-	capabilities: {
-		kicker: string;
-		title: string;
-		body: string;
-		items: Capability[];
-	};
-	approach: {
-		kicker: string;
-		title: string;
-		steps: Step[];
-	};
-	labs: {
-		kicker: string;
-		title: string;
-		body: string;
-		items: Lab[];
-	};
-	contact: {
+	products: {
 		kicker: string;
 		title: string;
 		body: string;
 		cta: string;
+	};
+	how: {
+		kicker: string;
+		title: string;
+		items: HowItem[];
+	};
+	studio: {
+		kicker: string;
+		title: string;
+		body: string;
+		/** 값은 제품 원장에서 계산한다. 여기에는 라벨만 둔다. */
+		proofLabels: {
+			products: string;
+			games: string;
+			channels: string;
+		};
+	};
+	support: {
+		kicker: string;
+		title: string;
+		body: string;
+		cta: string;
+		links: Array<{ label: string; href: string }>;
 	};
 	footer: {
 		tagline: string;
@@ -121,225 +97,126 @@ type HomeContent = {
 
 export const content: Record<Locale, HomeContent> = {
 	ko: {
-		locale: 'ko',
-		lang: 'ko',
 		hreflang: 'ko-KR',
-		metaTitle: 'Seori Labs - 소프트웨어 개발과 새로운 가치 실험',
+		metaTitle: '서리랩스 - 모바일 게임과 생활 앱을 직접 만들어 서비스합니다',
 		metaDescription:
-			'서리랩스는 제품 개발, 자동화, AI 시스템을 통해 실용적인 소프트웨어와 새로운 가치창출을 실험하는 개발 스튜디오입니다.',
-		nav: {
-			vision: '비전',
-			capabilities: '역량',
-			approach: '방식',
-			labs: '실험',
-			contact: '문의',
-			languageLabel: 'Switch to English',
-			languageHref: '/en/',
-			languageText: 'EN'
-		},
+			'서리랩스는 모바일 게임과 생활 앱을 직접 기획하고 개발해 Google Play, App Store, 앱인토스에서 서비스합니다.',
 		hero: {
-			eyebrow: 'Software studio for useful experiments',
-			title: 'Seori Labs',
-			lead: '서리랩스는 소프트웨어 개발을 중심으로 제품, 자동화, AI 시스템을 만들고 검증합니다. 작지만 밀도 있는 실험으로 새로운 가치가 실제로 작동하는 지점을 찾습니다.',
-			primaryCta: '프로젝트 이야기하기',
-			secondaryCta: '작업 방식 보기',
-			keywords: ['Product development', 'Automation', 'AI systems']
+			eyebrow: '모바일 게임 · 생활 앱 퍼블리셔',
+			title: '모바일 게임과 생활 앱을 직접 만들어 서비스합니다',
+			lead: '기획, 개발, 스토어 등록, 업데이트, 문의 응대를 한 팀에서 합니다. 외주로 받아 만든 제품은 없습니다.',
+			primaryCta: '앱 둘러보기',
+			secondaryCta: '문의하기',
+			keywords: ['Google Play', 'App Store', '앱인토스']
 		},
-		vision: {
-			kicker: 'Vision',
-			title: '좋은 소프트웨어는 아이디어를 실제 가치로 바꾸는 실험 장치입니다.',
-			body: '우리는 멋진 기술 자체보다 기술이 만들어내는 변화에 집중합니다. 빠르게 가설을 세우고, 작동하는 형태로 만들고, 사용자와 운영 환경 속에서 검증하며 다음 가능성을 찾습니다.',
-			proofs: [
-				{ value: 'Build', label: '손에 잡히는 제품 구현' },
-				{ value: 'Automate', label: '반복 업무와 운영 흐름 자동화' },
-				{ value: 'Explore', label: 'AI와 새로운 인터페이스 실험' }
-			]
+		products: {
+			kicker: 'Products',
+			title: '서비스 중인 앱',
+			body: '전부 서리랩스가 직접 만들고 운영하는 제품입니다. 각 앱의 설치 경로와 정책 문서를 함께 공개합니다.',
+			cta: '앱 전체 보기'
 		},
-		capabilities: {
-			kicker: 'Capabilities',
-			title: '아이디어가 서비스가 되기까지 필요한 핵심을 다룹니다.',
-			body: '초기 프로토타입부터 운영 가능한 제품까지, 작게 시작하되 유지 가능한 구조와 사용자 경험을 함께 설계합니다.',
+		how: {
+			kicker: 'How we build',
+			title: '우리가 지키는 세 가지',
 			items: [
 				{
-					title: '제품 개발',
-					body: '웹 서비스, 내부 도구, MVP, 운영 대시보드를 빠르게 설계하고 구현합니다. 기능보다 문제 해결 흐름을 먼저 정리합니다.',
-					icon: 'product'
+					title: '끝까지 직접 만듭니다',
+					body: '기획, 아트, 개발, 스토어 등록, 업데이트, 문의 응대를 바깥에 맡기지 않습니다. 버그가 생기면 만든 사람이 고칩니다.'
 				},
 				{
-					title: '업무 자동화',
-					body: '반복 업무, 데이터 처리, 운영 알림, 배포 흐름을 자동화해 사람이 더 중요한 판단에 집중할 수 있게 만듭니다.',
-					icon: 'automation'
+					title: '앱마다 조건을 먼저 밝힙니다',
+					body: '광고가 있는지, 무엇이 유료인지, 확률형 아이템이 있는지, 어떤 데이터를 받는지를 앱 상세와 정책 문서에 적어 둡니다.'
 				},
 				{
-					title: 'AI 시스템',
-					body: 'AI API, 검색, 문서 처리, 에이전트형 워크플로우를 제품 안에 현실적으로 통합합니다. 데모가 아니라 운영 가능한 형태를 목표로 합니다.',
-					icon: 'ai'
+					title: '세 마켓에 함께 냅니다',
+					body: '같은 제품을 Google Play, App Store, 토스의 앱인토스에 함께 올립니다. 한 마켓의 사정으로 쓰던 제품이 멈추지 않게 하려는 이유입니다.'
 				}
 			]
 		},
-		approach: {
-			kicker: 'Approach',
-			title: '작게 증명하고, 선명하게 확장합니다.',
-			steps: [
-				{
-					title: '문제 정의',
-					body: '목표, 사용자, 제약, 성공 기준을 먼저 좁혀 불필요한 구현을 줄입니다.'
-				},
-				{
-					title: '프로토타입',
-					body: '핵심 가설을 확인할 수 있는 작은 결과물을 빠르게 만듭니다.'
-				},
-				{
-					title: '제품화',
-					body: '운영, 보안, 배포, 유지보수를 고려해 실제 사용 가능한 구조로 정리합니다.'
-				},
-				{
-					title: '반복 개선',
-					body: '사용 데이터와 현장의 피드백을 바탕으로 다음 개선 지점을 찾습니다.'
-				}
-			]
+		studio: {
+			kicker: 'Studio',
+			title: '두 사람의 성에서 시작한 이름',
+			body: "'서리'는 두 사람의 성 '서'와 '이'를 하나로 합쳐 만든 이름입니다. 작은 팀이라 만드는 사람과 답장하는 사람이 같습니다.",
+			proofLabels: {
+				products: '서비스 중인 앱',
+				games: '게임',
+				channels: '출시 마켓'
+			}
 		},
-		labs: {
-			kicker: 'Labs',
-			title: '서리랩스는 계속 실험합니다.',
-			body: '새로운 도구, 인터페이스, 자동화 방식, AI 활용법을 직접 만들고 시험합니다. 실패를 빠르게 배우고, 쓸모가 확인된 조각은 제품과 서비스로 확장합니다.',
-			items: [
-				{
-					kicker: 'Experiment 01',
-					title: 'AI-assisted workflows',
-					body: '문서, 코드, 운영 업무를 연결하는 작고 실용적인 에이전트 흐름을 검증합니다.'
-				},
-				{
-					kicker: 'Experiment 02',
-					title: 'Tiny product systems',
-					body: '짧은 주기로 출시 가능한 작은 서비스와 내부 도구를 설계합니다.'
-				},
-				{
-					kicker: 'Experiment 03',
-					title: 'Automation infrastructure',
-					body: '반복 가능한 빌드, 배포, 알림, 데이터 흐름을 더 단순하게 만드는 방식을 연구합니다.'
-				}
+		support: {
+			kicker: 'Support',
+			title: '앱을 쓰다 막히면 여기로 연락하세요',
+			body: '버그 신고, 결제와 구매 복원 문제, 개인정보 열람·삭제 요청을 같은 주소로 받습니다. 앱 이름과 쓰시는 기기, 문제가 생긴 시각을 적어 주시면 확인이 빠릅니다.',
+			cta: 'cs@seorilabs.com으로 문의',
+			links: [
+				{ label: '고객지원 안내', href: '/support/' },
+				{ label: '법적 고지', href: '/legal/' }
 			]
-		},
-		contact: {
-			kicker: 'Contact',
-			title: '새로운 제품, 자동화, AI 실험을 함께 이야기해보세요.',
-			body: '아직 정리되지 않은 아이디어라도 괜찮습니다. 목표와 제약을 함께 보고, 가장 작게 검증할 수 있는 시작점을 찾겠습니다.',
-			cta: 'cs@seorilabs.com으로 문의'
 		},
 		footer: {
-			tagline: 'Software development, automation, and experiments for new value.'
+			tagline: '모바일 게임과 생활 앱을 직접 만들고 운영합니다.'
 		}
 	},
+
 	en: {
-		locale: 'en',
-		lang: 'en',
 		hreflang: 'en',
-		metaTitle: 'Seori Labs - Software development and useful experiments',
+		metaTitle: 'Seori Labs - We build and run our own mobile games and apps',
 		metaDescription:
-			'Seori Labs is a software studio building products, automation, and AI systems that turn practical experiments into new value.',
-		nav: {
-			vision: 'Vision',
-			capabilities: 'Capabilities',
-			approach: 'Approach',
-			labs: 'Labs',
-			contact: 'Contact',
-			languageLabel: '한국어로 보기',
-			languageHref: '/',
-			languageText: 'KR'
-		},
+			'Seori Labs designs, builds, and publishes its own mobile games and everyday apps on Google Play, the App Store, and AppsInToss.',
 		hero: {
-			eyebrow: 'Software studio for useful experiments',
-			title: 'Seori Labs',
-			lead: 'Seori Labs builds and validates software products, automation, and AI systems. We use focused experiments to find where new value can actually work.',
-			primaryCta: 'Start a conversation',
-			secondaryCta: 'See our approach',
-			keywords: ['Product development', 'Automation', 'AI systems']
+			eyebrow: 'Mobile games and everyday apps',
+			title: 'We build our own mobile games and everyday apps',
+			lead: 'Design, code, store submission, updates, and support mail stay in one team. None of it is client work.',
+			primaryCta: 'See the apps',
+			secondaryCta: 'Get in touch',
+			keywords: ['Google Play', 'App Store', 'AppsInToss']
 		},
-		vision: {
-			kicker: 'Vision',
-			title: 'Good software turns ideas into working value.',
-			body: 'We care less about impressive technology in isolation and more about the change it can create. We frame hypotheses, build working forms, validate them with users and operations, then move toward the next useful possibility.',
-			proofs: [
-				{ value: 'Build', label: 'Practical product implementation' },
-				{ value: 'Automate', label: 'Operational and workflow automation' },
-				{ value: 'Explore', label: 'AI and interface experiments' }
-			]
+		products: {
+			kicker: 'Products',
+			title: 'Live right now',
+			body: 'Every app here was built and is operated by Seori Labs. Each one links to where you can install it and to its own policy documents.',
+			cta: 'See all apps'
 		},
-		capabilities: {
-			kicker: 'Capabilities',
-			title: 'We handle the essentials from idea to usable service.',
-			body: 'From early prototypes to production-ready products, we start small while designing for maintainable systems and clear user experience.',
+		how: {
+			kicker: 'How we build',
+			title: 'Three things we hold to',
 			items: [
 				{
-					title: 'Product development',
-					body: 'We design and build web services, internal tools, MVPs, and operational dashboards with a clear focus on the problem flow.',
-					icon: 'product'
+					title: 'We build all of it',
+					body: 'Design, art, code, store submission, updates, and support mail stay in-house. When something breaks, the person who wrote it fixes it.'
 				},
 				{
-					title: 'Automation',
-					body: 'We automate repetitive work, data processing, notifications, and deployment flows so teams can focus on higher-value decisions.',
-					icon: 'automation'
+					title: 'We write the terms down first',
+					body: 'Whether an app shows ads, what costs money, whether it contains randomized items, and what data it receives are written on the app page and in its policy documents.'
 				},
 				{
-					title: 'AI systems',
-					body: 'We integrate AI APIs, search, document processing, and agentic workflows into products with an emphasis on real operation, not just demos.',
-					icon: 'ai'
+					title: 'We ship to three stores together',
+					body: 'The same product goes to Google Play, the App Store, and Toss AppsInToss, so that one store’s decision cannot take an app you use away from you.'
 				}
 			]
 		},
-		approach: {
-			kicker: 'Approach',
-			title: 'Prove small, then expand with clarity.',
-			steps: [
-				{
-					title: 'Define the problem',
-					body: 'We clarify goals, users, constraints, and success criteria before writing unnecessary code.'
-				},
-				{
-					title: 'Prototype',
-					body: 'We build a compact working result that can validate the core hypothesis.'
-				},
-				{
-					title: 'Productize',
-					body: 'We shape the system for actual use, including operations, security, deployment, and maintenance.'
-				},
-				{
-					title: 'Iterate',
-					body: 'We use real feedback and usage signals to find the next meaningful improvement.'
-				}
-			]
+		studio: {
+			kicker: 'Studio',
+			title: 'A name made of two surnames',
+			body: 'Seori joins two family names, Seo and Lee, into one word. The team is small enough that the person who builds an app is the one who writes back.',
+			proofLabels: {
+				products: 'live apps',
+				games: 'games',
+				channels: 'stores'
+			}
 		},
-		labs: {
-			kicker: 'Labs',
-			title: 'Seori Labs keeps experimenting.',
-			body: 'We build and test new tools, interfaces, automation patterns, and AI use cases. We learn quickly from what fails and expand what proves useful into products and services.',
-			items: [
-				{
-					kicker: 'Experiment 01',
-					title: 'AI-assisted workflows',
-					body: 'Testing practical agent flows that connect documents, code, and operational work.'
-				},
-				{
-					kicker: 'Experiment 02',
-					title: 'Tiny product systems',
-					body: 'Designing small services and internal tools that can ship on short cycles.'
-				},
-				{
-					kicker: 'Experiment 03',
-					title: 'Automation infrastructure',
-					body: 'Studying simpler ways to make build, deployment, alerting, and data flows repeatable.'
-				}
+		support: {
+			kicker: 'Support',
+			title: 'If an app gives you trouble, write to us',
+			body: 'Bug reports, purchase and restore problems, and privacy access or deletion requests all go to the same address. Tell us the app name, your device, and when it happened, and we can look faster.',
+			cta: 'Email cs@seorilabs.com',
+			links: [
+				{ label: 'Support', href: '/en/support/' },
+				{ label: 'Legal', href: '/en/legal/' }
 			]
-		},
-		contact: {
-			kicker: 'Contact',
-			title: 'Let us talk about your next product, automation, or AI experiment.',
-			body: 'Your idea does not need to be fully organized yet. We can review the goal and constraints together, then find the smallest useful starting point.',
-			cta: 'Contact cs@seorilabs.com'
 		},
 		footer: {
-			tagline: 'Software development, automation, and experiments for new value.'
+			tagline: 'We build our own mobile games and everyday apps, and we run them.'
 		}
 	}
 };

@@ -18,8 +18,10 @@ const check = (condition, message) => {
 	if (!condition) errors.push(message);
 };
 
-// 1. 경로는 모두 '/'로 끝나야 한다 (trailingSlash: 'always').
+// 1. 페이지 경로는 모두 '/'로 끝나야 한다 (trailingSlash: 'always').
+//    확장자가 붙은 값은 정적 자산이라 검사 대상이 아니다.
 for (const [, path] of registrySource.matchAll(/(?:ko|en):\s*'(\/[^']*)'/g)) {
+	if (/\.[a-z0-9]+$/i.test(path)) continue;
 	check(path.endsWith('/'), `경로가 '/'로 끝나지 않습니다: ${path}`);
 }
 

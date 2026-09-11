@@ -2,7 +2,7 @@
 
 ## Brand Idea
 
-`서리`는 두 사람의 성 `서`와 `이`에서 시작해 하나의 이름이 되었습니다. Seori Labs는 제품 개발, 자동화, AI 시스템을 작게 만들고 검증하는 소프트웨어 스튜디오이며, 브랜드 아이디어는 **Two surnames. One complete name. One shared foundation.**입니다.
+`서리`는 두 사람의 성 `서`와 `이`에서 시작해 하나의 이름이 되었습니다. Seori Labs는 모바일 게임과 생활 앱을 직접 만들어 Google Play, Apple App Store, 앱인토스에서 서비스하는 제품 스튜디오이며, 브랜드 아이디어는 **Two surnames. One complete name. One shared foundation.**입니다.
 
 ## Logo Concept
 
@@ -24,6 +24,7 @@
 - Monochrome symbol: `static/brand/seori-labs-symbol-mono.svg`
 - Brand board: `static/brand/seori-labs-brand-board.svg`
 - Website favicon: `static/favicon.svg`, `static/favicon.png`, `static/favicon.ico`
+- Open Graph 공유 이미지: `static/og/*-1200x630.png` (1200x630 고정, PNG, 200KB 이하)
 
 ## Logo Usage
 
@@ -71,18 +72,20 @@ Seori Labs의 말투는 선명하고 실용적이어야 합니다.
 
 - 짧은 문장으로 목적을 먼저 말합니다.
 - 기술명보다 사용자가 얻는 변화를 먼저 설명합니다.
-- 가능성을 과장하지 않고, 검증 방식과 제약을 함께 말합니다.
-- "실험"은 장식적인 표현이 아니라 작은 단위로 증명하는 작업 방식을 의미합니다.
+- 가능성을 과장하지 않고, 제약과 조건을 함께 말합니다.
+- 회사를 설명하기 전에 만든 제품을 먼저 보여 줍니다.
+- 확인되지 않은 수치는 쓰지 않습니다. 다운로드 수, 사용자 수, 평점은 근거가 있을 때만 씁니다.
+- 광고, 결제, 확률형 아이템, 수집 데이터는 제품 단위로만 말합니다. 앱마다 조건이 다르므로 회사 차원의 일반화는 거짓이 됩니다.
 
 ## CI Principles
 
-1. Build: 손에 잡히는 제품을 빠르게 구현합니다.
-2. Automate: 반복 업무와 운영 흐름을 단순하게 만듭니다.
-3. Explore: AI와 새로운 인터페이스를 실제 사용 맥락 안에서 검증합니다.
+1. Build: 기획부터 스토어 등록까지 직접 만듭니다.
+2. Disclose: 광고와 결제, 다루는 데이터를 앱마다 먼저 밝힙니다.
+3. Operate: 출시 이후의 업데이트와 문의 응대를 만든 사람이 이어서 합니다.
 
 ## Application Rules
 
 - UI 반경은 기존 웹사이트와 맞춰 8px 중심으로 사용합니다.
 - 장식적인 배경보다 정보의 계층, 간격, 대비를 우선합니다.
 - 브랜드 강조선은 `Signal Cyan`을 사용합니다. 제품 UI의 성공·주의 상태색은 로고와 분리합니다.
-- 로고와 함께 쓰는 사진/그래픽은 실험실 분위기보다 실제 제품, 코드, 자동화 흐름, 인터페이스가 드러나는 이미지를 우선합니다.
+- 로고와 함께 쓰는 사진/그래픽은 분위기 이미지보다 실제 앱 화면, 아이콘, 인터페이스가 드러나는 이미지를 우선합니다.
