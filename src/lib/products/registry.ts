@@ -22,6 +22,7 @@ export const products: Product[] = [
 			ko: '내 도마뱀 키우기 : 픽셀 테라리움 육성',
 			en: 'Lizard Terrarium'
 		},
+		shortName: { ko: '내 도마뱀 키우기', en: 'Lizard Terrarium' },
 		tagline: {
 			ko: '도마뱀 식구를 돌보고 교배하며 모프와 무늬를 모으는 픽셀 육성 게임',
 			en: 'Care, breed, and collect a growing lizard family in a cozy pixel terrarium.'
@@ -59,6 +60,7 @@ export const products: Product[] = [
 			ko: '함께봄: 수유, 기저귀, 아기돌봄 기록 어플',
 			en: 'BabyNest: Shared Baby Care Log'
 		},
+		shortName: { ko: '함께봄', en: 'BabyNest' },
 		tagline: {
 			ko: '수유·수면·체온·복약을 여러 양육자가 실시간으로 함께 기록하는 공동 돌봄 앱',
 			en: 'Log feeding, sleep, temperature, and medication together with every caregiver.'
@@ -96,6 +98,7 @@ export const products: Product[] = [
 			ko: '운글: 사주 몰라도 읽히는 풀이',
 			en: 'Ungeul'
 		},
+		shortName: { ko: '운글', en: 'Ungeul' },
 		tagline: {
 			ko: '생년월일과 태어난 시간을 넣으면 명식·오행·십성·대운을 읽기 쉬운 말로 풀어드립니다',
 			en: 'Saju readings explained in plain words. Korean only.'

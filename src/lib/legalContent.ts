@@ -229,11 +229,13 @@ export const legalNav: Record<Locale, Array<{ label: string; href: string }>> = 
 	ko: [
 		{ label: '개인정보 처리방침', href: '/privacy/' },
 		{ label: '이용약관', href: '/terms/' },
-		{ label: '고객지원', href: '/support/' }
+		{ label: '고객지원', href: '/support/' },
+		{ label: '법적 고지', href: '/legal/' }
 	],
 	en: [
 		{ label: 'Privacy', href: '/en/privacy/' },
 		{ label: 'Terms', href: '/en/terms/' },
-		{ label: 'Support', href: '/en/support/' }
+		{ label: 'Support', href: '/en/support/' },
+		{ label: 'Legal', href: '/en/legal/' }
 	]
 };

@@ -1,0 +1,111 @@
+<script lang="ts">
+	import type { Locale } from '$lib/content';
+	import { shortName } from '$lib/products/derive';
+	import type { Product } from '$lib/products/types';
+	import StoreLinks from '$lib/ui/StoreLinks.svelte';
+
+	let { product, locale }: { product: Product; locale: Locale } = $props();
+
+	const landingHref = $derived(
+		product.hasLanding ? `${locale === 'ko' ? '' : '/en'}/apps/${product.slug}/` : null
+	);
+	const name = $derived(product.name[locale]);
+</script>
+
+<article class="card">
+	{#if product.media.icon}
+		<img class="icon" src={product.media.icon} alt="" width="64" height="64" loading="lazy" />
+	{/if}
+	<div class="body">
+		<h3>
+			{#if landingHref}
+				<a href={landingHref}>{name}</a>
+			{:else}
+				{name}
+			{/if}
+		</h3>
+		<p class="tagline">{product.tagline[locale]}</p>
+		<ul class="badges">
+			{#each product.badges[locale] as badge (badge)}
+				<li>{badge}</li>
+			{/each}
+		</ul>
+		<StoreLinks channels={product.channels} {locale} productName={shortName(product, locale)} />
+		{#if landingHref}
+			<a class="more" href={landingHref}>
+				{locale === 'ko' ? '자세히 보기' : 'Learn more'} →
+			</a>
+		{/if}
+	</div>
+</article>
+
+<style>
+	.card {
+		display: grid;
+		grid-template-columns: auto minmax(0, 1fr);
+		gap: 18px;
+		padding: 22px;
+		border: 1px solid rgba(19, 32, 39, 0.1);
+		border-radius: var(--r-sm);
+		background: #fff;
+	}
+
+	.icon {
+		width: 64px;
+		height: 64px;
+		border-radius: 14px;
+	}
+
+	h3 {
+		margin: 0;
+		color: var(--c-text-strong);
+		font-size: 1.06rem;
+		line-height: 1.4;
+		word-break: keep-all;
+	}
+
+	h3 a:hover {
+		color: var(--c-accent);
+	}
+
+	.tagline {
+		margin: 8px 0 0;
+		color: rgba(19, 32, 39, 0.7);
+		font-size: 0.94rem;
+		line-height: 1.65;
+		word-break: keep-all;
+	}
+
+	.badges {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 6px;
+		margin: 12px 0 14px;
+		padding: 0;
+		list-style: none;
+	}
+
+	.badges li {
+		padding: 3px 9px;
+		border-radius: 999px;
+		background: var(--c-frost);
+		color: var(--c-muted);
+		font-size: 0.76rem;
+		font-weight: 700;
+	}
+
+	.more {
+		display: inline-block;
+		margin-top: 14px;
+		color: var(--c-accent);
+		font-size: 0.9rem;
+		font-weight: 800;
+	}
+
+	@media (max-width: 560px) {
+		.card {
+			grid-template-columns: 1fr;
+			gap: 14px;
+		}
+	}
+</style>

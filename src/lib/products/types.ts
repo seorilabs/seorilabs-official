@@ -37,6 +37,8 @@ export type Product = {
 	updatedOn: string;
 	/** 라이브 스토어 등록명을 그대로 쓴다. */
 	name: Record<Locale, string>;
+	/** 부제를 뺀 짧은 이름. 앱인토스 검색 안내나 좁은 자리에 쓴다. */
+	shortName?: Record<Locale, string>;
 	/** 스토어 짧은 설명 원문. 심사를 통과한 문구라 새로 쓰지 않는다. */
 	tagline: Record<Locale, string>;
 	/** 랜딩 페이지 meta description. 랜딩이 있는 제품만 채운다. */

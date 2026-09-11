@@ -1,4 +1,5 @@
 import { products } from '$lib/products/registry';
+import type { Locale } from '$lib/content';
 import type { LegalDocRef, Product, StoreChannel } from '$lib/products/types';
 
 const byOrder = (a: Product, b: Product) => a.order - b.order;
@@ -19,6 +20,11 @@ export const upcomingProducts: Product[] = products
 export const landingProducts: Product[] = liveProducts.filter((product) => product.hasLanding);
 
 export const landingSlugs: Set<string> = new Set(landingProducts.map((product) => product.slug));
+
+/** 부제를 뺀 짧은 이름. 지정하지 않은 제품은 등록명을 그대로 쓴다. */
+export function shortName(product: Product, locale: Locale): string {
+	return product.shortName?.[locale] ?? product.name[locale];
+}
 
 export function productBySlug(slug: string): Product | undefined {
 	return products.find((product) => product.slug === slug);
