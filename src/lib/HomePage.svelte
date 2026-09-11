@@ -11,34 +11,28 @@
 	} from '@lucide/svelte';
 	import { content, site, type Locale } from '$lib/content';
 	import { legalNav } from '$lib/legalContent';
+	import Seo from '$lib/seo/Seo.svelte';
+	import { organizationSchema, webSiteSchema } from '$lib/seo/jsonld';
 
 	export let locale: Locale;
 
 	const c = content[locale];
-	const canonical = `${site.url}${locale === 'ko' ? '/' : '/en/'}`;
-	const alternate = `${site.url}${locale === 'ko' ? '/en/' : '/'}`;
+	const homePath = locale === 'ko' ? '/' : '/en/';
 	const mailHref = `mailto:${site.email}`;
 </script>
 
-<svelte:head>
-	<title>{c.metaTitle}</title>
-	<meta name="description" content={c.metaDescription} />
-	<meta name="theme-color" content="#f6f8f8" />
-	<link rel="canonical" href={canonical} />
-	<link rel="alternate" hreflang="ko-KR" href={`${site.url}/`} />
-	<link rel="alternate" hreflang="en" href={`${site.url}/en/`} />
-	<link rel="alternate" hreflang="x-default" href={`${site.url}/`} />
-	<meta property="og:type" content="website" />
-	<meta property="og:site_name" content={site.name} />
-	<meta property="og:title" content={c.metaTitle} />
-	<meta property="og:description" content={c.metaDescription} />
-	<meta property="og:url" content={canonical} />
-	<meta property="og:image" content={`${site.url}${site.image}`} />
-	<meta name="twitter:card" content="summary_large_image" />
-	<meta name="twitter:title" content={c.metaTitle} />
-	<meta name="twitter:description" content={c.metaDescription} />
-	<meta name="twitter:image" content={`${site.url}${site.image}`} />
-</svelte:head>
+<Seo
+	title={c.metaTitle}
+	description={c.metaDescription}
+	path={homePath}
+	{locale}
+	alternates={[
+		{ hreflang: 'ko-KR', path: '/' },
+		{ hreflang: 'en', path: '/en/' }
+	]}
+	xDefaultPath="/"
+	jsonLd={[organizationSchema(), webSiteSchema(c.hreflang)]}
+/>
 
 <div class="page">
 	<header class="site-header" aria-label="Primary navigation">

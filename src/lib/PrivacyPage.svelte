@@ -3,6 +3,7 @@
 	import { site, privacyLocales, privacyPath, type PrivacyLocaleKey } from '$lib/content';
 	import { legalNav } from '$lib/legalContent';
 	import { privacyContent, type PrivacyContent } from '$lib/privacyContent';
+	import Seo from '$lib/seo/Seo.svelte';
 
 	export let localeKey: PrivacyLocaleKey;
 	export let contentOverride: PrivacyContent | undefined = undefined;
@@ -18,7 +19,6 @@
 			? `${prefix ? `/${prefix}` : ''}/apps/${productSlug}/privacy/`
 			: privacyPath(prefix);
 
-	const canonical = `${site.url}${pagePath(meta.urlPrefix)}`;
 	const homeHref = localeKey === 'ko' ? '/' : '/en/';
 
 	// 상단 legal 내비게이션. ko/en은 자체 nav, 그 외 언어는 privacy만 자국어 경로로 두고
@@ -35,21 +35,14 @@
 					];
 </script>
 
-<svelte:head>
-	<title>{c.title} - {site.name}</title>
-	<meta name="description" content={c.description} />
-	<meta name="theme-color" content="#f6f8f8" />
-	<link rel="canonical" href={canonical} />
-	{#each pageLocales as loc}
-		<link rel="alternate" hreflang={loc.hreflang} href={`${site.url}${pagePath(loc.urlPrefix)}`} />
-	{/each}
-	<link rel="alternate" hreflang="x-default" href={`${site.url}${pagePath('')}`} />
-	<meta property="og:type" content="website" />
-	<meta property="og:site_name" content={site.name} />
-	<meta property="og:title" content={`${c.title} - ${site.name}`} />
-	<meta property="og:description" content={c.description} />
-	<meta property="og:url" content={canonical} />
-</svelte:head>
+<Seo
+	title={`${c.title} - ${site.name}`}
+	description={c.description}
+	path={pagePath(meta.urlPrefix)}
+	locale={localeKey}
+	alternates={pageLocales.map((loc) => ({ hreflang: loc.hreflang, path: pagePath(loc.urlPrefix) }))}
+	xDefaultPath={pagePath('')}
+/>
 
 <main class="legal-page">
 	<header class="legal-header">

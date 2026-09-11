@@ -7,6 +7,7 @@
 		type LegalPageContent,
 		type LegalPageKey
 	} from '$lib/legalContent';
+	import Seo from '$lib/seo/Seo.svelte';
 
 	export let locale: Locale;
 	export let page: LegalPageKey;
@@ -16,26 +17,22 @@
 
 	const c = contentOverride ?? legalContent[locale][page];
 	const pagePath = canonicalPath ?? `${locale === 'ko' ? '' : '/en'}/${page}/`;
-	const canonical = `${site.url}${pagePath}`;
 	const koHref = locale === 'ko' ? pagePath : c.otherLocaleHref;
 	const enHref = locale === 'en' ? pagePath : c.otherLocaleHref;
 	const homeHref = locale === 'ko' ? '/' : '/en/';
 </script>
 
-<svelte:head>
-	<title>{c.title} - {site.name}</title>
-	<meta name="description" content={c.description} />
-	<meta name="theme-color" content="#f6f8f8" />
-	<link rel="canonical" href={canonical} />
-	<link rel="alternate" hreflang="ko-KR" href={`${site.url}${koHref}`} />
-	<link rel="alternate" hreflang="en" href={`${site.url}${enHref}`} />
-	<link rel="alternate" hreflang="x-default" href={`${site.url}${koHref}`} />
-	<meta property="og:type" content="website" />
-	<meta property="og:site_name" content={site.name} />
-	<meta property="og:title" content={`${c.title} - ${site.name}`} />
-	<meta property="og:description" content={c.description} />
-	<meta property="og:url" content={canonical} />
-</svelte:head>
+<Seo
+	title={`${c.title} - ${site.name}`}
+	description={c.description}
+	path={pagePath}
+	{locale}
+	alternates={[
+		{ hreflang: 'ko-KR', path: koHref },
+		{ hreflang: 'en', path: enHref }
+	]}
+	xDefaultPath={koHref}
+/>
 
 <main class="legal-page">
 	<header class="legal-header">
