@@ -40,7 +40,7 @@
 	<meta name="twitter:image" content={`${site.url}${site.image}`} />
 </svelte:head>
 
-<div class="page" lang={c.lang}>
+<div class="page">
 	<header class="site-header" aria-label="Primary navigation">
 		<a class="brand" href={locale === 'ko' ? '/' : '/en/'} aria-label={site.name}>
 			<span class="brand-mark" aria-hidden="true">
@@ -218,42 +218,6 @@
 </div>
 
 <style>
-	:global(*) {
-		box-sizing: border-box;
-	}
-
-	:global(html) {
-		color: #182126;
-		background: #f6f8f8;
-		font-family:
-			Inter,
-			ui-sans-serif,
-			system-ui,
-			-apple-system,
-			BlinkMacSystemFont,
-			'Segoe UI',
-			sans-serif;
-		scroll-behavior: smooth;
-		overflow-x: hidden;
-	}
-
-	:global(body) {
-		margin: 0;
-		min-width: 320px;
-		overflow-x: hidden;
-	}
-
-	:global(a) {
-		color: inherit;
-		text-decoration: none;
-	}
-
-	:global(button),
-	:global(input),
-	:global(textarea) {
-		font: inherit;
-	}
-
 	.page {
 		width: 100%;
 		max-width: 100%;

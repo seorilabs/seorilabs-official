@@ -51,7 +51,7 @@
 	<meta property="og:url" content={canonical} />
 </svelte:head>
 
-<main class="legal-page" lang={meta.htmlLang}>
+<main class="legal-page">
 	<header class="legal-header">
 		<a class="brand" href={homeHref} aria-label={site.name}>
 			<span class="brand-mark" aria-hidden="true">
@@ -126,33 +126,6 @@
 </main>
 
 <style>
-	:global(*) {
-		box-sizing: border-box;
-	}
-
-	:global(html) {
-		color: #182126;
-		background: #f6f8f8;
-		font-family:
-			Inter,
-			ui-sans-serif,
-			system-ui,
-			-apple-system,
-			BlinkMacSystemFont,
-			'Segoe UI',
-			sans-serif;
-	}
-
-	:global(body) {
-		margin: 0;
-		min-width: 320px;
-	}
-
-	:global(a) {
-		color: inherit;
-		text-decoration: none;
-	}
-
 	.legal-page {
 		min-height: 100vh;
 		background: linear-gradient(180deg, #f6f8f8 0%, #eef4f3 100%), #f6f8f8;
