@@ -76,6 +76,11 @@
 			: 'We build our own mobile games and everyday apps, and we run them.'
 	);
 
+	/** 제품 랜딩 경로. 랜딩이 없는 제품은 null이다. */
+	const landingPath = $derived(
+		product?.hasLanding ? `${uiLocale === 'ko' ? '' : '/en'}/apps/${product.slug}/` : null
+	);
+
 	const breadcrumb = $derived(
 		product
 			? [
@@ -84,7 +89,8 @@
 						name: uiLocale === 'ko' ? '앱' : 'Apps',
 						path: uiLocale === 'ko' ? '/apps/' : '/en/apps/'
 					},
-					{ name: product.name[uiLocale], path }
+					...(landingPath ? [{ name: product.name[uiLocale], path: landingPath }] : []),
+					{ name: content.title, path }
 				]
 			: [
 					{ name: site.name, path: homeHref(uiLocale) },
@@ -110,9 +116,9 @@
 
 	<main class="legal-page">
 		<section class="legal-hero">
-			<a class="back-link" href={homeHref(uiLocale)}>
+			<a class="back-link" href={landingPath ?? homeHref(uiLocale)}>
 				<ArrowLeft size={17} aria-hidden="true" />
-				<span>{backLabel}</span>
+				<span>{landingPath && product ? product.name[uiLocale] : backLabel}</span>
 			</a>
 			<p class="kicker">{content.kicker}</p>
 			<h1>{content.title}</h1>
