@@ -73,6 +73,24 @@ for (const file of pages) {
 	}
 }
 
+// sitemap의 lastmod가 전부 오늘로 찍히는 회귀를 감지한다.
+const sitemapPath = join(buildDir, 'sitemap.xml');
+if (existsSync(sitemapPath)) {
+	const sitemap = readFileSync(sitemapPath, 'utf8');
+	const lastmods = [...sitemap.matchAll(/<lastmod>([^<]*)<\/lastmod>/g)].map((m) => m[1]);
+	const today = new Date().toISOString().slice(0, 10);
+	const todayCount = lastmods.filter((value) => value.startsWith(today)).length;
+	if (lastmods.length > 0 && todayCount === lastmods.length) {
+		errors.push(
+			`sitemap.xml: lastmod ${lastmods.length}개가 전부 오늘(${today})입니다. ` +
+				'빌드 시각을 쓰고 있지 않은지 확인하세요.'
+		);
+	}
+	for (const [, loc] of sitemap.matchAll(/<loc>([^<]*)<\/loc>/g)) {
+		if (!resolvesInBuild(loc)) errors.push(`sitemap.xml: 없는 주소를 등재했습니다 -> ${loc}`);
+	}
+}
+
 if (errors.length > 0) {
 	console.error(`check-build: 오류 ${errors.length}건`);
 	for (const error of errors.slice(0, 40)) console.error(`  ${error}`);
