@@ -148,16 +148,15 @@ Google Search Console ownership is verified by `static/google2e62fa60f6f170e1.ht
 Naver Search Advisor ownership is verified by
 `static/naver87563770d4049cce9eabfc6cbf3c987a.html`.
 
-Bing is not registered yet. To add it, get the verification file from the console
-and drop it in `static/`:
+Bing Webmaster ownership is verified by `static/BingSiteAuth.xml`.
 
-```text
-static/BingSiteAuth.xml      Bing Webmaster Tools
-```
+Drop verification files in `static/` exactly as issued — they are copied to the site
+root verbatim.
 
-Drop the file in `static/` exactly as issued — it is copied to the site root
-verbatim. `scripts/check-build.mjs` skips files that contain no `<html>` tag, so a
-plain-text verification file will not trip the validators.
+`scripts/check-verification-files.mjs` enforces this on every build: the built file
+must match the source byte for byte, must carry no executable content, and a Naver
+file's name hash must appear in its body. `.prettierignore` keeps the formatter away
+from them, and that check is the backstop for when it does not.
 
 After verification, submit `https://www.seorilabs.com/sitemap.xml` in each console.
 

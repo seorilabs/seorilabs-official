@@ -19,6 +19,10 @@ const VERIFICATION_PATTERNS = [
 
 const UNSAFE = /<script|<iframe|javascript:|onerror\s*=|onload\s*=/i;
 
+// XML 확인 파일에 외부 엔티티 선언이 있으면 파서에 따라 외부 자원을 읽으려 든다.
+// 발급된 확인 파일에는 있을 이유가 없다.
+const XML_UNSAFE = /<!DOCTYPE|<!ENTITY/i;
+
 const errors = [];
 const checked = [];
 
@@ -43,6 +47,10 @@ for (const entry of readdirSync(staticDir)) {
 	// 공개 사이트 루트에 올라가는 외부 발급 파일이라 실행 가능한 내용이 없어야 한다.
 	if (UNSAFE.test(text)) {
 		errors.push(`${entry}: 실행 가능한 내용이 들어 있습니다`);
+	}
+
+	if (entry.endsWith('.xml') && XML_UNSAFE.test(text)) {
+		errors.push(`${entry}: 외부 엔티티 선언이 있습니다`);
 	}
 
 	// 네이버는 파일명의 해시가 내용에도 그대로 들어간다.
