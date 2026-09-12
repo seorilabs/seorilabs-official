@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { ArrowLeft, Mail } from '@lucide/svelte';
+	import { trackContactClick } from '$lib/analytics';
 	import { privacyLocales, site, type Locale } from '$lib/content';
 	import { globalLegalDocs, LEGAL_DOC_KIND_LABEL } from '$lib/legal/docs';
 	import { legalIndexContent } from '$lib/legal/legalIndexContent';
@@ -107,7 +108,7 @@
 					? '문서 내용이나 개인정보 열람·삭제 요청은 아래 주소로 보내주세요.'
 					: 'Questions about these documents, or access and deletion requests, go to the address below.'}
 			</p>
-			<a href={`mailto:${site.email}`}>
+			<a href={`mailto:${site.email}`} onclick={() => trackContactClick('legal_support')}>
 				<Mail size={18} aria-hidden="true" />
 				<span>{site.email}</span>
 			</a>

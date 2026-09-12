@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { ArrowLeft, Mail } from '@lucide/svelte';
+	import { trackContactClick } from '$lib/analytics';
 	import { site, type Locale } from '$lib/content';
 	import { shortName } from '$lib/products/derive';
 	import { appLandings } from '$lib/products/landings';
@@ -100,7 +101,9 @@
 			<StoreLinks
 				channels={product.channels}
 				{locale}
+				productSlug={product.slug}
 				productName={shortName(product, locale)}
+				placement="landing_hero"
 				size="large"
 			/>
 			<ul class="facts">
@@ -160,7 +163,9 @@
 			<StoreLinks
 				channels={product.channels}
 				{locale}
+				productSlug={product.slug}
 				productName={shortName(product, locale)}
+				placement="landing_install"
 				size="large"
 			/>
 		</section>
@@ -185,7 +190,7 @@
 				{/if}
 				<li><a href={supportHref}>{c.support.supportLabel}</a></li>
 				<li>
-					<a href={`mailto:${site.email}`}>
+					<a href={`mailto:${site.email}`} onclick={() => trackContactClick('product_support')}>
 						<Mail size={16} aria-hidden="true" />
 						<span>{site.email}</span>
 					</a>

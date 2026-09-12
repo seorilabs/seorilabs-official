@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { requestAnalyticsSettings, trackContactClick } from '$lib/analytics';
 	import { site, type Locale } from '$lib/content';
 	import { legalNav } from '$lib/legalContent';
 	import { siteNav } from '$lib/ui/nav';
@@ -24,7 +25,10 @@
 			<a href={item.href}>{item.label}</a>
 		{/each}
 		<a href={legalIndexHref}>{locale === 'ko' ? '문서 전체' : 'All documents'}</a>
-		<a href={`mailto:${site.email}`}>{site.email}</a>
+		<button type="button" onclick={requestAnalyticsSettings}>
+			{locale === 'ko' ? '개인정보 설정' : 'Privacy settings'}
+		</button>
+		<a href={`mailto:${site.email}`} onclick={() => trackContactClick('footer')}>{site.email}</a>
 	</nav>
 </footer>
 
@@ -61,8 +65,19 @@
 		gap: 18px;
 	}
 
-	nav a:hover {
+	nav a:hover,
+	nav button:hover {
 		color: var(--c-accent);
+	}
+
+	nav button {
+		margin: 0;
+		padding: 0;
+		border: 0;
+		background: transparent;
+		color: inherit;
+		font: inherit;
+		cursor: pointer;
 	}
 
 	@media (max-width: 860px) {

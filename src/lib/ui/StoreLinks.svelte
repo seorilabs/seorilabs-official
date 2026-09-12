@@ -1,5 +1,10 @@
 <script lang="ts">
 	import { ArrowUpRight } from '@lucide/svelte';
+	import {
+		trackStoreLinkClick,
+		type AnalyticsPlacement,
+		type StoreChannel as AnalyticsStoreChannel
+	} from '$lib/analytics';
 	import type { Locale } from '$lib/content';
 	import { josa } from '$lib/i18n/josa';
 	import { CHANNEL_LABEL, channelUrl } from '$lib/products/storeLinks';
@@ -8,12 +13,16 @@
 	let {
 		channels,
 		locale,
+		productSlug,
 		productName,
+		placement,
 		size = 'small'
 	}: {
 		channels: StoreChannel[];
 		locale: Locale;
+		productSlug: string;
 		productName: string;
+		placement: AnalyticsPlacement;
 		size?: 'small' | 'large';
 	} = $props();
 
@@ -21,12 +30,34 @@
 	// 링크가 아닌 안내 문장으로 분리한다.
 	const linkable = $derived(channels.filter((channel) => channelUrl(channel) !== null));
 	const hasAppsInToss = $derived(channels.some((channel) => channel.kind === 'apps-in-toss'));
+
+	function analyticsChannel(channel: StoreChannel): AnalyticsStoreChannel | null {
+		switch (channel.kind) {
+			case 'google-play':
+				return 'google_play';
+			case 'app-store':
+				return 'app_store';
+			case 'apps-in-toss':
+				return null;
+		}
+	}
+
+	function trackClick(channel: StoreChannel): void {
+		const storeChannel = analyticsChannel(channel);
+		if (storeChannel) trackStoreLinkClick(productSlug, storeChannel, placement);
+	}
 </script>
 
 {#if linkable.length > 0}
 	<div class="store-links" class:large={size === 'large'}>
 		{#each linkable as channel (channel.kind)}
-			<a class="store-link" href={channelUrl(channel)} rel="noopener" target="_blank">
+			<a
+				class="store-link"
+				href={channelUrl(channel)}
+				rel="noopener"
+				target="_blank"
+				onclick={() => trackClick(channel)}
+			>
 				<span>{CHANNEL_LABEL[channel.kind]}</span>
 				<ArrowUpRight size={size === 'large' ? 18 : 15} aria-hidden="true" />
 			</a>
