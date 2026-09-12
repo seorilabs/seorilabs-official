@@ -68,7 +68,7 @@
 
 		<section class="grid" aria-label={c.title}>
 			{#each liveProducts as product (product.slug)}
-				<ProductCard {product} {locale} />
+				<ProductCard {product} {locale} placement="apps_card" />
 			{/each}
 		</section>
 

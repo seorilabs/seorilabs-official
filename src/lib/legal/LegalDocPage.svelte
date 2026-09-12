@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { ArrowLeft, Globe2, Mail } from '@lucide/svelte';
+	import { trackContactClick } from '$lib/analytics';
 	import { privacyLocales, privacyPath, site, type PrivacyLocaleKey } from '$lib/content';
 	import type { LegalDocContent } from '$lib/legal/types';
 	import { productBySlug } from '$lib/products/derive';
@@ -167,7 +168,10 @@
 
 		<section class="legal-note">
 			<p>{content.footerNote}</p>
-			<a href={contactHref ?? `mailto:${site.email}`}>
+			<a
+				href={contactHref ?? `mailto:${site.email}`}
+				onclick={() => trackContactClick('legal_support')}
+			>
 				<Mail size={18} aria-hidden="true" />
 				<span>{site.email}</span>
 			</a>

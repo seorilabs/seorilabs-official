@@ -25,7 +25,7 @@ export const privacyContent: Record<PrivacyLocaleKey, PrivacyContent> = {
 		description:
 			'서리랩스 웹사이트, 앱, 서비스에 적용되는 개인정보 처리방침입니다. 앱별 데이터 처리가 다른 경우 별도 앱 정책이 우선 적용됩니다.',
 		kicker: 'Privacy Policy',
-		lastUpdated: '2026년 7월 19일',
+		lastUpdated: '2026년 9월 12일',
 		lastUpdatedLabel: '최종 수정일',
 		backLabel: '홈으로',
 		languageLabel: '언어',
@@ -37,6 +37,7 @@ export const privacyContent: Record<PrivacyLocaleKey, PrivacyContent> = {
 				body: [
 					'문의 과정에서 사용자가 직접 제공하는 이름, 이메일 주소, 문의 내용 등의 정보를 수집할 수 있습니다.',
 					'서비스 안정성, 보안, 장애 분석을 위해 IP 주소, 사용자 에이전트, 요청 시간, 접속 경로 등 기본적인 기술 로그가 처리될 수 있습니다.',
+					"웹사이트는 이용자가 분석을 허용한 경우에만 Google Analytics를 사용하여 방문 페이지, 유입 경로, 스토어 링크·문의 링크 선택 등 이용 현황을 통계적으로 측정할 수 있습니다. 이 분석은 광고 개인화에 사용하지 않으며, 사이트 하단의 '개인정보 설정'에서 언제든지 선택을 바꾸거나 철회할 수 있습니다.",
 					'서리랩스 앱·게임은 서비스 개선을 위해 익명 사용 데이터(앱/게임 내 이벤트·상호작용)와 익명 분석 식별자를 Google Firebase/Google Analytics 등 분석 도구로 수집할 수 있습니다. 이 데이터는 특정 개인을 식별하지 않으며 계정·연락처와 연결되지 않고, 광고·추적(ATT) 목적으로 사용되지 않습니다.',
 					'일부 앱은 계정, 결제(인앱결제), 위치, 카메라, 사진, 연락처, 광고 및 광고 식별자 등 추가 데이터를 사용할 수 있으며, 그 경우 해당 앱 스토어의 데이터 안전/App Privacy 표시와 앱 내 고지를 따릅니다.'
 				]
@@ -100,7 +101,7 @@ export const privacyContent: Record<PrivacyLocaleKey, PrivacyContent> = {
 		description:
 			'Privacy Policy for Seori Labs websites, apps, and services. Product-specific notices apply first when an app handles data differently.',
 		kicker: 'Privacy Policy',
-		lastUpdated: 'July 19, 2026',
+		lastUpdated: 'September 12, 2026',
 		lastUpdatedLabel: 'Last updated',
 		backLabel: 'Back home',
 		languageLabel: 'Language',
@@ -112,6 +113,7 @@ export const privacyContent: Record<PrivacyLocaleKey, PrivacyContent> = {
 				body: [
 					'We may collect information you provide directly, such as your name, email address, and message when you contact us.',
 					'We may process basic technical logs, such as IP address, user agent, request time, and referrer, to keep services reliable and secure.',
+					'Only when you allow analytics, this website may use Google Analytics to measure aggregate use such as visited pages, referrers, and store or contact-link selections. We do not use it for advertising personalisation, and you can change or withdraw your choice through Privacy settings in the site footer at any time.',
 					'Seori Labs apps and games may collect anonymous usage data (in-app/in-game events and interactions) and an anonymous analytics identifier via analytics tools such as Google Firebase/Google Analytics to improve our services. This data does not identify individuals, is not linked to your account or contacts, and is not used for advertising or tracking (ATT).',
 					'Some apps may use additional data such as accounts, payments (in-app purchases), location, camera, photos, contacts, or advertising and advertising identifiers; in those cases the app store Data safety/App Privacy labels and in-app disclosures apply.'
 				]
@@ -175,7 +177,7 @@ export const privacyContent: Record<PrivacyLocaleKey, PrivacyContent> = {
 		description:
 			'Seori Labs のウェブサイト、アプリ、サービスに適用されるプライバシーポリシーです。アプリごとにデータの取り扱いが異なる場合は、個別のアプリポリシーが優先して適用されます。',
 		kicker: 'Privacy Policy',
-		lastUpdated: '2026年7月19日',
+		lastUpdated: '2026年9月12日',
 		lastUpdatedLabel: '最終更新日',
 		backLabel: 'ホームへ',
 		languageLabel: '言語',
@@ -187,6 +189,7 @@ export const privacyContent: Record<PrivacyLocaleKey, PrivacyContent> = {
 				body: [
 					'お問い合わせの際にお客様が直接提供される氏名、メールアドレス、お問い合わせ内容などの情報を収集する場合があります。',
 					'サービスの安定性、セキュリティ、障害分析のため、IP アドレス、ユーザーエージェント、リクエスト時刻、アクセス経路などの基本的な技術ログを処理する場合があります。',
+					'ウェブサイトでは、利用者が分析を許可した場合に限り、Google Analytics を使用して訪問ページ、参照元、ストアリンク・問い合わせリンクの選択などを統計的に測定することがあります。広告のパーソナライズには使用せず、サイト下部の Privacy settings からいつでも選択を変更または撤回できます。',
 					'Seori Labs のアプリ・ゲームは、サービス改善のため、匿名の利用データ(アプリ/ゲーム内のイベント・操作)および匿名の分析用識別子を、Google Firebase/Google Analytics などの分析ツールを通じて収集する場合があります。このデータは特定の個人を識別せず、アカウントや連絡先と紐づけられることはなく、広告・トラッキング(ATT)の目的では使用されません。',
 					'一部のアプリでは、アカウント、決済(アプリ内課金)、位置情報、カメラ、写真、連絡先、広告および広告識別子などの追加データを使用する場合があり、その場合は各アプリストアのデータセーフティ/App Privacy の表示およびアプリ内の告知に従います。'
 				]
@@ -250,7 +253,7 @@ export const privacyContent: Record<PrivacyLocaleKey, PrivacyContent> = {
 		description:
 			'本隐私政策适用于 Seori Labs 的网站、应用和服务。当某款应用对数据的处理方式不同时，将优先适用该应用的单独政策。',
 		kicker: 'Privacy Policy',
-		lastUpdated: '2026年7月19日',
+		lastUpdated: '2026年9月12日',
 		lastUpdatedLabel: '最后更新',
 		backLabel: '返回首页',
 		languageLabel: '语言',
@@ -262,6 +265,7 @@ export const privacyContent: Record<PrivacyLocaleKey, PrivacyContent> = {
 				body: [
 					'当您与我们联系时，我们可能会收集您直接提供的信息，例如姓名、电子邮件地址和咨询内容。',
 					'为保障服务的稳定性、安全性并进行故障分析，我们可能会处理 IP 地址、用户代理、请求时间、访问来源等基本技术日志。',
+					'仅在您允许分析时，网站才可能使用 Google Analytics 以汇总方式衡量访问页面、来源以及商店或联系链接的选择。我们不会将其用于广告个性化，您可以随时通过网站页脚的 Privacy settings 更改或撤回选择。',
 					'Seori Labs 的应用和游戏可能会通过 Google Firebase/Google Analytics 等分析工具，收集匿名使用数据（应用/游戏内的事件与交互）以及匿名分析标识符，以改进我们的服务。这些数据不会识别特定个人，不会与您的账户或联系人关联，也不会用于广告或跟踪（ATT）目的。',
 					'部分应用可能会使用账户、支付（应用内购买）、位置、摄像头、照片、通讯录以及广告和广告标识符等额外数据；在这种情况下，将适用相应应用商店的数据安全/App Privacy 标识以及应用内的说明。'
 				]
@@ -324,7 +328,7 @@ export const privacyContent: Record<PrivacyLocaleKey, PrivacyContent> = {
 		description:
 			'本隱私權政策適用於 Seori Labs 的網站、應用程式與服務。當某款應用程式對資料的處理方式不同時，將優先適用該應用程式的個別政策。',
 		kicker: 'Privacy Policy',
-		lastUpdated: '2026年7月19日',
+		lastUpdated: '2026年9月12日',
 		lastUpdatedLabel: '最後更新',
 		backLabel: '返回首頁',
 		languageLabel: '語言',
@@ -336,6 +340,7 @@ export const privacyContent: Record<PrivacyLocaleKey, PrivacyContent> = {
 				body: [
 					'當您與我們聯絡時，我們可能會收集您直接提供的資訊，例如姓名、電子郵件地址與詢問內容。',
 					'為維持服務的穩定性、安全性並進行故障分析，我們可能會處理 IP 位址、使用者代理、要求時間、連線來源等基本技術記錄。',
+					'僅在您允許分析時，網站才可能使用 Google Analytics 以彙總方式衡量瀏覽頁面、來源以及商店或聯絡連結的選擇。我們不會將其用於廣告個人化，您可隨時透過網站頁尾的 Privacy settings 變更或撤回選擇。',
 					'Seori Labs 的應用程式與遊戲可能會透過 Google Firebase/Google Analytics 等分析工具，收集匿名使用資料（應用程式/遊戲內的事件與互動）以及匿名分析識別碼，以改善我們的服務。這些資料不會識別特定個人，不會與您的帳戶或聯絡人連結，也不會用於廣告或追蹤（ATT）目的。',
 					'部分應用程式可能會使用帳戶、付款（應用程式內購買）、位置、相機、相片、聯絡人以及廣告與廣告識別碼等額外資料；在此情況下，將適用相應應用程式商店的資料安全/App Privacy 標示以及應用程式內的說明。'
 				]
@@ -399,7 +404,7 @@ export const privacyContent: Record<PrivacyLocaleKey, PrivacyContent> = {
 		description:
 			'Datenschutzerklärung für die Websites, Apps und Dienste von Seori Labs. Produktspezifische Hinweise gelten vorrangig, wenn eine App Daten anders verarbeitet.',
 		kicker: 'Privacy Policy',
-		lastUpdated: '19. Juli 2026',
+		lastUpdated: '12. September 2026',
 		lastUpdatedLabel: 'Zuletzt aktualisiert',
 		backLabel: 'Zur Startseite',
 		languageLabel: 'Sprache',
@@ -411,6 +416,7 @@ export const privacyContent: Record<PrivacyLocaleKey, PrivacyContent> = {
 				body: [
 					'Wir können Informationen erheben, die Sie uns direkt bereitstellen, etwa Ihren Namen, Ihre E-Mail-Adresse und Ihre Nachricht, wenn Sie uns kontaktieren.',
 					'Wir können grundlegende technische Protokolle wie IP-Adresse, User-Agent, Anfragezeitpunkt und Referrer verarbeiten, um die Dienste zuverlässig und sicher zu halten sowie Störungen zu analysieren.',
+					'Nur wenn Sie Analysen erlauben, kann diese Website Google Analytics verwenden, um besuchte Seiten, Referrer sowie die Auswahl von Store- oder Kontaktlinks zusammengefasst zu messen. Wir verwenden dies nicht für personalisierte Werbung; Sie können Ihre Wahl jederzeit über Privacy settings in der Fußzeile ändern oder widerrufen.',
 					'Apps und Spiele von Seori Labs können anonyme Nutzungsdaten (Ereignisse und Interaktionen in der App bzw. im Spiel) sowie eine anonyme Analyse-Kennung über Analysewerkzeuge wie Google Firebase/Google Analytics erheben, um unsere Dienste zu verbessern. Diese Daten identifizieren keine Personen, werden nicht mit Ihrem Konto oder Ihren Kontakten verknüpft und nicht für Werbung oder Tracking (ATT) verwendet.',
 					'Einige Apps können zusätzliche Daten verwenden, etwa Konten, Zahlungen (In-App-Käufe), Standort, Kamera, Fotos, Kontakte sowie Werbung und Werbekennungen; in diesen Fällen gelten die Angaben zur Datensicherheit/App-Privatsphäre des jeweiligen App-Stores sowie die Hinweise in der App.'
 				]
@@ -474,7 +480,7 @@ export const privacyContent: Record<PrivacyLocaleKey, PrivacyContent> = {
 		description:
 			'Politique de confidentialité des sites web, applications et services de Seori Labs. Des mentions spécifiques à un produit s’appliquent en priorité lorsqu’une application traite les données différemment.',
 		kicker: 'Privacy Policy',
-		lastUpdated: '19 juillet 2026',
+		lastUpdated: '12 septembre 2026',
 		lastUpdatedLabel: 'Dernière mise à jour',
 		backLabel: 'Accueil',
 		languageLabel: 'Langue',
@@ -486,6 +492,7 @@ export const privacyContent: Record<PrivacyLocaleKey, PrivacyContent> = {
 				body: [
 					'Nous pouvons collecter les informations que vous fournissez directement, telles que votre nom, votre adresse e-mail et votre message lorsque vous nous contactez.',
 					'Nous pouvons traiter des journaux techniques de base, tels que l’adresse IP, l’agent utilisateur, l’heure de la requête et le référent, afin de garantir la fiabilité et la sécurité des services et d’analyser les incidents.',
+					'Uniquement si vous autorisez l’analyse, ce site peut utiliser Google Analytics pour mesurer de manière agrégée les pages visitées, les référents et les sélections de liens vers les boutiques ou le contact. Nous ne l’utilisons pas pour la personnalisation publicitaire et vous pouvez modifier ou retirer votre choix à tout moment depuis Privacy settings dans le pied de page.',
 					'Les applications et jeux de Seori Labs peuvent collecter des données d’utilisation anonymes (événements et interactions dans l’application ou le jeu) ainsi qu’un identifiant d’analyse anonyme via des outils d’analyse tels que Google Firebase/Google Analytics afin d’améliorer nos services. Ces données n’identifient pas les personnes, ne sont pas liées à votre compte ni à vos contacts et ne sont pas utilisées à des fins publicitaires ou de suivi (ATT).',
 					'Certaines applications peuvent utiliser des données supplémentaires telles que les comptes, les paiements (achats intégrés), la localisation, l’appareil photo, les photos, les contacts, ainsi que la publicité et les identifiants publicitaires ; dans ce cas, les libellés de sécurité des données/confidentialité de l’app de la boutique concernée et les mentions dans l’application s’appliquent.'
 				]
@@ -549,7 +556,7 @@ export const privacyContent: Record<PrivacyLocaleKey, PrivacyContent> = {
 		description:
 			'Política de privacidad de los sitios web, las aplicaciones y los servicios de Seori Labs. Los avisos específicos de cada producto se aplican con prioridad cuando una aplicación trata los datos de forma diferente.',
 		kicker: 'Privacy Policy',
-		lastUpdated: '19 de julio de 2026',
+		lastUpdated: '12 de septiembre de 2026',
 		lastUpdatedLabel: 'Última actualización',
 		backLabel: 'Inicio',
 		languageLabel: 'Idioma',
@@ -561,6 +568,7 @@ export const privacyContent: Record<PrivacyLocaleKey, PrivacyContent> = {
 				body: [
 					'Podemos recopilar la información que usted nos facilita directamente, como su nombre, su dirección de correo electrónico y su mensaje cuando se pone en contacto con nosotros.',
 					'Podemos tratar registros técnicos básicos, como la dirección IP, el agente de usuario, la hora de la solicitud y el referente, para mantener los servicios fiables y seguros y analizar incidencias.',
+					'Solo cuando autoriza el análisis, este sitio puede usar Google Analytics para medir de forma agregada las páginas visitadas, las fuentes de referencia y las selecciones de enlaces de tienda o contacto. No lo usamos para personalización publicitaria y puede cambiar o retirar su elección en cualquier momento desde Privacy settings en el pie de página.',
 					'Las aplicaciones y los juegos de Seori Labs pueden recopilar datos de uso anónimos (eventos e interacciones dentro de la aplicación o el juego) y un identificador de análisis anónimo mediante herramientas de análisis como Google Firebase/Google Analytics para mejorar nuestros servicios. Estos datos no identifican a personas, no se vinculan con su cuenta ni con sus contactos y no se utilizan con fines publicitarios ni de seguimiento (ATT).',
 					'Algunas aplicaciones pueden utilizar datos adicionales, como cuentas, pagos (compras dentro de la aplicación), ubicación, cámara, fotos, contactos, así como publicidad e identificadores publicitarios; en esos casos se aplican las etiquetas de seguridad de los datos/privacidad de la app de la tienda correspondiente y los avisos dentro de la aplicación.'
 				]

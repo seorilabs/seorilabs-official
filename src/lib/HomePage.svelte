@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { ArrowUpRight, Compass, Mail } from '@lucide/svelte';
+	import { trackContactClick } from '$lib/analytics';
 	import { content, site, type Locale } from '$lib/content';
 	import { liveProducts, liveStats } from '$lib/products/derive';
 	import { organizationSchema, webSiteSchema } from '$lib/seo/jsonld';
@@ -75,7 +76,7 @@
 			</div>
 			<div class="product-grid">
 				{#each liveProducts as product (product.slug)}
-					<ProductCard {product} {locale} />
+					<ProductCard {product} {locale} placement="home_card" />
 				{/each}
 			</div>
 			<a class="section-cta" href={appsHref}>{c.products.cta} →</a>
@@ -129,7 +130,7 @@
 						{/each}
 					</nav>
 				</div>
-				<a class="button contact" href={mailHref}>
+				<a class="button contact" href={mailHref} onclick={() => trackContactClick('home_support')}>
 					<Mail size={19} aria-hidden="true" />
 					<span>{c.support.cta}</span>
 					<ArrowUpRight size={18} aria-hidden="true" />

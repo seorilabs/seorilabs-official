@@ -1,10 +1,15 @@
 <script lang="ts">
+	import type { AnalyticsPlacement } from '$lib/analytics';
 	import type { Locale } from '$lib/content';
 	import { shortName } from '$lib/products/derive';
 	import type { Product } from '$lib/products/types';
 	import StoreLinks from '$lib/ui/StoreLinks.svelte';
 
-	let { product, locale }: { product: Product; locale: Locale } = $props();
+	let {
+		product,
+		locale,
+		placement
+	}: { product: Product; locale: Locale; placement: AnalyticsPlacement } = $props();
 
 	const landingHref = $derived(
 		product.hasLanding ? `${locale === 'ko' ? '' : '/en'}/apps/${product.slug}/` : null
@@ -30,7 +35,13 @@
 				<li>{badge}</li>
 			{/each}
 		</ul>
-		<StoreLinks channels={product.channels} {locale} productName={shortName(product, locale)} />
+		<StoreLinks
+			channels={product.channels}
+			{locale}
+			productSlug={product.slug}
+			productName={shortName(product, locale)}
+			{placement}
+		/>
 		{#if landingHref}
 			<a class="more" href={landingHref}>
 				{locale === 'ko' ? '자세히 보기' : 'Learn more'} →
