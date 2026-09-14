@@ -93,6 +93,8 @@ const sitemapPath = join(buildDir, 'sitemap.xml');
 if (existsSync(sitemapPath)) {
 	const sitemap = readFileSync(sitemapPath, 'utf8');
 	const lastmods = [...sitemap.matchAll(/<lastmod>([^<]*)<\/lastmod>/g)].map((m) => m[1]);
+	// 여기서 찾는 것은 빌드 시각이 lastmod로 새는 회귀다. 그 값은 러너 시계의 UTC로
+	// 찍히므로 원장 날짜와 달리 KST가 아니라 UTC 오늘과 비교하는 것이 맞다.
 	const today = new Date().toISOString().slice(0, 10);
 	const todayCount = lastmods.filter((value) => value.startsWith(today)).length;
 	if (lastmods.length > 0 && todayCount === lastmods.length) {

@@ -31,7 +31,11 @@ for (const [, asset] of registrySource.matchAll(/'(\/(?:products|og)\/[^']+)'/g)
 }
 
 // 3. 날짜는 ISO 형식이고 미래가 아니어야 한다.
-const today = new Date().toISOString().slice(0, 10);
+//    원장 날짜는 사람이 KST 기준으로 적는데 CI 러너 시계는 UTC다. UTC로 비교하면
+//    KST 오전 9시 이전에 적은 '오늘'이 미래로 잡혀 검사가 헛돈다. KST는 DST가 없으므로
+//    고정 +09:00을 더해 오늘을 구한다.
+const KST_OFFSET_MS = 9 * 60 * 60 * 1000;
+const today = new Date(Date.now() + KST_OFFSET_MS).toISOString().slice(0, 10);
 for (const [, field, value] of registrySource.matchAll(
 	/(updated|updatedOn|releasedOn):\s*'([^']*)'/g
 )) {
