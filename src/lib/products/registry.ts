@@ -201,7 +201,10 @@ export const products: Product[] = [
 			en: 'Mix, discover, and collect little wonders from Korean nature and everyday life.'
 		},
 		badges: { ko: ['게임', '아동 대상'], en: ['Game', 'For kids'] },
-		channels: [{ kind: 'app-store', appId: '6801187599' }],
+		channels: [
+			{ kind: 'google-play', packageName: 'com.seorilabs.jomul' },
+			{ kind: 'app-store', appId: '6801187599' }
+		],
 		media: { icon: '/products/jomul/icon-256.webp' },
 		legal: [
 			{
