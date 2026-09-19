@@ -19,13 +19,88 @@ export type PrivacyContent = {
 	footerNote: string;
 };
 
+const advertisingSection: Record<PrivacyLocaleKey, PrivacySection> = {
+	ko: {
+		title: '광고와 Google AdMob',
+		body: [
+			'일부 앱은 이용자가 선택하는 보상형 광고와 전면 광고를 제공하기 위해 Google AdMob을 사용합니다. Google과 광고 파트너는 광고 제공·측정·부정 이용 방지를 위해 IP 주소와 그로부터 추정한 대략적 위치, 허용된 기기·광고 식별자, 앱 및 광고 상호작용, 진단·성능 정보를 처리할 수 있습니다.',
+			'유럽경제지역, 영국, 스위스에서는 Google 인증 동의 관리 플랫폼인 User Messaging Platform(UMP)을 사용합니다. 개인화 광고는 필요한 동의를 받은 경우에만 제공하며, 동의하지 않으면 비개인화·제한 광고가 제공되거나 광고가 제공되지 않을 수 있습니다. 동의 여부는 앱의 기본 기능 이용에 영향을 주지 않습니다.',
+			'UMP 화면에는 실제로 정보를 처리할 수 있는 Google 및 광고 파트너와 처리 목적이 표시됩니다. Google 서비스는 이용자의 국가 밖에서 정보를 처리할 수 있으며, 처리 장소·보관 기간·국외 이전 보호조치는 Google과 해당 파트너의 공개 정책을 따릅니다.',
+			"앱 설정의 '광고 개인정보 설정'에서 언제든지 선택을 확인하거나 철회할 수 있습니다. 이 선택은 Android의 광고 개인정보 설정 및 iOS의 앱 추적 투명성(ATT) 권한과 별개입니다."
+		]
+	},
+	en: {
+		title: 'Advertising and Google AdMob',
+		body: [
+			'Some apps use Google AdMob to provide optional rewarded ads and interstitial ads. For ad delivery, measurement, and fraud prevention, Google and advertising partners may process IP addresses and approximate location derived from them, permitted device or advertising identifiers, app and ad interactions, and diagnostic or performance information.',
+			'In the European Economic Area, United Kingdom, and Switzerland, we use Google’s certified User Messaging Platform (UMP). Personalised ads are served only when the required consent has been obtained. If you do not consent, non-personalised or limited ads may be served, or ads may be unavailable. Your choice does not restrict the app’s core functions.',
+			'The UMP form identifies the Google and advertising partners that may process information and their purposes. Google services may process information outside your country; processing locations, retention, and international-transfer safeguards are governed by Google’s and the relevant partners’ published policies.',
+			'You can review or withdraw your choice at any time through Advertising privacy choices in the app settings. This choice is separate from Android advertising privacy controls and Apple App Tracking Transparency (ATT) permission.'
+		]
+	},
+	ja: {
+		title: '広告と Google AdMob',
+		body: [
+			'一部のアプリでは、任意のリワード広告およびインタースティシャル広告を提供するために Google AdMob を使用します。Google と広告パートナーは、広告配信、測定、不正防止のため、IP アドレスとそこから推定されるおおよその位置情報、許可された端末・広告識別子、アプリや広告の操作、診断・パフォーマンス情報を処理する場合があります。',
+			'欧州経済領域、英国、スイスでは、Google の認定同意管理プラットフォーム User Messaging Platform（UMP）を使用します。パーソナライズ広告は必要な同意を得た場合にのみ配信されます。同意しない場合、非パーソナライズ広告・制限付き広告が配信されるか、広告を利用できない場合があります。選択によってアプリの基本機能が制限されることはありません。',
+			'UMP 画面には、情報を処理する可能性のある Google と広告パートナー、および処理目的が表示されます。Google のサービスは利用者の国外で情報を処理する場合があり、処理場所、保存期間、国外移転の保護措置は Google と各パートナーの公開ポリシーに従います。',
+			'アプリ設定の「広告のプライバシー設定」から、いつでも選択を確認または撤回できます。この選択は Android の広告プライバシー設定および Apple の App Tracking Transparency（ATT）権限とは別のものです。'
+		]
+	},
+	zh: {
+		title: '广告与 Google AdMob',
+		body: [
+			'部分应用使用 Google AdMob 提供可选的激励广告和插页广告。为提供和衡量广告并防止欺诈，Google 及广告合作伙伴可能会处理 IP 地址及由此推断的大致位置、获准使用的设备或广告标识符、应用与广告互动，以及诊断和性能信息。',
+			'在欧洲经济区、英国和瑞士，我们使用 Google 认证的同意管理平台 User Messaging Platform（UMP）。只有在取得必要同意后才会提供个性化广告。若您不同意，可能会提供非个性化或受限广告，也可能无法提供广告。您的选择不会限制应用的核心功能。',
+			'UMP 界面会列明可能处理信息的 Google 及广告合作伙伴和处理目的。Google 服务可能在您所在国家以外处理信息；处理地点、保存期限和跨境传输保障措施遵循 Google 及相关合作伙伴公布的政策。',
+			'您可以随时通过应用设置中的“广告隐私设置”查看或撤回选择。此选择与 Android 广告隐私控制以及 Apple App Tracking Transparency（ATT）权限相互独立。'
+		]
+	},
+	'zh-tw': {
+		title: '廣告與 Google AdMob',
+		body: [
+			'部分應用程式使用 Google AdMob 提供可選的獎勵廣告與插頁廣告。為提供與衡量廣告並防止詐欺，Google 及廣告合作夥伴可能處理 IP 位址及由此推定的大致位置、獲准使用的裝置或廣告識別碼、應用程式與廣告互動，以及診斷與效能資訊。',
+			'在歐洲經濟區、英國與瑞士，我們使用 Google 認證的同意管理平台 User Messaging Platform（UMP）。只有在取得必要同意後才會提供個人化廣告。若您不同意，可能會提供非個人化或受限廣告，也可能無法提供廣告。您的選擇不會限制應用程式的核心功能。',
+			'UMP 畫面會列出可能處理資訊的 Google 及廣告合作夥伴與處理目的。Google 服務可能在您所在國家以外處理資訊；處理地點、保存期限與跨境傳輸保障措施依 Google 及相關合作夥伴公布的政策辦理。',
+			'您可以隨時透過應用程式設定中的「廣告隱私權設定」查看或撤回選擇。此選擇與 Android 廣告隱私控制及 Apple App Tracking Transparency（ATT）權限彼此獨立。'
+		]
+	},
+	de: {
+		title: 'Werbung und Google AdMob',
+		body: [
+			'Einige Apps verwenden Google AdMob für optionale Belohnungs- und Vollbildwerbung. Für Auslieferung, Messung und Betrugsprävention können Google und Werbepartner IP-Adressen und den daraus abgeleiteten ungefähren Standort, zulässige Geräte- oder Werbekennungen, App- und Werbeinteraktionen sowie Diagnose- und Leistungsdaten verarbeiten.',
+			'Im Europäischen Wirtschaftsraum, im Vereinigten Königreich und in der Schweiz verwenden wir Googles zertifizierte Einwilligungsplattform User Messaging Platform (UMP). Personalisierte Werbung wird nur mit der erforderlichen Einwilligung bereitgestellt. Ohne Einwilligung können nicht personalisierte oder eingeschränkte Anzeigen erscheinen oder Anzeigen nicht verfügbar sein. Die Kernfunktionen der App bleiben nutzbar.',
+			'Das UMP-Formular nennt Google und die Werbepartner, die Daten verarbeiten können, sowie deren Zwecke. Google-Dienste können Daten außerhalb Ihres Landes verarbeiten; Verarbeitungsorte, Speicherdauer und Schutzmaßnahmen für internationale Übermittlungen richten sich nach den veröffentlichten Richtlinien von Google und den jeweiligen Partnern.',
+			'Sie können Ihre Auswahl jederzeit in den App-Einstellungen unter Datenschutzeinstellungen für Werbung prüfen oder widerrufen. Diese Auswahl ist von den Werbe-Datenschutzkontrollen von Android und der Apple App Tracking Transparency (ATT) getrennt.'
+		]
+	},
+	fr: {
+		title: 'Publicité et Google AdMob',
+		body: [
+			'Certaines applications utilisent Google AdMob pour proposer des publicités récompensées facultatives et des publicités interstitielles. Pour la diffusion, la mesure et la prévention de la fraude, Google et ses partenaires publicitaires peuvent traiter l’adresse IP et la localisation approximative qui en est déduite, les identifiants d’appareil ou publicitaires autorisés, les interactions avec l’application et les annonces, ainsi que les informations de diagnostic et de performance.',
+			'Dans l’Espace économique européen, au Royaume-Uni et en Suisse, nous utilisons la plateforme de gestion du consentement certifiée de Google, User Messaging Platform (UMP). Les publicités personnalisées ne sont diffusées qu’après obtention du consentement requis. Sans consentement, des publicités non personnalisées ou limitées peuvent être diffusées, ou les publicités peuvent être indisponibles. Les fonctions essentielles de l’application restent accessibles.',
+			'Le formulaire UMP indique Google et les partenaires publicitaires susceptibles de traiter des informations ainsi que leurs finalités. Les services Google peuvent traiter des informations en dehors de votre pays ; les lieux de traitement, la durée de conservation et les garanties de transfert international sont régis par les politiques publiées de Google et des partenaires concernés.',
+			'Vous pouvez consulter ou retirer votre choix à tout moment dans les paramètres de l’application, sous Choix de confidentialité publicitaire. Ce choix est distinct des contrôles publicitaires d’Android et de l’autorisation App Tracking Transparency (ATT) d’Apple.'
+		]
+	},
+	es: {
+		title: 'Publicidad y Google AdMob',
+		body: [
+			'Algunas aplicaciones usan Google AdMob para ofrecer anuncios recompensados opcionales y anuncios intersticiales. Para servir y medir anuncios y prevenir el fraude, Google y sus socios publicitarios pueden tratar la dirección IP y la ubicación aproximada derivada de ella, los identificadores de dispositivo o publicitarios permitidos, las interacciones con la aplicación y los anuncios, y la información de diagnóstico y rendimiento.',
+			'En el Espacio Económico Europeo, el Reino Unido y Suiza usamos la plataforma de gestión del consentimiento certificada de Google, User Messaging Platform (UMP). Los anuncios personalizados solo se muestran cuando se ha obtenido el consentimiento necesario. Si no acepta, pueden mostrarse anuncios no personalizados o limitados, o los anuncios pueden no estar disponibles. Las funciones principales de la aplicación siguen disponibles.',
+			'El formulario de UMP identifica a Google y a los socios publicitarios que pueden tratar información y sus finalidades. Los servicios de Google pueden tratar información fuera de su país; los lugares de tratamiento, la conservación y las salvaguardias para transferencias internacionales se rigen por las políticas publicadas de Google y de los socios correspondientes.',
+			'Puede revisar o retirar su elección en cualquier momento desde Opciones de privacidad de anuncios en los ajustes de la aplicación. Esta elección es independiente de los controles de privacidad publicitaria de Android y del permiso App Tracking Transparency (ATT) de Apple.'
+		]
+	}
+};
+
 export const privacyContent: Record<PrivacyLocaleKey, PrivacyContent> = {
 	ko: {
 		title: '개인정보 처리방침',
 		description:
 			'서리랩스 웹사이트, 앱, 서비스에 적용되는 개인정보 처리방침입니다. 앱별 데이터 처리가 다른 경우 별도 앱 정책이 우선 적용됩니다.',
 		kicker: 'Privacy Policy',
-		lastUpdated: '2026년 9월 12일',
+		lastUpdated: '2026년 9월 19일',
 		lastUpdatedLabel: '최종 수정일',
 		backLabel: '홈으로',
 		languageLabel: '언어',
@@ -42,6 +117,7 @@ export const privacyContent: Record<PrivacyLocaleKey, PrivacyContent> = {
 					'일부 앱은 계정, 결제(인앱결제), 위치, 카메라, 사진, 연락처, 광고 및 광고 식별자 등 추가 데이터를 사용할 수 있으며, 그 경우 해당 앱 스토어의 데이터 안전/App Privacy 표시와 앱 내 고지를 따릅니다.'
 				]
 			},
+			advertisingSection.ko,
 			{
 				title: '정보의 이용 목적',
 				body: [
@@ -101,7 +177,7 @@ export const privacyContent: Record<PrivacyLocaleKey, PrivacyContent> = {
 		description:
 			'Privacy Policy for Seori Labs websites, apps, and services. Product-specific notices apply first when an app handles data differently.',
 		kicker: 'Privacy Policy',
-		lastUpdated: 'September 12, 2026',
+		lastUpdated: 'September 19, 2026',
 		lastUpdatedLabel: 'Last updated',
 		backLabel: 'Back home',
 		languageLabel: 'Language',
@@ -118,6 +194,7 @@ export const privacyContent: Record<PrivacyLocaleKey, PrivacyContent> = {
 					'Some apps may use additional data such as accounts, payments (in-app purchases), location, camera, photos, contacts, or advertising and advertising identifiers; in those cases the app store Data safety/App Privacy labels and in-app disclosures apply.'
 				]
 			},
+			advertisingSection.en,
 			{
 				title: 'How We Use Information',
 				body: [
@@ -177,7 +254,7 @@ export const privacyContent: Record<PrivacyLocaleKey, PrivacyContent> = {
 		description:
 			'Seori Labs のウェブサイト、アプリ、サービスに適用されるプライバシーポリシーです。アプリごとにデータの取り扱いが異なる場合は、個別のアプリポリシーが優先して適用されます。',
 		kicker: 'Privacy Policy',
-		lastUpdated: '2026年9月12日',
+		lastUpdated: '2026年9月19日',
 		lastUpdatedLabel: '最終更新日',
 		backLabel: 'ホームへ',
 		languageLabel: '言語',
@@ -194,6 +271,7 @@ export const privacyContent: Record<PrivacyLocaleKey, PrivacyContent> = {
 					'一部のアプリでは、アカウント、決済(アプリ内課金)、位置情報、カメラ、写真、連絡先、広告および広告識別子などの追加データを使用する場合があり、その場合は各アプリストアのデータセーフティ/App Privacy の表示およびアプリ内の告知に従います。'
 				]
 			},
+			advertisingSection.ja,
 			{
 				title: '情報の利用目的',
 				body: [
@@ -253,7 +331,7 @@ export const privacyContent: Record<PrivacyLocaleKey, PrivacyContent> = {
 		description:
 			'本隐私政策适用于 Seori Labs 的网站、应用和服务。当某款应用对数据的处理方式不同时，将优先适用该应用的单独政策。',
 		kicker: 'Privacy Policy',
-		lastUpdated: '2026年9月12日',
+		lastUpdated: '2026年9月19日',
 		lastUpdatedLabel: '最后更新',
 		backLabel: '返回首页',
 		languageLabel: '语言',
@@ -270,6 +348,7 @@ export const privacyContent: Record<PrivacyLocaleKey, PrivacyContent> = {
 					'部分应用可能会使用账户、支付（应用内购买）、位置、摄像头、照片、通讯录以及广告和广告标识符等额外数据；在这种情况下，将适用相应应用商店的数据安全/App Privacy 标识以及应用内的说明。'
 				]
 			},
+			advertisingSection.zh,
 			{
 				title: '信息的使用目的',
 				body: [
@@ -328,7 +407,7 @@ export const privacyContent: Record<PrivacyLocaleKey, PrivacyContent> = {
 		description:
 			'本隱私權政策適用於 Seori Labs 的網站、應用程式與服務。當某款應用程式對資料的處理方式不同時，將優先適用該應用程式的個別政策。',
 		kicker: 'Privacy Policy',
-		lastUpdated: '2026年9月12日',
+		lastUpdated: '2026年9月19日',
 		lastUpdatedLabel: '最後更新',
 		backLabel: '返回首頁',
 		languageLabel: '語言',
@@ -345,6 +424,7 @@ export const privacyContent: Record<PrivacyLocaleKey, PrivacyContent> = {
 					'部分應用程式可能會使用帳戶、付款（應用程式內購買）、位置、相機、相片、聯絡人以及廣告與廣告識別碼等額外資料；在此情況下，將適用相應應用程式商店的資料安全/App Privacy 標示以及應用程式內的說明。'
 				]
 			},
+			advertisingSection['zh-tw'],
 			{
 				title: '資訊的使用目的',
 				body: [
@@ -404,7 +484,7 @@ export const privacyContent: Record<PrivacyLocaleKey, PrivacyContent> = {
 		description:
 			'Datenschutzerklärung für die Websites, Apps und Dienste von Seori Labs. Produktspezifische Hinweise gelten vorrangig, wenn eine App Daten anders verarbeitet.',
 		kicker: 'Privacy Policy',
-		lastUpdated: '12. September 2026',
+		lastUpdated: '19. September 2026',
 		lastUpdatedLabel: 'Zuletzt aktualisiert',
 		backLabel: 'Zur Startseite',
 		languageLabel: 'Sprache',
@@ -421,6 +501,7 @@ export const privacyContent: Record<PrivacyLocaleKey, PrivacyContent> = {
 					'Einige Apps können zusätzliche Daten verwenden, etwa Konten, Zahlungen (In-App-Käufe), Standort, Kamera, Fotos, Kontakte sowie Werbung und Werbekennungen; in diesen Fällen gelten die Angaben zur Datensicherheit/App-Privatsphäre des jeweiligen App-Stores sowie die Hinweise in der App.'
 				]
 			},
+			advertisingSection.de,
 			{
 				title: 'Wie wir Daten verwenden',
 				body: [
@@ -480,7 +561,7 @@ export const privacyContent: Record<PrivacyLocaleKey, PrivacyContent> = {
 		description:
 			'Politique de confidentialité des sites web, applications et services de Seori Labs. Des mentions spécifiques à un produit s’appliquent en priorité lorsqu’une application traite les données différemment.',
 		kicker: 'Privacy Policy',
-		lastUpdated: '12 septembre 2026',
+		lastUpdated: '19 septembre 2026',
 		lastUpdatedLabel: 'Dernière mise à jour',
 		backLabel: 'Accueil',
 		languageLabel: 'Langue',
@@ -497,6 +578,7 @@ export const privacyContent: Record<PrivacyLocaleKey, PrivacyContent> = {
 					'Certaines applications peuvent utiliser des données supplémentaires telles que les comptes, les paiements (achats intégrés), la localisation, l’appareil photo, les photos, les contacts, ainsi que la publicité et les identifiants publicitaires ; dans ce cas, les libellés de sécurité des données/confidentialité de l’app de la boutique concernée et les mentions dans l’application s’appliquent.'
 				]
 			},
+			advertisingSection.fr,
 			{
 				title: 'Utilisation des informations',
 				body: [
@@ -556,7 +638,7 @@ export const privacyContent: Record<PrivacyLocaleKey, PrivacyContent> = {
 		description:
 			'Política de privacidad de los sitios web, las aplicaciones y los servicios de Seori Labs. Los avisos específicos de cada producto se aplican con prioridad cuando una aplicación trata los datos de forma diferente.',
 		kicker: 'Privacy Policy',
-		lastUpdated: '12 de septiembre de 2026',
+		lastUpdated: '19 de septiembre de 2026',
 		lastUpdatedLabel: 'Última actualización',
 		backLabel: 'Inicio',
 		languageLabel: 'Idioma',
@@ -573,6 +655,7 @@ export const privacyContent: Record<PrivacyLocaleKey, PrivacyContent> = {
 					'Algunas aplicaciones pueden utilizar datos adicionales, como cuentas, pagos (compras dentro de la aplicación), ubicación, cámara, fotos, contactos, así como publicidad e identificadores publicitarios; en esos casos se aplican las etiquetas de seguridad de los datos/privacidad de la app de la tienda correspondiente y los avisos dentro de la aplicación.'
 				]
 			},
+			advertisingSection.es,
 			{
 				title: 'Cómo usamos la información',
 				body: [
