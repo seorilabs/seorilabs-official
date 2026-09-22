@@ -4,8 +4,7 @@ import type { PrivacyContent } from '$lib/privacyContent';
 export const lucidReversiPrivacyContent: Record<'ko' | 'en', PrivacyContent> = {
 	ko: {
 		title: '루시드 리버시 개인정보 처리방침',
-		description:
-			'루시드 리버시의 게임 데이터, 분석 및 광고 처리에 관한 개인정보 처리방침입니다.',
+		description: '루시드 리버시의 게임 데이터, 분석 및 광고 처리에 관한 개인정보 처리방침입니다.',
 		kicker: 'Lucid Reversi Privacy Policy',
 		lastUpdated: '2026년 9월 22일',
 		lastUpdatedLabel: '시행일 및 최종 수정일',
@@ -75,8 +74,7 @@ export const lucidReversiPrivacyContent: Record<'ko' | 'en', PrivacyContent> = {
 	},
 	en: {
 		title: 'Lucid Reversi Privacy Policy',
-		description:
-			'Privacy policy covering game data, analytics, and advertising in Lucid Reversi.',
+		description: 'Privacy policy covering game data, analytics, and advertising in Lucid Reversi.',
 		kicker: 'Lucid Reversi Privacy Policy',
 		lastUpdated: 'September 22, 2026',
 		lastUpdatedLabel: 'Effective and last updated',

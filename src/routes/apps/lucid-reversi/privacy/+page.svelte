@@ -3,4 +3,9 @@
 	import { lucidReversiPrivacyContent } from '$lib/lucidReversiPrivacyContent';
 </script>
 
-<LegalDocPage locale="ko" content={lucidReversiPrivacyContent.ko} docKind="privacy" />
+<LegalDocPage
+	locale="ko"
+	content={lucidReversiPrivacyContent.ko}
+	docKind="privacy"
+	productSlug="lucid-reversi"
+/>
