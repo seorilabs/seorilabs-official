@@ -260,6 +260,30 @@ export const products: Product[] = [
 		media: { icon: '/products/lucid-chess/icon-256.webp' },
 		legal: []
 	},
+	{
+		slug: 'lucid-reversi',
+		order: 10,
+		status: 'live',
+		category: 'game',
+		hasLanding: false,
+		updatedOn: '2026-09-22',
+		name: { ko: '루시드 리버시', en: 'Lucid Reversi' },
+		tagline: {
+			ko: '선명한 보드와 큼직한 흑백 돌로 다음 수가 잘 보이는, AI와 한 판 붙는 모바일 리버시',
+			en: 'A mobile reversi game for quick matches against AI, with a clear board and instant move feedback.'
+		},
+		badges: { ko: ['게임'], en: ['Game'] },
+		// 번들 ID는 구 네임스페이스(com.etlegame.reversi)이고 App Store에만 있다.
+		channels: [{ kind: 'app-store', appId: '994468960' }],
+		media: { icon: '/products/lucid-reversi/icon-256.webp' },
+		legal: [
+			{
+				kind: 'privacy',
+				path: { ko: '/apps/lucid-reversi/privacy/', en: '/en/apps/lucid-reversi/privacy/' },
+				updated: '2026-09-22'
+			}
+		]
+	},
 
 	// 아래는 아직 출시 전이다. 목록에 노출하지 않지만 개인정보처리방침은 이미
 	// 스토어 심사에 쓰이고 있으므로 경로와 sitemap 등재를 유지한다.

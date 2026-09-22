@@ -25,6 +25,7 @@ const KO_PATHS = [
 	'/apps/jomul/privacy/',
 	'/apps/lizard-tycoon/privacy/',
 	'/apps/lord-ledger/privacy/',
+	'/apps/lucid-reversi/privacy/',
 	'/apps/matgo/privacy/',
 	'/apps/ungeul/privacy/',
 	'/apps/ungeul/terms/'
