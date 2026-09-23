@@ -288,6 +288,32 @@ export const products: Product[] = [
 	// 아래는 아직 출시 전이다. 목록에 노출하지 않지만 개인정보처리방침은 이미
 	// 스토어 심사에 쓰이고 있으므로 경로와 sitemap 등재를 유지한다.
 	{
+		slug: 'merge-armada',
+		order: 99,
+		status: 'upcoming',
+		category: 'game',
+		hasLanding: false,
+		updatedOn: '2026-09-24',
+		name: { ko: '수군 머지: 거북선 함대', en: 'Seori Merge Armada: Turtle' },
+		tagline: {
+			ko: '함선을 합쳐 진형을 완성하는 해전 전략 게임',
+			en: 'Merge ships, shape formations, and command a fleet through naval battles.'
+		},
+		badges: { ko: ['게임'], en: ['Game'] },
+		channels: [
+			{ kind: 'google-play', packageName: 'com.seorilabs.mergearmada' },
+			{ kind: 'app-store', appId: '6812823076' }
+		],
+		media: {},
+		legal: [
+			{
+				kind: 'privacy',
+				path: { ko: '/apps/merge-armada/privacy/', en: '/en/apps/merge-armada/privacy/' },
+				updated: '2026-09-24'
+			}
+		]
+	},
+	{
 		slug: 'reascend',
 		order: 100,
 		status: 'upcoming',
