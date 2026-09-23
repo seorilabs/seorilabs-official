@@ -319,6 +319,35 @@ export const products: Product[] = [
 		]
 	},
 	{
+		slug: 'salt-compass',
+		order: 104,
+		status: 'upcoming',
+		category: 'game',
+		hasLanding: false,
+		updatedOn: '2026-09-23',
+		name: { ko: '소금과 나침반', en: 'Salt & Compass' },
+		tagline: {
+			ko: '바람을 읽고 교역하며 세계 지도를 채우는 세로형 항해 모험',
+			en: 'Read the wind, trade across the real world and fill in your chart.'
+		},
+		badges: { ko: ['게임'], en: ['Game'] },
+		channels: [],
+		media: {},
+		legal: [
+			{
+				kind: 'privacy',
+				path: { ko: '/apps/salt-compass/privacy/', en: '/en/apps/salt-compass/privacy/' },
+				updated: '2026-09-23'
+			},
+			{
+				kind: 'account-deletion',
+				path: { ko: '/apps/salt-compass/privacy/', en: '/en/apps/salt-compass/privacy/' },
+				updated: '2026-09-23',
+				legacyAnchor: { path: '/apps/salt-compass/privacy/', id: 'account-deletion' }
+			}
+		]
+	},
+	{
 		slug: 'lord-ledger',
 		order: 101,
 		status: 'upcoming',
