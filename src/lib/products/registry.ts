@@ -288,6 +288,37 @@ export const products: Product[] = [
 	// 아래는 아직 출시 전이다. 목록에 노출하지 않지만 개인정보처리방침은 이미
 	// 스토어 심사에 쓰이고 있으므로 경로와 sitemap 등재를 유지한다.
 	{
+		slug: 'reascend',
+		order: 100,
+		status: 'upcoming',
+		category: 'game',
+		hasLanding: false,
+		updatedOn: '2026-09-23',
+		name: { ko: '리어센드', en: 'Reascend' },
+		tagline: {
+			ko: '방치형 탑 등반 RPG. 회귀할 때마다 한 헌터의 이야기가 한 장씩 쌓인다.',
+			en: 'Idle tower RPG. Every regression is a new chapter of one hunter\u2019s climb.'
+		},
+		badges: { ko: ['게임'], en: ['Game'] },
+		channels: [],
+		media: {},
+		legal: [
+			{
+				kind: 'privacy',
+				path: { ko: '/apps/reascend/privacy/', en: '/en/apps/reascend/privacy/' },
+				updated: '2026-09-23'
+			},
+			{
+				kind: 'account-deletion',
+				path: {
+					ko: '/apps/reascend/account-deletion/',
+					en: '/en/apps/reascend/account-deletion/'
+				},
+				updated: '2026-09-23'
+			}
+		]
+	},
+	{
 		slug: 'lord-ledger',
 		order: 101,
 		status: 'upcoming',
