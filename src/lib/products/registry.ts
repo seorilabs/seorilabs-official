@@ -345,6 +345,35 @@ export const products: Product[] = [
 		]
 	},
 	{
+		slug: 'bloomhand',
+		order: 105,
+		status: 'upcoming',
+		category: 'game',
+		hasLanding: false,
+		updatedOn: '2026-09-24',
+		name: { ko: '블룸핸드', en: 'Bloomhand' },
+		tagline: {
+			ko: '카드로 꽃을 피우는 세로 한 손 정원 로그라이크',
+			en: 'Grow a garden with a hand of seed cards — a one-handed roguelike.'
+		},
+		badges: { ko: ['게임'], en: ['Game'] },
+		channels: [],
+		media: {},
+		legal: [
+			{
+				kind: 'privacy',
+				path: { ko: '/apps/bloomhand/privacy/', en: '/en/apps/bloomhand/privacy/' },
+				updated: '2026-09-24'
+			},
+			{
+				kind: 'account-deletion',
+				path: { ko: '/apps/bloomhand/privacy/', en: '/en/apps/bloomhand/privacy/' },
+				updated: '2026-09-24',
+				legacyAnchor: { path: '/apps/bloomhand/privacy/', id: 'account-deletion' }
+			}
+		]
+	},
+	{
 		slug: 'salt-compass',
 		order: 104,
 		status: 'upcoming',
