@@ -379,7 +379,7 @@ export const products: Product[] = [
 		status: 'upcoming',
 		category: 'game',
 		hasLanding: false,
-		updatedOn: '2026-09-23',
+		updatedOn: '2026-09-25',
 		name: { ko: '소금과 나침반', en: 'Salt & Compass' },
 		tagline: {
 			ko: '바람을 읽고 교역하며 세계 지도를 채우는 세로형 항해 모험',
@@ -392,12 +392,12 @@ export const products: Product[] = [
 			{
 				kind: 'privacy',
 				path: { ko: '/apps/salt-compass/privacy/', en: '/en/apps/salt-compass/privacy/' },
-				updated: '2026-09-23'
+				updated: '2026-09-25'
 			},
 			{
 				kind: 'account-deletion',
 				path: { ko: '/apps/salt-compass/privacy/', en: '/en/apps/salt-compass/privacy/' },
-				updated: '2026-09-23',
+				updated: '2026-09-25',
 				legacyAnchor: { path: '/apps/salt-compass/privacy/', id: 'account-deletion' }
 			}
 		]
