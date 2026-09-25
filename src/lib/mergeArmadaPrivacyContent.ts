@@ -3,16 +3,16 @@ import type { PrivacyContent } from '$lib/privacyContent';
 
 export const mergeArmadaPrivacyContent: Record<'ko' | 'en', PrivacyContent> = {
 	ko: {
-		title: '수군 머지: 거북선 함대 개인정보 처리방침',
+		title: '머지 함대: 해전 전략 개인정보 처리방침',
 		description:
-			'수군 머지의 게임 저장, 이용 분석 및 Android 보상형 광고에 관한 개인정보 처리방침입니다.',
-		kicker: 'Merge Armada Privacy Policy',
-		lastUpdated: '2026년 9월 24일',
+			'머지 함대의 게임 저장, 이용 분석, 오류 진단 및 보상형 광고에 관한 개인정보 처리방침입니다.',
+		kicker: 'Merge Fleet Privacy Policy',
+		lastUpdated: '2026년 9월 25일',
 		lastUpdatedLabel: '시행일 및 최종 수정일',
 		backLabel: '서리랩스 홈으로',
 		languageLabel: '언어',
 		intro:
-			'이 방침은 Seori Labs가 제공하는 「수군 머지: 거북선 함대」(패키지명 및 번들 ID com.seorilabs.mergearmada, 이하 “앱”)에 적용됩니다. 앱의 데이터 처리가 회사 공통 방침과 다른 경우 이 제품별 방침이 우선합니다.',
+			'이 방침은 Seori Labs가 제공하는 「머지 함대: 해전 전략」(패키지명 및 번들 ID com.seorilabs.mergearmada, 이하 “앱”)에 적용됩니다. 앱의 데이터 처리가 회사 공통 방침과 다른 경우 이 제품별 방침이 우선합니다.',
 		sections: [
 			{
 				title: '게임 데이터와 계정',
@@ -24,16 +24,16 @@ export const mergeArmadaPrivacyContent: Record<'ko' | 'en', PrivacyContent> = {
 			{
 				title: '이용 분석',
 				body: [
-					'분석 설정이 포함된 출시 빌드에서는 Google 애널리틱스 4로 앱 실행, 튜토리얼, 배치, 합성, 전투 결과와 같은 게임 내 이벤트, 플랫폼 구분, 세션 정보, 설치본에 연결된 무작위 분석 식별자를 전송합니다. 이름이나 연락처를 이벤트에 포함하지 않습니다.',
-					'이 정보는 게임의 이용 상태와 안정성을 파악하고 기능을 개선하는 데 사용합니다. 앱 설정에서 이용 정보 수집을 끌 수 있으며 분석 식별자를 재설정할 수 있습니다. 분석 전송에는 HTTPS를 사용합니다.'
+					'Android와 iOS 출시 빌드에서는 Firebase Analytics를 통해 앱 실행, 튜토리얼, 배치, 합성, 전투 결과와 같은 게임 내 이벤트, 플랫폼 구분, 세션 정보, 설치본에 연결된 무작위 분석 식별자를 전송합니다. 이름이나 연락처를 이벤트에 포함하지 않습니다.',
+					'Firebase Crashlytics는 앱 오류와 진단 정보를 처리할 수 있습니다. 이 정보는 게임의 이용 상태와 안정성을 파악하고 기능을 개선하는 데 사용합니다. 앱 설정에서 이용 정보 수집을 끌 수 있으며 분석 식별자를 재설정할 수 있습니다. 분석 전송에는 HTTPS를 사용합니다.'
 				]
 			},
 			{
-				title: 'Android 광고',
+				title: '보상형 광고',
 				body: [
-					'Android 앱에서는 이용자가 보상을 받기 위해 선택하는 Google AdMob 광고를 제공할 수 있습니다. 광고 제공, 성과 측정 및 부정 이용 방지 과정에서 Google과 광고 파트너가 광고 ID, 기기 정보, 광고·앱 상호작용, 진단 정보, IP 주소와 그로부터 추정한 대략적 위치를 처리할 수 있습니다.',
+					'Android와 iOS 앱에서는 이용자가 보상을 받기 위해 선택하는 Google AdMob 광고를 제공할 수 있습니다. 광고 제공, 성과 측정 및 부정 이용 방지 과정에서 Google과 광고 파트너가 광고 ID를 포함한 기기 식별자, 기기 정보, 광고·앱 상호작용, 진단 정보, IP 주소와 그로부터 추정한 대략적 위치를 처리할 수 있습니다.',
 					'동의가 필요한 지역에서는 Google User Messaging Platform으로 광고 개인정보 선택을 받습니다. 필요한 동의가 없으면 광고가 제한되거나 제공되지 않을 수 있습니다. 광고를 보지 않아도 기본 게임은 이용할 수 있습니다.',
-					'현재 iOS 후보에서는 AdMob 광고와 광고 식별자 IDFA를 사용하지 않으며 앱 추적 권한을 요청하지 않습니다. 향후 iOS 광고를 활성화하면 이 방침과 스토어의 개인정보 표시를 먼저 수정합니다.'
+					'iOS 광고 요청에는 비개인화 광고 설정을 적용하며 앱 추적 권한을 요청하지 않습니다. 광고 제공에 필요한 데이터 처리는 Google의 정책과 이용자의 기기 설정에 따릅니다.'
 				]
 			},
 			{
@@ -55,16 +55,16 @@ export const mergeArmadaPrivacyContent: Record<'ko' | 'en', PrivacyContent> = {
 		footerNote: `개인정보 문의: ${site.email}`
 	},
 	en: {
-		title: 'Merge Armada Privacy Policy',
+		title: 'Merge Fleet: Naval Battles Privacy Policy',
 		description:
-			'Privacy policy for local game saves, usage analytics, and Android rewarded ads in Merge Armada.',
-		kicker: 'Merge Armada Privacy Policy',
-		lastUpdated: 'September 24, 2026',
+			'Privacy policy for local game saves, usage analytics, crash diagnostics, and rewarded ads in Merge Fleet.',
+		kicker: 'Merge Fleet Privacy Policy',
+		lastUpdated: 'September 25, 2026',
 		lastUpdatedLabel: 'Effective and last updated',
 		backLabel: 'Back to Seori Labs',
 		languageLabel: 'Language',
 		intro:
-			'This policy applies to Merge Armada (package name and bundle ID com.seorilabs.mergearmada, the “App”), provided by Seori Labs. This product policy takes precedence where its data handling differs from our general policy.',
+			'This policy applies to Merge Fleet: Naval Battles (package name and bundle ID com.seorilabs.mergearmada, the “App”), provided by Seori Labs. This product policy takes precedence where its data handling differs from our general policy.',
 		sections: [
 			{
 				title: 'Game data and accounts',
@@ -76,16 +76,16 @@ export const mergeArmadaPrivacyContent: Record<'ko' | 'en', PrivacyContent> = {
 			{
 				title: 'Usage analytics',
 				body: [
-					'In release builds configured for analytics, the App sends in-game events such as launches, tutorials, deployment, merging, and battle results to Google Analytics 4, along with platform and session information and a random identifier tied to the installation. Names and contact details are not included in these events.',
-					'We use this information to understand usage and stability and improve the game. You can disable usage analytics and reset the analytics identifier in the App settings. Analytics data is transmitted over HTTPS.'
+					'On Android and iOS, release builds send in-game events such as launches, tutorials, deployment, merging, and battle results to Firebase Analytics, along with platform and session information and a random identifier tied to the installation. Names and contact details are not included in these events.',
+					'Firebase Crashlytics may process app crashes and diagnostic information. We use this information to understand usage and stability and improve the game. You can disable usage analytics and reset the analytics identifier in the App settings. Analytics data is transmitted over HTTPS.'
 				]
 			},
 			{
-				title: 'Android advertising',
+				title: 'Rewarded advertising',
 				body: [
-					'On Android, the App may offer optional Google AdMob rewarded ads. To deliver and measure ads and prevent fraud, Google and its advertising partners may process advertising identifiers, device information, app and ad interactions, diagnostics, IP addresses, and approximate location inferred from them.',
+					'On Android and iOS, the App may offer optional Google AdMob rewarded ads. To deliver and measure ads and prevent fraud, Google and its advertising partners may process device identifiers including advertising identifiers, device information, app and ad interactions, diagnostics, IP addresses, and approximate location inferred from them.',
 					'Where consent is required, the App uses Google User Messaging Platform for advertising privacy choices. Without the required consent, ads may be limited or unavailable. Core gameplay remains available without watching ads.',
-					'The current iOS release candidate does not use AdMob ads or the IDFA and does not request App Tracking Transparency permission. We will update this policy and the store disclosures before enabling iOS ads.'
+					'iOS ad requests use a non-personalized ads setting, and the App does not request App Tracking Transparency permission. Data processing needed to provide ads follows Google’s policies and your device settings.'
 				]
 			},
 			{
