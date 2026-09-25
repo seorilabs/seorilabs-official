@@ -94,6 +94,12 @@ Adding a new app:
 The apps index card, homepage card, `/legal/` row, and sitemap entries follow
 automatically. `npm run check` fails if a referenced path or asset is missing.
 
+An entry with `status: 'upcoming'` appears only in the "In progress" cards on
+`/apps/`, without store buttons or a landing page, even if `channels` already
+lists the pending store identifiers. Once the store listing is confirmed public,
+switch `status` to `live`, set `releasedOn`, and keep only the channels that are
+actually reachable.
+
 ## Legal and Support Pages
 
 The site serves public policy pages used for app store submissions. `/legal/`

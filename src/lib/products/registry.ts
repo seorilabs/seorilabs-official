@@ -284,19 +284,110 @@ export const products: Product[] = [
 			}
 		]
 	},
+	{
+		slug: 'lord-ledger',
+		order: 11,
+		status: 'live',
+		category: 'game',
+		hasLanding: false,
+		releasedOn: '2026-09-25',
+		updatedOn: '2026-09-25',
+		name: { ko: '삼국지 풍운록', en: 'Lord Ledger' },
+		tagline: {
+			ko: '46개 도시와 226명의 장수로 천하를 경영하는 정통 가로형 역사 전략 게임',
+			en: 'Rule 46 cities and 226 officers in a landscape Three Kingdoms strategy game.'
+		},
+		badges: { ko: ['게임'], en: ['Game'] },
+		// Google Play(com.seorilabs.lordledger)는 아직 미공개다. 공개가 확인되면 채널을 추가한다.
+		channels: [{ kind: 'app-store', appId: '6804420009' }],
+		media: { icon: '/products/lord-ledger/icon-256.webp' },
+		legal: [
+			{
+				kind: 'privacy',
+				path: { ko: '/apps/lord-ledger/privacy/', en: '/en/apps/lord-ledger/privacy/' },
+				updated: '2026-09-09'
+			},
+			{
+				kind: 'account-deletion',
+				path: { ko: '/apps/lord-ledger/privacy/', en: '/en/apps/lord-ledger/privacy/' },
+				updated: '2026-09-09',
+				legacyAnchor: { path: '/apps/lord-ledger/privacy/', id: 'account-deletion' }
+			}
+		]
+	},
+	{
+		slug: 'lucid-reels',
+		order: 12,
+		status: 'live',
+		category: 'game',
+		hasLanding: false,
+		updatedOn: '2026-09-25',
+		name: { ko: 'Lucid Reels: Open Odds', en: 'Lucid Reels: Open Odds' },
+		tagline: {
+			ko: '스핀 전 공개 확률을 비교하고 리스크를 고르는 소셜 슬롯',
+			en: 'Compare open odds and choose a risk profile before you spin'
+		},
+		// Google Play 프로덕션은 한국 스토어프런트를 제외하고 배포 중이다.
+		// iOS(appId 6795099819)는 심사 대기라 공개가 확인되면 채널을 추가한다.
+		badges: { ko: ['게임', '한국 미제공'], en: ['Game', 'Not available in Korea'] },
+		channels: [{ kind: 'google-play', packageName: 'com.seorilabs.slotmachine' }],
+		media: { icon: '/products/lucid-reels/icon-256.webp' },
+		legal: []
+	},
+	{
+		slug: 'match-picture',
+		order: 13,
+		status: 'live',
+		category: 'game',
+		hasLanding: false,
+		updatedOn: '2026-09-25',
+		// Google Play 등록명이다. App Store에는 '같은 그림 찾아보기 / Match Symbols'로 등록돼 있다.
+		name: { ko: '같은 그림 찾기', en: 'Match Picture' },
+		tagline: {
+			ko: '두 카드에서 똑같은 그림 하나를 가장 빨리 찾는 스피드 퍼즐!',
+			en: 'Spot the one matching picture between two cards — beat the clock!'
+		},
+		badges: { ko: ['게임'], en: ['Game'] },
+		// 2020년 출시한 구 네임스페이스 번들이다. Godot 재구현이 출시되면 채널과 아이콘을 바꾼다.
+		channels: [
+			{ kind: 'google-play', packageName: 'com.github.magicsih.MatchPictureUnity' },
+			{ kind: 'app-store', appId: '1528539634' }
+		],
+		media: { icon: '/products/match-picture/icon-256.webp' },
+		legal: []
+	},
+	{
+		slug: 'baby-feeding-logger',
+		order: 14,
+		status: 'live',
+		category: 'app',
+		hasLanding: false,
+		updatedOn: '2026-09-25',
+		name: { ko: '수유로그', en: 'Baby Feeding Logger' },
+		// App Store에 부제와 짧은 설명이 없어 스토어 설명문의 문장을 그대로 옮겼다.
+		tagline: {
+			ko: '아기 키우는데 필요한 핵심 기능만 담았습니다. 모든 데이터는 폰에만 저장됩니다.',
+			en: 'Only essential features. All data is stored only on the phone.'
+		},
+		badges: { ko: ['생활 앱'], en: ['App'] },
+		// 구 네임스페이스(com.github.magicsih.BabyCareApp) 번들이고 App Store에만 있다.
+		channels: [{ kind: 'app-store', appId: '1494547124' }],
+		media: { icon: '/products/baby-feeding-logger/icon-256.webp' },
+		legal: []
+	},
 
-	// 아래는 아직 출시 전이다. 목록에 노출하지 않지만 개인정보처리방침은 이미
-	// 스토어 심사에 쓰이고 있으므로 경로와 sitemap 등재를 유지한다.
+	// 아래는 아직 출시 전이다. /apps/의 준비 중 카드로만 노출하고 스토어 버튼은 만들지 않는다.
+	// 개인정보처리방침은 이미 스토어 심사에 쓰이고 있으므로 경로와 sitemap 등재를 유지한다.
 	{
 		slug: 'merge-armada',
 		order: 99,
 		status: 'upcoming',
 		category: 'game',
 		hasLanding: false,
-		updatedOn: '2026-09-24',
-		name: { ko: '수군 머지: 거북선 함대', en: 'Seori Merge Armada: Turtle' },
+		updatedOn: '2026-09-25',
+		name: { ko: '머지 함대: 해전 전략', en: 'Merge Fleet: Naval Battles' },
 		tagline: {
-			ko: '함선을 합쳐 진형을 완성하는 해전 전략 게임',
+			ko: '진형을 짜고 함선을 합쳐, 자동 해전에서 거북선 함대를 지휘하세요.',
 			en: 'Merge ships, shape formations, and command a fleet through naval battles.'
 		},
 		badges: { ko: ['게임'], en: ['Game'] },
@@ -304,7 +395,7 @@ export const products: Product[] = [
 			{ kind: 'google-play', packageName: 'com.seorilabs.mergearmada' },
 			{ kind: 'app-store', appId: '6812823076' }
 		],
-		media: {},
+		media: { icon: '/products/merge-armada/icon-256.webp' },
 		legal: [
 			{
 				kind: 'privacy',
@@ -327,7 +418,7 @@ export const products: Product[] = [
 		},
 		badges: { ko: ['게임'], en: ['Game'] },
 		channels: [],
-		media: {},
+		media: { icon: '/products/reascend/icon-256.webp' },
 		legal: [
 			{
 				kind: 'privacy',
@@ -358,7 +449,7 @@ export const products: Product[] = [
 		},
 		badges: { ko: ['게임'], en: ['Game'] },
 		channels: [],
-		media: {},
+		media: { icon: '/products/bloomhand/icon-256.webp' },
 		legal: [
 			{
 				kind: 'privacy',
@@ -387,7 +478,7 @@ export const products: Product[] = [
 		},
 		badges: { ko: ['게임'], en: ['Game'] },
 		channels: [],
-		media: {},
+		media: { icon: '/products/salt-compass/icon-256.webp' },
 		legal: [
 			{
 				kind: 'privacy',
@@ -403,41 +494,12 @@ export const products: Product[] = [
 		]
 	},
 	{
-		slug: 'lord-ledger',
-		order: 101,
-		status: 'upcoming',
-		category: 'game',
-		hasLanding: false,
-		updatedOn: '2026-09-09',
-		name: { ko: '삼국지 풍운록', en: 'Lord Ledger' },
-		tagline: {
-			ko: '46개 도시와 226명의 장수로 천하를 경영하는 정통 가로형 역사 전략 게임',
-			en: 'Rule 46 cities and 226 officers in a landscape Three Kingdoms strategy game.'
-		},
-		badges: { ko: ['게임'], en: ['Game'] },
-		channels: [],
-		media: {},
-		legal: [
-			{
-				kind: 'privacy',
-				path: { ko: '/apps/lord-ledger/privacy/', en: '/en/apps/lord-ledger/privacy/' },
-				updated: '2026-09-09'
-			},
-			{
-				kind: 'account-deletion',
-				path: { ko: '/apps/lord-ledger/privacy/', en: '/en/apps/lord-ledger/privacy/' },
-				updated: '2026-09-09',
-				legacyAnchor: { path: '/apps/lord-ledger/privacy/', id: 'account-deletion' }
-			}
-		]
-	},
-	{
 		slug: 'matgo',
 		order: 102,
 		status: 'upcoming',
 		category: 'game',
 		hasLanding: false,
-		updatedOn: '2026-09-09',
+		updatedOn: '2026-09-25',
 		name: { ko: '달빛 맞고', en: 'Moonlight Matgo' },
 		tagline: {
 			ko: '현금성 보상 없이 AI와 즐기는 큰 글자 오프라인 2인 맞고',
@@ -445,7 +507,7 @@ export const products: Product[] = [
 		},
 		badges: { ko: ['게임'], en: ['Game'] },
 		channels: [],
-		media: {},
+		media: { icon: '/products/matgo/icon-256.webp' },
 		legal: [
 			{
 				kind: 'privacy',
@@ -460,15 +522,16 @@ export const products: Product[] = [
 		status: 'upcoming',
 		category: 'app',
 		hasLanding: false,
-		updatedOn: '2026-08-09',
-		name: { ko: '사이클 페어', en: 'Cycle Pair' },
+		updatedOn: '2026-09-25',
+		name: { ko: '사이클 페어 : 내 기분, 주기, 컨디션을 알려요', en: 'Cycle Pair' },
+		shortName: { ko: '사이클 페어', en: 'Cycle Pair' },
 		tagline: {
 			ko: '생리주기를 함께 이해하고 대비하는 커플 케어 앱',
 			en: 'A private cycle and condition sharing app for two.'
 		},
 		badges: { ko: ['생활 앱'], en: ['App'] },
 		channels: [],
-		media: {},
+		media: { icon: '/products/cycle-pair/icon-256.webp' },
 		legal: [
 			{
 				kind: 'privacy',
@@ -484,5 +547,42 @@ export const products: Product[] = [
 				updated: '2026-08-09'
 			}
 		]
+	},
+	{
+		slug: 'alley-market-match',
+		order: 106,
+		status: 'upcoming',
+		category: 'game',
+		hasLanding: false,
+		updatedOn: '2026-09-25',
+		name: { ko: '골목상점 매치', en: 'Alley Market Match' },
+		tagline: {
+			ko: '골목시장 주문서를 3매치로 완성하는 감성 퍼즐',
+			en: 'Fill market orders in a cozy match-3 puzzle'
+		},
+		badges: { ko: ['게임'], en: ['Game'] },
+		// Google Play(com.seorilabs.alleymarketmatch)와 App Store(appId 6815288695)에 업로드해
+		// 심사를 기다리는 중이다. 공개가 확인되면 채널을 추가하고 live로 바꾼다.
+		channels: [],
+		media: { icon: '/products/alley-market-match/icon-256.webp' },
+		legal: []
+	},
+	{
+		slug: 'vernhald',
+		order: 107,
+		status: 'upcoming',
+		category: 'game',
+		hasLanding: false,
+		updatedOn: '2026-09-25',
+		name: { ko: '베른할드 연대기', en: 'Vernhald Chronicles' },
+		// 스토어 등록 전이라 제품 브리프의 한 문장을 줄여 썼다. 스토어 등록 시 등록 문구로 바꾼다.
+		tagline: {
+			ko: '연대기를 읽고 5~7인 파티를 편성해 자동 전투로 싸우는 수집형 오토 RPG',
+			en: 'Read the chronicle, form a party of five to seven, and fight in auto battles in a collectible RPG'
+		},
+		badges: { ko: ['게임'], en: ['Game'] },
+		channels: [],
+		media: { icon: '/products/vernhald/icon-256.webp' },
+		legal: []
 	}
 ];

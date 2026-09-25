@@ -76,14 +76,11 @@
 			<section class="upcoming" aria-labelledby="upcoming-title">
 				<h2 id="upcoming-title">{c.upcomingHeading}</h2>
 				<p class="upcoming-note">{c.upcomingNote}</p>
-				<ul>
+				<div class="grid upcoming-grid">
 					{#each upcomingProducts as product (product.slug)}
-						<li>
-							<strong>{product.name[locale]}</strong>
-							<span>{product.tagline[locale]}</span>
-						</li>
+						<ProductCard {product} {locale} placement="apps_card" />
 					{/each}
-				</ul>
+				</div>
 			</section>
 		{/if}
 	</main>
@@ -167,28 +164,8 @@
 		word-break: keep-all;
 	}
 
-	.upcoming ul {
-		margin: 22px 0 0;
-		padding: 0;
-		list-style: none;
-		display: grid;
-		gap: 14px;
-	}
-
-	.upcoming li {
-		display: grid;
-		gap: 4px;
-	}
-
-	.upcoming strong {
-		color: var(--c-text-strong);
-	}
-
-	.upcoming span {
-		color: rgba(19, 32, 39, 0.66);
-		font-size: 0.92rem;
-		line-height: 1.6;
-		word-break: keep-all;
+	.upcoming-grid {
+		margin-top: 22px;
 	}
 
 	@media (max-width: 720px) {

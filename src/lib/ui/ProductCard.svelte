@@ -11,8 +11,11 @@
 		placement
 	}: { product: Product; locale: Locale; placement: AnalyticsPlacement } = $props();
 
+	// 출시 전 제품은 랜딩도 스토어 버튼도 만들지 않는다. 미공개 채널이 원장에 적혀 있어도
+	// 스토어 페이지가 없어 죽은 링크가 되기 때문이다.
+	const isLive = $derived(product.status === 'live');
 	const landingHref = $derived(
-		product.hasLanding ? `${locale === 'ko' ? '' : '/en'}/apps/${product.slug}/` : null
+		isLive && product.hasLanding ? `${locale === 'ko' ? '' : '/en'}/apps/${product.slug}/` : null
 	);
 	const name = $derived(product.name[locale]);
 </script>
@@ -35,13 +38,15 @@
 				<li>{badge}</li>
 			{/each}
 		</ul>
-		<StoreLinks
-			channels={product.channels}
-			{locale}
-			productSlug={product.slug}
-			productName={shortName(product, locale)}
-			{placement}
-		/>
+		{#if isLive}
+			<StoreLinks
+				channels={product.channels}
+				{locale}
+				productSlug={product.slug}
+				productName={shortName(product, locale)}
+				{placement}
+			/>
+		{/if}
 		{#if landingHref}
 			<a class="more" href={landingHref}>
 				{locale === 'ko' ? '자세히 보기' : 'Learn more'} →
