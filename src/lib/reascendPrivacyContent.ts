@@ -7,7 +7,7 @@ export const reascendPrivacyContent: Record<'ko' | 'en', PrivacyContent> = {
 		description:
 			'리어센드의 계정 식별자, 클라우드 저장, 순위표, 분석 및 광고 처리에 관한 개인정보 처리방침입니다.',
 		kicker: 'Reascend Privacy Policy',
-		lastUpdated: '2026년 9월 23일',
+		lastUpdated: '2026년 9월 25일',
 		lastUpdatedLabel: '시행일 및 최종 수정일',
 		backLabel: '서리랩스 홈으로',
 		languageLabel: '언어',
@@ -19,7 +19,7 @@ export const reascendPrivacyContent: Record<'ko' | 'en', PrivacyContent> = {
 				body: [
 					'앱은 이름, 이메일, 전화번호, 생년월일 같은 개인 식별 정보를 입력받지 않으며 수집하지도 않습니다. 회원가입 화면도 없습니다.',
 					'대신 앱을 처음 실행하면 Seori Labs Platform을 통해 Firebase 인증 계정이 자동으로 만들어지고, 그 계정의 식별자(uid)가 플레이어 식별자가 됩니다. 이 식별자는 무작위 문자열이며 이용자의 실명이나 연락처와 연결되지 않습니다.',
-					'플레이어 식별자는 기기 이전 코드로도 쓰입니다. 새 기기에서 이 값을 입력하면 클라우드 저장본을 가져올 수 있으며, 서버는 요청자의 인증 계정과 식별자가 일치할 때만 저장본을 내어 줍니다.'
+					'플레이어 식별자는 기기 이전 코드로 제공되지 않습니다. 웹 계정 삭제 요청에 쓸 별도의 지원 코드는 앱 설정에서 발급하며, 서버에는 코드 원문 대신 해시값만 저장합니다.'
 				]
 			},
 			{
@@ -68,8 +68,8 @@ export const reascendPrivacyContent: Record<'ko' | 'en', PrivacyContent> = {
 			{
 				title: '보관과 삭제',
 				body: [
-					'기기에 저장된 진행 상황은 앱을 삭제하면 함께 제거됩니다. 다만 클라우드 저장본은 서버에 남아 있어, 같은 식별자로 다시 접속하면 복구됩니다.',
-					'서버의 진행 상황은 이용자가 삭제를 요청하거나 계정을 삭제할 때까지 보관합니다. 저장본은 손상 복구를 위해 직전 세대 한 벌을 함께 보관합니다.',
+					'기기에 저장된 진행 상황은 앱을 삭제하면 함께 제거됩니다. 클라우드 저장본은 서버에 남지만 새로 설치한 앱에는 새 게스트 계정이 만들어지므로 기존 진행이 자동 복구되지는 않습니다.',
+					'서버의 진행 상황은 이용자가 삭제를 요청하거나 계정을 삭제할 때까지 보관합니다. 손상 복구와 저장 충돌 확인을 위한 보관본도 함께 저장될 수 있습니다.',
 					'분석 데이터는 Google 애널리틱스에 설정된 보관 기간 동안 보관된 뒤 삭제되거나 집계·비식별화됩니다.',
 					`계정과 데이터 삭제 방법은 별도 안내 페이지에 정리되어 있습니다. 문의는 ${site.email}로 보내주세요.`
 				]
@@ -108,7 +108,7 @@ export const reascendPrivacyContent: Record<'ko' | 'en', PrivacyContent> = {
 		description:
 			'How Reascend handles account identifiers, cloud saves, leaderboards, analytics, and advertising.',
 		kicker: 'Reascend Privacy Policy',
-		lastUpdated: '23 September 2026',
+		lastUpdated: '25 September 2026',
 		lastUpdatedLabel: 'Effective and last updated',
 		backLabel: 'Back to Seori Labs',
 		languageLabel: 'Language',
@@ -120,7 +120,7 @@ export const reascendPrivacyContent: Record<'ko' | 'en', PrivacyContent> = {
 				body: [
 					'The app does not ask for or collect personally identifying information such as your name, email address, phone number, or date of birth. There is no sign-up screen.',
 					'Instead, the first time you open the app, a Firebase authentication account is created automatically through Seori Labs Platform, and that account’s identifier (uid) becomes your player identifier. It is a random string and is not linked to your real name or contact details.',
-					'The player identifier also serves as your device transfer code. Entering it on a new device restores your cloud save, and the server releases a save only when the requester’s authenticated account matches that identifier.'
+					'The player identifier is not offered as a device transfer code. The app can issue a separate support code for a web account deletion request; the server stores its hash rather than the code itself.'
 				]
 			},
 			{
@@ -169,8 +169,8 @@ export const reascendPrivacyContent: Record<'ko' | 'en', PrivacyContent> = {
 			{
 				title: 'Retention and deletion',
 				body: [
-					'Progress stored on your device is removed when you uninstall the app. The cloud save remains on the server, so signing in again with the same identifier restores it.',
-					'Server-side progress is retained until you request deletion or delete your account. One previous generation of the save is retained alongside the current one so that a corrupted save can be recovered.',
+					'Progress stored on your device is removed when you uninstall the app. The cloud save remains on the server, but a new installation creates a new guest account and does not automatically recover the old progress.',
+					'Server-side progress is retained until you request deletion or delete your account. Copies may also be kept to recover a corrupted save or examine a save conflict.',
 					'Analytics data is retained for the period configured in Google Analytics, after which it is deleted or aggregated and de-identified.',
 					`A separate page explains how to delete your account and data. For questions, write to ${site.email}.`
 				]
