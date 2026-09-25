@@ -5,7 +5,7 @@ export const jomulPrivacyContent: Record<'ko' | 'en', PrivacyContent> = {
 		title: '조물조물 개인정보처리방침',
 		description: '조물조물 만물 합치기의 아동 대상 개인정보 처리 안내',
 		kicker: 'Jomul Privacy Policy',
-		lastUpdated: '2026-09-06',
+		lastUpdated: '2026-09-25',
 		lastUpdatedLabel: '최종 수정일',
 		backLabel: '서리랩스 홈으로',
 		languageLabel: '언어',
@@ -24,7 +24,7 @@ export const jomulPrivacyContent: Record<'ko' | 'en', PrivacyContent> = {
 				body: [
 					'Android와 iOS는 온라인 기능을 위해 무작위 Platform 사용자 식별자, Firebase UID와 지원 코드를 사용합니다. 이름이나 연락처를 입력하는 회원 가입이나 로그인을 요구하지 않습니다.',
 					'발견한 원소와 조합, 챕터 진행, 힌트 잔량과 일일 보상 기록을 기기에 저장하며, 온라인 기능이 연결되면 Firebase Firestore에 백업합니다. 기본 게임 콘텐츠는 기기에 포함되어 있어 인터넷 없이 플레이할 수 있습니다.',
-					'게임 시작, 조합 시도·발견, 챕터 진행, 힌트 사용, 화면 이용 등 허용된 게임 이벤트를 Platform에 전송합니다. 게임 기능과 사용 흐름을 확인하기 위한 데이터이며 자유 입력 텍스트를 전송하지 않습니다. 무작위 사용자 식별자와 연결될 수 있으므로 개인을 입력받지 않는다는 이유로 완전한 익명 데이터라고 취급하지 않습니다.'
+					'게임 시작, 조합 시도·발견, 챕터 진행, 힌트 사용, 화면 이용 등 허용된 게임 이벤트를 Google Analytics for Firebase(Android·iOS 앱)와 Google Analytics(AppsInToss 웹)로 전송합니다. 게임 기능과 사용 흐름을 확인하기 위한 내부 운영 목적의 데이터이며 자유 입력 텍스트를 전송하지 않습니다. 이 분석 SDK는 앱 인스턴스 식별자, 기기·OS 정보, 앱 버전, IP 주소로 추정한 국가 수준의 위치를 함께 처리합니다. 광고 저장·광고 개인화 동의는 거부로 고정하고 Android 광고 ID와 iOS IDFA·IDFV는 수집하지 않으며, 분석 데이터를 광고 프로필이나 교차 앱 추적에 쓰지 않습니다. 무작위 식별자와 연결될 수 있으므로 개인을 입력받지 않는다는 이유로 완전한 익명 데이터라고 취급하지 않습니다.'
 				]
 			},
 			{
@@ -38,7 +38,7 @@ export const jomulPrivacyContent: Record<'ko' | 'en', PrivacyContent> = {
 			{
 				title: '서비스 제공자와 전송',
 				body: [
-					'Seori Labs의 Platform과 Google Firebase·Google Cloud는 인증, 백업, 이벤트 처리와 서비스 운영을 담당합니다. Google AdMob은 선택적 광고를 제공합니다. 네트워크 요청은 HTTPS/TLS를 사용하며 서비스 제공자 위치에 따라 국외에서 처리될 수 있습니다.',
+					'Seori Labs의 Platform과 Google Firebase·Google Cloud는 인증, 백업과 서비스 운영을 담당하고, Google Analytics for Firebase와 Google Analytics는 게임 이벤트 분석을 담당합니다. Google AdMob은 선택적 광고를 제공합니다. 네트워크 요청은 HTTPS/TLS를 사용하며 서비스 제공자 위치에 따라 국외에서 처리될 수 있습니다.',
 					'Google의 데이터 처리 안내: https://policies.google.com/privacy 및 https://developers.google.com/admob/ios/privacy/data-disclosure 및 https://developers.google.com/admob/android/privacy/play-data-disclosure',
 					'개인정보를 판매하지 않습니다. 앱별 수집 항목은 각 마켓의 Data safety 및 App Privacy에도 표시합니다.'
 				]
@@ -48,7 +48,7 @@ export const jomulPrivacyContent: Record<'ko' | 'en', PrivacyContent> = {
 				title: '계정·데이터 삭제 요청과 보관 안내',
 				body: [
 					'진행 백업과 온라인 식별자는 게임 기능을 제공하는 동안 보관하며 아래 삭제 기능이나 보호자 요청으로 삭제할 수 있습니다. 문의 기록은 답변과 후속 연락에 필요한 기간, 기술 로그는 보안·장애 대응·운영 안정성에 필요한 기간 동안 보관한 뒤 삭제하거나 비식별화합니다. 법령상 보관 의무가 있는 정보는 해당 법령의 기간을 적용합니다.',
-					'기기의 진행·설정은 앱 내 진행 삭제 또는 앱 제거 시 삭제됩니다. 앱 제거만으로 서버 데이터가 삭제되지는 않습니다. 설정의 진행 지우기는 부모 게이트 뒤에서 백업, Platform 사용자 매핑과 Firebase 사용자 삭제를 요청합니다. 연결 실패 시 온라인 삭제가 완료되지 않았음을 표시하며 다시 시도할 수 있습니다.',
+					'기기의 진행·설정은 앱 내 진행 삭제 또는 앱 제거 시 삭제됩니다. 앱 제거만으로 서버 데이터가 삭제되지는 않습니다. 설정의 진행 지우기는 부모 게이트 뒤에서 백업, Platform 사용자 매핑과 Firebase 사용자 삭제를 요청하고 분석 SDK의 앱 인스턴스 식별자를 새로 만듭니다. 연결 실패 시 온라인 삭제가 완료되지 않았음을 표시하며 다시 시도할 수 있습니다.',
 					'보호자는 cs@seorilabs.com으로 데이터 열람·정정·삭제 및 처리 중단을 요청할 수 있습니다. 확인에 필요한 경우 앱에 표시되는 지원 코드를 요청할 수 있으며 비밀번호나 인증 토큰을 보내지 마세요. 광고 제공자가 처리하는 데이터는 해당 제공자의 보관·삭제 정책도 적용됩니다.',
 					'진행 삭제가 이미 전송된 모든 분석·광고·보안 기록을 즉시 삭제한다는 뜻은 아닙니다. 해당 기록에 대한 요청은 위 연락처로 접수합니다.'
 				]
@@ -68,7 +68,7 @@ export const jomulPrivacyContent: Record<'ko' | 'en', PrivacyContent> = {
 		title: 'Jomul Privacy Policy',
 		description: 'Data practices for the child-directed Jomul puzzle game.',
 		kicker: 'Jomul Privacy Policy',
-		lastUpdated: '2026-09-06',
+		lastUpdated: '2026-09-25',
 		lastUpdatedLabel: 'Last updated',
 		backLabel: 'Back home',
 		languageLabel: 'Language',
@@ -87,7 +87,7 @@ export const jomulPrivacyContent: Record<'ko' | 'en', PrivacyContent> = {
 				body: [
 					'Android and iOS use random Platform identifiers, Firebase UIDs and support codes for online features without a registration or sign-in form.',
 					'Discovered elements and recipes, chapter progress, hint balances and daily reward records are stored on the device and backed up to Firebase Firestore when online features are connected. All core game content is bundled for offline play.',
-					'Allowlisted events about sessions, combinations, discoveries, chapter progress, hints and screen interactions are sent to Platform to understand game operation and usage. No free-form text is sent. These records may be linked to a random user identifier and are not treated as fully anonymous.'
+					'Allowlisted events about sessions, combinations, discoveries, chapter progress, hints and screen interactions are sent to Google Analytics for Firebase (Android and iOS apps) and Google Analytics (AppsInToss web) to understand game operation and usage for internal operations only. No free-form text is sent. The analytics SDK also processes an app instance identifier, device and OS information, the app version and a country-level location inferred from the IP address. Advertising storage and personalization consent are fixed to denied, the Android advertising ID and iOS IDFA/IDFV are not collected, and analytics data is not used for ad profiling or cross-app tracking. These records may be linked to a random identifier and are not treated as fully anonymous.'
 				]
 			},
 			{
@@ -101,7 +101,7 @@ export const jomulPrivacyContent: Record<'ko' | 'en', PrivacyContent> = {
 			{
 				title: 'Providers and transmission',
 				body: [
-					'Seori Labs Platform and Google Firebase/Google Cloud support authentication, backups, event processing and operations. Google AdMob provides optional ads. Requests use HTTPS/TLS. Data may be processed outside your country depending on provider server locations.',
+					'Seori Labs Platform and Google Firebase/Google Cloud support authentication, backups and operations, and Google Analytics for Firebase and Google Analytics process game event analytics. Google AdMob provides optional ads. Requests use HTTPS/TLS. Data may be processed outside your country depending on provider server locations.',
 					'Google disclosures: https://policies.google.com/privacy, https://developers.google.com/admob/ios/privacy/data-disclosure and https://developers.google.com/admob/android/privacy/play-data-disclosure',
 					'We do not sell personal information. App data types are also disclosed in store Data safety and App Privacy labels.'
 				]
@@ -111,7 +111,7 @@ export const jomulPrivacyContent: Record<'ko' | 'en', PrivacyContent> = {
 				title: 'Request account and data deletion; retention information',
 				body: [
 					'Progress backups and online identifiers are retained while providing game functionality and can be deleted using the reset function or a parental request. Contact records are kept as needed for responses and follow-up. Technical logs are kept as needed for security, troubleshooting and operational reliability, then deleted or de-identified. Legally required records are retained for the period required by law.',
-					'Local progress and settings are removed by resetting progress or uninstalling the app. Uninstalling alone does not delete server data. Reset progress, behind the parental gate, requests deletion of the backup, Platform identity mapping and Firebase user. Online deletion failures are shown and can be retried.',
+					'Local progress and settings are removed by resetting progress or uninstalling the app. Uninstalling alone does not delete server data. Reset progress, behind the parental gate, requests deletion of the backup, Platform identity mapping and Firebase user, and resets the analytics app instance identifier. Online deletion failures are shown and can be retried.',
 					'Parents can request access, correction, deletion or cessation of processing at cs@seorilabs.com. We may request the app support code to locate records. Do not send passwords or authentication tokens. Ad provider data is also subject to its retention and deletion policies.',
 					'Resetting progress does not imply immediate deletion of all previously sent analytics, advertising or security records. Contact us for requests concerning those records.'
 				]
