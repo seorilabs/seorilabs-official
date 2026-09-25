@@ -7,15 +7,17 @@ export const reascendAccountDeletionContent: Record<Locale, LegalPageContent> = 
 		description:
 			'서리랩스 리어센드의 계정과 진행 데이터를 삭제하는 방법과, 삭제되는 항목 및 처리 기간을 안내합니다.',
 		kicker: 'Reascend Account Deletion',
-		lastUpdated: '2026년 9월 23일',
+		lastUpdated: '2026년 9월 25일',
 		intro:
 			'리어센드는 Seori Labs가 제공합니다. 아래 방법으로 계정과 연결된 진행 데이터를 영구 삭제할 수 있습니다.',
 		sections: [
 			{
 				title: '삭제 요청 방법',
 				body: [
+					'앱을 사용할 수 있다면 설정 → 계정·데이터 관리 → 계정 삭제에서 바로 요청할 수 있습니다.',
 					`${site.email}로 이메일을 보내 삭제를 요청할 수 있습니다. 제목에 "리어센드 계정 삭제 요청"이라고 적어 주세요.`,
-					'본문에는 앱 설정 화면에 표시되는 기기 이전 코드를 적어 주세요. 이 값이 계정을 특정하는 식별자입니다. 설정 화면을 열 수 없다면 사용 기기와 대략적인 최초 실행 시점, 최고 도달 층과 스테이지를 알려 주세요.',
+					'본문에는 앱 설정 → 계정·데이터 관리 → 지원 코드 복사에서 받은 코드를 적어 주세요. 새 코드를 복사하면 이전 코드는 무효가 됩니다. 앱을 지우기 전에 코드를 보관해 주세요. 앱을 이미 지웠다면 보관한 지원 코드 또는 구매 영수증의 주문 번호를 알려 주세요.',
+					'지원 코드와 구매 주문 번호가 모두 없으면 기존 계정을 확인하기 어려울 수 있습니다. 이 경우에도 문의해 주시면 확인 가능한 방법을 안내하겠습니다. 사용 기기나 진행 상황만으로는 타인의 계정을 삭제하지 않습니다.',
 					'타인의 데이터 삭제를 막기 위해 최소한의 확인 절차를 안내할 수 있으며, 확인이 끝나면 삭제 결과를 회신합니다.',
 					'앱에는 이름, 이메일, 전화번호 같은 개인 식별 정보가 저장되어 있지 않습니다. 확인에 필요하지 않은 개인정보는 이메일로 보내지 마세요.'
 				]
@@ -41,7 +43,7 @@ export const reascendAccountDeletionContent: Record<Locale, LegalPageContent> = 
 				title: '처리 시점',
 				body: [
 					'요청을 확인한 날로부터 영업일 기준 7일 이내에 삭제하고 결과를 회신합니다.',
-					'삭제가 끝나면 같은 기기 이전 코드로는 진행을 복구할 수 없습니다. 삭제 후 앱을 다시 실행하면 새 계정으로 처음부터 시작합니다.',
+					'삭제가 끝나면 지원 코드는 더 이상 해당 계정을 가리키지 않습니다. 삭제 후 앱을 다시 실행하면 새 계정으로 처음부터 시작합니다.',
 					'삭제는 되돌릴 수 없습니다. 진행을 남겨 두고 싶다면 요청 전에 다시 확인해 주세요.'
 				]
 			},
@@ -59,15 +61,17 @@ export const reascendAccountDeletionContent: Record<Locale, LegalPageContent> = 
 		description:
 			'How to delete your Reascend account and progress data, what is removed, and how long it takes.',
 		kicker: 'Reascend Account Deletion',
-		lastUpdated: '23 September 2026',
+		lastUpdated: '25 September 2026',
 		intro:
 			'Reascend is provided by Seori Labs. You can permanently delete the progress data associated with your account using the steps below.',
 		sections: [
 			{
 				title: 'How to request deletion',
 				body: [
+					'If you can open the app, go to Settings → Account & Data → Delete Account to submit a request directly.',
 					`Write to ${site.email} to request deletion. Please put "Reascend account deletion request" in the subject line.`,
-					'In the message, include the device transfer code shown on the app’s settings screen. That value is the identifier for your account. If you cannot open the settings screen, tell us the device you used, roughly when you first played, and the highest tower and stage you reached.',
+					'Include the code from Settings → Account & Data → Copy Support Code. Copying a new code invalidates the previous one. Keep the code before uninstalling the app. If you already uninstalled it, send a saved support code or the order number from a purchase receipt.',
+					'If you have neither a support code nor a purchase order number, contact us so we can explain any available verification steps. A device description or game progress alone is not enough to delete an account.',
 					'To prevent anyone from deleting someone else’s data, we may ask you to complete a minimal verification step, and we will reply once deletion is complete.',
 					'The app does not store personally identifying information such as your name, email address, or phone number. Please do not send personal details that are not needed for verification.'
 				]
@@ -93,7 +97,7 @@ export const reascendAccountDeletionContent: Record<Locale, LegalPageContent> = 
 				title: 'Timing',
 				body: [
 					'We delete the data and reply within 7 business days of verifying your request.',
-					'Once deletion is complete, the same device transfer code can no longer restore your progress. Opening the app afterwards starts a new account from the beginning.',
+					'Once deletion is complete, the support code no longer identifies that account. Opening the app afterwards starts a new account from the beginning.',
 					'Deletion cannot be undone. If you want to keep your progress, please reconsider before sending the request.'
 				]
 			},
