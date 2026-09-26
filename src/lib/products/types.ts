@@ -9,7 +9,7 @@ export type ProductCategory = 'game' | 'app';
  */
 export type StoreChannel =
 	| { kind: 'google-play'; packageName: string }
-	| { kind: 'app-store'; appId: string }
+	| { kind: 'app-store'; appId: string; country?: string }
 	| { kind: 'apps-in-toss' };
 
 export type LegalDocKind = 'privacy' | 'terms' | 'account-deletion';

@@ -376,25 +376,20 @@ export const products: Product[] = [
 		legal: []
 	},
 
-	// 아래는 아직 출시 전이다. /apps/의 준비 중 카드로만 노출하고 스토어 버튼은 만들지 않는다.
-	// 개인정보처리방침은 이미 스토어 심사에 쓰이고 있으므로 경로와 sitemap 등재를 유지한다.
 	{
 		slug: 'merge-armada',
 		order: 99,
-		status: 'upcoming',
+		status: 'live',
 		category: 'game',
 		hasLanding: false,
-		updatedOn: '2026-09-25',
+		updatedOn: '2026-09-26',
 		name: { ko: '머지 함대: 해전 전략', en: 'Merge Fleet: Naval Battles' },
 		tagline: {
 			ko: '진형을 짜고 함선을 합쳐, 자동 해전에서 거북선 함대를 지휘하세요.',
 			en: 'Merge ships, shape formations, and command a fleet through naval battles.'
 		},
 		badges: { ko: ['게임'], en: ['Game'] },
-		channels: [
-			{ kind: 'google-play', packageName: 'com.seorilabs.mergearmada' },
-			{ kind: 'app-store', appId: '6812823076' }
-		],
+		channels: [{ kind: 'app-store', appId: '6812823076', country: 'us' }],
 		media: { icon: '/products/merge-armada/icon-256.webp' },
 		legal: [
 			{
@@ -551,19 +546,17 @@ export const products: Product[] = [
 	{
 		slug: 'alley-market-match',
 		order: 106,
-		status: 'upcoming',
+		status: 'live',
 		category: 'game',
 		hasLanding: false,
-		updatedOn: '2026-09-25',
+		updatedOn: '2026-09-26',
 		name: { ko: '골목상점 매치', en: 'Alley Market Match' },
 		tagline: {
 			ko: '골목시장 주문서를 3매치로 완성하는 감성 퍼즐',
 			en: 'Fill market orders in a cozy match-3 puzzle'
 		},
 		badges: { ko: ['게임'], en: ['Game'] },
-		// Google Play(com.seorilabs.alleymarketmatch)와 App Store(appId 6815288695)에 업로드해
-		// 심사를 기다리는 중이다. 공개가 확인되면 채널을 추가하고 live로 바꾼다.
-		channels: [],
+		channels: [{ kind: 'app-store', appId: '6815288695' }],
 		media: { icon: '/products/alley-market-match/icon-256.webp' },
 		legal: []
 	},
