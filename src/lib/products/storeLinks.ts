@@ -3,7 +3,8 @@ import type { StoreChannel } from '$lib/products/types';
 export const playUrl = (packageName: string) =>
 	`https://play.google.com/store/apps/details?id=${packageName}`;
 
-export const appStoreUrl = (appId: string) => `https://apps.apple.com/kr/app/id${appId}`;
+export const appStoreUrl = (appId: string, country = 'kr') =>
+	`https://apps.apple.com/${country}/app/id${appId}`;
 
 /** 채널의 공개 웹 URL. 앱인토스는 URL이 없어 null을 돌려준다. */
 export function channelUrl(channel: StoreChannel): string | null {
@@ -11,7 +12,7 @@ export function channelUrl(channel: StoreChannel): string | null {
 		case 'google-play':
 			return playUrl(channel.packageName);
 		case 'app-store':
-			return appStoreUrl(channel.appId);
+			return appStoreUrl(channel.appId, channel.country);
 		case 'apps-in-toss':
 			return null;
 	}
