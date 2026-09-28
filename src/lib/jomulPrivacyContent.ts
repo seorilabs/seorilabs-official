@@ -5,7 +5,7 @@ export const jomulPrivacyContent: Record<'ko' | 'en', PrivacyContent> = {
 		title: '조물조물 개인정보처리방침',
 		description: '조물조물 만물 합치기의 아동 대상 개인정보 처리 안내',
 		kicker: 'Jomul Privacy Policy',
-		lastUpdated: '2026-09-25',
+		lastUpdated: '2026-09-27',
 		lastUpdatedLabel: '최종 수정일',
 		backLabel: '서리랩스 홈으로',
 		languageLabel: '언어',
@@ -28,9 +28,9 @@ export const jomulPrivacyContent: Record<'ko' | 'en', PrivacyContent> = {
 				]
 			},
 			{
-				title: '선택적 리워드 광고',
+				title: '힌트 리워드와 발견 전면광고',
 				body: [
-					'힌트 화면에서 이용자가 선택하는 리워드 광고만 사용합니다. 전면광고, 배너와 앱 시작 광고는 없습니다. 개인화 광고를 요청하지 않으며, 아동 대상 처리와 최대 광고 콘텐츠 등급 G를 SDK 초기화 전에 적용합니다.',
+					'힌트 화면에서 이용자가 선택하는 리워드 광고와 새 조합 발견 결과를 닫은 뒤 표시되는 전면광고를 사용합니다. 전면광고는 초반 플레이를 보호하고, 발견 수와 플레이 시간에 따른 간격 및 하루 횟수 제한을 적용합니다. 배너와 앱 시작 광고는 없습니다. 개인화 광고를 요청하지 않으며, 아동 대상 처리와 최대 광고 콘텐츠 등급 G를 SDK 초기화 전에 적용합니다.',
 					'광고 기능은 Google AdMob을 사용합니다. Google Mobile Ads SDK는 IP 주소와 그로부터 추정되는 대략적 위치, 앱·기기 범위 식별자, 광고 시청 및 상호작용, 성능·진단 정보를 광고 제공, 측정 및 부정 이용 방지를 위해 처리하고 공유할 수 있습니다. iOS SDK는 충돌 정보도 처리할 수 있습니다.',
 					'앱은 Android 광고 ID 권한과 iOS IDFA·ATT를 사용하지 않습니다. 이것이 IP 주소나 다른 앱·기기 식별자의 처리가 없다는 뜻은 아닙니다. 광고 보상 검증에는 무작위 사용자 ID, 보상 요청 식별자 및 광고 검증 결과가 사용됩니다.'
 				]
@@ -38,7 +38,7 @@ export const jomulPrivacyContent: Record<'ko' | 'en', PrivacyContent> = {
 			{
 				title: '서비스 제공자와 전송',
 				body: [
-					'Seori Labs의 Platform과 Google Firebase·Google Cloud는 인증, 백업과 서비스 운영을 담당하고, Google Analytics for Firebase와 Google Analytics는 게임 이벤트 분석을 담당합니다. Google AdMob은 선택적 광고를 제공합니다. 네트워크 요청은 HTTPS/TLS를 사용하며 서비스 제공자 위치에 따라 국외에서 처리될 수 있습니다.',
+					'Seori Labs의 Platform과 Google Firebase·Google Cloud는 인증, 백업과 서비스 운영을 담당하고, Google Analytics for Firebase와 Google Analytics는 게임 이벤트 분석을 담당합니다. Google AdMob은 힌트 리워드와 발견 전면광고를 제공합니다. 네트워크 요청은 HTTPS/TLS를 사용하며 서비스 제공자 위치에 따라 국외에서 처리될 수 있습니다.',
 					'Google의 데이터 처리 안내: https://policies.google.com/privacy 및 https://developers.google.com/admob/ios/privacy/data-disclosure 및 https://developers.google.com/admob/android/privacy/play-data-disclosure',
 					'개인정보를 판매하지 않습니다. 앱별 수집 항목은 각 마켓의 Data safety 및 App Privacy에도 표시합니다.'
 				]
@@ -68,7 +68,7 @@ export const jomulPrivacyContent: Record<'ko' | 'en', PrivacyContent> = {
 		title: 'Jomul Privacy Policy',
 		description: 'Data practices for the child-directed Jomul puzzle game.',
 		kicker: 'Jomul Privacy Policy',
-		lastUpdated: '2026-09-25',
+		lastUpdated: '2026-09-27',
 		lastUpdatedLabel: 'Last updated',
 		backLabel: 'Back home',
 		languageLabel: 'Language',
@@ -91,9 +91,9 @@ export const jomulPrivacyContent: Record<'ko' | 'en', PrivacyContent> = {
 				]
 			},
 			{
-				title: 'Optional rewarded advertising',
+				title: 'Hint rewards and discovery interstitial ads',
 				body: [
-					'Only user-initiated rewarded ads in the hints screen are offered. There are no interstitial, banner or app-open ads. Requests are non-personalized, with child-directed treatment and a maximum G content rating applied before SDK initialization.',
+					'The app offers user-initiated rewarded ads on the hint screen and interstitial ads after the player closes a new discovery result. Interstitial ads protect early play and use discovery-count intervals, active-play-time intervals and a daily limit. There are no banner or app-open ads. Requests are non-personalized, with child-directed treatment and a maximum G content rating applied before SDK initialization.',
 					'Google AdMob provides ads. Its SDK may process and share IP addresses and inferred approximate location, app- or device-scoped identifiers, ad views and interactions, performance and diagnostic information for advertising, measurement and fraud prevention. The iOS SDK may also process crash information.',
 					'The app does not use the Android advertising ID permission, iOS IDFA or ATT. Other identifiers and IP processing can still occur. Reward verification uses random user IDs, claim identifiers and ad verification results.'
 				]
@@ -101,7 +101,7 @@ export const jomulPrivacyContent: Record<'ko' | 'en', PrivacyContent> = {
 			{
 				title: 'Providers and transmission',
 				body: [
-					'Seori Labs Platform and Google Firebase/Google Cloud support authentication, backups and operations, and Google Analytics for Firebase and Google Analytics process game event analytics. Google AdMob provides optional ads. Requests use HTTPS/TLS. Data may be processed outside your country depending on provider server locations.',
+					'Seori Labs Platform and Google Firebase/Google Cloud support authentication, backups and operations, and Google Analytics for Firebase and Google Analytics process game event analytics. Google AdMob provides hint rewards and discovery interstitial ads. Requests use HTTPS/TLS. Data may be processed outside your country depending on provider server locations.',
 					'Google disclosures: https://policies.google.com/privacy, https://developers.google.com/admob/ios/privacy/data-disclosure and https://developers.google.com/admob/android/privacy/play-data-disclosure',
 					'We do not sell personal information. App data types are also disclosed in store Data safety and App Privacy labels.'
 				]
