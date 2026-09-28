@@ -381,8 +381,8 @@ export const products: Product[] = [
 		order: 99,
 		status: 'live',
 		category: 'game',
-		hasLanding: false,
-		updatedOn: '2026-09-26',
+		hasLanding: true,
+		updatedOn: '2026-09-28',
 		name: { ko: '머지 함대: 해전 전략', en: 'Merge Fleet: Naval Battles' },
 		tagline: {
 			ko: '진형을 짜고 함선을 합쳐, 자동 해전에서 거북선 함대를 지휘하세요.',
