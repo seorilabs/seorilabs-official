@@ -51,7 +51,12 @@ export const products: Product[] = [
 			{
 				kind: 'privacy',
 				path: { ko: '/apps/lizard-tycoon/privacy/', en: '/en/apps/lizard-tycoon/privacy/' },
-				updated: '2026-08-14'
+				updated: '2026-09-30'
+			},
+			{
+				kind: 'terms',
+				path: { ko: '/apps/lizard-tycoon/terms/', en: '/en/apps/lizard-tycoon/terms/' },
+				updated: '2026-09-30'
 			}
 		]
 	},

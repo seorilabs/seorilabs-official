@@ -7,7 +7,7 @@ export const lizardTycoonPrivacyContent: Record<'ko' | 'en', PrivacyContent> = {
 		description:
 			'내 도마뱀 키우기: 픽셀 테라리움 육성의 게임 데이터, 분석 및 인앱결제 처리에 관한 개인정보 처리방침입니다.',
 		kicker: 'Lizard Terrarium Privacy Policy',
-		lastUpdated: '2026년 8월 14일',
+		lastUpdated: '2026년 9월 30일',
 		lastUpdatedLabel: '시행일 및 최종 수정일',
 		backLabel: '서리랩스 홈으로',
 		languageLabel: '언어',
@@ -22,6 +22,8 @@ export const lizardTycoonPrivacyContent: Record<'ko' | 'en', PrivacyContent> = {
 					'서비스 안정성을 확인하기 위해 릴리스 빌드에서 발생한 GDScript 오류의 앱 내부 파일 경로(res://), 코드 라인, 오류 유형과 허용 목록 오류 분류, 최대 2개의 파일·함수·라인 프레임을 진단 데이터로 처리합니다. 같은 파일·라인은 실행 세션당 1회, 실행 세션당 전체 20건으로 제한합니다. 오류 원문, 로컬·멤버 변수, 게임 저장 내용, 기기의 절대 사용자 경로는 수집하지 않습니다.',
 					'Google Play와 Apple App Store에서는 기존 구매 권한 확인과 복원을 위해 Firebase 익명 설치 사용자 ID를 사용합니다. AppsInToss에서는 토스 로그인으로 받은 앱 범위 사용자 키를 서버에서 즉시 SHA-256 처리한 Platform 사용자 식별자를 사용합니다. 원본 사용자 키는 저장하거나 앱에 반환하지 않습니다.',
 					'AppsInToss 토스 로그인 동의 과정에서 토스가 이름을 제공할 수 있지만 Seori Labs는 이름을 기능에 사용하거나 서버에 저장하지 않습니다. 인앱결제를 선택한 경우 마켓·상품 ID, 구매 또는 주문의 거래 참조값과 토큰, 권한·환불 상태 및 처리 시각을 구매 검증과 복원 원장에 저장합니다. 결제 카드번호와 은행계좌 정보는 Seori Labs가 수집하지 않습니다.',
+					'크리스털(유료 재화)을 사용하는 경우 유상·무상 크리스털 잔액, 연구 조각과 증표, 모프 상자 열기 요청과 결과, 보장 횟수, 연구·탐사 상태, 지급·차감 시각과 관련 주문 참조를 서버 원장에 저장합니다. 결과는 서버가 정하며 요청별 기록은 같은 요청의 중복 처리 방지와 환불 차감에 사용합니다.',
+					'유상 크리스털을 쓰기 위해 Google 또는 Apple 계정을 연결하면, Seori Labs 서버는 해당 공급자가 발급한 로그인 토큰의 서명·발급자·대상값을 검증한 뒤 공급자 이름과 계정 식별자의 해시만 저장합니다. 계정 식별자 원문, 이메일, 이름, 프로필 사진은 저장하지 않습니다. 이 해시는 같은 계정을 다시 연결했을 때 같은 지갑을 찾는 데만 사용합니다.',
 					'앱은 위치, 연락처, 사진, 동영상, 마이크, 건강 정보 또는 광고 식별자를 수집하지 않습니다.'
 				]
 			},
@@ -37,7 +39,7 @@ export const lizardTycoonPrivacyContent: Record<'ko' | 'en', PrivacyContent> = {
 				title: '처리 위탁과 전송',
 				body: [
 					'Seori Labs는 개인정보를 판매하거나 광고 목적으로 공유하지 않습니다.',
-					'Google Firebase, Google Analytics 및 Google Cloud는 분석·진단, 익명 인증, 구매 검증 원장과 서버 운영을 위해 Seori Labs의 서비스 제공자로서 데이터를 처리합니다. Google Play, Apple App Store 및 AppsInToss·토스는 선택한 마켓의 로그인·결제·환불을 처리합니다.',
+					'Google Firebase, Google Analytics 및 Google Cloud는 분석·진단, 익명 인증, 구매 검증 원장, 크리스털 지갑 원장과 서버 운영을 위해 Seori Labs의 서비스 제공자로서 데이터를 처리합니다. Google Play, Apple App Store 및 AppsInToss·토스는 선택한 마켓의 로그인·결제·환불을 처리합니다. 계정 연결은 이용자가 선택한 Google 또는 Apple의 로그인 시스템을 이용하며, 각 공급자는 자체 개인정보처리방침에 따라 로그인 정보를 처리합니다.',
 					'서버로 전송되는 데이터는 HTTPS/TLS로 암호화됩니다. 서비스 제공자의 서버 위치에 따라 데이터가 국외에서 처리될 수 있습니다.'
 				]
 			},
@@ -45,7 +47,8 @@ export const lizardTycoonPrivacyContent: Record<'ko' | 'en', PrivacyContent> = {
 				title: '보관과 삭제',
 				body: [
 					'기기 내 게임 데이터는 앱을 삭제하면 제거됩니다. 분석 데이터는 Google Analytics에 설정된 보관 기간 동안 보관된 뒤 삭제되거나 집계·비식별화됩니다.',
-					'구매 원장은 유료 권한 제공, 복원, 환불, 회계·감사, 부정 이용 방지 및 법적 의무에 필요한 기간 동안 보관한 뒤 삭제하거나 비식별화합니다.',
+					'구매 원장과 크리스털 지갑 원장은 유료 권한 제공, 복원, 환불 차감, 회계·감사, 부정 이용 방지 및 법적 의무에 필요한 기간 동안 보관한 뒤 삭제하거나 비식별화합니다. 계정 연결 해시는 이용자가 계정 삭제를 요청하면 함께 삭제합니다.',
+					'Google 또는 Apple 계정을 연결한 이용자는 앱 삭제·재설치나 기기 변경 뒤 같은 계정을 다시 연결해 크리스털 지갑과 구매 기록을 복구할 수 있습니다.',
 					`데이터 열람 또는 삭제 요청은 ${site.email}로 보내주세요. 요청 확인을 위해 앱과 거래를 식별하는 최소 정보를 요청할 수 있습니다. 법령, 회계, 분쟁 또는 부정 이용 방지에 필요한 기록은 해당 목적이 끝날 때까지 제한적으로 보관될 수 있습니다.`
 				]
 			},
@@ -53,7 +56,7 @@ export const lizardTycoonPrivacyContent: Record<'ko' | 'en', PrivacyContent> = {
 				title: '아동과 결제',
 				body: [
 					'이 앱은 만 13세 미만 아동을 대상으로 제작되지 않았으며, 아동임을 알고 개인정보를 수집하지 않습니다.',
-					'미성년자는 보호자의 동의와 기기·스토어의 결제 보호 설정에 따라 인앱결제를 이용해야 합니다.'
+					'미성년자는 보호자의 동의와 기기·스토어의 결제 보호 설정에 따라 인앱결제와 크리스털 충전을 이용해야 합니다.'
 				]
 			},
 			{
@@ -72,7 +75,7 @@ export const lizardTycoonPrivacyContent: Record<'ko' | 'en', PrivacyContent> = {
 		description:
 			'Privacy Policy for game data, analytics, and in-app purchase processing in Lizard Terrarium.',
 		kicker: 'Lizard Terrarium Privacy Policy',
-		lastUpdated: 'August 14, 2026',
+		lastUpdated: 'September 30, 2026',
 		lastUpdatedLabel: 'Effective and last updated',
 		backLabel: 'Back to Seori Labs',
 		languageLabel: 'Language',
@@ -87,6 +90,8 @@ export const lizardTycoonPrivacyContent: Record<'ko' | 'en', PrivacyContent> = {
 					'To monitor reliability, release builds process diagnostic data from GDScript errors: the app-relative file path (res://), code line, error type and allowlisted classification, and up to two stack frames containing file, function, and line information. We limit reports from the same file and line to once per session and cap each session at 20 reports. We do not collect the raw error message, local or member variables, saved game data, or absolute user paths from the device.',
 					'On Google Play and the Apple App Store, the App uses a Firebase anonymous installation user ID to check and restore existing purchase entitlements. On AppsInToss, we immediately transform the app-scoped user key received through Toss Login with SHA-256 and use the result as a Platform user identifier. We do not store the original user key or return it to the App.',
 					'Toss may provide a name during the AppsInToss login consent flow, but Seori Labs does not use it for App features or store it on our servers. If you choose an in-app purchase, we store market and product IDs, transaction references or tokens, entitlement and refund status, and processing timestamps in our purchase-validation and restoration ledger. Seori Labs does not collect payment card or bank details.',
+					'If you use Crystals (a paid currency), we store your paid and free Crystal balances, research shards and tokens, Morph Box open requests and results, guarantee counters, research and expedition state, grant and deduction timestamps, and related order references in our server ledger. Results are determined by the server, and per-request records are used to prevent duplicate processing and to apply refund deductions.',
+					'If you link a Google or Apple account to spend paid Crystals, the Seori Labs server verifies the signature, issuer, and audience of the provider’s sign-in token and stores only the provider name and a hash of the account identifier. We do not store the raw account identifier, email address, name, or profile picture. The hash is used only to find the same wallet when you link the same account again.',
 					'The App does not collect location, contacts, photos, videos, microphone recordings, health data, or advertising identifiers.'
 				]
 			},
@@ -102,7 +107,7 @@ export const lizardTycoonPrivacyContent: Record<'ko' | 'en', PrivacyContent> = {
 				title: 'Processors and Transfers',
 				body: [
 					'Seori Labs does not sell personal data or share it for advertising.',
-					'Google Firebase, Google Analytics, and Google Cloud process data as service providers for analytics and diagnostics, anonymous authentication, the purchase ledger, and server operations. Google Play, the Apple App Store, and AppsInToss or Toss process login, payment, and refund data for the market you choose.',
+					'Google Firebase, Google Analytics, and Google Cloud process data as service providers for analytics and diagnostics, anonymous authentication, the purchase ledger, the Crystal wallet ledger, and server operations. Google Play, the Apple App Store, and AppsInToss or Toss process login, payment, and refund data for the market you choose. Account linking uses the Google or Apple sign-in system you choose, and each provider handles sign-in data under its own privacy policy.',
 					'Data sent to servers is encrypted in transit with HTTPS/TLS. It may be processed outside your country depending on service-provider infrastructure.'
 				]
 			},
@@ -110,7 +115,8 @@ export const lizardTycoonPrivacyContent: Record<'ko' | 'en', PrivacyContent> = {
 				title: 'Retention and Deletion',
 				body: [
 					'Local game data is removed when you delete the App. Analytics data is retained for the period configured in Google Analytics, then deleted or retained only in aggregated or de-identified form.',
-					'Purchase-ledger records are retained as needed to provide and restore paid entitlements, process refunds, support accounting and audits, prevent abuse, and meet legal obligations, then deleted or de-identified.',
+					'Purchase-ledger and Crystal-wallet records are retained as needed to provide and restore paid entitlements, apply refund deductions, support accounting and audits, prevent abuse, and meet legal obligations, then deleted or de-identified. The account-link hash is deleted together with your data when you request account deletion.',
+					'If you linked a Google or Apple account, you can restore your Crystal wallet and purchase records after reinstalling the App or changing devices by linking the same account again.',
 					`Send access or deletion requests to ${site.email}. We may request the minimum information needed to identify the App installation or transaction. Records required by law or for accounting, disputes, or fraud prevention may be retained on a restricted basis until that purpose ends.`
 				]
 			},
@@ -118,7 +124,7 @@ export const lizardTycoonPrivacyContent: Record<'ko' | 'en', PrivacyContent> = {
 				title: 'Children and Purchases',
 				body: [
 					'The App is not directed to children under 13, and we do not knowingly collect personal data from children.',
-					'Minors should use in-app purchases only with a guardian’s consent and the payment protections configured on the device and store account.'
+					'Minors should use in-app purchases and Crystal top-ups only with a guardian’s consent and the payment protections configured on the device and store account.'
 				]
 			},
 			{
