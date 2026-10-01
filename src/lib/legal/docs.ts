@@ -46,5 +46,6 @@ export const globalLegalDocs: GlobalLegalDoc[] = [
 export const LEGAL_DOC_KIND_LABEL: Record<string, Record<Locale, string>> = {
 	privacy: { ko: '개인정보 처리방침', en: 'Privacy Policy' },
 	terms: { ko: '이용약관', en: 'Terms of Service' },
-	'account-deletion': { ko: '계정·데이터 삭제', en: 'Account & Data Deletion' }
+	'account-deletion': { ko: '계정·데이터 삭제', en: 'Account & Data Deletion' },
+	odds: { ko: '확률 정보', en: 'Odds Disclosure' }
 };

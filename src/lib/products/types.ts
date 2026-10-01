@@ -12,7 +12,8 @@ export type StoreChannel =
 	| { kind: 'app-store'; appId: string; country?: string }
 	| { kind: 'apps-in-toss' };
 
-export type LegalDocKind = 'privacy' | 'terms' | 'account-deletion';
+/** odds: 확률형 아이템 확률 정보(게임산업법 표시 의무, 검색 가능한 텍스트 페이지). */
+export type LegalDocKind = 'privacy' | 'terms' | 'account-deletion' | 'odds';
 
 export type LegalDocRef = {
 	kind: LegalDocKind;
