@@ -576,16 +576,25 @@ export const products: Product[] = [
 		status: 'upcoming',
 		category: 'game',
 		hasLanding: false,
-		updatedOn: '2026-09-25',
+		updatedOn: '2026-10-01',
 		name: { ko: '베른할드 연대기', en: 'Vernhald Chronicles' },
-		// 스토어 등록 전이라 제품 브리프의 한 문장을 줄여 썼다. 스토어 등록 시 등록 문구로 바꾼다.
+		// 스토어 등록 전이라 현재 게임 구성(스토리 없는 1인용 20라운드 오토체스)을 한 문장으로 썼다.
+		// 스토어 등록 시 등록 문구로 바꾼다.
 		tagline: {
-			ko: '연대기를 읽고 5~7인 파티를 편성해 자동 전투로 싸우는 수집형 오토 RPG',
-			en: 'Read the chronicle, form a party of five to seven, and fight in auto battles in a collectible RPG'
+			ko: '말을 모으고 배치해 20라운드를 버티는 1인용 오토체스',
+			en: 'A single-player auto-chess game: gather pieces, place them, and survive 20 rounds.'
 		},
 		badges: { ko: ['게임'], en: ['Game'] },
+		// Google Play(com.seorilabs.vernhald)가 첫 마켓이며 아직 미공개다. App Store와 앱인토스는 그 뒤다.
+		// 공개가 확인되면 채널을 추가한다.
 		channels: [],
 		media: { icon: '/products/vernhald/icon-256.webp' },
-		legal: []
+		legal: [
+			{
+				kind: 'privacy',
+				path: { ko: '/apps/vernhald/privacy/', en: '/en/apps/vernhald/privacy/' },
+				updated: '2026-10-01'
+			}
+		]
 	}
 ];
