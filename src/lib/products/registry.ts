@@ -596,5 +596,28 @@ export const products: Product[] = [
 				updated: '2026-10-02'
 			}
 		]
+	},
+	{
+		slug: 'meniere-support',
+		order: 108,
+		status: 'upcoming',
+		category: 'app',
+		hasLanding: false,
+		updatedOn: '2026-10-03',
+		name: { ko: '메니에르 기록', en: 'Meniere Journal' },
+		tagline: {
+			ko: '증상과 일상을 기기에 기록하고 진료 전에 정리하는 개인 기록 앱',
+			en: 'Keep a private journal of symptoms and daily life, and prepare for appointments.'
+		},
+		badges: { ko: ['기록 앱'], en: ['Journal'] },
+		channels: [],
+		media: {},
+		legal: [
+			{
+				kind: 'privacy',
+				path: { ko: '/apps/meniere-support/privacy/', en: '/en/apps/meniere-support/privacy/' },
+				updated: '2026-10-03'
+			}
+		]
 	}
 ];
