@@ -10,12 +10,12 @@ export const menierePrivacyContent: Record<'ko' | 'en', PrivacyContent> = {
 		backLabel: '서리랩스 홈으로',
 		languageLabel: '언어',
 		intro:
-			'이 방침은 Seolee Apps가 배포하고 Seori Labs가 지원하는 메니에르 기록 / Meniere Journal(com.seoleeapps.menieresupport)에 적용됩니다. 이 앱에는 아래 앱별 방침이 공통 방침보다 우선합니다. 성인의 증상 기록과 진료 준비 도구이며 진단이나 치료를 제공하지 않습니다.',
+			'이 방침은 Seolee Apps가 배포하고 Seori Labs가 지원하는 메니에르 기록 / Meniere Journal(com.seoleeapps.menieresupport)에 적용됩니다. 이 앱에는 아래 앱별 방침이 공통 방침보다 우선합니다. 성인의 증상 기록, 진료 준비와 의료진이 확인한 전정재활 운동을 돕습니다. 진단하거나 개인별 치료를 처방하지 않습니다.',
 		sections: [
 			{
 				title: '기기에 보관하는 정보',
 				body: [
-					'본인이 입력한 발작 시각·시간의 정확도·증상·귀 좌우·일상 영향·회복 시점·증상 및 치료 메모, 하루 상태, 생활 항목과 확인 기록, 진료일·질문·의료진 설명 메모를 기기의 암호화 데이터베이스에 보관합니다. 직접 입력한 도움 연락처와 현지 응급 번호, 언어·테마·알림 설정도 기기에 보관합니다.',
+					'본인이 입력한 발작 시각·시간의 정확도·증상·귀 좌우·일상 영향·회복 시점·증상 및 치료 메모, 하루 상태, 생활 항목과 확인 기록, 진료일·질문·의료진 설명 메모, 전정재활 운동 계획·확인 여부·수행 시각·설정 시간·반복 횟수·실제 수행 시간·완료 및 중단 여부·운동 전후 불편감·운동 메모를 기기의 암호화 데이터베이스에 보관합니다. 직접 입력한 도움 연락처와 현지 응급 번호, 언어·테마·알림 설정도 기기에 보관합니다.',
 					'계정이나 자동 동기화를 제공하지 않으며 Firebase, 원격 이용 통계, 원격 오류 보고 및 AI 서비스로 기록을 보내지 않습니다. 위치, 주소록 전체, 마이크, 사진 권한을 요구하지 않습니다. 건강 기록·연락처·자유 메모·문서 내용은 광고 요청에 넣지 않습니다.'
 				]
 			},
@@ -30,7 +30,7 @@ export const menierePrivacyContent: Record<'ko' | 'en', PrivacyContent> = {
 			{
 				title: 'Google AdMob 배너 광고',
 				body: [
-					'Google AdMob의 배너만 표시하며 비개인화 광고를 요청합니다. 건강 기록으로 광고를 개인화하거나 대상자를 분류하지 않습니다. 기록 입력·진행 중 발작·도움·진료 요약·백업 및 복원 중에는 광고를 표시하지 않습니다.',
+					'Google AdMob의 배너만 표시하며 비개인화 광고를 요청합니다. 건강 기록으로 광고를 개인화하거나 대상자를 분류하지 않습니다. 기록 입력·진행 중 발작·도움·전정재활 운동·진료 요약·백업 및 복원 중에는 광고를 표시하지 않습니다.',
 					'비개인화 광고도 광고 제공·측정·부정 이용 방지를 위해 IP 주소와 그로부터 추정한 대략적 위치, 허용된 기기·광고 식별자, 앱·SDK 정보, 광고 상호작용과 진단 정보를 Google 및 광고 파트너가 처리할 수 있습니다. 비개인화는 외부 전송이 없다는 뜻이 아닙니다.',
 					'필요한 지역에서는 Google User Messaging Platform(UMP)의 동의 화면을 제공하며, 광고 요청이 허용되지 않으면 광고를 표시하지 않습니다. 설정의 “광고 개인정보 선택”에서 필요한 경우 선택을 변경할 수 있습니다. 광고 동의 여부는 기록·요약·백업 등 기본 기능 이용에 영향을 주지 않습니다. iOS에서 ATT 추적 허용을 요청하지 않습니다.',
 					'광고 관련 처리는 Google 및 화면에 표시되는 광고 파트너의 목적·보관 기간·국외 이전 정책에 따라 이뤄질 수 있습니다. https://policies.google.com/privacy 및 https://policies.google.com/technologies/partner-sites 를 확인할 수 있습니다.'
@@ -70,12 +70,12 @@ export const menierePrivacyContent: Record<'ko' | 'en', PrivacyContent> = {
 		backLabel: 'Back to Seori Labs',
 		languageLabel: 'Language',
 		intro:
-			'This policy applies to Meniere Journal / 메니에르 기록 (com.seoleeapps.menieresupport), distributed by Seolee Apps and supported by Seori Labs. This app-specific policy takes precedence over our general policy. The app is a symptom journal and visit preparation tool for adults, and does not provide diagnosis or treatment.',
+			'This policy applies to Meniere Journal / 메니에르 기록 (com.seoleeapps.menieresupport), distributed by Seolee Apps and supported by Seori Labs. This app-specific policy takes precedence over our general policy. The app supports symptom journaling, visit preparation and clinician-confirmed vestibular exercises for adults. It does not diagnose conditions or prescribe individual treatment.',
 		sections: [
 			{
 				title: 'Information stored on your device',
 				body: [
-					'Your episode times and their accuracy, symptoms, affected ear, impact on daily activities, recovery times, symptom and treatment notes, daily status, habits and check-ins, visit dates, questions and clinician notes are stored in an encrypted database on your device. Manually entered help contacts and local emergency numbers, language, appearance and reminder settings are also kept on the device.',
+					'Your episode times and their accuracy, symptoms, affected ear, impact on daily activities, recovery times, symptom and treatment notes, daily status, habits and check-ins, visit dates, questions and clinician notes, vestibular exercise plans and confirmation, session times, selected duration and repetitions, actual exercise duration, completion or stopping, before/after discomfort and exercise notes are stored in an encrypted database on your device. Manually entered help contacts and local emergency numbers, language, appearance and reminder settings are also kept on the device.',
 					'There is no account or automatic sync. Records are not sent to Firebase, remote usage analytics, remote crash reporting or AI services. The app does not request location, full address book, microphone or photo access. Health records, contacts, free-text notes and document content are not included in ad requests.'
 				]
 			},
@@ -90,7 +90,7 @@ export const menierePrivacyContent: Record<'ko' | 'en', PrivacyContent> = {
 			{
 				title: 'Google AdMob banner ads',
 				body: [
-					'Only Google AdMob banners are shown, and non-personalized ads are requested. Health records are not used to personalize ads or create audiences. Ads are hidden during record entry, ongoing episodes, help, visit summaries, backups and restoration.',
+					'Only Google AdMob banners are shown, and non-personalized ads are requested. Health records are not used to personalize ads or create audiences. Ads are hidden during record entry, ongoing episodes, help, vestibular exercises, visit summaries, backups and restoration.',
 					'Even non-personalized ads may involve Google and its advertising partners processing IP addresses and approximate location inferred from them, permitted device or advertising identifiers, app and SDK information, ad interactions and diagnostics for ad delivery, measurement and fraud prevention. Non-personalized does not mean no data leaves the device.',
 					'Google User Messaging Platform (UMP) consent forms are provided where required. Ads are not shown unless ad requests are permitted. Advertising privacy choices in settings let you change choices where required. Consent does not affect access to records, summaries, backups or other core functions. The app does not request ATT tracking permission on iOS.',
 					'Google and the advertising partners shown in the consent form may process data outside your country under their purposes, retention periods and transfer policies. See https://policies.google.com/privacy and https://policies.google.com/technologies/partner-sites .'
