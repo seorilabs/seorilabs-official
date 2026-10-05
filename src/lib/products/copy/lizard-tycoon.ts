@@ -175,7 +175,7 @@ export const lizardTycoonLanding: AppLandingSet = {
 		faq: [
 			{
 				q: '광고가 나오나요?',
-				a: '나오지 않습니다. 배너, 전면 광고, 보상형 광고를 모두 넣지 않았습니다.'
+				a: 'Android·iOS 버전에는 광고가 없습니다. 앱인토스에서는 튜토리얼 후 놀이·탐사·제작 결과를 확인하고 닫거나 홈으로 돌아갈 때 전면 광고가 표시될 수 있습니다.'
 			},
 			{
 				q: '무료인가요?',
@@ -387,7 +387,10 @@ export const lizardTycoonLanding: AppLandingSet = {
 			}
 		],
 		faq: [
-			{ q: 'Are there ads?', a: 'No. There are no banners, interstitials, or rewarded video ads.' },
+			{
+				q: 'Are there ads?',
+				a: 'There are no ads on Android or iOS. On AppsInToss, an interstitial may appear after the tutorial when you confirm play, expedition, or crafting results and close the screen or return home.'
+			},
 			{
 				q: 'Is it free?',
 				a: 'Core play, including care, breeding, and the collection, is free. Premium species, habitat rack expansions, terrarium themes, and accessories are one-time purchases, and there is no subscription.'
