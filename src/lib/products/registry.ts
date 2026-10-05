@@ -581,7 +581,7 @@ export const products: Product[] = [
 		status: 'upcoming',
 		category: 'game',
 		hasLanding: false,
-		updatedOn: '2026-10-02',
+		updatedOn: '2026-10-06',
 		name: { ko: '베른할드 연대기', en: 'Vernhald Chronicles' },
 		// 스토어 등록 전이라 현재 게임 구성(스토리 없는 1인용 20라운드 오토체스)을 한 문장으로 썼다.
 		// 스토어 등록 시 등록 문구로 바꾼다.
@@ -598,7 +598,12 @@ export const products: Product[] = [
 			{
 				kind: 'privacy',
 				path: { ko: '/apps/vernhald/privacy/', en: '/en/apps/vernhald/privacy/' },
-				updated: '2026-10-02'
+				updated: '2026-10-06'
+			},
+			{
+				kind: 'account-deletion',
+				path: { ko: '/apps/vernhald/account-deletion/', en: '/en/apps/vernhald/account-deletion/' },
+				updated: '2026-10-06'
 			}
 		]
 	},
