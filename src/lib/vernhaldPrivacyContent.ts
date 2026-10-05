@@ -7,33 +7,42 @@ export const vernhaldPrivacyContent: Record<'ko' | 'en', PrivacyContent> = {
 		description:
 			'베른할드 연대기의 기기 내 저장, 선택형 이용 통계, 보상형 광고, 인앱 구매에 관한 개인정보 처리방침입니다.',
 		kicker: 'Vernhald Chronicles Privacy Policy',
-		lastUpdated: '2026년 10월 2일',
+		lastUpdated: '2026년 10월 6일',
 		lastUpdatedLabel: '시행일 및 최종 수정일',
 		backLabel: '서리랩스 홈으로',
 		languageLabel: '언어',
 		intro:
-			'이 방침은 Seori Labs가 제공하는 「베른할드 연대기」(패키지명 com.seorilabs.vernhald, 이하 “앱”)에 적용됩니다. 앱은 오프라인으로 혼자 플레이하는 오토체스 게임입니다. 앱의 실제 데이터 처리와 스토어 표시가 공통 방침과 다른 경우 이 제품별 방침이 우선합니다.',
+			'이 방침은 Seori Labs가 제공하는 「베른할드 연대기」(패키지명 com.seorilabs.vernhald, 이하 “앱”)에 적용됩니다. 도전과 무한모드는 오프라인으로 플레이할 수 있으며, 선택형 정기 리그에는 인터넷 연결이 필요합니다. 앱의 실제 데이터 처리와 스토어 표시가 공통 방침과 다른 경우 이 제품별 방침이 우선합니다.',
 		sections: [
 			{
 				title: '계정과 식별자',
 				body: [
-					'앱에는 계정, 회원가입, 로그인이 없습니다. Seori Labs가 운영하는 자체 서버도 없으며 순위표와 채팅 기능도 없습니다.',
-					'앱은 이름, 이메일, 전화번호, 생년월일을 묻지 않으며 수집하지 않습니다. Seori Labs가 이용자 식별자를 따로 만들거나 분석 도구에 사용자 ID를 설정하지도 않습니다.',
+					'이메일 가입이나 로그인 화면은 없습니다. 리그를 이용하면 Firebase 익명 인증으로 무작위 이용자 식별자가 발급되며, 이 식별자로 리그 서버에서 덱과 경기 기록을 구분합니다. 채팅 기능은 없습니다.',
+					'앱은 이름, 이메일, 전화번호, 생년월일을 묻지 않습니다. 리그 식별자는 분석 도구의 사용자 ID로 설정하지 않습니다.',
 					'앱은 위치, 연락처, 사진, 카메라, 마이크, 건강 정보에 접근하지 않습니다.'
 				]
 			},
 			{
 				title: '기기에만 저장되는 데이터',
 				body: [
-					'다음 데이터는 이용자의 기기에만 저장되며 Seori Labs로 전송되지 않습니다.',
+					'일반 도전과 무한모드의 진행 저장 및 다음 설정은 기기에 저장됩니다. 리그 준비판의 명령 기록과 완성 덱은 아래 설명과 같이 서버에 제출됩니다.',
 					'판과 판 사이의 진행 상황(해금한 도전 단계, 최고 라운드, 최근 판 기록), 진행 중인 판, 설정(언어, 소리, 진동, 이용 통계 공유 선택, 받침대 색), 보유한 상품 목록과 심사용 코드 사용 여부, 그리고 광고 노출 빈도 제한을 적용하기 위한 날짜별 보상형 광고 노출 횟수입니다.',
 					'Android 시스템 백업을 사용하지 않으므로 앱을 삭제하면 이 데이터도 모두 지워집니다. 클라우드 저장이 없어 삭제한 데이터는 복구할 수 없습니다.'
 				]
 			},
 			{
+				title: '정기 리그와 서버 데이터',
+				body: [
+					'리그를 선택하면 익명 이용자 식별자, 준비판의 설정·시드·성공한 명령 기록, 제출한 덱과 배치, 구매 확장 권한, 참가 기간, 평점, 시즌·경기 기록과 재생 자료를 서버에서 처리합니다. 덱 검증, 경기 편성, 부정 이용 방지, 순위와 결과 제공에 사용합니다.',
+					'등록 덱, 평점과 경기 결과는 상대 이용자 또는 리그 순위에 표시될 수 있습니다. 구매 토큰과 준비판의 전체 명령 기록은 다른 이용자에게 공개하지 않습니다.',
+					'Firebase App Check와 Google Play Integrity는 앱과 요청의 진위를 확인합니다. 서버는 요청을 처리할 때 IP 주소와 요청·오류 정보를 운영 로그로 처리할 수 있습니다.',
+					'참가 해제 또는 7일 참가 기간 만료는 새 경기 편성만 중단합니다. 덱, 평점과 지난 기록은 삭제되지 않으며 다음 시즌에도 보관됩니다. 앱 삭제 역시 서버 데이터를 지우지 않습니다. 서버 데이터 삭제는 아래 연락처로 요청할 수 있으며, 다른 이용자의 데이터를 보호하기 위해 본인 확인 후 처리합니다.'
+				]
+			},
+			{
 				title: '이용 통계(선택)',
 				body: [
-					'앱을 처음 실행하면 이용 통계를 공유할지 한 번 묻습니다. 이용자가 답하기 전이나 공유하지 않기로 선택하면 아무것도 수집하지 않습니다. 이 선택은 설정에서 언제든 바꿀 수 있습니다.',
+					'앱을 처음 실행하면 이용 통계를 공유할지 한 번 묻습니다. 이용자가 답하기 전이나 공유하지 않기로 선택하면 이용 통계와 오류 보고서를 수집하지 않습니다. 이 선택은 리그 운영에 필요한 데이터 처리와 별개입니다. 이 선택은 설정에서 언제든 바꿀 수 있습니다.',
 					'공유를 켜면 Google Firebase 애널리틱스로 게임 이벤트가 전송됩니다. 판 시작과 종료(도전 단계, 라운드, 남은 체력), 강화 카드 선택, 보상형 광고의 요청·노출·실패·보상 획득, 상품 구매 결과(상품 ID와 완료·대기·취소·실패)가 해당하며, 앱 마켓·플랫폼·앱 버전이 함께 담깁니다. 여기에 Firebase 앱 인스턴스 ID와 Firebase가 자동으로 수집하는 기기·앱 정보가 더해집니다.',
 					'앱이 비정상 종료되면 Firebase Crashlytics로 오류 보고서(기기 모델, OS 버전, 오류 발생 지점의 스택 트레이스)가 전송됩니다. 오류 보고서도 이용 통계와 같은 선택을 따릅니다.',
 					'애널리틱스의 광고 저장(ad storage), 광고 사용자 데이터(ad user data), 광고 개인 맞춤(ad personalization) 동의는 항상 거부로 설정되어 있습니다. 사용자 ID는 설정하지 않습니다.'
@@ -51,9 +60,9 @@ export const vernhaldPrivacyContent: Record<'ko' | 'en', PrivacyContent> = {
 			{
 				title: '인앱 구매',
 				body: [
-					'앱에는 선택형 일회성 상품 두 개(“확장 팩 1: 해적과 태엽”, “광고 없는 보상”)가 있으며 Google Play 결제로 판매합니다. App Store 결제는 이후 지원할 예정입니다.',
+					'앱에는 선택형 일회성 상품 두 개(“확장 팩 1: 해적과 태엽”, “광고 없는 보상”)가 있으며 Google Play 결제로 판매합니다. ',
 					'카드번호 같은 결제 정보는 마켓이 처리하며 Seori Labs는 받지 않습니다.',
-					'앱은 마켓의 구매 확인 정보를 기기에서 산 상품을 열기 위해서만 받고, 마켓에 구매 확인(acknowledge)을 보냅니다. 이 정보는 Seori Labs 서버로 전송되지 않습니다.',
+					'앱은 상품을 열기 위해 구매 확인 정보를 받고 마켓에 구매 확인(acknowledge)을 보냅니다. 리그에서 구매한 확장을 사용하면 상품 ID와 구매 토큰을 서버에 보내 Google Play에 실제 보유 여부를 검증합니다. 서버는 이용자 식별자와 연결된 구매 토큰 및 토큰 소유 확인 기록을 보관하여 권한 위조와 중복 사용을 방지합니다.',
 					'산 상품은 기기에서 마켓의 보유 기록을 조회해 복원합니다. 스토어 심사를 위한 코드를 입력하면 그 기기에서 모든 상품이 켜지며, 이 사실은 기기에만 저장됩니다.'
 				]
 			},
@@ -69,7 +78,7 @@ export const vernhaldPrivacyContent: Record<'ko' | 'en', PrivacyContent> = {
 				title: '처리 위탁과 국외 이전',
 				body: [
 					'Seori Labs는 개인정보를 판매하지 않습니다.',
-					'Google이 Firebase 애널리틱스, Firebase Crashlytics, AdMob, Google Play 결제를 위해 데이터를 처리합니다. Google의 처리는 Google 개인정보처리방침과 AdMob 정책을 따릅니다.',
+					'Google이 Firebase Auth, App Check와 Play Integrity, Firestore, Cloud Run, Cloud Storage, Firebase 애널리틱스, Firebase Crashlytics, AdMob, Google Play 결제를 위해 데이터를 처리합니다. 리그 서버와 데이터 저장소의 기본 리전은 대한민국 서울입니다. Google의 처리는 Google 개인정보처리방침과 AdMob 정책을 따릅니다.',
 					'Google은 데이터를 대한민국 밖에서 처리할 수 있습니다.'
 				]
 			},
@@ -78,7 +87,7 @@ export const vernhaldPrivacyContent: Record<'ko' | 'en', PrivacyContent> = {
 				body: [
 					'기기에 저장된 데이터는 앱을 삭제할 때까지 보관되며, 앱을 삭제하면 함께 지워집니다.',
 					'분석 데이터는 Google 애널리틱스에 설정된 보관 기간 동안 보관된 뒤 삭제되거나 집계됩니다.',
-					`분석 데이터의 삭제를 요청하거나 문의하려면 ${site.email}로 연락해 주세요.`
+					`분석 데이터나 서버에 보관된 리그 데이터의 삭제를 요청하거나 문의하려면 ${site.email}로 연락해 주세요.`
 				]
 			},
 			{
@@ -99,7 +108,7 @@ export const vernhaldPrivacyContent: Record<'ko' | 'en', PrivacyContent> = {
 			{
 				title: '방침 변경',
 				body: [
-					'이 방침이 바뀌면 이 페이지의 시행일을 갱신합니다. 처리 목적이나 항목이 실질적으로 바뀌는 경우에는 앱 안에서도 알립니다.'
+					'이 방침이 바뀌면 이 페이지의 시행일을 갱신합니다. 변경된 처리 내용은 이 페이지와 앱의 개인정보 처리방침 링크에서 확인할 수 있습니다.'
 				]
 			},
 			{
@@ -115,33 +124,42 @@ export const vernhaldPrivacyContent: Record<'ko' | 'en', PrivacyContent> = {
 		description:
 			'How Vernhald Chronicles handles on-device saves, optional usage statistics, rewarded ads, and in-app purchases.',
 		kicker: 'Vernhald Chronicles Privacy Policy',
-		lastUpdated: '2 October 2026',
+		lastUpdated: '6 October 2026',
 		lastUpdatedLabel: 'Effective and last updated',
 		backLabel: 'Back to Seori Labs',
 		languageLabel: 'Language',
 		intro:
-			'This policy applies to Vernhald Chronicles (package com.seorilabs.vernhald, the “app”), provided by Seori Labs. The app is a single-player auto-chess game played offline. Where the app’s actual processing or store disclosure differs from our general policy, this product policy prevails.',
+			'This policy applies to Vernhald Chronicles (package com.seorilabs.vernhald, the “app”), provided by Seori Labs. Challenge and Endless modes can be played offline; the optional scheduled league requires an internet connection. Where the app’s actual processing or store disclosure differs from our general policy, this product policy prevails.',
 		sections: [
 			{
 				title: 'Accounts and identifiers',
 				body: [
-					'The app has no account, sign-up, or login. Seori Labs runs no server of its own for the app, and there is no leaderboard or chat.',
-					'The app does not ask for or collect your name, email address, phone number, or date of birth. Seori Labs does not create a user identifier for you or set a user ID in any analytics tool.',
+					'There is no email sign-up or login screen. Using the league creates a random identifier through Firebase Anonymous Authentication, used by our league server to associate decks and match records. There is no chat.',
+					'The app does not ask for your name, email address, phone number, or date of birth. The league identifier is not set as an analytics user ID.',
 					'The app does not access location, contacts, photos, camera, microphone, or health data.'
 				]
 			},
 			{
 				title: 'Data stored only on your device',
 				body: [
-					'The following data is stored only on your device and is not sent to Seori Labs.',
+					'Normal Challenge and Endless saves and the settings below are stored on your device. League preparation commands and completed decks are submitted to the server as described below.',
 					'Progress between runs (unlocked challenge levels, best rounds, recent run records), the run in progress, your settings (language, sound, vibration, usage statistics choice, base colour), the products you own and whether a review code was entered, and a per-day count of rewarded ads shown, used to apply ad frequency limits.',
 					'Android system backup is disabled, so uninstalling the app deletes all of this data. There is no cloud save, and deleted data cannot be restored.'
 				]
 			},
 			{
+				title: 'Scheduled league and server data',
+				body: [
+					'If you use the league, our server processes your anonymous identifier, preparation settings, seed and successful command history, submitted decks and placements, purchased expansion entitlements, participation period, rating, season and match records, and replays. These support deck validation, matchmaking, fraud prevention, rankings and results.',
+					'Registered decks, ratings and match results may be shown to opponents or in league rankings. Purchase tokens and complete preparation command histories are not disclosed to other players.',
+					'Firebase App Check and Google Play Integrity verify the app and its requests. The server may process IP addresses and request and error information in operational logs.',
+					'Leaving the league or expiry of the seven-day participation period only stops new matchmaking. Decks, ratings and past records remain stored across seasons. Uninstalling the app does not delete server data. You can request deletion using the contact below; we verify ownership to protect other players before processing a request.'
+				]
+			},
+			{
 				title: 'Usage statistics (optional)',
 				body: [
-					'The first time you open the app, it asks once whether you want to share usage statistics. Nothing is collected before you answer or if you choose not to share. You can change this choice at any time in Settings.',
+					'The first time you open the app, it asks once whether you want to share usage statistics. Usage statistics and crash reports are not collected before you answer or if you choose not to share. This choice is separate from processing needed to operate the league. You can change this choice at any time in Settings.',
 					'When sharing is on, game events are sent to Google Firebase Analytics: run start and end (with challenge level, round, and remaining HP), augment card picks, rewarded ads requested, shown, failed, and earned, and the result of a product purchase, together with the app market, platform, and app version. Firebase also receives the Firebase app instance ID and the device and app information it collects automatically.',
 					'If the app crashes, Firebase Crashlytics receives a crash report (device model, OS version, and the stack trace of the crash). Crash reports follow the same choice as usage statistics.',
 					'Analytics consent for ad storage, ad user data, and ad personalization is always set to denied. No user ID is set.'
@@ -159,9 +177,9 @@ export const vernhaldPrivacyContent: Record<'ko' | 'en', PrivacyContent> = {
 			{
 				title: 'In-app purchase',
 				body: [
-					'The app offers two optional one-time purchases, “Expansion 1: Corsairs & Clockwork” and “Ad-free Rewards”, sold through Google Play Billing. App Store purchases will be supported later.',
+					'The app offers two optional one-time purchases, “Expansion 1: Corsairs & Clockwork” and “Ad-free Rewards”, sold through Google Play Billing.',
 					'Payment details such as card numbers are handled by the store; Seori Labs never receives them.',
-					'The app receives the store’s purchase confirmation only to unlock the purchase on your device, and acknowledges the purchase with the store. This confirmation is not sent to any Seori Labs server.',
+					'The app receives purchase confirmation to unlock products and acknowledges purchases with the store. When using purchased expansions in the league, it sends the product ID and purchase token to our server to verify ownership with Google Play. The server retains purchase tokens and ownership records linked to the league identifier to prevent forged entitlements and duplicate claims.',
 					'Purchases are restored on your device from the store’s ownership records. Entering a store review code turns on every product on that device; this is stored only on the device.'
 				]
 			},
@@ -177,7 +195,7 @@ export const vernhaldPrivacyContent: Record<'ko' | 'en', PrivacyContent> = {
 				title: 'Processors and international transfers',
 				body: [
 					'Seori Labs does not sell personal information.',
-					'Google processes data for Firebase Analytics, Firebase Crashlytics, AdMob, and Google Play Billing. Google’s handling is governed by the Google Privacy Policy and AdMob policies.',
+					'Google processes data for Firebase Auth, App Check and Play Integrity, Firestore, Cloud Run, Cloud Storage, Firebase Analytics, Firebase Crashlytics, AdMob, and Google Play Billing. The league server and data stores use Seoul, Republic of Korea as their primary region. Google’s handling is governed by the Google Privacy Policy and AdMob policies.',
 					'Google may process data outside the Republic of Korea.'
 				]
 			},
@@ -186,7 +204,7 @@ export const vernhaldPrivacyContent: Record<'ko' | 'en', PrivacyContent> = {
 				body: [
 					'Data stored on your device is kept until you uninstall the app, at which point it is deleted.',
 					'Analytics data is retained for the period configured in Google Analytics, after which it is deleted or aggregated.',
-					`To request deletion of analytics data or to ask a question, write to ${site.email}.`
+					`To request deletion of analytics or server-stored league data, or to ask a question, write to ${site.email}.`
 				]
 			},
 			{
@@ -207,7 +225,7 @@ export const vernhaldPrivacyContent: Record<'ko' | 'en', PrivacyContent> = {
 			{
 				title: 'Changes to this policy',
 				body: [
-					'If this policy changes, we update the effective date on this page. Where the purposes or categories of processing change materially, we also notify you inside the app.'
+					'If this policy changes, we update the effective date on this page. You can review processing changes on this page through the privacy policy link in the app.'
 				]
 			},
 			{
