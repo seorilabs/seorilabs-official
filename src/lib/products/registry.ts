@@ -303,8 +303,10 @@ export const products: Product[] = [
 			en: 'Rule 46 cities and 226 officers in a landscape Three Kingdoms strategy game.'
 		},
 		badges: { ko: ['게임'], en: ['Game'] },
-		// Google Play(com.seorilabs.lordledger)는 아직 미공개다. 공개가 확인되면 채널을 추가한다.
-		channels: [{ kind: 'app-store', appId: '6804420009' }],
+		channels: [
+			{ kind: 'google-play', packageName: 'com.seorilabs.lordledger' },
+			{ kind: 'app-store', appId: '6804420009' }
+		],
 		media: { icon: '/products/lord-ledger/icon-256.webp' },
 		legal: [
 			{
@@ -566,7 +568,10 @@ export const products: Product[] = [
 			en: 'Fill market orders in a cozy match-3 puzzle'
 		},
 		badges: { ko: ['게임'], en: ['Game'] },
-		channels: [{ kind: 'app-store', appId: '6815288695' }],
+		channels: [
+			{ kind: 'google-play', packageName: 'com.seorilabs.alleymarketmatch' },
+			{ kind: 'app-store', appId: '6815288695' }
+		],
 		media: { icon: '/products/alley-market-match/icon-256.webp' },
 		legal: []
 	},
