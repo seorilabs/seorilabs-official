@@ -22,14 +22,14 @@ const shot = (file: string, alt: string, en = false): LandingMedia => ({
  */
 export const lizardTycoonLanding: AppLandingSet = {
 	ko: {
-		metaTitle: '내 도마뱀 키우기 - 광고 없는 픽셀 도마뱀 키우기 게임',
+		metaTitle: '내 도마뱀 키우기 - 픽셀 도마뱀 키우기 게임',
 		metaDescription:
-			'먹이를 주고 온도를 맞추고 교감하며 도마뱀을 돌보는 도마뱀 키우기 게임. 교배와 유전으로 모프와 무늬를 모으는 파충류 육성 시뮬레이션입니다. 광고 없음, 오프라인 돌봄 가능, 전체이용가.',
+			'먹이를 주고 온도를 맞추고 교감하며 도마뱀을 돌보는 도마뱀 키우기 게임. 교배와 유전으로 모프와 무늬를 모으는 파충류 육성 시뮬레이션입니다. Android·iOS 광고 없음, 오프라인 돌봄 가능, 전체이용가.',
 		kicker: '픽셀 테라리움 육성 게임',
 		title: '내 도마뱀 키우기 : 픽셀 테라리움 육성',
-		lead: '작은 픽셀 테라리움에서 도마뱀 한 마리를 돌보는 것부터 시작합니다. 먹이를 주고, 온도를 맞추고, 청소하고, 교감하고, 관찰하면서 가족을 늘려가는 육성 게임입니다. 광고가 없고, 며칠 못 들어와도 도마뱀이 죽지 않습니다.',
+		lead: '작은 픽셀 테라리움에서 도마뱀 한 마리를 돌보는 것부터 시작합니다. 먹이를 주고, 온도를 맞추고, 청소하고, 교감하고, 관찰하면서 가족을 늘려가는 육성 게임입니다. Android·iOS 버전은 광고가 없고, 며칠 못 들어와도 도마뱀이 죽지 않습니다.',
 		quickFacts: [
-			'광고 없음',
+			'Android·iOS 광고 없음',
 			'돌봄은 오프라인 가능',
 			'전체이용가 (GRAC)',
 			'한 번에 1~3분',
@@ -125,8 +125,8 @@ export const lizardTycoonLanding: AppLandingSet = {
 				title: '도마뱀 키우기 게임을 찾고 계셨다면',
 				items: [
 					{
-						title: '광고 없는 도마뱀 키우기 게임',
-						body: '배너도, 전면 광고도, 보상형 광고도 넣지 않았습니다.'
+						title: '마켓별 광고 안내',
+						body: 'Android·iOS 버전에는 광고가 없습니다. 앱인토스에서는 놀이·탐사·제작 결과를 확인하고 화면을 닫거나 홈으로 돌아갈 때 전면 광고가 표시될 수 있습니다.'
 					},
 					{
 						title: '며칠 못 들어와도 괜찮은 게임',
@@ -153,7 +153,7 @@ export const lizardTycoonLanding: AppLandingSet = {
 				title: '무엇이 무료이고 무엇이 유료인지',
 				bullets: [
 					'돌봄, 교배, 도감을 포함한 핵심 플레이는 무료입니다.',
-					'광고는 넣지 않았습니다.',
+					'Android·iOS에는 광고가 없습니다. 앱인토스는 튜토리얼 완료 후 결과 확인 경계에 전면 광고가 표시될 수 있습니다. 돌봄 중에는 표시하지 않습니다.',
 					'프리미엄 종, 사육 랙 확장, 테라리움 테마, 액세서리는 원할 때 한 번만 결제하는 상품입니다. 구독은 없습니다.',
 					'확률형 아이템이 포함됩니다. 선택한 프리미엄 종은 확정으로 지급되고, 그 개체의 모프와 무늬 같은 특성은 무작위입니다. 나올 수 있는 결과와 확률은 구매 전에 화면에 표시합니다.',
 					'구매한 상품은 같은 스토어 계정에서 구매 복원으로 다시 받을 수 있습니다.'
@@ -175,7 +175,7 @@ export const lizardTycoonLanding: AppLandingSet = {
 		faq: [
 			{
 				q: '광고가 나오나요?',
-				a: '나오지 않습니다. 배너, 전면 광고, 보상형 광고를 모두 넣지 않았습니다.'
+				a: 'Android·iOS 버전에는 광고가 없습니다. 앱인토스에서는 튜토리얼 후 놀이·탐사·제작 결과를 확인하고 닫거나 홈으로 돌아갈 때 전면 광고가 표시될 수 있습니다.'
 			},
 			{
 				q: '무료인가요?',
@@ -227,14 +227,14 @@ export const lizardTycoonLanding: AppLandingSet = {
 	},
 
 	en: {
-		metaTitle: 'Lizard Terrarium - A pixel lizard care game with no ads',
+		metaTitle: 'Lizard Terrarium - A pixel lizard care game',
 		metaDescription:
-			'Feed, warm, clean, and bond with lizards in a pixel terrarium. Breed for morphs and patterns in this reptile care simulator. No ads, offline care, rated 3+.',
+			'Feed, warm, clean, and bond with lizards in a pixel terrarium. Breed for morphs and patterns in this reptile care simulator. No ads on Android and iOS, offline care, rated 3+.',
 		kicker: 'Pixel terrarium care game',
 		title: 'Lizard Terrarium',
-		lead: 'It starts with one lizard in a tiny pixel terrarium. Feed it, get the temperature right, clean up, bond, observe, and slowly grow a family. There are no ads, and your lizards do not die while you are away.',
+		lead: 'It starts with one lizard in a tiny pixel terrarium. Feed it, get the temperature right, clean up, bond, observe, and slowly grow a family. The Android and iOS versions have no ads, and your lizards do not die while you are away.',
 		quickFacts: [
-			'No ads',
+			'No ads on Android and iOS',
 			'Care works offline',
 			'Rated 3+',
 			'1-3 minutes a session',
@@ -339,8 +339,8 @@ export const lizardTycoonLanding: AppLandingSet = {
 				title: 'If you were looking for a lizard care game',
 				items: [
 					{
-						title: 'A lizard care game with no ads',
-						body: 'No banners, no interstitials, no rewarded video.'
+						title: 'Ads by version',
+						body: 'The Android and iOS versions have no ads. On AppsInToss, an interstitial may appear after you confirm play, expedition, or crafting results and close the screen or return home.'
 					},
 					{
 						title: 'A game that forgives a few days away',
@@ -367,7 +367,7 @@ export const lizardTycoonLanding: AppLandingSet = {
 				title: 'What is free and what is not',
 				bullets: [
 					'Core play - care, breeding, and the collection - is free.',
-					'There are no ads.',
+					'There are no ads on Android and iOS. On AppsInToss, interstitial ads may appear after the tutorial when you confirm activity results, never during care.',
 					'Premium species, habitat rack expansions, terrarium themes, and accessories are one-time purchases. There is no subscription.',
 					'The game contains randomized items. The premium species you choose is guaranteed. The individual traits of that lizard, such as morph and pattern, are randomized, and the possible results and their odds are shown before purchase.',
 					'Purchases can be restored from the same store account.'
@@ -387,7 +387,10 @@ export const lizardTycoonLanding: AppLandingSet = {
 			}
 		],
 		faq: [
-			{ q: 'Are there ads?', a: 'No. There are no banners, interstitials, or rewarded video ads.' },
+			{
+				q: 'Are there ads?',
+				a: 'There are no ads on Android or iOS. On AppsInToss, an interstitial may appear after the tutorial when you confirm play, expedition, or crafting results and close the screen or return home.'
+			},
 			{
 				q: 'Is it free?',
 				a: 'Core play, including care, breeding, and the collection, is free. Premium species, habitat rack expansions, terrarium themes, and accessories are one-time purchases, and there is no subscription.'

@@ -7,7 +7,7 @@ export const lizardTycoonPrivacyContent: Record<'ko' | 'en', PrivacyContent> = {
 		description:
 			'내 도마뱀 키우기: 픽셀 테라리움 육성의 게임 데이터, 분석 및 인앱결제 처리에 관한 개인정보 처리방침입니다.',
 		kicker: 'Lizard Terrarium Privacy Policy',
-		lastUpdated: '2026년 9월 30일',
+		lastUpdated: '2026년 10월 5일',
 		lastUpdatedLabel: '시행일 및 최종 수정일',
 		backLabel: '서리랩스 홈으로',
 		languageLabel: '언어',
@@ -24,7 +24,7 @@ export const lizardTycoonPrivacyContent: Record<'ko' | 'en', PrivacyContent> = {
 					'AppsInToss 토스 로그인 동의 과정에서 토스가 이름을 제공할 수 있지만 Seori Labs는 이름을 기능에 사용하거나 서버에 저장하지 않습니다. 인앱결제를 선택한 경우 마켓·상품 ID, 구매 또는 주문의 거래 참조값과 토큰, 권한·환불 상태 및 처리 시각을 구매 검증과 복원 원장에 저장합니다. 결제 카드번호와 은행계좌 정보는 Seori Labs가 수집하지 않습니다.',
 					'크리스털(유료 재화)을 사용하는 경우 유상·무상 크리스털 잔액, 연구 조각과 증표, 모프 상자 열기 요청과 결과, 보장 횟수, 연구·탐사 상태, 지급·차감 시각과 관련 주문 참조를 서버 원장에 저장합니다. 결과는 서버가 정하며 요청별 기록은 같은 요청의 중복 처리 방지와 환불 차감에 사용합니다.',
 					'유상 크리스털을 쓰기 위해 Google 또는 Apple 계정을 연결하면, Seori Labs 서버는 해당 공급자가 발급한 로그인 토큰의 서명·발급자·대상값을 검증한 뒤 공급자 이름과 계정 식별자의 해시만 저장합니다. 계정 식별자 원문, 이메일, 이름, 프로필 사진은 저장하지 않습니다. 이 해시는 같은 계정을 다시 연결했을 때 같은 지갑을 찾는 데만 사용합니다.',
-					'앱은 위치, 연락처, 사진, 동영상, 마이크, 건강 정보 또는 광고 식별자를 수집하지 않습니다.'
+					'게임 기능은 위치, 연락처, 사진, 동영상, 마이크, 건강 정보를 수집하지 않습니다. Google Play·App Store 버전은 광고 SDK와 광고 식별자를 사용하지 않습니다. AppsInToss 버전의 전면 광고는 토스 통합 광고 SDK를 사용하며, 토스와 Google AdMob은 해당 정책과 기기 동의 설정에 따라 광고 식별자, 기기·네트워크 정보, 광고 노출·클릭 데이터를 처리할 수 있습니다. Seori Labs는 이 광고 식별자를 구매 계정이나 게임 분석 식별자와 연결하지 않습니다.'
 				]
 			},
 			{
@@ -36,9 +36,15 @@ export const lizardTycoonPrivacyContent: Record<'ko' | 'en', PrivacyContent> = {
 				]
 			},
 			{
+				title: 'AppsInToss 광고',
+				body: [
+					'광고 횟수, 마지막 광고 종료 시각, 세션 활동 시각과 완료 식별자는 게임 저장과 별도로 기기에 저장해 빈도 제한과 중복 방지에 사용합니다. 광고 기회·생략 사유·로드·요청·표시·노출·클릭·닫힘·오류 및 표시 시간은 마켓, OS, 번들과 정책 버전별로 분석합니다. 광고 시청에는 토스 로그인이 필요하지 않습니다.'
+				]
+			},
+			{
 				title: '처리 위탁과 전송',
 				body: [
-					'Seori Labs는 개인정보를 판매하거나 광고 목적으로 공유하지 않습니다.',
+					'Seori Labs는 개인정보를 판매하지 않습니다. AppsInToss 광고 제공과 관련하여 토스 및 Google의 광고 SDK가 데이터를 처리할 수 있으며, 토스 개인정보 처리방침과 Google 개인정보처리방침이 함께 적용됩니다.',
 					'Google Firebase, Google Analytics 및 Google Cloud는 분석·진단, 익명 인증, 구매 검증 원장, 크리스털 지갑 원장과 서버 운영을 위해 Seori Labs의 서비스 제공자로서 데이터를 처리합니다. Google Play, Apple App Store 및 AppsInToss·토스는 선택한 마켓의 로그인·결제·환불을 처리합니다. 계정 연결은 이용자가 선택한 Google 또는 Apple의 로그인 시스템을 이용하며, 각 공급자는 자체 개인정보처리방침에 따라 로그인 정보를 처리합니다.',
 					'서버로 전송되는 데이터는 HTTPS/TLS로 암호화됩니다. 서비스 제공자의 서버 위치에 따라 데이터가 국외에서 처리될 수 있습니다.'
 				]
@@ -75,7 +81,7 @@ export const lizardTycoonPrivacyContent: Record<'ko' | 'en', PrivacyContent> = {
 		description:
 			'Privacy Policy for game data, analytics, and in-app purchase processing in Lizard Terrarium.',
 		kicker: 'Lizard Terrarium Privacy Policy',
-		lastUpdated: 'September 30, 2026',
+		lastUpdated: 'October 5, 2026',
 		lastUpdatedLabel: 'Effective and last updated',
 		backLabel: 'Back to Seori Labs',
 		languageLabel: 'Language',
@@ -92,7 +98,7 @@ export const lizardTycoonPrivacyContent: Record<'ko' | 'en', PrivacyContent> = {
 					'Toss may provide a name during the AppsInToss login consent flow, but Seori Labs does not use it for App features or store it on our servers. If you choose an in-app purchase, we store market and product IDs, transaction references or tokens, entitlement and refund status, and processing timestamps in our purchase-validation and restoration ledger. Seori Labs does not collect payment card or bank details.',
 					'If you use Crystals (a paid currency), we store your paid and free Crystal balances, research shards and tokens, Morph Box open requests and results, guarantee counters, research and expedition state, grant and deduction timestamps, and related order references in our server ledger. Results are determined by the server, and per-request records are used to prevent duplicate processing and to apply refund deductions.',
 					'If you link a Google or Apple account to spend paid Crystals, the Seori Labs server verifies the signature, issuer, and audience of the provider’s sign-in token and stores only the provider name and a hash of the account identifier. We do not store the raw account identifier, email address, name, or profile picture. The hash is used only to find the same wallet when you link the same account again.',
-					'The App does not collect location, contacts, photos, videos, microphone recordings, health data, or advertising identifiers.'
+					'Game features do not collect location, contacts, photos, videos, microphone recordings, or health data. The Google Play and App Store versions do not use an ad SDK or advertising identifiers. AppsInToss interstitials use the Toss integrated ad SDK. Toss and Google AdMob may process advertising identifiers, device and network information, and ad impression and click data according to their policies and your device consent settings. Seori Labs does not link these advertising identifiers to purchase accounts or game analytics identifiers.'
 				]
 			},
 			{
@@ -104,9 +110,15 @@ export const lizardTycoonPrivacyContent: Record<'ko' | 'en', PrivacyContent> = {
 				]
 			},
 			{
+				title: 'AppsInToss Ads',
+				body: [
+					'Ad counts, the last ad close time, session activity times, and completion identifiers are stored on your device separately from game saves to enforce frequency limits and prevent duplicates. We analyze ad opportunities, skip reasons, loads, requests, shows, impressions, closes, errors, and display duration by market, OS, bundle, and policy version. Toss Login is not required to view ads.'
+				]
+			},
+			{
 				title: 'Processors and Transfers',
 				body: [
-					'Seori Labs does not sell personal data or share it for advertising.',
+					'Seori Labs does not sell personal data. Toss and Google ad SDKs may process data to provide AppsInToss ads. The Toss privacy policy (toss.im/privacy-policy) and Google privacy policy (policies.google.com/privacy) also apply.',
 					'Google Firebase, Google Analytics, and Google Cloud process data as service providers for analytics and diagnostics, anonymous authentication, the purchase ledger, the Crystal wallet ledger, and server operations. Google Play, the Apple App Store, and AppsInToss or Toss process login, payment, and refund data for the market you choose. Account linking uses the Google or Apple sign-in system you choose, and each provider handles sign-in data under its own privacy policy.',
 					'Data sent to servers is encrypted in transit with HTTPS/TLS. It may be processed outside your country depending on service-provider infrastructure.'
 				]
