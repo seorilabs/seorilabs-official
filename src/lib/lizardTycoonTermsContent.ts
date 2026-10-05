@@ -7,7 +7,7 @@ export const lizardTycoonTermsContent: Record<Locale, LegalPageContent> = {
 		description:
 			'내 도마뱀 키우기: 픽셀 테라리움 육성의 서비스 내용, 인앱결제, 크리스털과 모프 상자, 계정 연결, 환불에 관한 앱별 이용약관입니다.',
 		kicker: 'Lizard Terrarium Terms of Service',
-		lastUpdated: '2026년 9월 30일',
+		lastUpdated: '2026년 10월 5일',
 		intro:
 			'이 약관은 Seori Labs가 제공하는 「내 도마뱀 키우기: 픽셀 테라리움 육성」(Android 패키지 및 iOS 번들 ID com.seorilabs.lizardtycoon, 이하 “앱”) 이용에 적용됩니다. 앱은 Google Play, Apple App Store, AppsInToss를 통해 제공됩니다.',
 		sections: [
@@ -22,7 +22,7 @@ export const lizardTycoonTermsContent: Record<Locale, LegalPageContent> = {
 			{
 				title: '서비스 내용',
 				body: [
-					'앱은 도마뱀을 돌보는 1인용 육성 게임입니다. 핵심 돌봄과 게임 진행은 무료이며 광고를 포함하지 않습니다.',
+					'앱은 도마뱀을 돌보는 1인용 육성 게임입니다. 핵심 돌봄과 게임 진행은 무료입니다. Google Play·App Store 버전은 광고를 포함하지 않습니다. AppsInToss 버전은 튜토리얼을 마친 뒤 놀이·탐사·제작 결과를 확인하고 화면을 닫거나 홈으로 돌아가는 경계에 전면 광고가 표시될 수 있습니다. 광고 시청에 로그인이나 구매가 필요하지 않습니다.',
 					'이용자는 원하는 프리미엄 품종, 사육 랙 확장, 테마, 액세서리를 1회 구매(비소모품)로 살 수 있습니다. 프리미엄 품종은 확정되지만 실제 입양 개체의 모프·성격·체형·시작 크기·선호 먹이는 무작위로 정해지며, 모든 결과의 확률 또는 범위·분포를 결제 전에 구매 버튼과 가까운 위치에 표시합니다.',
 					'이용자는 유료 재화 “크리스털”을 충전하고, 크리스털로 “모프 상자”를 열어 무작위 모프(도마뱀 외형)를 얻을 수 있습니다.',
 					'돌봄은 인터넷 연결 없이 이용할 수 있으나 신규 구매, 구매 재검증과 미결 지급 복구, 환불 상태 동기화, 크리스털 충전과 사용에는 인터넷 연결이 필요합니다.',
@@ -86,7 +86,7 @@ export const lizardTycoonTermsContent: Record<Locale, LegalPageContent> = {
 		description:
 			'App-specific terms for Lizard Terrarium covering the service, in-app purchases, Crystals and Morph Boxes, account linking, and refunds.',
 		kicker: 'Lizard Terrarium Terms of Service',
-		lastUpdated: 'September 30, 2026',
+		lastUpdated: 'October 5, 2026',
 		intro:
 			'These terms apply to “Lizard Terrarium” (Android package and iOS bundle ID com.seorilabs.lizardtycoon, the “App”), provided by Seori Labs. The App is distributed through Google Play, the Apple App Store, and AppsInToss.',
 		sections: [
@@ -101,7 +101,7 @@ export const lizardTycoonTermsContent: Record<Locale, LegalPageContent> = {
 			{
 				title: 'The Service',
 				body: [
-					'The App is a single-player game about caring for lizards. Core care and game progress are free, and the App contains no ads.',
+					'The App is a single-player game about caring for lizards. Core care and game progress are free. The Google Play and App Store versions contain no ads. On AppsInToss, an interstitial may appear after the tutorial when you confirm play, expedition, or crafting results and close the screen or return home. No sign-in or purchase is required for ads.',
 					'You may buy premium species, rack expansions, themes, and accessories as one-time (non-consumable) purchases. A premium species is guaranteed, but the adopted individual’s morph, personality, body shape, starting size, and food preference are randomized. The odds or ranges and distributions of every outcome are shown before payment, next to the purchase button.',
 					'You may top up a paid currency called “Crystals” and spend Crystals to open “Morph Boxes”, which grant a random morph (lizard appearance).',
 					'Care works offline. New purchases, purchase re-verification and pending-grant recovery, refund-status sync, and Crystal top-ups and spending require an internet connection.',
