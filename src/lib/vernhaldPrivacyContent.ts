@@ -62,7 +62,7 @@ export const vernhaldPrivacyContent: Record<'ko' | 'en', PrivacyContent> = {
 				body: [
 					'앱에는 선택형 비소모성 일회성 상품 두 개(“확장 팩 1: 해적과 태엽”, “광고 없는 보상”)가 있습니다. 각 기기의 Google Play 또는 App Store 결제로 판매합니다.',
 					'카드번호 같은 결제 정보는 마켓이 처리하며 Seori Labs는 받지 않습니다.',
-					'구매·복원 때 상품 ID와 Google Play 구매 토큰 또는 App Store 거래 ID를 서버에 보내 해당 마켓의 구매·환불 상태를 검증합니다. 서버는 마켓, 검증 환경, 거래와 상품, 구매 증명, 익명 이용자별 권한 연결, 거래 완료 여부를 보관하여 구매 제공·복원·부정 이용 방지에 사용합니다. 확인된 환불이나 철회는 상품 권한에 반영하되 게임 진행과 덱 기록을 삭제하지 않습니다. 테스트 구매와 테스트 리그는 실제 구매·공식 리그 원장과 분리합니다.',
+					'구매·복원 때 상품 ID와 Google Play 구매 토큰 또는 App Store 서명 거래와 거래 ID를 서버에 보내 해당 마켓의 구매·환불 상태를 검증합니다. 서버는 마켓, 검증 환경, 거래와 상품, 구매 증명, 익명 이용자별 권한 연결, 거래 완료 여부를 보관하여 구매 제공·복원·부정 이용 방지에 사용합니다. 확인된 환불이나 철회는 상품 권한에 반영하되 게임 진행과 덱 기록을 삭제하지 않습니다. 테스트 구매와 테스트 리그는 실제 구매·공식 리그 원장과 분리합니다.',
 					'같은 마켓 계정의 보유 기록으로 새 설치나 새 익명 이용자에게 비소모성 상품을 복원할 수 있습니다. Android와 iOS 사이 구매 공유, 기존 익명 이용자의 진행·덱·점수 이전이나 병합은 제공하지 않습니다. 스토어 심사 코드는 기기의 체험만 열며 서버의 구매 증명으로 인정하지 않습니다.'
 				]
 			},
@@ -179,7 +179,7 @@ export const vernhaldPrivacyContent: Record<'ko' | 'en', PrivacyContent> = {
 				body: [
 					'The app offers two optional, non-consumable one-time purchases, “Expansion 1: Corsairs & Clockwork” and “Ad-free Rewards”, through Google Play or the App Store on the respective device.',
 					'Payment details such as card numbers are handled by the store; Seori Labs never receives them.',
-					'For purchases and restoration, the app sends product IDs and Google Play purchase tokens or App Store transaction IDs to our server to verify purchase and refund status with the respective store. We retain market, verified environment, transaction and product, purchase proof, anonymous-user entitlement links and completion status for purchase delivery, restoration and fraud prevention. Confirmed refunds or revocations update entitlements without deleting game progress or deck records. Test purchases and test leagues use separate ledgers from real purchases and official leagues.',
+					'For purchases and restoration, the app sends product IDs and Google Play purchase tokens or signed App Store transactions and transaction IDs to our server to verify purchase and refund status with the respective store. We retain market, verified environment, transaction and product, purchase proof, anonymous-user entitlement links and completion status for purchase delivery, restoration and fraud prevention. Confirmed refunds or revocations update entitlements without deleting game progress or deck records. Test purchases and test leagues use separate ledgers from real purchases and official leagues.',
 					'Non-consumable purchases can be restored to a new installation or anonymous identifier using the same store account. We do not share purchases between Android and iOS or transfer or merge an earlier anonymous player’s progress, decks or scores. A review code enables an on-device preview only and is not accepted as server purchase proof.'
 				]
 			},
