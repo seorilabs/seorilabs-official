@@ -54,6 +54,7 @@ export const lizardTycoonPrivacyContent: Record<'ko' | 'en', PrivacyContent> = {
 				title: '보관과 삭제',
 				body: [
 					'기기 내 게임 데이터는 앱을 삭제하면 제거됩니다. 분석 데이터는 Google Analytics에 설정된 보관 기간 동안 보관된 뒤 삭제되거나 집계·비식별화됩니다.',
+					'Firebase Crashlytics는 호출 경로와 관련 설치 식별자를 90일 보관한 뒤 운영·백업 시스템에서 삭제 절차를 시작합니다.',
 					'구매 원장과 크리스털 지갑 원장은 유료 권한 제공, 복원, 환불 차감, 회계·감사, 부정 이용 방지 및 법적 의무에 필요한 기간 동안 보관한 뒤 삭제하거나 비식별화합니다. 계정 연결 해시는 이용자가 계정 삭제를 요청하면 함께 삭제합니다.',
 					'Google 또는 Apple 계정을 연결한 이용자는 앱 삭제·재설치나 기기 변경 뒤 같은 계정을 다시 연결해 크리스털 지갑과 구매 기록을 복구할 수 있습니다.',
 					`데이터 열람 또는 삭제 요청은 ${site.email}로 보내주세요. 요청 확인을 위해 앱과 거래를 식별하는 최소 정보를 요청할 수 있습니다. 법령, 회계, 분쟁 또는 부정 이용 방지에 필요한 기록은 해당 목적이 끝날 때까지 제한적으로 보관될 수 있습니다.`
@@ -129,6 +130,7 @@ export const lizardTycoonPrivacyContent: Record<'ko' | 'en', PrivacyContent> = {
 				title: 'Retention and Deletion',
 				body: [
 					'Local game data is removed when you delete the App. Analytics data is retained for the period configured in Google Analytics, then deleted or retained only in aggregated or de-identified form.',
+					'Firebase Crashlytics retains crash traces and associated installation identifiers for 90 days before starting removal from live and backup systems.',
 					'Purchase-ledger and Crystal-wallet records are retained as needed to provide and restore paid entitlements, apply refund deductions, support accounting and audits, prevent abuse, and meet legal obligations, then deleted or de-identified. The account-link hash is deleted together with your data when you request account deletion.',
 					'If you linked a Google or Apple account, you can restore your Crystal wallet and purchase records after reinstalling the App or changing devices by linking the same account again.',
 					`Send access or deletion requests to ${site.email}. We may request the minimum information needed to identify the App installation or transaction. Records required by law or for accounting, disputes, or fraud prevention may be retained on a restricted basis until that purpose ends.`
