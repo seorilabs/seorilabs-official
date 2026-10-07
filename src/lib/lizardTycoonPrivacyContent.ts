@@ -7,7 +7,7 @@ export const lizardTycoonPrivacyContent: Record<'ko' | 'en', PrivacyContent> = {
 		description:
 			'내 도마뱀 키우기: 픽셀 테라리움 육성의 게임 데이터, 분석 및 인앱결제 처리에 관한 개인정보 처리방침입니다.',
 		kicker: 'Lizard Terrarium Privacy Policy',
-		lastUpdated: '2026년 10월 5일',
+		lastUpdated: '2026년 10월 7일',
 		lastUpdatedLabel: '시행일 및 최종 수정일',
 		backLabel: '서리랩스 홈으로',
 		languageLabel: '언어',
@@ -20,6 +20,7 @@ export const lizardTycoonPrivacyContent: Record<'ko' | 'en', PrivacyContent> = {
 					'게임 진행 상황과 설정은 이용자의 기기에만 저장되며 Seori Labs 서버로 전송되지 않습니다. 앱을 삭제하면 기기에 저장된 진행 상황도 삭제됩니다.',
 					'서비스 품질을 확인하기 위해 Google Analytics for Firebase로 화면 조회, 탭, 튜토리얼 진행, 도마뱀 돌보기와 같은 앱·게임 내 상호작용 및 앱 인스턴스에 연결된 분석 식별자를 수집합니다. 이름, 이메일, 전화번호 또는 광고 ID와 연결하지 않으며 광고나 교차 앱 추적에 사용하지 않습니다.',
 					'서비스 안정성을 확인하기 위해 릴리스 빌드에서 발생한 GDScript 오류의 앱 내부 파일 경로(res://), 코드 라인, 오류 유형과 허용 목록 오류 분류, 최대 2개의 파일·함수·라인 프레임을 진단 데이터로 처리합니다. 같은 파일·라인은 실행 세션당 1회, 실행 세션당 전체 20건으로 제한합니다. 오류 원문, 로컬·멤버 변수, 게임 저장 내용, 기기의 절대 사용자 경로는 수집하지 않습니다.',
+					'iOS 버전은 Firebase Crashlytics로 네이티브 비정상 종료의 호출 경로, 앱 버전과 실행 단계, 기기·OS 정보, Crashlytics 설치 UUID와 Firebase installation ID, 비정상 종료 직전의 기존 가명 분석 이벤트를 처리합니다. 제한된 GDScript 오류도 안정성 확인에 사용합니다. 계정 ID, 도마뱀 이름, 저장 내용과 인증 토큰을 진단에 첨부하지 않으며 광고·교차 앱 추적에 사용하지 않습니다. Crashlytics는 iOS 버전에만 적용됩니다.',
 					'Google Play와 Apple App Store에서는 기존 구매 권한 확인과 복원을 위해 Firebase 익명 설치 사용자 ID를 사용합니다. AppsInToss에서는 토스 로그인으로 받은 앱 범위 사용자 키를 서버에서 즉시 SHA-256 처리한 Platform 사용자 식별자를 사용합니다. 원본 사용자 키는 저장하거나 앱에 반환하지 않습니다.',
 					'AppsInToss 토스 로그인 동의 과정에서 토스가 이름을 제공할 수 있지만 Seori Labs는 이름을 기능에 사용하거나 서버에 저장하지 않습니다. 인앱결제를 선택한 경우 마켓·상품 ID, 구매 또는 주문의 거래 참조값과 토큰, 권한·환불 상태 및 처리 시각을 구매 검증과 복원 원장에 저장합니다. 결제 카드번호와 은행계좌 정보는 Seori Labs가 수집하지 않습니다.',
 					'크리스털(유료 재화)을 사용하는 경우 유상·무상 크리스털 잔액, 연구 조각과 증표, 모프 상자 열기 요청과 결과, 보장 횟수, 연구·탐사 상태, 지급·차감 시각과 관련 주문 참조를 서버 원장에 저장합니다. 결과는 서버가 정하며 요청별 기록은 같은 요청의 중복 처리 방지와 환불 차감에 사용합니다.',
@@ -53,6 +54,7 @@ export const lizardTycoonPrivacyContent: Record<'ko' | 'en', PrivacyContent> = {
 				title: '보관과 삭제',
 				body: [
 					'기기 내 게임 데이터는 앱을 삭제하면 제거됩니다. 분석 데이터는 Google Analytics에 설정된 보관 기간 동안 보관된 뒤 삭제되거나 집계·비식별화됩니다.',
+					'Firebase Crashlytics는 호출 경로와 관련 설치 식별자를 90일 보관한 뒤 운영·백업 시스템에서 삭제 절차를 시작합니다.',
 					'구매 원장과 크리스털 지갑 원장은 유료 권한 제공, 복원, 환불 차감, 회계·감사, 부정 이용 방지 및 법적 의무에 필요한 기간 동안 보관한 뒤 삭제하거나 비식별화합니다. 계정 연결 해시는 이용자가 계정 삭제를 요청하면 함께 삭제합니다.',
 					'Google 또는 Apple 계정을 연결한 이용자는 앱 삭제·재설치나 기기 변경 뒤 같은 계정을 다시 연결해 크리스털 지갑과 구매 기록을 복구할 수 있습니다.',
 					`데이터 열람 또는 삭제 요청은 ${site.email}로 보내주세요. 요청 확인을 위해 앱과 거래를 식별하는 최소 정보를 요청할 수 있습니다. 법령, 회계, 분쟁 또는 부정 이용 방지에 필요한 기록은 해당 목적이 끝날 때까지 제한적으로 보관될 수 있습니다.`
@@ -81,7 +83,7 @@ export const lizardTycoonPrivacyContent: Record<'ko' | 'en', PrivacyContent> = {
 		description:
 			'Privacy Policy for game data, analytics, and in-app purchase processing in Lizard Terrarium.',
 		kicker: 'Lizard Terrarium Privacy Policy',
-		lastUpdated: 'October 5, 2026',
+		lastUpdated: 'October 7, 2026',
 		lastUpdatedLabel: 'Effective and last updated',
 		backLabel: 'Back to Seori Labs',
 		languageLabel: 'Language',
@@ -94,6 +96,7 @@ export const lizardTycoonPrivacyContent: Record<'ko' | 'en', PrivacyContent> = {
 					'Game progress and settings are stored only on your device and are not sent to Seori Labs servers. Removing the App also removes this local progress.',
 					'To understand service quality, Google Analytics for Firebase collects screen views, taps, tutorial progress, lizard-care actions, other in-app or gameplay interactions, and an analytics identifier associated with the app instance. We do not link this data to a name, email address, phone number, or advertising ID, and do not use it for advertising or cross-app tracking.',
 					'To monitor reliability, release builds process diagnostic data from GDScript errors: the app-relative file path (res://), code line, error type and allowlisted classification, and up to two stack frames containing file, function, and line information. We limit reports from the same file and line to once per session and cap each session at 20 reports. We do not collect the raw error message, local or member variables, saved game data, or absolute user paths from the device.',
+					'The iOS version uses Firebase Crashlytics to process native crash stack traces, app version and startup phase, device and OS information, Crashlytics installation UUIDs and Firebase installation IDs, and existing pseudonymous analytics events immediately before a crash. Limited GDScript diagnostics also help monitor reliability. We do not attach account IDs, lizard names, saved game contents, or authentication tokens to diagnostics, or use them for advertising or cross-app tracking. Crashlytics applies only to the iOS version.',
 					'On Google Play and the Apple App Store, the App uses a Firebase anonymous installation user ID to check and restore existing purchase entitlements. On AppsInToss, we immediately transform the app-scoped user key received through Toss Login with SHA-256 and use the result as a Platform user identifier. We do not store the original user key or return it to the App.',
 					'Toss may provide a name during the AppsInToss login consent flow, but Seori Labs does not use it for App features or store it on our servers. If you choose an in-app purchase, we store market and product IDs, transaction references or tokens, entitlement and refund status, and processing timestamps in our purchase-validation and restoration ledger. Seori Labs does not collect payment card or bank details.',
 					'If you use Crystals (a paid currency), we store your paid and free Crystal balances, research shards and tokens, Morph Box open requests and results, guarantee counters, research and expedition state, grant and deduction timestamps, and related order references in our server ledger. Results are determined by the server, and per-request records are used to prevent duplicate processing and to apply refund deductions.',
@@ -127,6 +130,7 @@ export const lizardTycoonPrivacyContent: Record<'ko' | 'en', PrivacyContent> = {
 				title: 'Retention and Deletion',
 				body: [
 					'Local game data is removed when you delete the App. Analytics data is retained for the period configured in Google Analytics, then deleted or retained only in aggregated or de-identified form.',
+					'Firebase Crashlytics retains crash traces and associated installation identifiers for 90 days before starting removal from live and backup systems.',
 					'Purchase-ledger and Crystal-wallet records are retained as needed to provide and restore paid entitlements, apply refund deductions, support accounting and audits, prevent abuse, and meet legal obligations, then deleted or de-identified. The account-link hash is deleted together with your data when you request account deletion.',
 					'If you linked a Google or Apple account, you can restore your Crystal wallet and purchase records after reinstalling the App or changing devices by linking the same account again.',
 					`Send access or deletion requests to ${site.email}. We may request the minimum information needed to identify the App installation or transaction. Records required by law or for accounting, disputes, or fraud prevention may be retained on a restricted basis until that purpose ends.`
