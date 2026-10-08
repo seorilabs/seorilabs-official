@@ -6,7 +6,7 @@ export const bloomhandPrivacyContent: Record<'ko' | 'en', PrivacyContent> = {
 		description:
 			'블룸핸드의 가명 계정, 끝없는 도전 순위(토종·개량 리그), Google Play 게임즈·Game Center, 이용 통계, 보상형 광고, 친구 상자를 포함한 인앱 결제와 데이터 삭제 안내입니다.',
 		kicker: 'Bloomhand Privacy Policy',
-		lastUpdated: '2026년 10월 1일',
+		lastUpdated: '2026년 10월 8일',
 		lastUpdatedLabel: '시행일 및 최종 수정일',
 		backLabel: '서리랩스 홈으로',
 		languageLabel: '언어',
@@ -38,7 +38,7 @@ export const bloomhandPrivacyContent: Record<'ko' | 'en', PrivacyContent> = {
 				title: '이용 통계',
 				body: [
 					'게임 개선을 위해 튜토리얼 단계, 패·가지치기·시장 행동, 하루와 런의 결과, 화면 이동 같은 게임 내 행동 기록과 앱 버전·언어·실행 환경·시각을 기기에서 만든 무작위 식별자와 함께 Google Analytics로 보냅니다. 런 시작·종료, 광고·결제 결과 같은 운영 기록은 가명 계정과 함께 Seori Platform으로 보냅니다. 통계에는 광고 식별자를 넣지 않고 개인화 광고에 사용하지 않습니다.',
-					'설정의 “사용 통계 보내기”를 끄면 이후 전송을 멈춥니다.'
+					'iPhone·iPad에서는 사용 통계 보내기가 처음부터 켜져 있고, Android에서는 처음 실행할 때 보낼지 고릅니다. 어느 기기에서든 설정의 “사용 통계 보내기”를 끄면 이후 전송을 멈춥니다.'
 				]
 			},
 			{
@@ -90,7 +90,7 @@ export const bloomhandPrivacyContent: Record<'ko' | 'en', PrivacyContent> = {
 		description:
 			'Pseudonymous accounts, Endless challenge rankings (Heirloom and Hybrid leagues), Google Play Games and Game Center, usage analytics, rewarded ads, in-app purchases including Friend Boxes, and data deletion in Bloomhand.',
 		kicker: 'Bloomhand Privacy Policy',
-		lastUpdated: 'October 1, 2026',
+		lastUpdated: 'October 8, 2026',
 		lastUpdatedLabel: 'Effective and last updated',
 		backLabel: 'Back to Seori Labs',
 		languageLabel: 'Language',
@@ -122,7 +122,7 @@ export const bloomhandPrivacyContent: Record<'ko' | 'en', PrivacyContent> = {
 				title: 'Usage analytics',
 				body: [
 					'To improve the game, in-game events such as tutorial steps, hands, pruning and market actions, day and run results and screen changes, together with app version, language, runtime and timestamps, are sent to Google Analytics with a random identifier created on your device. Operational records such as run start and end and ad and purchase results are sent to Seori Platform with your pseudonymous account. Analytics does not include advertising identifiers and is not used for personalized advertising.',
-					'Turning off “Send usage stats” in Settings stops further transmission.'
+					'On iPhone and iPad, “Send usage stats” is on by default; on Android, you choose on first launch. On any device, turning off “Send usage stats” in Settings stops further transmission.'
 				]
 			},
 			{
