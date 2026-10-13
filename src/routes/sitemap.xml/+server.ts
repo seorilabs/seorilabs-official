@@ -1,5 +1,6 @@
 import { content, site, type Locale } from '$lib/content';
 import { globalLegalDocs } from '$lib/legal/docs';
+import { matchPicturePrivacyPaths } from '$lib/matchPicturePrivacyContent';
 import { landingProducts, liveProducts, productLegalDocs } from '$lib/products/derive';
 import { products } from '$lib/products/registry';
 
@@ -67,6 +68,13 @@ const groups: SitemapGroup[] = [
 		lastmod: doc.updated,
 		pages: doc.paths
 	})),
+
+	// iOS 1.1.7 전용 문서: 공통 제품 정책 목록에 등록하지 않는다.
+	{
+		priority: '0.5',
+		lastmod: '2026-10-13',
+		pages: matchPicturePrivacyPaths.map(({ key, path }) => ({ path, hreflang: HREFLANG[key] }))
+	},
 
 	// 제품별 법무 문서. 원장에서 파생되므로 새 제품을 추가해도 누락되지 않는다.
 	...productLegalDocs.map(({ doc }) => ({

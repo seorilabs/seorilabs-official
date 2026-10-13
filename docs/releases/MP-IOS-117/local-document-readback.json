@@ -1,0 +1,24 @@
+{
+	"checkedAt": "2026-10-13T14:26:37.527895+00:00",
+	"environment": "local static preview HTTP; not deployed",
+	"initialObservation": "First final-text check rejected the expected bare-domain canonical; observed canonical is www.seorilabs.com and verified against the actual site configuration.",
+	"configurationScope": "iOS 1.1.7 existing blank analytics; GMA/UMP disclosures retained",
+	"pages": [
+		{
+			"locale": "ko",
+			"path": "/apps/match-picture/privacy/",
+			"status": 200,
+			"matchedParagraphs": 6,
+			"languageCanonicalAndLocaleLinks": "pass",
+			"htmlSha256": "5cc7a896e29438c634c496893786aa8f7c50479c301fa237e84eb3e6f96bb421"
+		},
+		{
+			"locale": "en",
+			"path": "/en/apps/match-picture/privacy/",
+			"status": 200,
+			"matchedParagraphs": 6,
+			"languageCanonicalAndLocaleLinks": "pass",
+			"htmlSha256": "d7b82cb765d03e40640639700ae958b75a49aff5248935ee6863b1718a8f3dfa"
+		}
+	]
+}
