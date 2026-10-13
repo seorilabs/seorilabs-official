@@ -7,7 +7,7 @@ export const vernhaldPrivacyContent: Record<'ko' | 'en', PrivacyContent> = {
 		description:
 			'베른할드 연대기의 기기 내 저장, 선택형 이용 통계, 보상형 광고, 인앱 구매에 관한 개인정보 처리방침입니다.',
 		kicker: 'Vernhald Chronicles Privacy Policy',
-		lastUpdated: '2026년 10월 7일',
+		lastUpdated: '2026년 10월 13일',
 		lastUpdatedLabel: '시행일 및 최종 수정일',
 		backLabel: '서리랩스 홈으로',
 		languageLabel: '언어',
@@ -42,9 +42,9 @@ export const vernhaldPrivacyContent: Record<'ko' | 'en', PrivacyContent> = {
 			{
 				title: '이용 통계(선택)',
 				body: [
-					'앱을 처음 실행하면 이용 통계를 공유할지 한 번 묻습니다. 이용자가 답하기 전이나 공유하지 않기로 선택하면 이용 통계와 오류 보고서를 수집하지 않습니다. 이 선택은 리그 운영에 필요한 데이터 처리와 별개입니다. 이 선택은 설정에서 언제든 바꿀 수 있습니다.',
+					'Android 앱은 처음 실행할 때 이용 통계를 공유할지 한 번 묻고, 이용자가 답하기 전이나 공유하지 않기로 선택하면 이용 통계를 수집하지 않습니다. iPhone·iPad 앱은 묻지 않고 이용 통계 공유가 켜진 상태로 시작합니다. 어느 기기에서든 설정의 “사용 통계”에서 언제든 끌 수 있습니다. 이 선택은 리그 운영에 필요한 데이터 처리와 별개입니다.',
 					'공유를 켜면 Google Firebase 애널리틱스로 게임 이벤트가 전송됩니다. 판 시작과 종료(도전 단계, 라운드, 남은 체력), 강화 카드 선택, 보상형 광고의 요청·노출·실패·보상 획득, 상품 구매 결과(상품 ID와 완료·대기·취소·실패)가 해당하며, 앱 마켓·플랫폼·앱 버전이 함께 담깁니다. 여기에 Firebase 앱 인스턴스 ID와 Firebase가 자동으로 수집하는 기기·앱 정보가 더해집니다.',
-					'Android 앱이 비정상 종료되면 Firebase Crashlytics로 오류 보고서(기기 모델, OS 버전, 오류 발생 지점의 스택 트레이스)가 전송됩니다. 오류 보고서도 이용 통계와 같은 선택을 따릅니다.',
+					'Android 앱이 비정상 종료되면 Firebase Crashlytics로 오류 보고서(기기 모델, OS 버전, 오류 발생 지점의 스택 트레이스)가 전송됩니다. 오류 보고서는 이용 통계 선택과 별개로 기본으로 켜져 있으며 설정의 “오류 보고”에서 끌 수 있습니다.',
 					'애널리틱스의 광고 저장(ad storage), 광고 사용자 데이터(ad user data), 광고 개인 맞춤(ad personalization) 동의는 항상 거부로 설정되어 있습니다. 사용자 ID는 설정하지 않습니다.'
 				]
 			},
@@ -52,7 +52,8 @@ export const vernhaldPrivacyContent: Record<'ko' | 'en', PrivacyContent> = {
 				title: '광고',
 				body: [
 					'앱에는 이용자가 원할 때만 보는 보상형 광고만 있습니다. 전면 광고, 배너 광고, 앱 시작 광고는 없습니다. 광고는 Google AdMob이 제공합니다.',
-					'광고를 불러오기 전에, 법령이 요구하는 지역(예: 유럽경제지역, 영국)에서는 Google 사용자 메시지 플랫폼(UMP)이 동의 양식을 보여 줍니다. 해당 지역에서는 설정에 “광고 개인정보 설정” 항목이 나타나 선택을 다시 바꿀 수 있습니다.',
+					'Android 앱은 광고를 불러오기 전에, 법령이 요구하는 지역(예: 유럽경제지역, 영국)에서 Google 사용자 메시지 플랫폼(UMP)이 동의 양식을 보여 줍니다. 해당 지역에서는 설정에 “광고 개인정보 설정” 항목이 나타나 선택을 다시 바꿀 수 있습니다.',
+					'iPhone·iPad 앱은 앱 추적 투명성(ATT) 허락을 요청하지 않으며, 다른 회사의 앱·웹사이트 데이터와 연결하는 추적을 하지 않습니다. 광고는 맞춤형이 아닌 광고만 요청합니다.',
 					'광고를 이용하면 Google과 광고 파트너가 자체 정책에 따라 IP 주소와 그로부터 추정한 대략적 위치, 광고 ID, 광고 상호작용, 진단 정보를 처리할 수 있습니다.',
 					'앱이 요청하는 광고 콘텐츠 등급의 상한은 청소년(Teen)입니다.'
 				]
@@ -70,7 +71,7 @@ export const vernhaldPrivacyContent: Record<'ko' | 'en', PrivacyContent> = {
 				title: '처리 목적',
 				body: [
 					'기기에 저장하는 데이터는 게임을 실행하고 진행 상황을 이어 가기 위해 처리합니다.',
-					'이용 통계와 오류 보고서는 이용자가 동의한 경우에만 앱 안정성 개선과 게임 균형 조정을 위해 처리합니다.',
+					'이용 통계와 오류 보고서는 앱 안정성 개선과 게임 균형 조정을 위해서만 처리하며, 설정에서 언제든 끌 수 있습니다.',
 					'광고와 구매 관련 처리는 보상형 광고와 일회성 상품을 제공하기 위해 이루어집니다.'
 				]
 			},
@@ -94,7 +95,7 @@ export const vernhaldPrivacyContent: Record<'ko' | 'en', PrivacyContent> = {
 				title: '이용자의 선택',
 				body: [
 					'이용 통계와 오류 보고서 공유는 설정에서 언제든 켜거나 끌 수 있습니다.',
-					'광고 동의가 필요한 지역에서는 설정의 “광고 개인정보 설정”에서 광고 관련 선택을 바꿀 수 있습니다.',
+					'광고 동의가 필요한 지역의 Android 앱에서는 설정의 “광고 개인정보 설정”에서 광고 관련 선택을 바꿀 수 있습니다.',
 					'Android에서는 설정 > 개인정보 보호 > 광고에서 광고 ID를 재설정하거나 삭제할 수 있습니다.'
 				]
 			},
@@ -124,7 +125,7 @@ export const vernhaldPrivacyContent: Record<'ko' | 'en', PrivacyContent> = {
 		description:
 			'How Vernhald Chronicles handles on-device saves, optional usage statistics, rewarded ads, and in-app purchases.',
 		kicker: 'Vernhald Chronicles Privacy Policy',
-		lastUpdated: '7 October 2026',
+		lastUpdated: '13 October 2026',
 		lastUpdatedLabel: 'Effective and last updated',
 		backLabel: 'Back to Seori Labs',
 		languageLabel: 'Language',
@@ -159,9 +160,9 @@ export const vernhaldPrivacyContent: Record<'ko' | 'en', PrivacyContent> = {
 			{
 				title: 'Usage statistics (optional)',
 				body: [
-					'The first time you open the app, it asks once whether you want to share usage statistics. Usage statistics and crash reports are not collected before you answer or if you choose not to share. This choice is separate from processing needed to operate the league. You can change this choice at any time in Settings.',
+					'On Android, the app asks once on first launch whether you want to share usage statistics, and usage statistics are not collected before you answer or if you choose not to share. On iPhone and iPad, the app does not ask and starts with sharing on. On any device, you can turn it off at any time under “Usage stats” in Settings. This choice is separate from processing needed to operate the league.',
 					'When sharing is on, game events are sent to Google Firebase Analytics: run start and end (with challenge level, round, and remaining HP), augment card picks, rewarded ads requested, shown, failed, and earned, and the result of a product purchase, together with the app market, platform, and app version. Firebase also receives the Firebase app instance ID and the device and app information it collects automatically.',
-					'If the Android app crashes, Firebase Crashlytics receives a crash report (device model, OS version, and the stack trace of the crash). Crash reports follow the same choice as usage statistics.',
+					'If the Android app crashes, Firebase Crashlytics receives a crash report (device model, OS version, and the stack trace of the crash). Crash reports are on by default, separately from the usage statistics choice, and can be turned off under “Crash reports” in Settings.',
 					'Analytics consent for ad storage, ad user data, and ad personalization is always set to denied. No user ID is set.'
 				]
 			},
@@ -169,7 +170,8 @@ export const vernhaldPrivacyContent: Record<'ko' | 'en', PrivacyContent> = {
 				title: 'Advertising',
 				body: [
 					'The app shows only optional rewarded ads that you choose to watch. There are no interstitial, banner, or app-open ads. Ads are provided by Google AdMob.',
-					'Before ads load, Google’s User Messaging Platform shows a consent form where the law requires it (for example, in the EEA or the UK). In those regions an “Ad privacy choices” entry appears in Settings so you can change your choice later.',
+					'On Android, before ads load, Google’s User Messaging Platform shows a consent form where the law requires it (for example, in the EEA or the UK). In those regions an “Ad privacy choices” entry appears in Settings so you can change your choice later.',
+					'On iPhone and iPad, the app does not request App Tracking Transparency permission and does not track you by linking its data with other companies’ apps or websites. It requests only non-personalized ads.',
 					'When ads are used, Google and its advertising partners may process your IP address and approximate location derived from it, the advertising ID, ad interactions, and diagnostic information under their own policies.',
 					'The maximum ad content rating the app requests is Teen.'
 				]
@@ -187,7 +189,7 @@ export const vernhaldPrivacyContent: Record<'ko' | 'en', PrivacyContent> = {
 				title: 'Purposes',
 				body: [
 					'Data stored on your device is processed to run the game and keep your progress.',
-					'Usage statistics and crash reports are processed, only with your consent, to improve stability and tune game balance.',
+					'Usage statistics and crash reports are processed only to improve stability and tune game balance, and you can turn them off at any time in Settings.',
 					'Advertising and purchase processing takes place to provide rewarded ads and the one-time purchases.'
 				]
 			},
@@ -211,7 +213,7 @@ export const vernhaldPrivacyContent: Record<'ko' | 'en', PrivacyContent> = {
 				title: 'Your choices',
 				body: [
 					'You can turn sharing of usage statistics and crash reports on or off at any time in Settings.',
-					'In regions where ad consent is required, you can change your ad choices under “Ad privacy choices” in Settings.',
+					'On Android in regions where ad consent is required, you can change your ad choices under “Ad privacy choices” in Settings.',
 					'On Android you can reset or delete your advertising ID under Settings > Privacy > Ads.'
 				]
 			},
