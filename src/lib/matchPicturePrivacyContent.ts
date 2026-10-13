@@ -1,5 +1,10 @@
 import type { LegalDocContent } from '$lib/legal/types';
 
+export const matchPicturePrivacyPaths = [
+	{ key: 'ko' as const, path: '/apps/match-picture/privacy/' },
+	{ key: 'en' as const, path: '/en/apps/match-picture/privacy/' }
+];
+
 export const matchPicturePrivacyContent: Record<'ko' | 'en', LegalDocContent> = {
 	ko: {
 		title: '같은 그림 찾아보기 / Match Symbols 개인정보 처리방침',

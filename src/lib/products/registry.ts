@@ -347,7 +347,7 @@ export const products: Product[] = [
 		status: 'live',
 		category: 'game',
 		hasLanding: false,
-		updatedOn: '2026-10-13',
+		updatedOn: '2026-09-25',
 		// Google Play 등록명이다. App Store에는 '같은 그림 찾아보기 / Match Symbols'로 등록돼 있다.
 		name: { ko: '같은 그림 찾기', en: 'Match Picture' },
 		tagline: {
@@ -361,13 +361,7 @@ export const products: Product[] = [
 			{ kind: 'app-store', appId: '1528539634' }
 		],
 		media: { icon: '/products/match-picture/icon-256.webp' },
-		legal: [
-			{
-				kind: 'privacy',
-				path: { ko: '/apps/match-picture/privacy/', en: '/en/apps/match-picture/privacy/' },
-				updated: '2026-10-13'
-			}
-		]
+		legal: []
 	},
 	{
 		slug: 'baby-feeding-logger',

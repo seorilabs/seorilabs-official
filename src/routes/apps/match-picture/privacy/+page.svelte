@@ -1,6 +1,9 @@
 <script lang="ts">
 	import LegalDocPage from '$lib/legal/LegalDocPage.svelte';
-	import { matchPicturePrivacyContent } from '$lib/matchPicturePrivacyContent';
+	import {
+		matchPicturePrivacyContent,
+		matchPicturePrivacyPaths
+	} from '$lib/matchPicturePrivacyContent';
 </script>
 
 <LegalDocPage
@@ -8,4 +11,5 @@
 	content={matchPicturePrivacyContent.ko}
 	docKind="privacy"
 	productSlug="match-picture"
+	documentPaths={matchPicturePrivacyPaths}
 />

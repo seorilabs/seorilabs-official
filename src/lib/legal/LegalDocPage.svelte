@@ -17,12 +17,15 @@
 		docKind,
 		/** 제품 문서일 때의 slug. 경로와 breadcrumb을 원장에서 가져온다. */
 		productSlug = undefined,
+		/** 특정 마켓·버전 문서는 공통 제품 원장에 노출하지 않고 경로를 직접 지정한다. */
+		documentPaths = undefined,
 		contactHref = undefined
 	}: {
 		content: LegalDocContent;
 		locale: PrivacyLocaleKey;
 		docKind: LegalDocKind | 'support';
 		productSlug?: string;
+		documentPaths?: Array<{ key: PrivacyLocaleKey; path: string }>;
 		contactHref?: string;
 	} = $props();
 
@@ -33,6 +36,7 @@
 	 * 제품 문서는 원장에서, 회사 공통 개인정보처리방침은 8개 언어, 나머지는 ko/en이다.
 	 */
 	const localePaths = $derived.by((): Array<{ key: PrivacyLocaleKey; path: string }> => {
+		if (documentPaths) return documentPaths;
 		if (product) {
 			const doc = product.legal.find((entry) => entry.kind === docKind);
 			if (!doc) return [];
