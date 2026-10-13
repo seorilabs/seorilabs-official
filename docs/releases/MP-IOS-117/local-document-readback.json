@@ -1,23 +1,24 @@
 {
-	"checkedAt": "2026-10-13T13:04:23.485619+00:00",
-	"environment": "local Vite development SSR; not deployed",
-	"initialObservation": "First HTTP reads timed out during local server preparation; no PASS inferred. Direct TCP read subsequently returned 200.",
+	"checkedAt": "2026-10-13T14:26:37.527895+00:00",
+	"environment": "local static preview HTTP; not deployed",
+	"initialObservation": "First final-text check rejected the expected bare-domain canonical; observed canonical is www.seorilabs.com and verified against the actual site configuration.",
+	"configurationScope": "iOS 1.1.7 existing blank analytics; GMA/UMP disclosures retained",
 	"pages": [
 		{
 			"locale": "ko",
 			"path": "/apps/match-picture/privacy/",
 			"status": 200,
-			"matchedParagraphs": 7,
+			"matchedParagraphs": 6,
 			"languageCanonicalAndLocaleLinks": "pass",
-			"htmlSha256": "4438b11c63e8c6ae3c90c294f130d8a97dc6319557ba78c9593093a8b00dd5af"
+			"htmlSha256": "5cc7a896e29438c634c496893786aa8f7c50479c301fa237e84eb3e6f96bb421"
 		},
 		{
 			"locale": "en",
 			"path": "/en/apps/match-picture/privacy/",
 			"status": 200,
-			"matchedParagraphs": 7,
+			"matchedParagraphs": 6,
 			"languageCanonicalAndLocaleLinks": "pass",
-			"htmlSha256": "62835a0e60839df6f9a62f6dd1f161ae2cb46bd66d13a6c60a9ee31191f630ea"
+			"htmlSha256": "d7b82cb765d03e40640639700ae958b75a49aff5248935ee6863b1718a8f3dfa"
 		}
 	]
 }

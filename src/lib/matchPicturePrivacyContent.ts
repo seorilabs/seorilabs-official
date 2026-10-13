@@ -4,14 +4,14 @@ export const matchPicturePrivacyContent: Record<'ko' | 'en', LegalDocContent> = 
 	ko: {
 		title: '같은 그림 찾아보기 / Match Symbols 개인정보 처리방침',
 		description:
-			'iOS 같은 그림 찾아보기 1.1.7 이후의 광고 동의, 추적 허용, 기록과 이용 통계 처리 안내입니다.',
+			'iOS 같은 그림 찾아보기 1.1.7의 광고 동의, 추적 허용, 기록과 동의 데이터 처리 안내입니다.',
 		kicker: 'Match Symbols Privacy Policy',
 		lastUpdated: '2026년 10월 13일',
 		lastUpdatedLabel: '작성일',
 		backLabel: '서리랩스 홈으로',
 		languageLabel: '언어',
 		intro:
-			'이 문서는 Seori Labs의 iOS 앱 Match Symbols(앱 식별자 com.github.magicsih.MatchSymbol) 1.1.7 이후 버전의 데이터 처리를 설명합니다. 해당 버전이 공개되기 전에는 예정된 변경에 대한 안내이며, 이전 버전에는 같은 동작이 적용된다고 보장하지 않습니다. 이 앱의 데이터 처리에는 회사 공통 방침보다 앱별 고지가 우선합니다.',
+			'이 문서는 Seori Labs의 iOS 앱 Match Symbols(앱 식별자 com.github.magicsih.MatchSymbol) 1.1.7 버전의 데이터 처리를 설명합니다. 해당 버전이 공개되기 전에는 예정된 변경에 대한 안내이며, 이전 버전에는 같은 동작이 적용된다고 보장하지 않습니다. 이 앱의 데이터 처리에는 회사 공통 방침보다 앱별 고지가 우선합니다.',
 		sections: [
 			{
 				title: '게임 기록과 Game Center',
@@ -28,32 +28,32 @@ export const matchPicturePrivacyContent: Record<'ko' | 'en', LegalDocContent> = 
 				]
 			},
 			{
-				title: '동의 처리와 이용 통계',
+				title: '동의 처리를 위한 데이터',
 				body: [
-					'광고가 없어도 Google UMP는 필요한 동의 정보를 확인하기 위해 대략적 위치·제품 상호작용·성능 정보를 앱 기능 목적으로 처리할 수 있습니다. 앱은 게임 개선과 오류 확인을 위해 설치별 무작위 분석 식별자와 앱 실행·안내·게임 시작·완료·Retry·광고 결과 등 허용된 게임 이벤트를 Google Analytics로 전송합니다. 분석 식별자는 기기에 저장하고 분석 요청에 IDFA·Game Center 계정 ID·이메일·연락처를 넣지 않습니다. Apple 추적 거부는 이 별도 이용 통계의 중단을 뜻하지 않습니다.'
+					'광고가 없어도 Google UMP는 필요한 동의 정보를 확인하기 위해 대략적 위치·제품 상호작용·성능 정보를 앱 기능 목적으로 처리할 수 있습니다. 이 iOS 1.1.7 빌드는 별도의 앱 이용 통계를 전송하지 않습니다. 광고·동의 SDK가 처리할 수 있는 데이터는 위의 광고 및 동의 처리 안내를 따릅니다.'
 				]
 			},
 			{
 				title: '처리 사업자·보관·문의',
 				body: [
-					'광고와 동의 처리에는 Google AdMob·UMP, 분석에는 Google Analytics, 순위표에는 Apple Game Center를 사용합니다. 네트워크 요청에는 HTTPS를 사용합니다. Google과 Apple은 해당 서비스의 정책에 따라 사용자 국가 밖에서 정보를 처리할 수 있습니다. 전송한 정보의 보관·국제 이전·권리 처리에는 각 제공자의 정책도 적용됩니다. 개인정보 열람·정정·삭제·처리 제한 또는 앱 문의는 cs@seorilabs.com으로 보내 주세요. 요청 처리에 필요한 최소한의 정보를 알려 주시고 비밀번호·인증 토큰은 보내지 마세요.'
+					'광고와 동의 처리에는 Google AdMob·UMP, 순위표에는 Apple Game Center를 사용합니다. 네트워크 요청에는 HTTPS를 사용합니다. Google과 Apple은 해당 서비스의 정책에 따라 사용자 국가 밖에서 정보를 처리할 수 있습니다. 전송한 정보의 보관·국제 이전·권리 처리에는 각 제공자의 정책도 적용됩니다. 개인정보 열람·정정·삭제·처리 제한 또는 앱 문의는 cs@seorilabs.com으로 보내 주세요. 요청 처리에 필요한 최소한의 정보를 알려 주시고 비밀번호·인증 토큰은 보내지 마세요.'
 				]
 			}
 		],
 		footerNote:
-			'이 고지는 iOS 1.1.7 이후 버전의 예정된 동작을 설명합니다. 해당 버전 공개 전에는 이전 버전의 추적 허용이나 광고 동작을 보장하지 않습니다.'
+			'이 고지는 iOS 1.1.7 버전의 예정된 동작을 설명합니다. 해당 버전 공개 전에는 이전 버전의 추적 허용이나 광고 동작을 보장하지 않습니다.'
 	},
 	en: {
 		title: 'Match Symbols Privacy Policy',
 		description:
-			'Advertising consent, tracking permission, records and usage analytics in Match Symbols for iOS 1.1.7 and later.',
+			'Advertising consent, tracking permission, records and consent data in Match Symbols for iOS 1.1.7.',
 		kicker: 'Match Symbols Privacy Policy',
 		lastUpdated: 'October 13, 2026',
 		lastUpdatedLabel: 'Prepared on',
 		backLabel: 'Back to Seori Labs',
 		languageLabel: 'Language',
 		intro:
-			"This notice describes data handling in Seori Labs' iOS app Match Symbols (app identifier com.github.magicsih.MatchSymbol), version 1.1.7 and later. Before that version becomes public, it describes planned changes and does not promise the same behavior in earlier versions. This app-specific notice takes precedence over the company's general policy for this app.",
+			"This notice describes data handling in Seori Labs' iOS app Match Symbols (app identifier com.github.magicsih.MatchSymbol), version 1.1.7. Before that version becomes public, it describes planned changes and does not promise the same behavior in earlier versions. This app-specific notice takes precedence over the company's general policy for this app.",
 		sections: [
 			{
 				title: 'Game records and Game Center',
@@ -70,19 +70,19 @@ export const matchPicturePrivacyContent: Record<'ko' | 'en', LegalDocContent> = 
 				]
 			},
 			{
-				title: 'Consent processing and usage analytics',
+				title: 'Data for consent processing',
 				body: [
-					"Even without ads, Google UMP may process approximate location, product interaction and performance data for the functionality of checking required consent. To improve the game and diagnose errors, the app sends a random installation-specific analytics identifier and permitted game events, such as app launch, tutorial, game start, completion, Retry and ad results, to Google Analytics. The identifier is stored on your device. Analytics requests do not include IDFA, Game Center account ID, email or contacts. Denying Apple's tracking permission does not turn off these separate usage analytics."
+					'Even without ads, Google UMP may process approximate location, product interaction and performance data for the functionality of checking required consent. This iOS 1.1.7 build does not send separate app usage analytics. Data that advertising and consent SDKs may process is described above.'
 				]
 			},
 			{
 				title: 'Providers, retention and contact',
 				body: [
-					'The app uses Google AdMob and UMP for advertising and consent, Google Analytics for usage analytics, and Apple Game Center for leaderboards. Network requests use HTTPS. Google and Apple may process information outside your country according to their service policies. Their policies also apply to retention, international transfers and rights requests for information sent to those services. For access, correction, deletion, restriction or app support, contact cs@seorilabs.com. Provide only the information needed to handle your request; do not send passwords or authentication tokens.'
+					'The app uses Google AdMob and UMP for advertising and consent, and Apple Game Center for leaderboards. Network requests use HTTPS. Google and Apple may process information outside your country according to their service policies. Their policies also apply to retention, international transfers and rights requests for information sent to those services. For access, correction, deletion, restriction or app support, contact cs@seorilabs.com. Provide only the information needed to handle your request; do not send passwords or authentication tokens.'
 				]
 			}
 		],
 		footerNote:
-			'This notice describes planned behavior for iOS version 1.1.7 and later. Before that version is public, it does not promise the same tracking permission or advertising behavior in earlier versions.'
+			'This notice describes planned behavior for iOS version 1.1.7. Before that version is public, it does not promise the same tracking permission or advertising behavior in earlier versions.'
 	}
 };
