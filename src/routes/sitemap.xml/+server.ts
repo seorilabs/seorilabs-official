@@ -69,10 +69,10 @@ const groups: SitemapGroup[] = [
 		pages: doc.paths
 	})),
 
-	// iOS 1.1.7 전용 문서: 공통 제품 정책 목록에 등록하지 않는다.
+	// iOS 1.1.8 전용 문서: 공통 제품 정책 목록에 등록하지 않는다.
 	{
 		priority: '0.5',
-		lastmod: '2026-10-13',
+		lastmod: '2026-10-14',
 		pages: matchPicturePrivacyPaths.map(({ key, path }) => ({ path, hreflang: HREFLANG[key] }))
 	},
 
