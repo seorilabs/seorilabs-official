@@ -456,7 +456,7 @@ export const products: Product[] = [
 			{
 				kind: 'privacy',
 				path: { ko: '/apps/bloomhand/privacy/', en: '/en/apps/bloomhand/privacy/' },
-				updated: '2026-10-01'
+				updated: '2026-10-14'
 			},
 			{
 				kind: 'odds',
@@ -466,7 +466,7 @@ export const products: Product[] = [
 			{
 				kind: 'account-deletion',
 				path: { ko: '/apps/bloomhand/privacy/', en: '/en/apps/bloomhand/privacy/' },
-				updated: '2026-09-24',
+				updated: '2026-10-14',
 				legacyAnchor: { path: '/apps/bloomhand/privacy/', id: 'account-deletion' }
 			}
 		]
