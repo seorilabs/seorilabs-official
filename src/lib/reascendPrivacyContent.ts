@@ -7,8 +7,8 @@ export const reascendPrivacyContent: Record<'ko' | 'en', PrivacyContent> = {
 		description:
 			'리어센드의 계정 식별자, 클라우드 저장, 순위표, 분석 및 광고 처리에 관한 개인정보 처리방침입니다.',
 		kicker: 'Reascend Privacy Policy',
-		lastUpdated: '2026년 9월 25일',
-		lastUpdatedLabel: '시행일 및 최종 수정일',
+		lastUpdated: '2026년 10월 14일',
+		lastUpdatedLabel: '최종 수정일',
 		backLabel: '서리랩스 홈으로',
 		languageLabel: '언어',
 		intro:
@@ -26,8 +26,9 @@ export const reascendPrivacyContent: Record<'ko' | 'en', PrivacyContent> = {
 				title: '앱이 처리하는 데이터',
 				body: [
 					'진행 상황(탑 층과 스테이지, 능력치, 장비와 아바타, 재화, 임무와 우편, 시즌패스, 출석), 그리고 소리·진동·글자 크기·표시 언어 같은 설정이 저장 대상입니다. 이 값들은 기기에 저장되고, 클라우드 저장을 사용할 수 있는 상태에서는 플레이어 식별자로 구분되는 서버 문서에도 저장됩니다.',
-					'서비스 품질을 확인하기 위해 게임 내 이벤트(게임 시작, 회귀, 재화 획득과 소비, 첫 승급 등)를 수집합니다. 각 이벤트에는 무작위 세션 식별자와 화면을 보고 있던 시간이 함께 담깁니다.',
-					'분석 데이터를 Google 애널리틱스 4로 보낼 때는 플레이어 식별자를 그대로 보내지 않고 단방향 해시로 바꾼 값을 사용합니다. 애널리틱스에는 원본 식별자를 두지 않으며 GA4의 사용자 ID 항목도 사용하지 않습니다.',
+					'다음 분석 선택 안내는 Android·iOS 1.1.2 업데이트에서 적용될 내용입니다. 현재 공개된 이전 버전의 수집 동작은 이 웹페이지 개정만으로 바뀌지 않습니다. 1.1.2 이상을 설치하면 모든 지역에서 이용 분석은 기본적으로 꺼져 있으며, 이전 저장 데이터에 분석 선택이 기록되지 않은 경우에도 꺼진 상태로 시작합니다.',
+					'이용자가 앱 설정에서 이용 분석을 명시적으로 켠 경우에만 Google Firebase Analytics의 네이티브 SDK를 통해 앱 인스턴스 식별자, 앱·운영체제·기기 정보, 국가 등 지역 정보, 세션·화면 이용 정보와 게임 내 이벤트(게임 시작, 회귀, 재화 획득과 소비, 첫 승급 등)를 처리합니다.',
+					'Android·iOS 네이티브 분석에는 플레이어 식별자(uid)나 그 해시를 보내지 않으며, 앱 코드로 GA4의 사용자 ID를 지정하지 않습니다. 분석 선택 기록은 이 기기에만 저장됩니다. 분석에 관한 광고 저장, 광고 사용자 데이터와 광고 개인화 신호는 항상 거부 상태로 둡니다.',
 					'앱은 위치, 연락처, 사진, 동영상, 마이크, 건강 정보, 주소록에 접근하지 않습니다.'
 				]
 			},
@@ -52,7 +53,7 @@ export const reascendPrivacyContent: Record<'ko' | 'en', PrivacyContent> = {
 				title: '처리 목적과 법적 근거',
 				body: [
 					'진행 상황과 설정은 이용자가 게임을 이어서 할 수 있도록, 그리고 기기를 바꿔도 진행을 잃지 않도록 처리합니다.',
-					'분석 데이터는 앱 안정성 확인과 난이도·경제 균형 조정을 위해 처리합니다.',
+					'분석 데이터는 앱 안정성 확인과 난이도·경제 균형 조정을 위해 처리합니다. 1.1.2 이상의 선택적 이용 분석은 이용자의 동의를 근거로 하며, 동의 여부는 게임 이용 조건이 아닙니다. 서버의 필수 인증·진행 저장·거래 검증 처리는 이 분석 선택과 별개입니다.',
 					'순위표 데이터는 이용자가 선택해 참여하는 경쟁 기능을 제공하기 위해 처리합니다.',
 					'영수증 검증과 재화 원장은 결제 이행과 중복 지급 방지를 위해 처리하며, 관련 법령이 정하는 거래 기록 보존 의무를 따릅니다.'
 				]
@@ -77,6 +78,9 @@ export const reascendPrivacyContent: Record<'ko' | 'en', PrivacyContent> = {
 			{
 				title: '이용자의 선택',
 				body: [
+					'1.1.2 이상에서는 앱 설정의 “이용 분석 OFF”를 눌러 수집에 동의할 수 있고, “이용 분석 ON”을 눌러 언제든 동의를 철회할 수 있습니다. 거부하거나 철회해도 게임 이용에 불이익이 없습니다. 선택은 기기 로컬에 저장되며, 계정·재화 원장·게임 진행 저장과 분리됩니다.',
+					'분석을 끄면 동의 신호를 거부로 변경하고 SDK 수집을 중지하며 아직 전송하지 않은 대기 이벤트를 비웁니다. 선택이 저장되면 다음 실행에도 적용됩니다. 저장 오류가 표시되면 다음 실행에서 상태를 확인해 주세요. 철회는 이후 수집을 중단하는 것이며 이미 처리된 자료를 자동으로 소급 삭제하지 않습니다.',
+					`철회 전 동의에 근거한 처리의 적법성에는 영향이 없으며, 기존 분석 자료에 관한 열람·삭제 등 적용 가능한 개인정보 권리는 ${site.email}로 요청할 수 있습니다.`,
 					'클라우드 저장을 사용하지 않으려면 기기를 네트워크에 연결하지 않은 상태로 플레이할 수 있습니다. 이때 진행 상황은 기기에만 남으며, 기기를 잃어버리면 복구할 수 없습니다.',
 					'순위표에 표시되는 것을 원하지 않으면 삭제 요청 시 순위표 항목만 제거해 달라고 알려 주세요.',
 					'Android에서는 설정 > 개인정보 보호 > 광고에서 광고 ID를 재설정하거나 삭제할 수 있습니다. iOS에서는 설정 > 개인정보 보호 및 보안 > 추적에서 앱의 추적 요청을 관리할 수 있습니다.'
@@ -108,8 +112,8 @@ export const reascendPrivacyContent: Record<'ko' | 'en', PrivacyContent> = {
 		description:
 			'How Reascend handles account identifiers, cloud saves, leaderboards, analytics, and advertising.',
 		kicker: 'Reascend Privacy Policy',
-		lastUpdated: '25 September 2026',
-		lastUpdatedLabel: 'Effective and last updated',
+		lastUpdated: '14 October 2026',
+		lastUpdatedLabel: 'Last updated',
 		backLabel: 'Back to Seori Labs',
 		languageLabel: 'Language',
 		intro:
@@ -127,8 +131,9 @@ export const reascendPrivacyContent: Record<'ko' | 'en', PrivacyContent> = {
 				title: 'What the app processes',
 				body: [
 					'Saved data covers your progress (tower and stage, stats, equipment and avatars, currencies, objectives and mail, season pass, attendance) and your settings (sound, vibration, text size, display language). These are stored on your device and, when cloud save is available, in a server document keyed by your player identifier.',
-					'To monitor service quality we collect in-game events such as game start, regression, currency earned and spent, and first prestige. Each event carries a random session identifier and the time the screen was in view.',
-					'When analytics are sent to Google Analytics 4, the player identifier is replaced with a one-way hash rather than sent as-is. Analytics does not hold the original identifier, and we do not populate the GA4 user-ID field.',
+					'The following analytics choices are planned for the Android and iOS 1.1.2 update. Revising this webpage does not change collection in the earlier versions currently available. After you install 1.1.2 or later, usage analytics is off by default in every region, including when existing saved data contains no analytics choice.',
+					'Only if you explicitly enable usage analytics in the app settings do we process app-instance identifiers, app, operating-system and device information, regional information such as country, session and screen-use information, and in-game events such as game start, regression, currency earned and spent, and first prestige through the native Google Firebase Analytics SDK.',
+					'Native Android and iOS analytics does not receive your player identifier (uid) or its hash, and our app code does not set the GA4 user-ID field. Your analytics choice is stored only on this device. Analytics signals for advertising storage, advertising user data, and advertising personalization always remain denied.',
 					'The app does not access location, contacts, photos, video, microphone, health data, or your address book.'
 				]
 			},
@@ -153,7 +158,7 @@ export const reascendPrivacyContent: Record<'ko' | 'en', PrivacyContent> = {
 				title: 'Purposes and legal bases',
 				body: [
 					'Progress and settings are processed so that you can resume play and keep your progress when you change devices.',
-					'Analytics data is processed to monitor stability and to tune difficulty and in-game economy balance.',
+					'Analytics data is processed to monitor stability and to tune difficulty and in-game economy balance. Optional usage analytics in 1.1.2 or later is based on your consent, which is not a condition of playing. Essential server processing for authentication, progress storage, and transaction validation is separate from this analytics choice.',
 					'Leaderboard data is processed to provide the competitive feature you choose to take part in.',
 					'Receipt validation and the currency ledger are processed to fulfil purchases and prevent duplicate grants, and to meet transaction-record retention duties where applicable law requires them.'
 				]
@@ -178,6 +183,9 @@ export const reascendPrivacyContent: Record<'ko' | 'en', PrivacyContent> = {
 			{
 				title: 'Your choices',
 				body: [
+					'In 1.1.2 or later, tap “Usage analytics OFF” in the app settings to agree to collection, or tap “Usage analytics ON” to withdraw consent at any time. Refusing or withdrawing does not disadvantage you in using the game. Your choice is stored locally on the device, separately from your account, currency ledger, and saved game progress.',
+					'Turning analytics off changes the consent signal to denied, stops SDK collection, and clears queued events that have not been sent. A saved choice also applies on the next launch. If a storage error is shown, check the setting again next time. Withdrawal stops future collection and does not automatically delete previously processed data.',
+					`Withdrawal does not affect the lawfulness of processing based on consent before withdrawal. You can request applicable privacy rights, such as access or deletion, for existing analytics data by contacting ${site.email}.`,
 					'If you prefer not to use cloud save, you can play with the device offline. Progress then stays only on the device and cannot be recovered if the device is lost.',
 					'If you do not want to appear on the leaderboard, say so in your deletion request and we will remove only the leaderboard entry.',
 					'On Android you can reset or delete your advertising ID under Settings > Privacy > Ads. On iOS you can manage app tracking requests under Settings > Privacy & Security > Tracking.'
