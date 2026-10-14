@@ -27,7 +27,7 @@ const advertisingSection: Record<PrivacyLocaleKey, PrivacySection> = {
 			'유럽경제지역, 영국, 스위스에서는 Google 인증 동의 관리 플랫폼인 User Messaging Platform(UMP)을 사용합니다. 개인화 광고는 필요한 동의를 받은 경우에만 제공하며, 동의하지 않으면 비개인화·제한 광고가 제공되거나 광고가 제공되지 않을 수 있습니다. 동의 여부는 앱의 기본 기능 이용에 영향을 주지 않습니다.',
 			'UMP 화면에는 실제로 정보를 처리할 수 있는 Google 및 광고 파트너와 처리 목적이 표시됩니다. Google 서비스는 이용자의 국가 밖에서 정보를 처리할 수 있으며, 처리 장소·보관 기간·국외 이전 보호조치는 Google과 해당 파트너의 공개 정책을 따릅니다.',
 			"UMP를 사용하는 앱에서는 앱 설정의 '광고 개인정보 설정'에서 언제든지 선택을 확인하거나 철회할 수 있습니다. 이 선택은 Android의 광고 개인정보 설정 및 iOS의 앱 추적 투명성(ATT) 권한과 별개입니다.",
-			"iOS에서 이용자를 추적하지 않는 일부 앱(예: 행복 농장 타이쿤)은 UMP 화면을 표시하지 않고 동의 정보를 저장하지 않으며, 유럽경제지역, 영국, 스위스에서는 제한 광고만 제공합니다. 이 경우 Google이 처리하는 정보와 목적은 앱 설정의 '광고 정보'에서 안내합니다."
+			'iOS에서 이용자를 추적하지 않는 일부 앱(예: 행복 농장 타이쿤)은 UMP 화면을 표시하지 않고 동의 정보를 저장하지 않으며, 유럽경제지역, 영국, 스위스에서는 제한 광고만 제공합니다.'
 		]
 	},
 	en: {
@@ -37,7 +37,7 @@ const advertisingSection: Record<PrivacyLocaleKey, PrivacySection> = {
 			'In the European Economic Area, United Kingdom, and Switzerland, we use Google’s certified User Messaging Platform (UMP). Personalised ads are served only when the required consent has been obtained. If you do not consent, non-personalised or limited ads may be served, or ads may be unavailable. Your choice does not restrict the app’s core functions.',
 			'The UMP form identifies the Google and advertising partners that may process information and their purposes. Google services may process information outside your country; processing locations, retention, and international-transfer safeguards are governed by Google’s and the relevant partners’ published policies.',
 			'In apps that use UMP, you can review or withdraw your choice at any time through Advertising privacy choices in the app settings. This choice is separate from Android advertising privacy controls and Apple App Tracking Transparency (ATT) permission.',
-			'Some iOS apps that do not track users (for example, Happy Farm Tycoon) do not show the UMP form or store consent information, and serve only limited ads in the European Economic Area, United Kingdom, and Switzerland. In these apps, Ads and your data in the app settings explains the information Google processes and why.'
+			'Some iOS apps that do not track users (for example, Happy Farm Tycoon) do not show the UMP form or store consent information, and serve only limited ads in the European Economic Area, United Kingdom, and Switzerland.'
 		]
 	},
 	ja: {
@@ -47,7 +47,7 @@ const advertisingSection: Record<PrivacyLocaleKey, PrivacySection> = {
 			'欧州経済領域、英国、スイスでは、Google の認定同意管理プラットフォーム User Messaging Platform（UMP）を使用します。パーソナライズ広告は必要な同意を得た場合にのみ配信されます。同意しない場合、非パーソナライズ広告・制限付き広告が配信されるか、広告を利用できない場合があります。選択によってアプリの基本機能が制限されることはありません。',
 			'UMP 画面には、情報を処理する可能性のある Google と広告パートナー、および処理目的が表示されます。Google のサービスは利用者の国外で情報を処理する場合があり、処理場所、保存期間、国外移転の保護措置は Google と各パートナーの公開ポリシーに従います。',
 			'UMP を使用するアプリでは、アプリ設定の「広告のプライバシー設定」から、いつでも選択を確認または撤回できます。この選択は Android の広告プライバシー設定および Apple の App Tracking Transparency（ATT）権限とは別のものです。',
-			'iOS で利用者をトラッキングしない一部のアプリ（例：ハッピーファーム 大農園）は、UMP 画面を表示せず同意情報も保存しません。欧州経済領域、英国、スイスでは制限付き広告のみを配信します。この場合、Google が処理する情報とその目的はアプリ設定の「広告とデータ」で案内します。'
+			'iOS で利用者をトラッキングしない一部のアプリ（例：ハッピーファーム 大農園）は、UMP 画面を表示せず同意情報も保存しません。欧州経済領域、英国、スイスでは制限付き広告のみを配信します。'
 		]
 	},
 	zh: {
@@ -57,7 +57,7 @@ const advertisingSection: Record<PrivacyLocaleKey, PrivacySection> = {
 			'在欧洲经济区、英国和瑞士，我们使用 Google 认证的同意管理平台 User Messaging Platform（UMP）。只有在取得必要同意后才会提供个性化广告。若您不同意，可能会提供非个性化或受限广告，也可能无法提供广告。您的选择不会限制应用的核心功能。',
 			'UMP 界面会列明可能处理信息的 Google 及广告合作伙伴和处理目的。Google 服务可能在您所在国家以外处理信息；处理地点、保存期限和跨境传输保障措施遵循 Google 及相关合作伙伴公布的政策。',
 			'在使用 UMP 的应用中，您可以随时通过应用设置中的“广告隐私设置”查看或撤回选择。此选择与 Android 广告隐私控制以及 Apple App Tracking Transparency（ATT）权限相互独立。',
-			'在 iOS 上不跟踪用户的部分应用（例如快乐农场大亨）不会显示 UMP 界面，也不会保存同意信息，在欧洲经济区、英国和瑞士仅提供受限广告。此时，Google 处理的信息及其目的会在应用设置的“广告与数据”中说明。'
+			'在 iOS 上不跟踪用户的部分应用（例如快乐农场大亨）不会显示 UMP 界面，也不会保存同意信息，在欧洲经济区、英国和瑞士仅提供受限广告。'
 		]
 	},
 	'zh-tw': {
@@ -67,7 +67,7 @@ const advertisingSection: Record<PrivacyLocaleKey, PrivacySection> = {
 			'在歐洲經濟區、英國與瑞士，我們使用 Google 認證的同意管理平台 User Messaging Platform（UMP）。只有在取得必要同意後才會提供個人化廣告。若您不同意，可能會提供非個人化或受限廣告，也可能無法提供廣告。您的選擇不會限制應用程式的核心功能。',
 			'UMP 畫面會列出可能處理資訊的 Google 及廣告合作夥伴與處理目的。Google 服務可能在您所在國家以外處理資訊；處理地點、保存期限與跨境傳輸保障措施依 Google 及相關合作夥伴公布的政策辦理。',
 			'在使用 UMP 的應用程式中，您可以隨時透過應用程式設定中的「廣告隱私權設定」查看或撤回選擇。此選擇與 Android 廣告隱私控制及 Apple App Tracking Transparency（ATT）權限彼此獨立。',
-			'在 iOS 上不追蹤使用者的部分應用程式（例如快樂農場大亨）不會顯示 UMP 畫面，也不會儲存同意資訊，在歐洲經濟區、英國與瑞士僅提供受限廣告。此時，Google 處理的資訊及其目的會在應用程式設定的「廣告與資料」中說明。'
+			'在 iOS 上不追蹤使用者的部分應用程式（例如快樂農場大亨）不會顯示 UMP 畫面，也不會儲存同意資訊，在歐洲經濟區、英國與瑞士僅提供受限廣告。'
 		]
 	},
 	de: {
@@ -77,7 +77,7 @@ const advertisingSection: Record<PrivacyLocaleKey, PrivacySection> = {
 			'Im Europäischen Wirtschaftsraum, im Vereinigten Königreich und in der Schweiz verwenden wir Googles zertifizierte Einwilligungsplattform User Messaging Platform (UMP). Personalisierte Werbung wird nur mit der erforderlichen Einwilligung bereitgestellt. Ohne Einwilligung können nicht personalisierte oder eingeschränkte Anzeigen erscheinen oder Anzeigen nicht verfügbar sein. Die Kernfunktionen der App bleiben nutzbar.',
 			'Das UMP-Formular nennt Google und die Werbepartner, die Daten verarbeiten können, sowie deren Zwecke. Google-Dienste können Daten außerhalb Ihres Landes verarbeiten; Verarbeitungsorte, Speicherdauer und Schutzmaßnahmen für internationale Übermittlungen richten sich nach den veröffentlichten Richtlinien von Google und den jeweiligen Partnern.',
 			'In Apps mit UMP können Sie Ihre Auswahl jederzeit in den App-Einstellungen unter Datenschutzeinstellungen für Werbung prüfen oder widerrufen. Diese Auswahl ist von den Werbe-Datenschutzkontrollen von Android und der Apple App Tracking Transparency (ATT) getrennt.',
-			'Einige iOS-Apps, die Nutzer nicht tracken (zum Beispiel Happy Farm Tycoon), zeigen das UMP-Formular nicht an, speichern keine Einwilligungsdaten und liefern im Europäischen Wirtschaftsraum, im Vereinigten Königreich und in der Schweiz nur eingeschränkte Anzeigen aus. In diesen Apps erklärt der Bereich „Werbung und deine Daten“ in den App-Einstellungen, welche Daten Google verarbeitet und wozu.'
+			'Einige iOS-Apps, die Nutzer nicht tracken (zum Beispiel Happy Farm Tycoon), zeigen das UMP-Formular nicht an, speichern keine Einwilligungsdaten und liefern im Europäischen Wirtschaftsraum, im Vereinigten Königreich und in der Schweiz nur eingeschränkte Anzeigen aus.'
 		]
 	},
 	fr: {
@@ -87,7 +87,7 @@ const advertisingSection: Record<PrivacyLocaleKey, PrivacySection> = {
 			'Dans l’Espace économique européen, au Royaume-Uni et en Suisse, nous utilisons la plateforme de gestion du consentement certifiée de Google, User Messaging Platform (UMP). Les publicités personnalisées ne sont diffusées qu’après obtention du consentement requis. Sans consentement, des publicités non personnalisées ou limitées peuvent être diffusées, ou les publicités peuvent être indisponibles. Les fonctions essentielles de l’application restent accessibles.',
 			'Le formulaire UMP indique Google et les partenaires publicitaires susceptibles de traiter des informations ainsi que leurs finalités. Les services Google peuvent traiter des informations en dehors de votre pays ; les lieux de traitement, la durée de conservation et les garanties de transfert international sont régis par les politiques publiées de Google et des partenaires concernés.',
 			'Dans les applications qui utilisent UMP, vous pouvez consulter ou retirer votre choix à tout moment dans les paramètres de l’application, sous Choix de confidentialité publicitaire. Ce choix est distinct des contrôles publicitaires d’Android et de l’autorisation App Tracking Transparency (ATT) d’Apple.',
-			'Certaines applications iOS qui ne suivent pas les utilisateurs (par exemple Happy Farm Tycoon) n’affichent pas le formulaire UMP, n’enregistrent pas d’informations de consentement et ne diffusent que des publicités limitées dans l’Espace économique européen, au Royaume-Uni et en Suisse. Dans ces applications, la rubrique « Publicités et données » des paramètres explique quelles informations Google traite et pourquoi.'
+			'Certaines applications iOS qui ne suivent pas les utilisateurs (par exemple Happy Farm Tycoon) n’affichent pas le formulaire UMP, n’enregistrent pas d’informations de consentement et ne diffusent que des publicités limitées dans l’Espace économique européen, au Royaume-Uni et en Suisse.'
 		]
 	},
 	es: {
@@ -97,7 +97,7 @@ const advertisingSection: Record<PrivacyLocaleKey, PrivacySection> = {
 			'En el Espacio Económico Europeo, el Reino Unido y Suiza usamos la plataforma de gestión del consentimiento certificada de Google, User Messaging Platform (UMP). Los anuncios personalizados solo se muestran cuando se ha obtenido el consentimiento necesario. Si no acepta, pueden mostrarse anuncios no personalizados o limitados, o los anuncios pueden no estar disponibles. Las funciones principales de la aplicación siguen disponibles.',
 			'El formulario de UMP identifica a Google y a los socios publicitarios que pueden tratar información y sus finalidades. Los servicios de Google pueden tratar información fuera de su país; los lugares de tratamiento, la conservación y las salvaguardias para transferencias internacionales se rigen por las políticas publicadas de Google y de los socios correspondientes.',
 			'En las aplicaciones que usan UMP, puede revisar o retirar su elección en cualquier momento desde Opciones de privacidad de anuncios en los ajustes de la aplicación. Esta elección es independiente de los controles de privacidad publicitaria de Android y del permiso App Tracking Transparency (ATT) de Apple.',
-			'Algunas aplicaciones de iOS que no rastrean a los usuarios (por ejemplo, Happy Farm Tycoon) no muestran el formulario de UMP ni guardan información de consentimiento, y solo ofrecen anuncios limitados en el Espacio Económico Europeo, el Reino Unido y Suiza. En estas aplicaciones, la sección «Anuncios y tus datos» de los ajustes explica qué información trata Google y para qué.'
+			'Algunas aplicaciones de iOS que no rastrean a los usuarios (por ejemplo, Happy Farm Tycoon) no muestran el formulario de UMP ni guardan información de consentimiento, y solo ofrecen anuncios limitados en el Espacio Económico Europeo, el Reino Unido y Suiza.'
 		]
 	}
 };
