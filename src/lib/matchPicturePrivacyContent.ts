@@ -9,14 +9,14 @@ export const matchPicturePrivacyContent: Record<'ko' | 'en', LegalDocContent> = 
 	ko: {
 		title: '같은 그림 찾아보기 / Match Symbols 개인정보 처리방침',
 		description:
-			'iOS 같은 그림 찾아보기 1.1.7의 광고 동의, 추적 허용, 기록과 동의 데이터 처리 안내입니다.',
+			'iOS 같은 그림 찾아보기 1.1.8의 광고 동의, 추적 허용, 기록과 동의 데이터 처리 안내입니다.',
 		kicker: 'Match Symbols Privacy Policy',
-		lastUpdated: '2026년 10월 13일',
+		lastUpdated: '2026년 10월 14일',
 		lastUpdatedLabel: '작성일',
 		backLabel: '서리랩스 홈으로',
 		languageLabel: '언어',
 		intro:
-			'이 문서는 Seori Labs의 iOS 앱 Match Symbols(앱 식별자 com.github.magicsih.MatchSymbol) 1.1.7 버전의 데이터 처리를 설명합니다. 해당 버전이 공개되기 전에는 예정된 변경에 대한 안내이며, 이전 버전에는 같은 동작이 적용된다고 보장하지 않습니다. 이 앱의 데이터 처리에는 회사 공통 방침보다 앱별 고지가 우선합니다.',
+			'이 문서는 Seori Labs의 iOS 앱 Match Symbols(앱 식별자 com.github.magicsih.MatchSymbol) 1.1.8 버전의 데이터 처리를 설명합니다. 해당 버전이 공개되기 전에는 예정된 변경에 대한 안내이며, 이전 버전에는 같은 동작이 적용된다고 보장하지 않습니다. 이 앱의 데이터 처리에는 회사 공통 방침보다 앱별 고지가 우선합니다.',
 		sections: [
 			{
 				title: '게임 기록과 Game Center',
@@ -35,7 +35,7 @@ export const matchPicturePrivacyContent: Record<'ko' | 'en', LegalDocContent> = 
 			{
 				title: '동의 처리를 위한 데이터',
 				body: [
-					'광고가 없어도 Google UMP는 필요한 동의 정보를 확인하기 위해 대략적 위치·제품 상호작용·성능 정보를 앱 기능 목적으로 처리할 수 있습니다. 이 iOS 1.1.7 빌드는 별도의 앱 이용 통계를 전송하지 않습니다. 광고·동의 SDK가 처리할 수 있는 데이터는 위의 광고 및 동의 처리 안내를 따릅니다.'
+					'광고가 없어도 Google UMP는 필요한 동의 정보를 확인하기 위해 대략적 위치·제품 상호작용·성능 정보를 앱 기능 목적으로 처리할 수 있습니다. 이 iOS 1.1.8 빌드는 별도의 앱 이용 통계를 전송하지 않습니다. 광고·동의 SDK가 처리할 수 있는 데이터는 위의 광고 및 동의 처리 안내를 따릅니다.'
 				]
 			},
 			{
@@ -46,19 +46,19 @@ export const matchPicturePrivacyContent: Record<'ko' | 'en', LegalDocContent> = 
 			}
 		],
 		footerNote:
-			'이 고지는 iOS 1.1.7 버전의 예정된 동작을 설명합니다. 해당 버전 공개 전에는 이전 버전의 추적 허용이나 광고 동작을 보장하지 않습니다.'
+			'이 고지는 iOS 1.1.8 버전의 예정된 동작을 설명합니다. 해당 버전 공개 전에는 이전 버전의 추적 허용이나 광고 동작을 보장하지 않습니다.'
 	},
 	en: {
 		title: 'Match Symbols Privacy Policy',
 		description:
-			'Advertising consent, tracking permission, records and consent data in Match Symbols for iOS 1.1.7.',
+			'Advertising consent, tracking permission, records and consent data in Match Symbols for iOS 1.1.8.',
 		kicker: 'Match Symbols Privacy Policy',
-		lastUpdated: 'October 13, 2026',
+		lastUpdated: 'October 14, 2026',
 		lastUpdatedLabel: 'Prepared on',
 		backLabel: 'Back to Seori Labs',
 		languageLabel: 'Language',
 		intro:
-			"This notice describes data handling in Seori Labs' iOS app Match Symbols (app identifier com.github.magicsih.MatchSymbol), version 1.1.7. Before that version becomes public, it describes planned changes and does not promise the same behavior in earlier versions. This app-specific notice takes precedence over the company's general policy for this app.",
+			"This notice describes data handling in Seori Labs' iOS app Match Symbols (app identifier com.github.magicsih.MatchSymbol), version 1.1.8. Before that version becomes public, it describes planned changes and does not promise the same behavior in earlier versions. This app-specific notice takes precedence over the company's general policy for this app.",
 		sections: [
 			{
 				title: 'Game records and Game Center',
@@ -77,7 +77,7 @@ export const matchPicturePrivacyContent: Record<'ko' | 'en', LegalDocContent> = 
 			{
 				title: 'Data for consent processing',
 				body: [
-					'Even without ads, Google UMP may process approximate location, product interaction and performance data for the functionality of checking required consent. This iOS 1.1.7 build does not send separate app usage analytics. Data that advertising and consent SDKs may process is described above.'
+					'Even without ads, Google UMP may process approximate location, product interaction and performance data for the functionality of checking required consent. This iOS 1.1.8 build does not send separate app usage analytics. Data that advertising and consent SDKs may process is described above.'
 				]
 			},
 			{
@@ -88,6 +88,6 @@ export const matchPicturePrivacyContent: Record<'ko' | 'en', LegalDocContent> = 
 			}
 		],
 		footerNote:
-			'This notice describes planned behavior for iOS version 1.1.7. Before that version is public, it does not promise the same tracking permission or advertising behavior in earlier versions.'
+			'This notice describes planned behavior for iOS version 1.1.8. Before that version is public, it does not promise the same tracking permission or advertising behavior in earlier versions.'
 	}
 };
