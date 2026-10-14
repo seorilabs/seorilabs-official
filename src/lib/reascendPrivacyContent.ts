@@ -78,7 +78,7 @@ export const reascendPrivacyContent: Record<'ko' | 'en', PrivacyContent> = {
 			{
 				title: '이용자의 선택',
 				body: [
-					'1.1.2 이상에서는 앱 설정의 “이용 분석 OFF”를 눌러 수집에 동의할 수 있고, “이용 분석 ON”을 눌러 언제든 동의를 철회할 수 있습니다. 거부하거나 철회해도 게임 이용에 불이익이 없습니다. 선택은 기기 로컬에 저장되며, 계정·재화 원장·게임 진행 저장과 분리됩니다.',
+					'1.1.2 이상에서는 앱 설정의 이용 분석을 ON으로 변경하여 수집에 동의할 수 있고, OFF로 변경하여 언제든 동의를 철회할 수 있습니다. 거부하거나 철회해도 게임 이용에 불이익이 없습니다. 선택은 기기 로컬에 저장되며, 계정·재화 원장·게임 진행 저장과 분리됩니다.',
 					'분석을 끄면 동의 신호를 거부로 변경하고 SDK 수집을 중지하며 아직 전송하지 않은 대기 이벤트를 비웁니다. 선택이 저장되면 다음 실행에도 적용됩니다. 저장 오류가 표시되면 다음 실행에서 상태를 확인해 주세요. 철회는 이후 수집을 중단하는 것이며 이미 처리된 자료를 자동으로 소급 삭제하지 않습니다.',
 					`철회 전 동의에 근거한 처리의 적법성에는 영향이 없으며, 기존 분석 자료에 관한 열람·삭제 등 적용 가능한 개인정보 권리는 ${site.email}로 요청할 수 있습니다.`,
 					'클라우드 저장을 사용하지 않으려면 기기를 네트워크에 연결하지 않은 상태로 플레이할 수 있습니다. 이때 진행 상황은 기기에만 남으며, 기기를 잃어버리면 복구할 수 없습니다.',
@@ -183,7 +183,7 @@ export const reascendPrivacyContent: Record<'ko' | 'en', PrivacyContent> = {
 			{
 				title: 'Your choices',
 				body: [
-					'In 1.1.2 or later, tap “Usage analytics OFF” in the app settings to agree to collection, or tap “Usage analytics ON” to withdraw consent at any time. Refusing or withdrawing does not disadvantage you in using the game. Your choice is stored locally on the device, separately from your account, currency ledger, and saved game progress.',
+					'In 1.1.2 or later, turn the Usage analytics setting ON to agree to collection, or OFF to withdraw consent at any time. Refusing or withdrawing does not disadvantage you in using the game. Your choice is stored locally on the device, separately from your account, currency ledger, and saved game progress.',
 					'Turning analytics off changes the consent signal to denied, stops SDK collection, and clears queued events that have not been sent. A saved choice also applies on the next launch. If a storage error is shown, check the setting again next time. Withdrawal stops future collection and does not automatically delete previously processed data.',
 					`Withdrawal does not affect the lawfulness of processing based on consent before withdrawal. You can request applicable privacy rights, such as access or deletion, for existing analytics data by contacting ${site.email}.`,
 					'If you prefer not to use cloud save, you can play with the device offline. Progress then stays only on the device and cannot be recovered if the device is lost.',
