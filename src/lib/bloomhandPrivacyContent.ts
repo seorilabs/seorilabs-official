@@ -76,7 +76,7 @@ export const bloomhandPrivacyContent: Record<'ko' | 'en', PrivacyContent> = {
 			{
 				title: '보관과 문의',
 				body: [
-					'순위 기록은 삭제할 때까지 보관합니다. 친구 상자 구매 기록과 상자 원장·개봉 기록은 ‘인앱 결제’에 적은 대로 삭제하지 않고 보관합니다. Platform의 원시 통계 기록과 운영 감사 기록은 최대 400일, Google Analytics 기록은 최대 14개월 보관하며, 구매·상자 처리 감사 기록은 계정을 삭제해도 이 기간 동안 남습니다.',
+					'순위 기록은 삭제할 때까지 보관합니다. 친구 상자 구매 기록과 상자 원장·개봉 기록은 ‘인앱 결제’에 적은 대로 삭제하지 않고 보관합니다. Platform의 원시 통계 기록과 운영 감사 기록은 최대 400일, Google Analytics 기록은 최대 14개월 보관하며, 구매·상자 처리 감사 기록은 계정을 삭제해도 400일 동안 남습니다.',
 					'문의하면 답변과 요청 처리에 필요한 발신 이메일, 문의 내용과 첨부 자료를 처리하고 해결에 필요한 동안 보관한 뒤 삭제합니다. 열람·정정·삭제·처리 제한 요청은 cs@seorilabs.com으로 할 수 있습니다.'
 				]
 			},
@@ -165,7 +165,7 @@ export const bloomhandPrivacyContent: Record<'ko' | 'en', PrivacyContent> = {
 			{
 				title: 'Retention and support',
 				body: [
-					'Ranking records are kept until deleted. Friend Box purchase records and the box ledger and opening records are kept and not deleted, as described under In-app purchases. Raw Platform analytics and operational audit records are retained for up to 400 days, and Google Analytics records for up to 14 months; purchase and box processing audit records remain for that period even after account deletion.',
+					'Ranking records are kept until deleted. Friend Box purchase records and the box ledger and opening records are kept and not deleted, as described under In-app purchases. Raw Platform analytics and operational audit records are retained for up to 400 days, and Google Analytics records for up to 14 months; purchase and box processing audit records remain for up to 400 days even after account deletion.',
 					'When you contact support, we process your sender address, message and attachments to respond and keep them as needed for resolution. Contact cs@seorilabs.com for access, correction, deletion or restriction requests.'
 				]
 			},
