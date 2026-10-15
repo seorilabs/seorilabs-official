@@ -25,10 +25,17 @@ export const legalContent: Record<Locale, Record<LegalPageKey, LegalPageContent>
 			description:
 				'서리랩스 웹사이트, 앱, 서비스 이용에 적용되는 기본 이용약관입니다. 별도 계약 또는 앱별 약관이 있는 경우 해당 조건이 우선합니다.',
 			kicker: 'Terms of Use',
-			lastUpdated: '2026년 5월 16일',
+			lastUpdated: '2026년 10월 16일',
 			intro:
 				'이 이용약관은 서리랩스가 운영하는 웹사이트, 앱, 서비스 중 이 문서로 연결되는 서비스 이용에 적용됩니다. 별도 계약, 견적서, 주문서, 앱별 약관이 있는 경우 해당 조건이 우선합니다.',
 			sections: [
+				{
+					title: '리어센드 이용 대상',
+					body: [
+						'리어센드(Reascend)는 전 세계 만 18세 이상 성인만 이용할 수 있는 서비스입니다. 만 18세 미만 이용자를 대상으로 제공하지 않습니다.',
+						'이 연령 조건은 리어센드에만 적용됩니다. 다른 Seori Labs 앱과 서비스의 이용 조건은 각 제품의 안내를 따릅니다.'
+					]
+				},
 				{
 					title: '서비스 이용',
 					body: [
@@ -121,10 +128,17 @@ export const legalContent: Record<Locale, Record<LegalPageKey, LegalPageContent>
 			description:
 				'Basic Terms of Use for Seori Labs websites, apps, and services. Separate contracts or product-specific terms apply first when provided.',
 			kicker: 'Terms of Use',
-			lastUpdated: 'May 16, 2026',
+			lastUpdated: 'October 16, 2026',
 			intro:
 				'These Terms of Use apply to Seori Labs websites, apps, and services that link to this document. If a separate contract, quote, order form, or product-specific terms apply, those terms apply first.',
 			sections: [
+				{
+					title: 'Reascend age eligibility',
+					body: [
+						'Reascend is available exclusively to adults aged 18 and over worldwide. It is not offered to anyone under 18.',
+						'This age condition applies only to Reascend. Other Seori Labs apps and services have their own product-specific eligibility terms.'
+					]
+				},
 				{
 					title: 'Use of Services',
 					body: [
