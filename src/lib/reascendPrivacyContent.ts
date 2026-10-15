@@ -7,12 +7,12 @@ export const reascendPrivacyContent: Record<'ko' | 'en', PrivacyContent> = {
 		description:
 			'리어센드의 계정 식별자, 클라우드 저장, 순위표, 분석 및 광고 처리에 관한 개인정보 처리방침입니다.',
 		kicker: 'Reascend Privacy Policy',
-		lastUpdated: '2026년 10월 15일',
+		lastUpdated: '2026년 10월 16일',
 		lastUpdatedLabel: '최종 수정일',
 		backLabel: '서리랩스 홈으로',
 		languageLabel: '언어',
 		intro:
-			'이 방침은 Seori Labs가 제공하는 「리어센드」(패키지명 com.seorilabs.reascend, 이하 “앱”)에 적용됩니다. 앱의 실제 데이터 처리와 스토어 표시가 공통 방침과 다른 경우 이 제품별 방침이 우선합니다.',
+			'리어센드는 전 세계 만 18세 이상 성인을 대상으로 합니다. 이 방침은 Seori Labs가 제공하는 「리어센드」(패키지명 com.seorilabs.reascend, 이하 “앱”)에 적용됩니다. 앱의 실제 데이터 처리와 스토어 표시가 공통 방침과 다른 경우 이 제품별 방침이 우선합니다.',
 		sections: [
 			{
 				title: '계정과 식별자',
@@ -87,10 +87,10 @@ export const reascendPrivacyContent: Record<'ko' | 'en', PrivacyContent> = {
 				]
 			},
 			{
-				title: '아동의 개인정보',
+				title: '이용 연령과 미성년자의 개인정보',
 				body: [
-					'앱은 만 13세 미만(대한민국은 만 14세 미만) 아동을 대상으로 하지 않으며, 아동의 개인정보를 의도적으로 수집하지 않습니다.',
-					`아동의 정보가 수집되었다고 생각되면 ${site.email}로 알려 주세요. 확인 후 지체 없이 삭제합니다.`
+					'리어센드는 전 세계 만 18세 이상 성인만 이용할 수 있습니다. 만 18세 미만 이용자를 대상으로 하지 않으며, 미성년자의 개인정보를 의도적으로 수집하지 않습니다.',
+					`만 18세 미만 이용자의 정보가 수집되었다고 생각되면 ${site.email}로 알려 주세요. 확인 후 지체 없이 삭제합니다.`
 				]
 			},
 			{
@@ -112,12 +112,12 @@ export const reascendPrivacyContent: Record<'ko' | 'en', PrivacyContent> = {
 		description:
 			'How Reascend handles account identifiers, cloud saves, leaderboards, analytics, and advertising.',
 		kicker: 'Reascend Privacy Policy',
-		lastUpdated: '15 October 2026',
+		lastUpdated: '16 October 2026',
 		lastUpdatedLabel: 'Last updated',
 		backLabel: 'Back to Seori Labs',
 		languageLabel: 'Language',
 		intro:
-			'This policy applies to Reascend (package com.seorilabs.reascend, the “app”), provided by Seori Labs. Where the app’s actual processing or store disclosure differs from our general policy, this product policy prevails.',
+			'Reascend is intended exclusively for adults aged 18 and over worldwide. This policy applies to Reascend (package com.seorilabs.reascend, the “app”), provided by Seori Labs. Where the app’s actual processing or store disclosure differs from our general policy, this product policy prevails.',
 		sections: [
 			{
 				title: 'Accounts and identifiers',
@@ -192,10 +192,10 @@ export const reascendPrivacyContent: Record<'ko' | 'en', PrivacyContent> = {
 				]
 			},
 			{
-				title: 'Children’s privacy',
+				title: 'Age eligibility and minors’ privacy',
 				body: [
-					'The app is not directed to children under 13 (under 14 in the Republic of Korea), and we do not knowingly collect children’s personal information.',
-					`If you believe a child’s information has been collected, write to ${site.email} and we will delete it without undue delay.`
+					'Reascend is available only to adults aged 18 and over worldwide. It is not directed to anyone under 18, and we do not knowingly collect minors’ personal information.',
+					`If you believe information about someone under 18 has been collected, write to ${site.email} and we will delete it without undue delay.`
 				]
 			},
 			{
