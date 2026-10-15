@@ -425,7 +425,7 @@ export const products: Product[] = [
 			{
 				kind: 'privacy',
 				path: { ko: '/apps/reascend/privacy/', en: '/en/apps/reascend/privacy/' },
-				updated: '2026-09-23'
+				updated: '2026-10-15'
 			},
 			{
 				kind: 'account-deletion',
