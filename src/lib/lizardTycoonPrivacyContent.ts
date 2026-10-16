@@ -5,9 +5,9 @@ export const lizardTycoonPrivacyContent: Record<'ko' | 'en', PrivacyContent> = {
 	ko: {
 		title: '내 도마뱀 키우기 개인정보 처리방침',
 		description:
-			'내 도마뱀 키우기: 픽셀 테라리움 육성의 게임 데이터, 분석 및 인앱결제 처리에 관한 개인정보 처리방침입니다.',
+			'내 도마뱀 키우기: 픽셀 테라리움 육성의 게임 데이터, 분석, 인앱결제 및 보상형 광고 처리에 관한 개인정보 처리방침입니다.',
 		kicker: 'Lizard Terrarium Privacy Policy',
-		lastUpdated: '2026년 10월 7일',
+		lastUpdated: '2026년 10월 16일',
 		lastUpdatedLabel: '시행일 및 최종 수정일',
 		backLabel: '서리랩스 홈으로',
 		languageLabel: '언어',
@@ -25,7 +25,7 @@ export const lizardTycoonPrivacyContent: Record<'ko' | 'en', PrivacyContent> = {
 					'AppsInToss 토스 로그인 동의 과정에서 토스가 이름을 제공할 수 있지만 Seori Labs는 이름을 기능에 사용하거나 서버에 저장하지 않습니다. 인앱결제를 선택한 경우 마켓·상품 ID, 구매 또는 주문의 거래 참조값과 토큰, 권한·환불 상태 및 처리 시각을 구매 검증과 복원 원장에 저장합니다. 결제 카드번호와 은행계좌 정보는 Seori Labs가 수집하지 않습니다.',
 					'크리스털(유료 재화)을 사용하는 경우 유상·무상 크리스털 잔액, 연구 조각과 증표, 모프 상자 열기 요청과 결과, 보장 횟수, 연구·탐사 상태, 지급·차감 시각과 관련 주문 참조를 서버 원장에 저장합니다. 결과는 서버가 정하며 요청별 기록은 같은 요청의 중복 처리 방지와 환불 차감에 사용합니다.',
 					'유상 크리스털을 쓰기 위해 Google 또는 Apple 계정을 연결하면, Seori Labs 서버는 해당 공급자가 발급한 로그인 토큰의 서명·발급자·대상값을 검증한 뒤 공급자 이름과 계정 식별자의 해시만 저장합니다. 계정 식별자 원문, 이메일, 이름, 프로필 사진은 저장하지 않습니다. 이 해시는 같은 계정을 다시 연결했을 때 같은 지갑을 찾는 데만 사용합니다.',
-					'게임 기능은 위치, 연락처, 사진, 동영상, 마이크, 건강 정보를 수집하지 않습니다. Google Play·App Store 버전은 광고 SDK와 광고 식별자를 사용하지 않습니다. AppsInToss 버전의 전면 광고는 토스 통합 광고 SDK를 사용하며, 토스와 Google AdMob은 해당 정책과 기기 동의 설정에 따라 광고 식별자, 기기·네트워크 정보, 광고 노출·클릭 데이터를 처리할 수 있습니다. Seori Labs는 이 광고 식별자를 구매 계정이나 게임 분석 식별자와 연결하지 않습니다.'
+					'게임 기능은 위치, 연락처, 사진, 동영상, 마이크, 건강 정보를 수집하지 않습니다. Google Play·App Store 버전의 보상형 광고에 관한 처리는 아래 「Google Play·App Store 보상형 광고」에 적었습니다. AppsInToss 버전에는 보상형 광고가 없고, 전면 광고는 토스 통합 광고 SDK를 사용하며, 토스와 Google AdMob은 해당 정책과 기기 동의 설정에 따라 광고 식별자, 기기·네트워크 정보, 광고 노출·클릭 데이터를 처리할 수 있습니다. Seori Labs는 이 광고 식별자를 구매 계정이나 게임 분석 식별자와 연결하지 않습니다.'
 				]
 			},
 			{
@@ -37,6 +37,20 @@ export const lizardTycoonPrivacyContent: Record<'ko' | 'en', PrivacyContent> = {
 				]
 			},
 			{
+				title: 'Google Play·App Store 보상형 광고',
+				body: [
+					'Google Play·App Store 버전의 광고는 이용자가 버튼을 눌러 직접 고르는 Google AdMob 보상형 광고뿐이며 배너·전면 광고는 없습니다. 광고를 보지 않아도 기본 게임을 이용할 수 있습니다.',
+					'광고 제공, 성과 측정과 부정 이용 방지를 위해 Google Mobile Ads SDK(Android 앱에서는 Google User Messaging Platform(UMP)도 함께)가 IP 주소와 그로부터 추정한 대략적 위치, 앱 또는 개발자 범위의 기기 식별자(예: Android 앱 세트 ID), 기기·OS·네트워크 정보, 광고 요청·노출·클릭·시청 완료 같은 광고 상호작용, 앱과 SDK의 성능·진단 정보를 처리할 수 있습니다. Google은 이 데이터를 자체 정책에 따라 처리합니다.',
+					'앱은 비개인화 광고만 요청하고 광고 콘텐츠 등급을 최대 G로 제한합니다. iPhone에서는 앱 추적 허락(ATT)을 요청하지 않고, Android에서는 광고 ID 권한을 사용하지 않습니다. Seori Labs는 광고 식별자를 받거나 저장하지 않습니다.',
+					"Android 앱에서는 유럽경제지역, 영국, 스위스 이용자가 처음 보상을 고를 때 Google의 동의 화면(UMP)이 나타납니다. 동의하지 않으면 Google의 제한 광고만 제공되거나 보상 버튼이 나타나지 않을 수 있습니다. 이 지역의 Android 이용자는 앱 설정의 '개인정보 선택'에서 언제든지 선택을 바꾸거나 철회할 수 있습니다.",
+					'iPhone 앱은 어느 지역에서도 동의 화면을 띄우지 않으며 설정에 개인정보 선택 항목이 없습니다. 유럽경제지역, 영국, 스위스의 iPhone 광고 요청은 Google의 제한 광고로 처리됩니다. 제한 광고에서는 맞춤 광고와 빈도 제한처럼 기기 식별자를 쓰는 기능이 꺼지고, 쿠키·로컬 저장소는 부정 트래픽 탐지에만 사용됩니다.',
+					'보상은 광고를 끝까지 본 뒤 Seori Labs 서버가 AdMob 서버 확인(SSV)으로 시청을 확인했을 때만 지급합니다. 이를 위해 보상 요청 ID, 광고 위치, 보상 종류와 양, 처리 상태와 시각, 가명 사용자 식별자를 서버에 저장하고, 보상 요청 ID와 가명 사용자 식별자를 광고 요청에 담아 AdMob이 확인 결과와 함께 돌려주게 합니다. 보상 확인 기록은 생성 90일 뒤 자동 삭제되고, 중복 지급을 막는 요청 기록은 데이터 삭제를 요청하면 함께 삭제합니다.',
+					'오늘 본 광고 횟수, 마지막 광고 시각, 확인을 기다리는 요청과 지급 완료 기록은 기기의 게임 저장에 보관합니다. 광고 요청·노출·실패·보상 확인 이벤트는 가명 분석 데이터로 처리합니다.',
+					"앱 설정의 '광고 신고'로 부적절한 광고를 알릴 수 있습니다.",
+					'Google의 데이터 처리 방식은 Google 개인정보처리방침(policies.google.com/privacy)과 Google 서비스를 사용하는 사이트·앱의 정보 사용 방식(policies.google.com/technologies/partner-sites)에서 확인할 수 있습니다.'
+				]
+			},
+			{
 				title: 'AppsInToss 광고',
 				body: [
 					'광고 횟수, 마지막 광고 종료 시각, 세션 활동 시각과 완료 식별자는 게임 저장과 별도로 기기에 저장해 빈도 제한과 중복 방지에 사용합니다. 광고 기회·생략 사유·로드·요청·표시·노출·클릭·닫힘·오류 및 표시 시간은 마켓, OS, 번들과 정책 버전별로 분석합니다. 광고 시청에는 토스 로그인이 필요하지 않습니다.'
@@ -45,7 +59,7 @@ export const lizardTycoonPrivacyContent: Record<'ko' | 'en', PrivacyContent> = {
 			{
 				title: '처리 위탁과 전송',
 				body: [
-					'Seori Labs는 개인정보를 판매하지 않습니다. AppsInToss 광고 제공과 관련하여 토스 및 Google의 광고 SDK가 데이터를 처리할 수 있으며, 토스 개인정보 처리방침과 Google 개인정보처리방침이 함께 적용됩니다.',
+					'Seori Labs는 개인정보를 판매하지 않습니다. Google Play·App Store 버전의 보상형 광고 제공을 위해 Google AdMob이, AppsInToss 광고 제공을 위해 토스 및 Google의 광고 SDK가 데이터를 처리할 수 있으며, Google 개인정보처리방침과 토스 개인정보 처리방침이 함께 적용됩니다.',
 					'Google Firebase, Google Analytics 및 Google Cloud는 분석·진단, 익명 인증, 구매 검증 원장, 크리스털 지갑 원장과 서버 운영을 위해 Seori Labs의 서비스 제공자로서 데이터를 처리합니다. Google Play, Apple App Store 및 AppsInToss·토스는 선택한 마켓의 로그인·결제·환불을 처리합니다. 계정 연결은 이용자가 선택한 Google 또는 Apple의 로그인 시스템을 이용하며, 각 공급자는 자체 개인정보처리방침에 따라 로그인 정보를 처리합니다.',
 					'서버로 전송되는 데이터는 HTTPS/TLS로 암호화됩니다. 서비스 제공자의 서버 위치에 따라 데이터가 국외에서 처리될 수 있습니다.'
 				]
@@ -81,9 +95,9 @@ export const lizardTycoonPrivacyContent: Record<'ko' | 'en', PrivacyContent> = {
 	en: {
 		title: 'Lizard Terrarium Privacy Policy',
 		description:
-			'Privacy Policy for game data, analytics, and in-app purchase processing in Lizard Terrarium.',
+			'Privacy Policy for game data, analytics, in-app purchase, and rewarded ad processing in Lizard Terrarium.',
 		kicker: 'Lizard Terrarium Privacy Policy',
-		lastUpdated: 'October 7, 2026',
+		lastUpdated: 'October 16, 2026',
 		lastUpdatedLabel: 'Effective and last updated',
 		backLabel: 'Back to Seori Labs',
 		languageLabel: 'Language',
@@ -101,7 +115,7 @@ export const lizardTycoonPrivacyContent: Record<'ko' | 'en', PrivacyContent> = {
 					'Toss may provide a name during the AppsInToss login consent flow, but Seori Labs does not use it for App features or store it on our servers. If you choose an in-app purchase, we store market and product IDs, transaction references or tokens, entitlement and refund status, and processing timestamps in our purchase-validation and restoration ledger. Seori Labs does not collect payment card or bank details.',
 					'If you use Crystals (a paid currency), we store your paid and free Crystal balances, research shards and tokens, Morph Box open requests and results, guarantee counters, research and expedition state, grant and deduction timestamps, and related order references in our server ledger. Results are determined by the server, and per-request records are used to prevent duplicate processing and to apply refund deductions.',
 					'If you link a Google or Apple account to spend paid Crystals, the Seori Labs server verifies the signature, issuer, and audience of the provider’s sign-in token and stores only the provider name and a hash of the account identifier. We do not store the raw account identifier, email address, name, or profile picture. The hash is used only to find the same wallet when you link the same account again.',
-					'Game features do not collect location, contacts, photos, videos, microphone recordings, or health data. The Google Play and App Store versions do not use an ad SDK or advertising identifiers. AppsInToss interstitials use the Toss integrated ad SDK. Toss and Google AdMob may process advertising identifiers, device and network information, and ad impression and click data according to their policies and your device consent settings. Seori Labs does not link these advertising identifiers to purchase accounts or game analytics identifiers.'
+					'Game features do not collect location, contacts, photos, videos, microphone recordings, or health data. Processing for rewarded ads in the Google Play and App Store versions is described under “Rewarded Ads on Google Play and the App Store” below. The AppsInToss version has no rewarded ads; AppsInToss interstitials use the Toss integrated ad SDK. Toss and Google AdMob may process advertising identifiers, device and network information, and ad impression and click data according to their policies and your device consent settings. Seori Labs does not link these advertising identifiers to purchase accounts or game analytics identifiers.'
 				]
 			},
 			{
@@ -113,6 +127,20 @@ export const lizardTycoonPrivacyContent: Record<'ko' | 'en', PrivacyContent> = {
 				]
 			},
 			{
+				title: 'Rewarded Ads on Google Play and the App Store',
+				body: [
+					'In the Google Play and App Store versions, the only ads are Google AdMob rewarded ads that you choose by tapping a button. There are no banner or interstitial ads. Core gameplay remains available without watching ads.',
+					'To deliver and measure ads and to prevent fraud, the Google Mobile Ads SDK (together with Google User Messaging Platform (UMP) in the Android app) may process your IP address and approximate location inferred from it, app- or developer-scoped device identifiers (such as the Android app set ID), device, OS, and network information, ad interactions such as requests, impressions, clicks, and completed views, and app and SDK performance and diagnostic data. Google processes this data under its own policies.',
+					'The App requests non-personalized ads only and limits ad content to a maximum rating of G. On iPhone the App does not request App Tracking Transparency permission, and on Android it does not use the advertising ID permission. Seori Labs does not receive or store advertising identifiers.',
+					'In the Android app, users in the European Economic Area, the United Kingdom, and Switzerland see Google’s consent form (UMP) the first time they choose a reward. If you do not consent, only Google’s limited ads may be served or reward buttons may not appear. Android users in those regions can review or withdraw their choice at any time under “Privacy choices” in the App’s Settings.',
+					'The iPhone app does not show a consent form in any region and has no “Privacy choices” item in Settings. Ad requests from the iPhone app in the European Economic Area, the United Kingdom, and Switzerland are served as Google limited ads, which turn off features that rely on device identifiers, such as ad personalization and frequency capping, and use cookies or local storage only to detect invalid traffic.',
+					'A reward is granted only after you watch the whole ad and the Seori Labs server confirms the view through AdMob server-side verification (SSV). For this we store the reward request ID, ad placement, reward type and amount, processing status and timestamps, and a pseudonymous user identifier on our server, and we include the reward request ID and the pseudonymous user identifier in the ad request so that AdMob returns them with its verification result. Reward verification records are deleted automatically 90 days after creation, and request records that prevent duplicate rewards are deleted when you request data deletion.',
+					'The number of ads watched today, the last ad time, pending requests, and completed rewards are kept in the game save on your device. Ad request, impression, failure, and reward verification events are processed as pseudonymous analytics data.',
+					'You can report an inappropriate ad with “Report an ad” in the App’s Settings.',
+					'For how Google uses this data, see the Google Privacy Policy (policies.google.com/privacy) and How Google uses information from sites or apps that use our services (policies.google.com/technologies/partner-sites).'
+				]
+			},
+			{
 				title: 'AppsInToss Ads',
 				body: [
 					'Ad counts, the last ad close time, session activity times, and completion identifiers are stored on your device separately from game saves to enforce frequency limits and prevent duplicates. We analyze ad opportunities, skip reasons, loads, requests, shows, impressions, closes, errors, and display duration by market, OS, bundle, and policy version. Toss Login is not required to view ads.'
@@ -121,7 +149,7 @@ export const lizardTycoonPrivacyContent: Record<'ko' | 'en', PrivacyContent> = {
 			{
 				title: 'Processors and Transfers',
 				body: [
-					'Seori Labs does not sell personal data. Toss and Google ad SDKs may process data to provide AppsInToss ads. The Toss privacy policy (toss.im/privacy-policy) and Google privacy policy (policies.google.com/privacy) also apply.',
+					'Seori Labs does not sell personal data. Google AdMob may process data to provide rewarded ads in the Google Play and App Store versions, and Toss and Google ad SDKs may process data to provide AppsInToss ads. The Google privacy policy (policies.google.com/privacy) and the Toss privacy policy (toss.im/privacy-policy) also apply.',
 					'Google Firebase, Google Analytics, and Google Cloud process data as service providers for analytics and diagnostics, anonymous authentication, the purchase ledger, the Crystal wallet ledger, and server operations. Google Play, the Apple App Store, and AppsInToss or Toss process login, payment, and refund data for the market you choose. Account linking uses the Google or Apple sign-in system you choose, and each provider handles sign-in data under its own privacy policy.',
 					'Data sent to servers is encrypted in transit with HTTPS/TLS. It may be processed outside your country depending on service-provider infrastructure.'
 				]
