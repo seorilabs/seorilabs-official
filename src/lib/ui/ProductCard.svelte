@@ -1,7 +1,6 @@
 <script lang="ts">
 	import type { AnalyticsPlacement } from '$lib/analytics';
 	import type { Locale } from '$lib/content';
-	import { shortName } from '$lib/products/derive';
 	import type { Product } from '$lib/products/types';
 	import StoreLinks from '$lib/ui/StoreLinks.svelte';
 
@@ -39,13 +38,7 @@
 			{/each}
 		</ul>
 		{#if isLive}
-			<StoreLinks
-				channels={product.channels}
-				{locale}
-				productSlug={product.slug}
-				productName={shortName(product, locale)}
-				{placement}
-			/>
+			<StoreLinks channels={product.channels} {locale} productSlug={product.slug} {placement} />
 		{/if}
 		{#if landingHref}
 			<a class="more" href={landingHref}>

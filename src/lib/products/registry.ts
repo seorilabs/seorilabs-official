@@ -17,12 +17,11 @@ export const products: Product[] = [
 		category: 'game',
 		hasLanding: true,
 		releasedOn: '2026-08-06',
-		updatedOn: '2026-09-11',
+		updatedOn: '2026-10-17',
 		name: {
-			ko: '내 도마뱀 키우기 : 픽셀 테라리움 육성',
+			ko: '도마뱀 테라리움',
 			en: 'Lizard Terrarium'
 		},
-		shortName: { ko: '내 도마뱀 키우기', en: 'Lizard Terrarium' },
 		tagline: {
 			ko: '도마뱀 식구를 돌보고 교배하며 모프와 무늬를 모으는 픽셀 육성 게임',
 			en: 'Care, breed, and collect a growing lizard family in a cozy pixel terrarium.'
@@ -38,7 +37,7 @@ export const products: Product[] = [
 		channels: [
 			{ kind: 'google-play', packageName: 'com.seorilabs.lizardtycoon' },
 			{ kind: 'app-store', appId: '6786516830' },
-			{ kind: 'apps-in-toss' }
+			{ kind: 'apps-in-toss', searchName: '내 도마뱀 키우기' }
 		],
 		media: {
 			icon: '/products/lizard-tycoon/icon-256.webp',
@@ -66,12 +65,11 @@ export const products: Product[] = [
 		status: 'live',
 		category: 'app',
 		hasLanding: false,
-		updatedOn: '2026-08-10',
+		updatedOn: '2026-10-17',
 		name: {
 			ko: '함께봄: 수유, 기저귀, 아기돌봄 기록 어플',
 			en: 'BabyNest: Shared Baby Care Log'
 		},
-		shortName: { ko: '함께봄', en: 'BabyNest' },
 		tagline: {
 			ko: '수유·수면·체온·복약을 여러 양육자가 실시간으로 함께 기록하는 공동 돌봄 앱',
 			en: 'Log feeding, sleep, temperature, and medication together with every caregiver.'
@@ -79,7 +77,8 @@ export const products: Product[] = [
 		badges: { ko: ['생활 앱'], en: ['App'] },
 		channels: [
 			{ kind: 'google-play', packageName: 'com.seorilabs.babycare' },
-			{ kind: 'app-store', appId: '6792193162' }
+			{ kind: 'app-store', appId: '6792193162' },
+			{ kind: 'apps-in-toss', searchName: '함께봄: 아기돌봄 기록' }
 		],
 		media: { icon: '/products/babycare/icon-256.webp' },
 		legal: [
@@ -104,12 +103,11 @@ export const products: Product[] = [
 		status: 'live',
 		category: 'app',
 		hasLanding: false,
-		updatedOn: '2026-09-07',
+		updatedOn: '2026-10-17',
 		name: {
 			ko: '운글: 사주 몰라도 읽히는 풀이',
 			en: 'Ungeul'
 		},
-		shortName: { ko: '운글', en: 'Ungeul' },
 		tagline: {
 			ko: '생년월일과 태어난 시간을 넣으면 명식·오행·십성·대운을 읽기 쉬운 말로 풀어드립니다',
 			en: 'Saju readings explained in plain words. Korean only.'
@@ -117,7 +115,7 @@ export const products: Product[] = [
 		badges: { ko: ['생활 앱'], en: ['App'] },
 		channels: [
 			{ kind: 'google-play', packageName: 'com.seorilabs.ungeul' },
-			{ kind: 'apps-in-toss' }
+			{ kind: 'apps-in-toss', searchName: '운글' }
 		],
 		media: { icon: '/products/ungeul/icon-256.webp' },
 		legal: [
@@ -139,7 +137,7 @@ export const products: Product[] = [
 		status: 'live',
 		category: 'game',
 		hasLanding: false,
-		updatedOn: '2026-08-27',
+		updatedOn: '2026-10-17',
 		name: { ko: '행복 농장 타이쿤', en: 'Happy Farm Tycoon' },
 		tagline: {
 			ko: '작물을 심고 수확하며 농장을 확장하는 방치형 농장 게임',
@@ -148,7 +146,8 @@ export const products: Product[] = [
 		badges: { ko: ['게임'], en: ['Game'] },
 		channels: [
 			{ kind: 'google-play', packageName: 'com.seorilabs.happyfarm' },
-			{ kind: 'app-store', appId: '6775451733' }
+			{ kind: 'app-store', appId: '6775451733' },
+			{ kind: 'apps-in-toss', searchName: '행복한 농장 타이쿤' }
 		],
 		media: { icon: '/products/happy-farm/icon-256.webp' },
 		legal: []
@@ -179,7 +178,7 @@ export const products: Product[] = [
 		status: 'live',
 		category: 'game',
 		hasLanding: false,
-		updatedOn: '2026-08-27',
+		updatedOn: '2026-10-17',
 		name: { ko: '가로세로 낱말 퍼즐', en: 'Korean Crossword Puzzle' },
 		tagline: {
 			ko: '매일 한 판씩 푸는 한글 가로세로 낱말 퍼즐',
@@ -188,7 +187,8 @@ export const products: Product[] = [
 		badges: { ko: ['게임'], en: ['Game'] },
 		channels: [
 			{ kind: 'google-play', packageName: 'com.seorilabs.crosswordpuzzle' },
-			{ kind: 'app-store', appId: '6777292094' }
+			{ kind: 'app-store', appId: '6777292094' },
+			{ kind: 'apps-in-toss', searchName: '가로세로 낱말' }
 		],
 		media: { icon: '/products/crossword-puzzle/icon-256.webp' },
 		legal: []
@@ -199,7 +199,7 @@ export const products: Product[] = [
 		status: 'live',
 		category: 'game',
 		hasLanding: false,
-		updatedOn: '2026-09-10',
+		updatedOn: '2026-10-17',
 		name: { ko: '조물조물 만물 합치기', en: 'Little Wonders: Merge & Make' },
 		tagline: {
 			ko: '두 개를 겹치면 새로운 게 나와요. 한국의 자연과 사계절을 조물조물 만들어요.',
@@ -208,7 +208,8 @@ export const products: Product[] = [
 		badges: { ko: ['게임', '아동 대상'], en: ['Game', 'For kids'] },
 		channels: [
 			{ kind: 'google-play', packageName: 'com.seorilabs.jomul' },
-			{ kind: 'app-store', appId: '6801187599' }
+			{ kind: 'app-store', appId: '6801187599' },
+			{ kind: 'apps-in-toss', searchName: '조물조물 만들기' }
 		],
 		media: { icon: '/products/jomul/icon-256.webp' },
 		legal: [
@@ -231,7 +232,7 @@ export const products: Product[] = [
 		status: 'live',
 		category: 'game',
 		hasLanding: false,
-		updatedOn: '2026-09-11',
+		updatedOn: '2026-10-17',
 		name: { ko: '버블 버블 거품 세차', en: 'Bubble Bubble Foam Party' },
 		tagline: {
 			ko: '물, 비누, 스펀지와 바람으로 자동차를 씻는 캐주얼 세차 게임',
@@ -240,7 +241,8 @@ export const products: Product[] = [
 		badges: { ko: ['게임'], en: ['Game'] },
 		channels: [
 			{ kind: 'google-play', packageName: 'com.seorilabs.foamparty' },
-			{ kind: 'app-store', appId: '6779624201' }
+			{ kind: 'app-store', appId: '6779624201' },
+			{ kind: 'apps-in-toss', searchName: '버블 버블 거품 세차' }
 		],
 		media: { icon: '/products/foam-party/icon-256.webp' },
 		legal: []
@@ -251,7 +253,7 @@ export const products: Product[] = [
 		status: 'live',
 		category: 'game',
 		hasLanding: false,
-		updatedOn: '2026-08-22',
+		updatedOn: '2026-10-17',
 		name: { ko: '루시드 체스', en: 'Lucid Chess' },
 		tagline: {
 			ko: '루시드 렌즈로 후보 수를 보며 AI와 두는 체스',
@@ -260,7 +262,8 @@ export const products: Product[] = [
 		badges: { ko: ['게임'], en: ['Game'] },
 		channels: [
 			{ kind: 'google-play', packageName: 'com.seorilabs.lucidchess' },
-			{ kind: 'app-store', appId: '1041884410' }
+			{ kind: 'app-store', appId: '1041884410' },
+			{ kind: 'apps-in-toss', searchName: '루시드 체스' }
 		],
 		media: { icon: '/products/lucid-chess/icon-256.webp' },
 		legal: []
@@ -271,15 +274,18 @@ export const products: Product[] = [
 		status: 'live',
 		category: 'game',
 		hasLanding: false,
-		updatedOn: '2026-09-22',
+		updatedOn: '2026-10-17',
 		name: { ko: '루시드 리버시', en: 'Lucid Reversi' },
 		tagline: {
 			ko: '선명한 보드와 큼직한 흑백 돌로 다음 수가 잘 보이는, AI와 한 판 붙는 모바일 리버시',
 			en: 'A mobile reversi game for quick matches against AI, with a clear board and instant move feedback.'
 		},
 		badges: { ko: ['게임'], en: ['Game'] },
-		// 번들 ID는 구 네임스페이스(com.etlegame.reversi)이고 App Store에만 있다.
-		channels: [{ kind: 'app-store', appId: '994468960' }],
+		// 네이티브 번들 ID는 구 네임스페이스(com.etlegame.reversi)이며 iOS만 제공한다.
+		channels: [
+			{ kind: 'app-store', appId: '994468960' },
+			{ kind: 'apps-in-toss', searchName: '루시드 리버시' }
+		],
 		media: { icon: '/products/lucid-reversi/icon-256.webp' },
 		legal: [
 			{
@@ -328,16 +334,16 @@ export const products: Product[] = [
 		status: 'live',
 		category: 'game',
 		hasLanding: false,
-		updatedOn: '2026-09-25',
+		updatedOn: '2026-10-17',
 		name: { ko: 'Lucid Reels: Open Odds', en: 'Lucid Reels: Open Odds' },
 		tagline: {
 			ko: '스핀 전 공개 확률을 비교하고 리스크를 고르는 소셜 슬롯',
 			en: 'Compare open odds and choose a risk profile before you spin'
 		},
 		// Google Play 프로덕션은 한국 스토어프런트를 제외하고 배포 중이다.
-		// iOS(appId 6795099819)는 심사 대기라 공개가 확인되면 채널을 추가한다.
+		// iOS(appId 6795099819)는 공개가 확인되면 채널을 추가한다.
 		badges: { ko: ['게임', '한국 미제공'], en: ['Game', 'Not available in Korea'] },
-		channels: [{ kind: 'google-play', packageName: 'com.seorilabs.slotmachine' }],
+		channels: [{ kind: 'google-play', packageName: 'com.seorilabs.slotmachine', country: 'us' }],
 		media: { icon: '/products/lucid-reels/icon-256.webp' },
 		legal: []
 	},
@@ -347,7 +353,7 @@ export const products: Product[] = [
 		status: 'live',
 		category: 'game',
 		hasLanding: false,
-		updatedOn: '2026-09-25',
+		updatedOn: '2026-10-17',
 		// Google Play 등록명이다. App Store에는 '같은 그림 찾아보기 / Match Symbols'로 등록돼 있다.
 		name: { ko: '같은 그림 찾기', en: 'Match Picture' },
 		tagline: {
@@ -355,10 +361,11 @@ export const products: Product[] = [
 			en: 'Spot the one matching picture between two cards — beat the clock!'
 		},
 		badges: { ko: ['게임'], en: ['Game'] },
-		// 2020년 출시한 구 네임스페이스 번들이다. Godot 재구현이 출시되면 채널과 아이콘을 바꾼다.
+		// 네이티브 스토어 식별자는 기존 출시 앱의 네임스페이스를 유지한다.
 		channels: [
 			{ kind: 'google-play', packageName: 'com.github.magicsih.MatchPictureUnity' },
-			{ kind: 'app-store', appId: '1528539634' }
+			{ kind: 'app-store', appId: '1528539634' },
+			{ kind: 'apps-in-toss', searchName: '같은 그림 찾기' }
 		],
 		media: { icon: '/products/match-picture/icon-256.webp' },
 		legal: []
@@ -389,14 +396,17 @@ export const products: Product[] = [
 		status: 'live',
 		category: 'game',
 		hasLanding: true,
-		updatedOn: '2026-09-28',
-		name: { ko: '머지 함대: 해전 전략', en: 'Merge Fleet: Naval Battles' },
+		updatedOn: '2026-10-17',
+		name: { ko: '머지 함대: 합치고 싸워라', en: 'Merge Fleet: Build & Battle' },
 		tagline: {
-			ko: '진형을 짜고 함선을 합쳐, 자동 해전에서 거북선 함대를 지휘하세요.',
-			en: 'Merge ships, shape formations, and command a fleet through naval battles.'
+			ko: '함선과 포를 합쳐 강화하고, 배치로 자동 해전의 승부를 바꾸세요.',
+			en: 'Merge ships and cannons. Plan your formation and win automatic naval battles.'
 		},
 		badges: { ko: ['게임'], en: ['Game'] },
-		channels: [{ kind: 'app-store', appId: '6812823076', country: 'us' }],
+		channels: [
+			{ kind: 'google-play', packageName: 'com.seorilabs.mergearmada' },
+			{ kind: 'app-store', appId: '6812823076' }
+		],
 		media: { icon: '/products/merge-armada/icon-256.webp' },
 		legal: [
 			{
@@ -409,17 +419,21 @@ export const products: Product[] = [
 	{
 		slug: 'reascend',
 		order: 100,
-		status: 'upcoming',
+		status: 'live',
 		category: 'game',
 		hasLanding: false,
-		updatedOn: '2026-09-23',
+		releasedOn: '2026-10-01',
+		updatedOn: '2026-10-17',
 		name: { ko: '리어센드', en: 'Reascend' },
 		tagline: {
 			ko: '방치형 탑 등반 RPG. 회귀할 때마다 한 헌터의 이야기가 한 장씩 쌓인다.',
 			en: 'Idle tower RPG. Every regression is a new chapter of one hunter\u2019s climb.'
 		},
 		badges: { ko: ['게임'], en: ['Game'] },
-		channels: [],
+		channels: [
+			{ kind: 'google-play', packageName: 'com.seorilabs.reascend' },
+			{ kind: 'app-store', appId: '6805464556' }
+		],
 		media: { icon: '/products/reascend/icon-256.webp' },
 		legal: [
 			{
@@ -440,17 +454,18 @@ export const products: Product[] = [
 	{
 		slug: 'bloomhand',
 		order: 105,
-		status: 'upcoming',
+		status: 'live',
 		category: 'game',
 		hasLanding: false,
-		updatedOn: '2026-09-24',
+		releasedOn: '2026-10-09',
+		updatedOn: '2026-10-17',
 		name: { ko: '블룸핸드', en: 'Bloomhand' },
 		tagline: {
-			ko: '카드로 꽃을 피우는 세로 한 손 정원 로그라이크',
-			en: 'Grow a garden with a hand of seed cards — a one-handed roguelike.'
+			ko: '씨앗 카드로 포커 족보를 만들어 꽃을 피우는 세로 한 손 로그라이크.',
+			en: 'A one-handed, portrait roguelike where seed cards bloom into flowers through poker hands.'
 		},
 		badges: { ko: ['게임'], en: ['Game'] },
-		channels: [],
+		channels: [{ kind: 'app-store', appId: '6815652277' }],
 		media: { icon: '/products/bloomhand/icon-256.webp' },
 		legal: [
 			{
@@ -503,17 +518,22 @@ export const products: Product[] = [
 	{
 		slug: 'matgo',
 		order: 102,
-		status: 'upcoming',
+		status: 'live',
 		category: 'game',
 		hasLanding: false,
-		updatedOn: '2026-09-25',
+		releasedOn: '2026-09-28',
+		updatedOn: '2026-10-17',
 		name: { ko: '달빛 맞고', en: 'Moonlight Matgo' },
 		tagline: {
 			ko: '현금성 보상 없이 AI와 즐기는 큰 글자 오프라인 2인 맞고',
 			en: 'A clear, offline two-player Matgo card game against AI.'
 		},
-		badges: { ko: ['게임'], en: ['Game'] },
-		channels: [],
+		badges: { ko: ['게임', '한국 미제공'], en: ['Game', 'Not available in Korea'] },
+		// 두 마켓 모두 한국에서는 미제공이며 미국 공개 스토어에서 확인했다.
+		channels: [
+			{ kind: 'google-play', packageName: 'com.seorilabs.matgo', country: 'us' },
+			{ kind: 'app-store', appId: '6795536910', country: 'us' }
+		],
 		media: { icon: '/products/matgo/icon-256.webp' },
 		legal: [
 			{
@@ -531,7 +551,6 @@ export const products: Product[] = [
 		hasLanding: false,
 		updatedOn: '2026-09-25',
 		name: { ko: '사이클 페어 : 내 기분, 주기, 컨디션을 알려요', en: 'Cycle Pair' },
-		shortName: { ko: '사이클 페어', en: 'Cycle Pair' },
 		tagline: {
 			ko: '생리주기를 함께 이해하고 대비하는 커플 케어 앱',
 			en: 'A private cycle and condition sharing app for two.'
@@ -561,16 +580,17 @@ export const products: Product[] = [
 		status: 'live',
 		category: 'game',
 		hasLanding: false,
-		updatedOn: '2026-09-26',
-		name: { ko: '골목상점 매치', en: 'Alley Market Match' },
+		updatedOn: '2026-10-17',
+		name: { ko: '마켓팝: 매치3 퍼즐', en: 'Market Pop: Match-3 Puzzle' },
 		tagline: {
-			ko: '골목시장 주문서를 3매치로 완성하는 감성 퍼즐',
-			en: 'Fill market orders in a cozy match-3 puzzle'
+			ko: '재료를 맞춰 주문을 완성하고, 콤보로 골목상점을 되살리세요',
+			en: 'Match ingredients, fill orders, and bring the market back to life.'
 		},
 		badges: { ko: ['게임'], en: ['Game'] },
 		channels: [
 			{ kind: 'google-play', packageName: 'com.seorilabs.alleymarketmatch' },
-			{ kind: 'app-store', appId: '6815288695' }
+			{ kind: 'app-store', appId: '6815288695' },
+			{ kind: 'apps-in-toss', searchName: '골목상점 매치' }
 		],
 		media: { icon: '/products/alley-market-match/icon-256.webp' },
 		legal: []
@@ -604,29 +624,6 @@ export const products: Product[] = [
 				kind: 'account-deletion',
 				path: { ko: '/apps/vernhald/account-deletion/', en: '/en/apps/vernhald/account-deletion/' },
 				updated: '2026-10-06'
-			}
-		]
-	},
-	{
-		slug: 'meniere-support',
-		order: 108,
-		status: 'upcoming',
-		category: 'app',
-		hasLanding: false,
-		updatedOn: '2026-10-03',
-		name: { ko: '메니에르 기록', en: 'Meniere Journal' },
-		tagline: {
-			ko: '증상과 일상을 기기에 기록하고 진료 전에 정리하는 개인 기록 앱',
-			en: 'Keep a private journal of symptoms and daily life, and prepare for appointments.'
-		},
-		badges: { ko: ['기록 앱'], en: ['Journal'] },
-		channels: [],
-		media: {},
-		legal: [
-			{
-				kind: 'privacy',
-				path: { ko: '/apps/meniere-support/privacy/', en: '/en/apps/meniere-support/privacy/' },
-				updated: '2026-10-03'
 			}
 		]
 	}

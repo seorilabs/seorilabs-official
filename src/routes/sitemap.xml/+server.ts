@@ -24,7 +24,7 @@ const pair = (koPath: string, enPath: string): SitemapPage[] => [
  * 콘텐츠가 바뀌지 않았는데 lastmod가 갱신되면 크롤러 신뢰도만 떨어진다.
  * 원장과 문서 메타에 적어 둔 ISO 날짜를 쓰고, 빌드 시각은 쓰지 않는다.
  */
-const SITE_PAGES_UPDATED = '2026-09-11';
+const SITE_PAGES_UPDATED = '2026-10-17';
 
 /** 둘 중 나중 날짜. 전부 ISO 날짜라 사전순 비교가 곧 날짜 비교다. */
 const latest = (...dates: string[]): string => dates.reduce((a, b) => (a > b ? a : b));
