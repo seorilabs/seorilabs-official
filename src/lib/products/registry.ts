@@ -334,16 +334,16 @@ export const products: Product[] = [
 		status: 'live',
 		category: 'game',
 		hasLanding: false,
-		updatedOn: '2026-09-25',
+		updatedOn: '2026-10-17',
 		name: { ko: 'Lucid Reels: Open Odds', en: 'Lucid Reels: Open Odds' },
 		tagline: {
 			ko: '스핀 전 공개 확률을 비교하고 리스크를 고르는 소셜 슬롯',
 			en: 'Compare open odds and choose a risk profile before you spin'
 		},
 		// Google Play 프로덕션은 한국 스토어프런트를 제외하고 배포 중이다.
-		// iOS(appId 6795099819)는 심사 대기라 공개가 확인되면 채널을 추가한다.
+		// iOS(appId 6795099819)는 공개가 확인되면 채널을 추가한다.
 		badges: { ko: ['게임', '한국 미제공'], en: ['Game', 'Not available in Korea'] },
-		channels: [{ kind: 'google-play', packageName: 'com.seorilabs.slotmachine' }],
+		channels: [{ kind: 'google-play', packageName: 'com.seorilabs.slotmachine', country: 'us' }],
 		media: { icon: '/products/lucid-reels/icon-256.webp' },
 		legal: []
 	},
@@ -531,7 +531,7 @@ export const products: Product[] = [
 		badges: { ko: ['게임', '한국 미제공'], en: ['Game', 'Not available in Korea'] },
 		// 두 마켓 모두 한국에서는 미제공이며 미국 공개 스토어에서 확인했다.
 		channels: [
-			{ kind: 'google-play', packageName: 'com.seorilabs.matgo' },
+			{ kind: 'google-play', packageName: 'com.seorilabs.matgo', country: 'us' },
 			{ kind: 'app-store', appId: '6795536910', country: 'us' }
 		],
 		media: { icon: '/products/matgo/icon-256.webp' },

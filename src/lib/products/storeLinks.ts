@@ -1,7 +1,7 @@
 import type { StoreChannel } from '$lib/products/types';
 
-export const playUrl = (packageName: string) =>
-	`https://play.google.com/store/apps/details?id=${packageName}`;
+export const playUrl = (packageName: string, country?: string) =>
+	`https://play.google.com/store/apps/details?id=${packageName}${country ? `&gl=${country.toUpperCase()}` : ''}`;
 
 export const appStoreUrl = (appId: string, country = 'kr') =>
 	`https://apps.apple.com/${country}/app/id${appId}`;
@@ -10,7 +10,7 @@ export const appStoreUrl = (appId: string, country = 'kr') =>
 export function channelUrl(channel: StoreChannel): string | null {
 	switch (channel.kind) {
 		case 'google-play':
-			return playUrl(channel.packageName);
+			return playUrl(channel.packageName, channel.country);
 		case 'app-store':
 			return appStoreUrl(channel.appId, channel.country);
 		case 'apps-in-toss':

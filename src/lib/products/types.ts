@@ -9,7 +9,7 @@ export type ProductCategory = 'game' | 'app';
  * searchName은 언어와 무관하게 토스 콘솔에 등록된 실제 검색 이름을 쓴다.
  */
 export type StoreChannel =
-	| { kind: 'google-play'; packageName: string }
+	| { kind: 'google-play'; packageName: string; country?: string }
 	| { kind: 'app-store'; appId: string; country?: string }
 	| { kind: 'apps-in-toss'; searchName: string };
 
