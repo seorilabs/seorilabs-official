@@ -2,7 +2,6 @@
 	import { ArrowLeft, Mail } from '@lucide/svelte';
 	import { trackContactClick } from '$lib/analytics';
 	import { site, type Locale } from '$lib/content';
-	import { shortName } from '$lib/products/derive';
 	import { appLandings } from '$lib/products/landings';
 	import { channelUrl } from '$lib/products/storeLinks';
 	import type { Product } from '$lib/products/types';
@@ -102,7 +101,6 @@
 				channels={product.channels}
 				{locale}
 				productSlug={product.slug}
-				productName={shortName(product, locale)}
 				placement="landing_hero"
 				size="large"
 			/>
@@ -164,7 +162,6 @@
 				channels={product.channels}
 				{locale}
 				productSlug={product.slug}
-				productName={shortName(product, locale)}
 				placement="landing_install"
 				size="large"
 			/>

@@ -17,7 +17,7 @@ export const appsIndexContent: Record<
 	ko: {
 		metaTitle: '앱 - 서리랩스가 만들고 운영하는 게임과 생활 앱',
 		metaDescription:
-			'내 도마뱀 키우기, 함께봄, 행복 농장 타이쿤, 영혼의 문 디펜스, 가로세로 낱말 퍼즐, 운글 등 서리랩스가 직접 만들어 Google Play와 App Store에서 서비스 중인 앱입니다.',
+			'도마뱀 테라리움, 리어센드, 블룸핸드, 머지 함대, 마켓팝 등 서리랩스가 직접 만들어 Google Play와 App Store에서 서비스 중인 게임과 생활 앱입니다.',
 		kicker: 'Apps',
 		title: '서비스 중인 앱',
 		intro:
@@ -30,7 +30,7 @@ export const appsIndexContent: Record<
 	en: {
 		metaTitle: 'Apps - Games and everyday apps built by Seori Labs',
 		metaDescription:
-			'Lizard Terrarium, BabyNest, Happy Farm Tycoon, Spiritgate Defenders, and more. Every app is designed, built, and operated by Seori Labs and published on Google Play and the App Store.',
+			'Lizard Terrarium, Reascend, Bloomhand, Merge Fleet, Market Pop, and more. Games and everyday apps designed, built, and operated by Seori Labs on Google Play and the App Store.',
 		kicker: 'Apps',
 		title: 'Live right now',
 		intro:
