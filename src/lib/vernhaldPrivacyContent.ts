@@ -42,7 +42,7 @@ export const vernhaldPrivacyContent: Record<'ko' | 'en', PrivacyContent> = {
 			{
 				title: '이용 통계(선택)',
 				body: [
-					'Android 앱은 처음 실행할 때 이용 통계를 공유할지 한 번 묻고, 이용자가 답하기 전이나 공유하지 않기로 선택하면 이용 통계를 수집하지 않습니다. iPhone·iPad 앱은 묻지 않고 이용 통계 공유가 켜진 상태로 시작합니다. 어느 기기에서든 설정의 “사용 통계”에서 언제든 끌 수 있습니다. 이 선택은 리그 운영에 필요한 데이터 처리와 별개입니다.',
+					'Android 앱은 처음 실행할 때 이용 통계를 공유할지 한 번 묻고, 이용자가 답하기 전이나 공유하지 않기로 선택하면 이용 통계를 수집하지 않습니다. iPhone·iPad 앱은 1.0.5부터 별도의 질문을 띄우지 않으며, 설정에서 이용자가 직접 공유를 켜기 전에는 이용 통계를 수집하지 않습니다. 이전 시험 버전의 자동 활성 설정은 동의로 취급하지 않고 끕니다. 어느 기기에서든 설정의 “사용 통계”에서 언제든 끌 수 있습니다. 이 선택은 리그 운영에 필요한 데이터 처리와 별개입니다.',
 					'공유를 켜면 Google Firebase 애널리틱스로 게임 이벤트가 전송됩니다. 판 시작과 종료(도전 단계, 라운드, 남은 체력), 강화 카드 선택, 보상형 광고의 요청·노출·실패·보상 획득, 상품 구매 결과(상품 ID와 완료·대기·취소·실패)가 해당하며, 앱 마켓·플랫폼·앱 버전이 함께 담깁니다. 여기에 Firebase 앱 인스턴스 ID와 Firebase가 자동으로 수집하는 기기·앱 정보가 더해집니다.',
 					'Android, iPhone 및 iPad 앱이 비정상 종료되면 Firebase Crashlytics로 오류 보고서(기기 모델, OS 버전, 오류 발생 지점의 스택 트레이스)가 전송됩니다. 오류 보고서는 이용 통계 선택과 별개로 기본으로 켜져 있으며 설정의 “오류 보고”에서 끌 수 있습니다.',
 					'애널리틱스의 광고 저장(ad storage), 광고 사용자 데이터(ad user data), 광고 개인 맞춤(ad personalization) 동의는 항상 거부로 설정되어 있습니다. 사용자 ID는 설정하지 않습니다.'
@@ -160,7 +160,7 @@ export const vernhaldPrivacyContent: Record<'ko' | 'en', PrivacyContent> = {
 			{
 				title: 'Usage statistics (optional)',
 				body: [
-					'On Android, the app asks once on first launch whether you want to share usage statistics, and usage statistics are not collected before you answer or if you choose not to share. On iPhone and iPad, the app does not ask and starts with sharing on. On any device, you can turn it off at any time under “Usage stats” in Settings. This choice is separate from processing needed to operate the league.',
+					'On Android, the app asks once on first launch whether you want to share usage statistics, and usage statistics are not collected before you answer or if you choose not to share. From version 1.0.5 on iPhone and iPad, the app shows no separate prompt and does not collect usage statistics until you enable sharing in Settings. Automatic sharing defaults from earlier test versions are switched off and are not treated as consent. On any device, you can turn it off at any time under “Usage stats” in Settings. This choice is separate from processing needed to operate the league.',
 					'When sharing is on, game events are sent to Google Firebase Analytics: run start and end (with challenge level, round, and remaining HP), augment card picks, rewarded ads requested, shown, failed, and earned, and the result of a product purchase, together with the app market, platform, and app version. Firebase also receives the Firebase app instance ID and the device and app information it collects automatically.',
 					'If the app crashes on Android, iPhone or iPad, Firebase Crashlytics receives a crash report (device model, OS version, and the stack trace of the crash). Crash reports are on by default, separately from the usage statistics choice, and can be turned off under “Crash reports” in Settings.',
 					'Analytics consent for ad storage, ad user data, and ad personalization is always set to denied. No user ID is set.'
