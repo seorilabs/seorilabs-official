@@ -24,12 +24,12 @@ export const lizardTycoonLanding: AppLandingSet = {
 	ko: {
 		metaTitle: '도마뱀 테라리움 - 픽셀 도마뱀 키우기 게임',
 		metaDescription:
-			'먹이를 주고 온도를 맞추고 교감하며 도마뱀을 돌보는 도마뱀 키우기 게임. 교배와 유전으로 모프와 무늬를 모으는 파충류 육성 시뮬레이션입니다. Android·iOS 광고 없음, 오프라인 돌봄 가능, 전체이용가.',
+			'먹이를 주고 온도를 맞추고 교감하며 도마뱀을 돌보는 도마뱀 키우기 게임. 교배와 유전으로 모프와 무늬를 모으는 파충류 육성 시뮬레이션입니다. 광고는 원할 때만 보는 보상형, 오프라인 돌봄 가능, 전체이용가.',
 		kicker: '픽셀 테라리움 육성 게임',
 		title: '도마뱀 테라리움',
-		lead: '작은 픽셀 테라리움에서 도마뱀 한 마리를 돌보는 것부터 시작합니다. 먹이를 주고, 온도를 맞추고, 청소하고, 교감하고, 관찰하면서 가족을 늘려가는 육성 게임입니다. Android·iOS 버전은 광고가 없고, 며칠 못 들어와도 도마뱀이 죽지 않습니다.',
+		lead: '작은 픽셀 테라리움에서 도마뱀 한 마리를 돌보는 것부터 시작합니다. 먹이를 주고, 온도를 맞추고, 청소하고, 교감하고, 관찰하면서 가족을 늘려가는 육성 게임입니다. 광고는 원할 때 직접 골라 보는 보상형뿐이고, 며칠 못 들어와도 도마뱀이 죽지 않습니다.',
 		quickFacts: [
-			'Android·iOS 광고 없음',
+			'광고는 원할 때만 보는 보상형',
 			'돌봄은 오프라인 가능',
 			'전체이용가 (GRAC)',
 			'한 번에 1~3분',
@@ -126,7 +126,7 @@ export const lizardTycoonLanding: AppLandingSet = {
 				items: [
 					{
 						title: '마켓별 광고 안내',
-						body: 'Android·iOS 버전에는 광고가 없습니다. 앱인토스에서는 놀이·탐사·제작 결과를 확인하고 화면을 닫거나 홈으로 돌아갈 때 전면 광고가 표시될 수 있습니다.'
+						body: 'Android·iOS 버전에는 버튼을 눌러 고를 때만 보는 보상형 광고만 있고 배너·전면 광고는 없습니다. 앱인토스에는 보상형 광고가 없고, 놀이·탐사·제작 결과를 확인하고 화면을 닫거나 홈으로 돌아갈 때 전면 광고가 표시될 수 있습니다.'
 					},
 					{
 						title: '며칠 못 들어와도 괜찮은 게임',
@@ -153,7 +153,8 @@ export const lizardTycoonLanding: AppLandingSet = {
 				title: '무엇이 무료이고 무엇이 유료인지',
 				bullets: [
 					'돌봄, 교배, 도감을 포함한 핵심 플레이는 무료입니다.',
-					'Android·iOS에는 광고가 없습니다. 앱인토스는 튜토리얼 완료 후 결과 확인 경계에 전면 광고가 표시될 수 있습니다. 돌봄 중에는 표시하지 않습니다.',
+					'Android·iOS에는 원할 때 골라 보는 보상형 광고만 있습니다. 하루 최대 4회이고, 보지 않아도 게임을 즐길 수 있습니다.',
+					'앱인토스는 튜토리얼 완료 후 결과 확인 경계에 전면 광고가 표시될 수 있습니다. 돌봄 중에는 표시하지 않습니다.',
 					'프리미엄 종, 사육 랙 확장, 테라리움 테마, 액세서리는 원할 때 한 번만 결제하는 상품입니다. 구독은 없습니다.',
 					'확률형 아이템이 포함됩니다. 선택한 프리미엄 종은 확정으로 지급되고, 그 개체의 모프와 무늬 같은 특성은 무작위입니다. 나올 수 있는 결과와 확률은 구매 전에 화면에 표시합니다.',
 					'구매한 상품은 같은 스토어 계정에서 구매 복원으로 다시 받을 수 있습니다.'
@@ -175,7 +176,7 @@ export const lizardTycoonLanding: AppLandingSet = {
 		faq: [
 			{
 				q: '광고가 나오나요?',
-				a: 'Android·iOS 버전에는 광고가 없습니다. 앱인토스에서는 튜토리얼 후 놀이·탐사·제작 결과를 확인하고 닫거나 홈으로 돌아갈 때 전면 광고가 표시될 수 있습니다.'
+				a: 'Android·iOS 버전에는 버튼을 눌러 고를 때만 보는 보상형 광고가 있습니다. 먹이가 떨어졌을 때 먹이 받기, 출석 보상 한 번 더 받기 같은 보상을 주며 하루 최대 4회입니다. 배너·전면 광고는 없습니다. 앱인토스에는 보상형 광고가 없고, 튜토리얼 후 놀이·탐사·제작 결과를 확인하고 닫거나 홈으로 돌아갈 때 전면 광고가 표시될 수 있습니다.'
 			},
 			{
 				q: '무료인가요?',
@@ -229,12 +230,12 @@ export const lizardTycoonLanding: AppLandingSet = {
 	en: {
 		metaTitle: 'Lizard Terrarium - A pixel lizard care game',
 		metaDescription:
-			'Feed, warm, clean, and bond with lizards in a pixel terrarium. Breed for morphs and patterns in this reptile care simulator. No ads on Android and iOS, offline care, rated 3+.',
+			'Feed, warm, clean, and bond with lizards in a pixel terrarium. Breed for morphs and patterns in this reptile care simulator. Optional rewarded ads only, offline care, rated 3+.',
 		kicker: 'Pixel terrarium care game',
 		title: 'Lizard Terrarium',
-		lead: 'It starts with one lizard in a tiny pixel terrarium. Feed it, get the temperature right, clean up, bond, observe, and slowly grow a family. The Android and iOS versions have no ads, and your lizards do not die while you are away.',
+		lead: 'It starts with one lizard in a tiny pixel terrarium. Feed it, get the temperature right, clean up, bond, observe, and slowly grow a family. The only ads are optional rewarded ads you choose to watch, and your lizards do not die while you are away.',
 		quickFacts: [
-			'No ads on Android and iOS',
+			'Optional rewarded ads only',
 			'Care works offline',
 			'Rated 3+',
 			'1-3 minutes a session',
@@ -340,7 +341,7 @@ export const lizardTycoonLanding: AppLandingSet = {
 				items: [
 					{
 						title: 'Ads by version',
-						body: 'The Android and iOS versions have no ads. On AppsInToss, an interstitial may appear after you confirm play, expedition, or crafting results and close the screen or return home.'
+						body: 'The Android and iOS versions have only rewarded ads that play when you tap to choose them, with no banner or interstitial ads. AppsInToss has no rewarded ads; there, an interstitial may appear after you confirm play, expedition, or crafting results and close the screen or return home.'
 					},
 					{
 						title: 'A game that forgives a few days away',
@@ -367,7 +368,8 @@ export const lizardTycoonLanding: AppLandingSet = {
 				title: 'What is free and what is not',
 				bullets: [
 					'Core play - care, breeding, and the collection - is free.',
-					'There are no ads on Android and iOS. On AppsInToss, interstitial ads may appear after the tutorial when you confirm activity results, never during care.',
+					'Android and iOS have only optional rewarded ads you choose to watch, up to 4 a day. You can enjoy the game without watching them.',
+					'On AppsInToss, interstitial ads may appear after the tutorial when you confirm activity results, never during care.',
 					'Premium species, habitat rack expansions, terrarium themes, and accessories are one-time purchases. There is no subscription.',
 					'The game contains randomized items. The premium species you choose is guaranteed. The individual traits of that lizard, such as morph and pattern, are randomized, and the possible results and their odds are shown before purchase.',
 					'Purchases can be restored from the same store account.'
@@ -389,7 +391,7 @@ export const lizardTycoonLanding: AppLandingSet = {
 		faq: [
 			{
 				q: 'Are there ads?',
-				a: 'There are no ads on Android or iOS. On AppsInToss, an interstitial may appear after the tutorial when you confirm play, expedition, or crafting results and close the screen or return home.'
+				a: 'The Android and iOS versions have rewarded ads that play only when you tap to choose them. They give rewards such as food when you run out or a second attendance reward, up to 4 a day. There are no banner or interstitial ads. AppsInToss has no rewarded ads; there, an interstitial may appear after the tutorial when you confirm play, expedition, or crafting results and close the screen or return home.'
 			},
 			{
 				q: 'Is it free?',

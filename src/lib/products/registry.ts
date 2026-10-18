@@ -27,12 +27,12 @@ export const products: Product[] = [
 			en: 'Care, breed, and collect a growing lizard family in a cozy pixel terrarium.'
 		},
 		description: {
-			ko: '먹이를 주고 온도를 맞추고 교감하며 도마뱀을 키우는 픽셀 육성 게임. 교배와 유전으로 모프와 무늬를 모아 도감을 채웁니다. Android·iOS 광고 없음, 오프라인 돌봄 가능, 전체이용가.',
-			en: 'Feed, warm, clean, and bond with lizards in your own pixel terrarium. Breed for morphs and patterns and fill out the collection. No ads on Android and iOS, offline care, rated 3+.'
+			ko: '먹이를 주고 온도를 맞추고 교감하며 도마뱀을 키우는 픽셀 육성 게임. 교배와 유전으로 모프와 무늬를 모아 도감을 채웁니다. 광고는 원할 때만 보는 보상형, 오프라인 돌봄 가능, 전체이용가.',
+			en: 'Feed, warm, clean, and bond with lizards in your own pixel terrarium. Breed for morphs and patterns and fill out the collection. Optional rewarded ads only, offline care, rated 3+.'
 		},
 		badges: {
-			ko: ['게임', 'Android·iOS 광고 없음'],
-			en: ['Game', 'No ads on Android and iOS']
+			ko: ['게임', '선택형 보상 광고'],
+			en: ['Game', 'Optional rewarded ads']
 		},
 		channels: [
 			{ kind: 'google-play', packageName: 'com.seorilabs.lizardtycoon' },
