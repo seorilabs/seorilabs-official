@@ -7,7 +7,7 @@ export const lizardTycoonPrivacyContent: Record<'ko' | 'en', PrivacyContent> = {
 		description:
 			'내 도마뱀 키우기: 픽셀 테라리움 육성의 게임 데이터, 분석, 인앱결제 및 보상형 광고 처리에 관한 개인정보 처리방침입니다.',
 		kicker: 'Lizard Terrarium Privacy Policy',
-		lastUpdated: '2026년 10월 16일',
+		lastUpdated: '2026년 10월 18일',
 		lastUpdatedLabel: '시행일 및 최종 수정일',
 		backLabel: '서리랩스 홈으로',
 		languageLabel: '언어',
@@ -97,7 +97,7 @@ export const lizardTycoonPrivacyContent: Record<'ko' | 'en', PrivacyContent> = {
 		description:
 			'Privacy Policy for game data, analytics, in-app purchase, and rewarded ad processing in Lizard Terrarium.',
 		kicker: 'Lizard Terrarium Privacy Policy',
-		lastUpdated: 'October 16, 2026',
+		lastUpdated: 'October 18, 2026',
 		lastUpdatedLabel: 'Effective and last updated',
 		backLabel: 'Back to Seori Labs',
 		languageLabel: 'Language',

@@ -13,7 +13,7 @@ export const mergeArmadaLanding: AppLandingSet = {
 		metaDescription:
 			'좁은 판에 함선을 배치하고 같은 병기를 합쳐 함대를 만드세요. 물때를 읽고 북을 울리며 네 장, 42개 해역을 항해하는 모바일 해전 전략 게임입니다.',
 		kicker: '배치와 합성이 승부를 바꾸는 해전',
-		title: '머지 함대: 해전 전략',
+		title: '머지 함대: 합치고 싸워라',
 		lead: '제한된 칸에 함선을 놓고 같은 병기를 합쳐 함대를 키우세요. 출정 전 진형과 다음 물때를 살피고, 전투에서는 북을 울릴 순간을 고릅니다.',
 		quickFacts: ['무료 플레이', '네 장, 42개 해역', '선택형 보상 광고', '기기 안에 진행 저장'],
 		installCtaTitle: '스토어에서 만나보세요',
@@ -86,7 +86,7 @@ export const mergeArmadaLanding: AppLandingSet = {
 		metaDescription:
 			'Place and merge ships on a compact grid, plan around the tide, and command a fleet across four chapters and 42 seas in this mobile naval strategy game.',
 		kicker: 'A naval battle shaped by your formation',
-		title: 'Merge Fleet: Naval Battles',
+		title: 'Merge Fleet: Build & Battle',
 		lead: 'Place ships on a limited grid and merge matching vessels to strengthen your fleet. Read the next tide before sailing, then choose when to fire the war drum in battle.',
 		quickFacts: [
 			'Free to play',

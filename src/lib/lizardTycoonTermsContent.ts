@@ -7,7 +7,7 @@ export const lizardTycoonTermsContent: Record<Locale, LegalPageContent> = {
 		description:
 			'내 도마뱀 키우기: 픽셀 테라리움 육성의 서비스 내용, 인앱결제, 크리스털과 모프 상자, 계정 연결, 환불에 관한 앱별 이용약관입니다.',
 		kicker: 'Lizard Terrarium Terms of Service',
-		lastUpdated: '2026년 10월 16일',
+		lastUpdated: '2026년 10월 18일',
 		intro:
 			'이 약관은 Seori Labs가 제공하는 「내 도마뱀 키우기: 픽셀 테라리움 육성」(Android 패키지 및 iOS 번들 ID com.seorilabs.lizardtycoon, 이하 “앱”) 이용에 적용됩니다. 앱은 Google Play, Apple App Store, AppsInToss를 통해 제공됩니다.',
 		sections: [
@@ -86,7 +86,7 @@ export const lizardTycoonTermsContent: Record<Locale, LegalPageContent> = {
 		description:
 			'App-specific terms for Lizard Terrarium covering the service, in-app purchases, Crystals and Morph Boxes, account linking, and refunds.',
 		kicker: 'Lizard Terrarium Terms of Service',
-		lastUpdated: 'October 16, 2026',
+		lastUpdated: 'October 18, 2026',
 		intro:
 			'These terms apply to “Lizard Terrarium” (Android package and iOS bundle ID com.seorilabs.lizardtycoon, the “App”), provided by Seori Labs. The App is distributed through Google Play, the Apple App Store, and AppsInToss.',
 		sections: [

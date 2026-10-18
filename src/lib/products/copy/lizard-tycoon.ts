@@ -22,11 +22,11 @@ const shot = (file: string, alt: string, en = false): LandingMedia => ({
  */
 export const lizardTycoonLanding: AppLandingSet = {
 	ko: {
-		metaTitle: '내 도마뱀 키우기 - 픽셀 도마뱀 키우기 게임',
+		metaTitle: '도마뱀 테라리움 - 픽셀 도마뱀 키우기 게임',
 		metaDescription:
 			'먹이를 주고 온도를 맞추고 교감하며 도마뱀을 돌보는 도마뱀 키우기 게임. 교배와 유전으로 모프와 무늬를 모으는 파충류 육성 시뮬레이션입니다. 광고는 원할 때만 보는 보상형, 오프라인 돌봄 가능, 전체이용가.',
 		kicker: '픽셀 테라리움 육성 게임',
-		title: '내 도마뱀 키우기 : 픽셀 테라리움 육성',
+		title: '도마뱀 테라리움',
 		lead: '작은 픽셀 테라리움에서 도마뱀 한 마리를 돌보는 것부터 시작합니다. 먹이를 주고, 온도를 맞추고, 청소하고, 교감하고, 관찰하면서 가족을 늘려가는 육성 게임입니다. 광고는 원할 때 직접 골라 보는 보상형뿐이고, 며칠 못 들어와도 도마뱀이 죽지 않습니다.',
 		quickFacts: [
 			'광고는 원할 때만 보는 보상형',

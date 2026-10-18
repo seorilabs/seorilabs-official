@@ -14,14 +14,12 @@
 		channels,
 		locale,
 		productSlug,
-		productName,
 		placement,
 		size = 'small'
 	}: {
 		channels: StoreChannel[];
 		locale: Locale;
 		productSlug: string;
-		productName: string;
 		placement: AnalyticsPlacement;
 		size?: 'small' | 'large';
 	} = $props();
@@ -29,7 +27,7 @@
 	// 앱인토스는 공개 웹 URL이 없다. 버튼처럼 보이면 눌렀다가 실망하므로
 	// 링크가 아닌 안내 문장으로 분리한다.
 	const linkable = $derived(channels.filter((channel) => channelUrl(channel) !== null));
-	const hasAppsInToss = $derived(channels.some((channel) => channel.kind === 'apps-in-toss'));
+	const appsInTossChannel = $derived(channels.find((channel) => channel.kind === 'apps-in-toss'));
 
 	function analyticsChannel(channel: StoreChannel): AnalyticsStoreChannel | null {
 		switch (channel.kind) {
@@ -65,12 +63,12 @@
 	</div>
 {/if}
 
-{#if hasAppsInToss}
+{#if appsInTossChannel}
 	<p class="toss-note">
 		<span class="chip">{CHANNEL_LABEL['apps-in-toss']}</span>
 		{locale === 'ko'
-			? `토스 앱에서 '${productName}'${josa(productName, '을', '를')} 검색하면 설치 없이 바로 플레이할 수 있습니다.`
-			: `Search for "${productName}" inside the Toss app to play without installing.`}
+			? `토스 앱에서 '${appsInTossChannel.searchName}'${josa(appsInTossChannel.searchName, '을', '를')} 검색하면 설치 없이 바로 플레이할 수 있습니다.`
+			: `Search for "${appsInTossChannel.searchName}" inside the Toss app to play without installing.`}
 	</p>
 {/if}
 

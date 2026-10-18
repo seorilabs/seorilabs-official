@@ -6,11 +6,12 @@ export type ProductCategory = 'game' | 'app';
 /**
  * 앱인토스는 공개 웹 URL이 없다(토스 앱 내부에서만 열린다).
  * 링크로 만들 수 없다는 사실을 타입으로 강제한다.
+ * searchName은 언어와 무관하게 토스 콘솔에 등록된 실제 검색 이름을 쓴다.
  */
 export type StoreChannel =
-	| { kind: 'google-play'; packageName: string }
+	| { kind: 'google-play'; packageName: string; country?: string }
 	| { kind: 'app-store'; appId: string; country?: string }
-	| { kind: 'apps-in-toss' };
+	| { kind: 'apps-in-toss'; searchName: string };
 
 /** odds: 확률형 아이템 확률 정보(게임산업법 표시 의무, 검색 가능한 텍스트 페이지). */
 export type LegalDocKind = 'privacy' | 'terms' | 'account-deletion' | 'odds';
@@ -38,8 +39,6 @@ export type Product = {
 	updatedOn: string;
 	/** 라이브 스토어 등록명을 그대로 쓴다. */
 	name: Record<Locale, string>;
-	/** 부제를 뺀 짧은 이름. 앱인토스 검색 안내나 좁은 자리에 쓴다. */
-	shortName?: Record<Locale, string>;
 	/** 스토어 짧은 설명 원문. 심사를 통과한 문구라 새로 쓰지 않는다. */
 	tagline: Record<Locale, string>;
 	/** 랜딩 페이지 meta description. 랜딩이 있는 제품만 채운다. */
