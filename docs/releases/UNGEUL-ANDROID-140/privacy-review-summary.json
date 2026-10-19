@@ -1,0 +1,25 @@
+{
+	"schemaVersion": 1,
+	"publicDocumentationOnly": true,
+	"officialSourceSha": "5ee13972cb87a782e9bb144b8bd72747368b848a",
+	"privateEvidenceCommit": "cf3e559130d707a2741d373d379b5f0dd79fe255",
+	"originalReview": {
+		"status": "changes_required",
+		"items": 80,
+		"manifestSha256": "a168a3e2c184f1e93fe844940e36d33dfc01dc645d4ce81076c26ea59a718c30"
+	},
+	"amendmentReview": {
+		"status": "pass",
+		"newlyRecheckedItems": 2,
+		"unchangedCarriedItems": 78,
+		"manifestSha256": "f85b34c71f49ebecbca35d0ef53b0bcb6c67ebc979c33695e747f3107ebc6316"
+	},
+	"actualWebLayoutConditions": 12,
+	"nativeSdkRun": false,
+	"deviceRun": false,
+	"publicUrlReadback": false,
+	"fullRepoFormat": "fails-two-unchanged-baseline-files",
+	"changedFileFormat": "pass",
+	"check": "pass",
+	"buildAnd67Pages": "pass"
+}
