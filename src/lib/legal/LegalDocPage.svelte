@@ -19,7 +19,8 @@
 		productSlug = undefined,
 		/** 특정 마켓·버전 문서는 공통 제품 원장에 노출하지 않고 경로를 직접 지정한다. */
 		documentPaths = undefined,
-		contactHref = undefined
+		contactHref = undefined,
+		relatedLinks = []
 	}: {
 		content: LegalDocContent;
 		locale: PrivacyLocaleKey;
@@ -27,6 +28,7 @@
 		productSlug?: string;
 		documentPaths?: Array<{ key: PrivacyLocaleKey; path: string }>;
 		contactHref?: string;
+		relatedLinks?: Array<{ label: string; href: string }>;
 	} = $props();
 
 	const product = $derived(productSlug ? productBySlug(productSlug) : undefined);
@@ -170,6 +172,17 @@
 			{/each}
 		</section>
 
+		{#if relatedLinks.length}
+			<nav
+				class="related-links"
+				aria-label={uiLocale === 'ko' ? '데이터 사용 안내' : 'Data-use disclosures'}
+			>
+				{#each relatedLinks as link (link.href)}
+					<a href={link.href}>{link.label}</a>
+				{/each}
+			</nav>
+		{/if}
+
 		<section class="legal-note">
 			<p>{content.footerNote}</p>
 			<a
@@ -199,6 +212,7 @@
 
 	.legal-hero,
 	.legal-content,
+	.related-links,
 	.legal-note {
 		width: min(860px, calc(100% - 40px));
 		margin: 0 auto;
@@ -338,6 +352,23 @@
 		background: rgba(255, 255, 255, 0.7);
 	}
 
+	.related-links {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 12px;
+	}
+
+	.related-links a {
+		display: inline-flex;
+		align-items: center;
+		min-height: 44px;
+		padding: 8px 12px;
+		border: 1px solid var(--c-accent);
+		border-radius: var(--r-sm);
+		color: var(--c-accent);
+		overflow-wrap: anywhere;
+	}
+
 	.legal-note p {
 		margin: 0;
 		max-width: 56ch;
@@ -357,6 +388,7 @@
 	@media (max-width: 720px) {
 		.legal-hero,
 		.legal-content,
+		.related-links,
 		.legal-note {
 			width: calc(100% - 32px);
 		}
