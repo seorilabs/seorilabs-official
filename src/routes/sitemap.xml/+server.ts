@@ -51,6 +51,11 @@ const LEGAL_INDEX_UPDATED = latest(
 );
 
 const groups: SitemapGroup[] = [
+	...['privacy', 'support'].map((kind) => ({
+		priority: '0.5',
+		lastmod: '2026-10-20',
+		pages: pair(`/apps/memorize-all/${kind}/`, `/en/apps/memorize-all/${kind}/`)
+	})),
 	{ priority: '1.0', lastmod: HOME_UPDATED, pages: pair('/', '/en/') },
 	{ priority: '0.9', lastmod: APPS_UPDATED, pages: pair('/apps/', '/en/apps/') },
 	{ priority: '0.5', lastmod: LEGAL_INDEX_UPDATED, pages: pair('/legal/', '/en/legal/') },
