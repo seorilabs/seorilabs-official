@@ -77,6 +77,12 @@ const groups: SitemapGroup[] = [
 		pages: pair(`/apps/${product.slug}/`, `/en/apps/${product.slug}/`)
 	})),
 
+	{
+		priority: '0.5',
+		lastmod: '2026-10-21',
+		pages: pair('/apps/keeum/privacy/', '/en/apps/keeum/privacy/')
+	},
+
 	// 회사 공통 법무 문서. 개인정보처리방침은 8개 언어를 한 그룹으로 묶는다.
 	...globalLegalDocs.map((doc) => ({
 		priority: '0.5',

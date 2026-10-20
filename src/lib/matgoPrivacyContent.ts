@@ -4,13 +4,15 @@ import type { PrivacyContent } from '$lib/privacyContent';
 export const matgoPrivacyContent: Record<'ko' | 'en', PrivacyContent> = {
 	ko: {
 		title: '달빛 맞고 개인정보 처리방침',
-		description: '달빛 맞고의 기기 내 저장, Android 광고 데이터, iOS 데이터 처리와 삭제 안내입니다.',
+		description:
+			'달빛 맞고의 기기 내 저장, Android 광고 데이터, iOS 데이터 처리와 삭제 안내입니다.',
 		kicker: 'Moonlight Matgo Privacy Policy',
 		lastUpdated: '2026년 9월 24일',
 		lastUpdatedLabel: '시행일 및 최종 수정일',
 		backLabel: '서리랩스 홈으로',
 		languageLabel: '언어',
-		intro: '이 방침은 Seori Labs가 제공하는 달빛 맞고(Moonlight Matgo, com.seorilabs.matgo)의 Android 및 iOS 앱에 적용됩니다. 게임 진행은 계정 없이 기기에서 처리됩니다. Android 버전에는 광고가 있으며 iOS 버전에는 현재 광고가 없습니다. 이 앱의 데이터 처리에는 공통 방침보다 이 문서가 우선합니다.',
+		intro:
+			'이 방침은 Seori Labs가 제공하는 달빛 맞고(Moonlight Matgo, com.seorilabs.matgo)의 Android 및 iOS 앱에 적용됩니다. 게임 진행은 계정 없이 기기에서 처리됩니다. Android 버전에는 광고가 있으며 iOS 버전에는 현재 광고가 없습니다. 이 앱의 데이터 처리에는 공통 방침보다 이 문서가 우선합니다.',
 		sections: [
 			{
 				title: '기기에 저장하는 정보',
@@ -51,7 +53,9 @@ export const matgoPrivacyContent: Record<'ko' | 'en', PrivacyContent> = {
 			},
 			{
 				title: '이용 연령과 판매 지역',
-				body: ['달빛 맞고는 18세 이상을 대상으로 하며 아동을 대상으로 하지 않습니다. 현재 한국에서는 판매하지 않습니다. 지역별 스토어 연령 등급과 현지 요건이 적용됩니다.']
+				body: [
+					'달빛 맞고는 18세 이상을 대상으로 하며 아동을 대상으로 하지 않습니다. 현재 한국에서는 판매하지 않습니다. 지역별 스토어 연령 등급과 현지 요건이 적용됩니다.'
+				]
 			},
 			{
 				title: '변경 및 연락처',
@@ -61,17 +65,20 @@ export const matgoPrivacyContent: Record<'ko' | 'en', PrivacyContent> = {
 				]
 			}
 		],
-		footerNote: '게임 진행 기록은 기기에 저장됩니다. Android 광고는 Google Mobile Ads를 통해 별도 데이터를 처리할 수 있습니다.'
+		footerNote:
+			'게임 진행 기록은 기기에 저장됩니다. Android 광고는 Google Mobile Ads를 통해 별도 데이터를 처리할 수 있습니다.'
 	},
 	en: {
 		title: 'Moonlight Matgo Privacy Policy',
-		description: 'Privacy Policy for local game data, Android advertising, iOS data practices, and deletion.',
+		description:
+			'Privacy Policy for local game data, Android advertising, iOS data practices, and deletion.',
 		kicker: 'Moonlight Matgo Privacy Policy',
 		lastUpdated: 'September 24, 2026',
 		lastUpdatedLabel: 'Effective and last updated',
 		backLabel: 'Back to Seori Labs',
 		languageLabel: 'Language',
-		intro: 'This policy applies to Moonlight Matgo (달빛 맞고, com.seorilabs.matgo), provided by Seori Labs on Android and iOS. Gameplay runs on your device without an account. The Android version has ads; the current iOS version does not. This policy takes precedence over our general policy for this app.',
+		intro:
+			'This policy applies to Moonlight Matgo (달빛 맞고, com.seorilabs.matgo), provided by Seori Labs on Android and iOS. Gameplay runs on your device without an account. The Android version has ads; the current iOS version does not. This policy takes precedence over our general policy for this app.',
 		sections: [
 			{
 				title: 'Data Stored on Your Device',
@@ -91,7 +98,9 @@ export const matgoPrivacyContent: Record<'ko' | 'en', PrivacyContent> = {
 			},
 			{
 				title: 'iOS Version',
-				body: ['The current iOS version contains no ad SDK, usage analytics SDK, remote crash reporting, or user tracking. It stores gameplay and settings on your device and does not collect or send personal or gameplay data from the app to Seori Labs or third-party servers.']
+				body: [
+					'The current iOS version contains no ad SDK, usage analytics SDK, remote crash reporting, or user tracking. It stores gameplay and settings on your device and does not collect or send personal or gameplay data from the app to Seori Labs or third-party servers.'
+				]
 			},
 			{
 				title: 'Retention and Deletion',
@@ -110,7 +119,9 @@ export const matgoPrivacyContent: Record<'ko' | 'en', PrivacyContent> = {
 			},
 			{
 				title: 'Age and Availability',
-				body: ['Moonlight Matgo is intended for players aged 18 or older and is not directed to children. It is not currently offered for sale in South Korea. Regional store age ratings and local requirements apply.']
+				body: [
+					'Moonlight Matgo is intended for players aged 18 or older and is not directed to children. It is not currently offered for sale in South Korea. Regional store age ratings and local requirements apply.'
+				]
 			},
 			{
 				title: 'Changes and Contact',
@@ -120,6 +131,7 @@ export const matgoPrivacyContent: Record<'ko' | 'en', PrivacyContent> = {
 				]
 			}
 		],
-		footerNote: 'Gameplay records stay on your device. Android ads may process separate data through Google Mobile Ads.'
+		footerNote:
+			'Gameplay records stay on your device. Android ads may process separate data through Google Mobile Ads.'
 	}
 };
