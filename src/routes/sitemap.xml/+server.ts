@@ -54,6 +54,11 @@ const groups: SitemapGroup[] = [
 	{
 		priority: '0.5',
 		lastmod: '2026-10-21',
+		pages: pair('/apps/crowd-gate-duel/privacy/', '/en/apps/crowd-gate-duel/privacy/')
+	},
+	{
+		priority: '0.5',
+		lastmod: '2026-10-21',
 		pages: pair('/apps/paper-craft-print/privacy/', '/en/apps/paper-craft-print/privacy/')
 	},
 	...['privacy', 'support'].map((kind) => ({
