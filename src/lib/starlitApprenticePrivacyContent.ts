@@ -37,7 +37,7 @@ export const starlitApprenticePrivacyContent: Record<'ko' | 'en', PrivacyContent
 			{
 				title: '광고 제공자가 처리하는 정보',
 				body: [
-					'광고는 Poing AdMob 플러그인을 통해 Google Mobile Ads Next-Gen SDK와 UMP에 연결됩니다. Google 광고 SDK는 광고 제공과 측정, 진단, 부정 이용 방지를 위해 IP 주소와 그로부터 추정할 수 있는 대략적 위치, 앱 실행과 광고 상호작용, 진단과 성능 정보, 광고 ID와 앱 세트 ID 등 허용된 식별자를 처리할 수 있습니다. 앱 계정이 없더라도 광고 제공자가 처리하는 기기 식별자가 있을 수 있습니다. 처리 범위는 지역, 동의 상태와 연령 제한에 따라 달라집니다.',
+					'광고는 Poing AdMob 플러그인을 통해 Google Mobile Ads Next-Gen SDK 1.4.0과 UMP에 연결됩니다. Google 광고 SDK는 광고 제공과 측정, 진단, 부정 이용 방지를 위해 IP 주소와 그로부터 추정할 수 있는 대략적 위치, 앱 실행과 탭, 동영상 재생 등 상호작용, 진단과 성능 정보, 광고 ID와 앱 세트 ID, 해당하는 경우 기기에 로그인한 계정 관련 식별자를 처리할 수 있습니다. 앱 계정이 없더라도 광고 제공자가 처리하는 기기 식별자가 있을 수 있습니다. 처리 범위는 지역, 동의 상태와 연령 제한에 따라 달라집니다.',
 					'Google은 광고 SDK가 수집하는 사용자 데이터를 전송 중 TLS로 암호화한다고 안내합니다. Google과 광고 파트너는 이용자의 국가 밖에서 정보를 처리할 수 있습니다. 처리 장소, 보관 기간과 삭제, 국외 이전 보호조치는 해당 제공자의 공개 정책에 따릅니다. 운영자는 기기에만 있는 게임 진행을 Google 광고 데이터와 연결해 전송하지 않습니다.',
 					'Google 개인정보처리방침: https://policies.google.com/privacy , 광고 기술 안내: https://policies.google.com/technologies/ads , 광고 SDK 데이터 공개 안내: https://developers.google.com/admob/android/next-gen/privacy/play-data-disclosure'
 				]
@@ -96,7 +96,7 @@ export const starlitApprenticePrivacyContent: Record<'ko' | 'en', PrivacyContent
 			{
 				title: 'Information handled by advertising providers',
 				body: [
-					'The Poing AdMob plugin connects advertising to Google Mobile Ads Next-Gen SDK and UMP. Google’s advertising SDK may handle IP addresses and inferred approximate location, app launches and ad interactions, diagnostics and performance data, and permitted identifiers such as advertising IDs and app set IDs, for ad delivery, measurement, diagnostics and fraud prevention. Device identifiers may be processed even though the game has no account. Processing depends on region, consent and age restrictions.',
+					'The Poing AdMob plugin connects advertising to Google Mobile Ads Next-Gen SDK 1.4.0 and UMP. Google’s advertising SDK may handle IP addresses and inferred approximate location, interactions such as app launches, taps and video views, diagnostics and performance data, advertising IDs, app set IDs and, where applicable, identifiers related to accounts signed in on the device, for ad delivery, measurement, diagnostics and fraud prevention. Device identifiers may be processed even though the game has no account. Processing depends on region, consent and age restrictions.',
 					'Google states that user data collected by its advertising SDK is encrypted in transit using TLS. Google and advertising partners may process data outside your country. Their published policies govern processing locations, retention, deletion and international transfer safeguards. The operator does not send local game progress linked to Google advertising data.',
 					'Google Privacy Policy: https://policies.google.com/privacy , advertising technologies: https://policies.google.com/technologies/ads , advertising SDK data disclosure: https://developers.google.com/admob/android/next-gen/privacy/play-data-disclosure'
 				]
