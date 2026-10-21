@@ -3,7 +3,8 @@ import type { PrivacyContent } from '$lib/privacyContent';
 export const starlitApprenticePrivacyContent: Record<'ko' | 'en', PrivacyContent> = {
 	ko: {
 		title: '별빛 견습생 개인정보처리방침',
-		description: '기기 내 게임 저장, 연령대와 언어 설정, 전면 광고와 개인정보 선택 안내입니다.',
+		description:
+			'기기 내 게임 저장, Play 연령 보호, 연령대와 언어 설정, 전면 광고와 개인정보 선택 안내입니다.',
 		kicker: 'Starlit Apprentice Privacy Policy',
 		lastUpdated: '2026년 10월 21일',
 		lastUpdatedLabel: '시행일 및 최종 수정일',
@@ -27,9 +28,17 @@ export const starlitApprenticePrivacyContent: Record<'ko' | 'en', PrivacyContent
 				]
 			},
 			{
+				title: 'Google Play 연령 정보와 접근 보호',
+				body: [
+					'Google Play용 Android 버전은 Play Age Signals API 0.0.4로 앱 시작과 복귀 시 공유된 연령 범위와 보호자 승인 상태를 확인합니다. Google Play가 필요한 경우 연령 정보 공유 선택 화면을 표시하며 사용자나 보호자가 공유 여부를 정합니다. 공유된 정보가 13세 미만이거나 보호자 승인이 대기 또는 거절인 경우 새 게임과 이어하기 전에 접근 보호 안내를 표시합니다. 기존 진행과 엔딩 기록은 삭제하지 않습니다. 연령 정보의 공유 거부는 보호자의 앱 변경 승인 거절과 구분합니다.',
+					'수신한 범위와 상태는 연령에 맞는 접근 보호를 위해 기기 메모리에서만 사용하며 파일에 저장하거나 운영자 서버로 보내지 않습니다. 원시 응답을 보관하지 않고 설치 식별자와 승인 날짜는 읽거나 저장하지 않습니다. Play 연령 정보와 그 파생값을 광고, 마케팅, 이용자 프로파일링이나 분석에 사용하거나 광고 SDK로 전달하지 않습니다. 수동 연령 선택과 광고 개인정보 설정은 별도이며 Play 응답으로 수동 연령 저장을 덮어쓰지 않습니다.',
+					'Google은 Play Age Signals 클라이언트 라이브러리가 사용 데이터를 수집하지 않는다고 안내합니다. 이 API는 Play 스토어와의 실행 중 인터페이스이며 Play 스토어 자체의 처리에는 Google Play 약관이 적용됩니다. API 이용 조건과 데이터 안전 안내: https://developer.android.com/google/play/age-signals/overview'
+				]
+			},
+			{
 				title: '전면 광고와 동의 선택',
 				body: [
-					'게임은 Google AdMob 전면 광고를 사용합니다. 월말 정산과 그 턴의 이벤트 결과를 확인한 뒤 다음 행동 화면으로 넘어갈 때 제한된 횟수로 표시할 수 있습니다. 튜토리얼과 세션 시작 후 첫 180초에는 표시하지 않습니다. 배너 광고, 보상형 광고와 광고 시청 보상은 없습니다. 광고가 허용되지 않거나 준비되지 않아도 게임을 계속할 수 있습니다.',
+					'게임은 Google AdMob 전면 광고를 사용합니다. 월말 정산과 그 턴의 이벤트 결과를 확인한 뒤 다음 행동 화면으로 넘어갈 때 제한된 횟수로 표시할 수 있습니다. 튜토리얼과 세션 시작 후 첫 180초에는 표시하지 않습니다. 배너 광고, 보상형 광고와 광고 시청 보상은 없습니다. 게임의 연령 보호 조건을 충족하면 광고가 허용되지 않거나 준비되지 않아도 게임을 계속할 수 있습니다.',
 					'광고를 요청할 수 있는 연령대에서는 Google User Messaging Platform(UMP)으로 동의 상태를 갱신하고 필요한 동의 화면을 제공합니다. 동의 상태가 광고 요청을 허용할 때만 광고를 준비합니다. 성인 광고의 개인화 여부는 지역과 동의 선택, Google의 정책에 따라 달라질 수 있습니다.',
 					'타이틀 화면의 광고 개인정보 설정에서 이용 가능한 동의 선택을 확인하거나 변경하고 철회할 수 있습니다. Google이 해당 설정 화면을 제공하지 않는 경우에는 변경할 설정이 없다는 안내가 표시됩니다. Android의 광고 개인정보 설정에서 광고 식별자를 재설정하거나 삭제할 수도 있습니다. 메뉴 이름은 Android 버전에 따라 다를 수 있습니다.'
 				]
@@ -62,7 +71,7 @@ export const starlitApprenticePrivacyContent: Record<'ko' | 'en', PrivacyContent
 	en: {
 		title: 'Starlit Apprentice Privacy Policy',
 		description:
-			'Local game saves, age and language settings, interstitial advertising and privacy choices.',
+			'Local game saves, Play age protection, age and language settings, interstitial advertising and privacy choices.',
 		kicker: 'Starlit Apprentice Privacy Policy',
 		lastUpdated: 'October 21, 2026',
 		lastUpdatedLabel: 'Effective and last updated',
@@ -86,9 +95,17 @@ export const starlitApprenticePrivacyContent: Record<'ko' | 'en', PrivacyContent
 				]
 			},
 			{
+				title: 'Google Play age signals and access protection',
+				body: [
+					'The Google Play Android version uses Play Age Signals API 0.0.4 at startup and when returning to the app to check shared age ranges and parental approval status. Google Play may display an age-sharing choice when needed; the user or parent decides whether to share. If the shared information indicates an age under 13, or parental approval is pending or denied, the game shows an access-protection notice before New Game or Continue. Existing progress and ending records are preserved. Declining age sharing is treated separately from a parent declining approval of an app change.',
+					'Received ranges and status are used only in device memory to provide age-appropriate access protection. They are not saved to files or sent to an operator server. Raw responses are not retained; installation identifiers and approval dates are not read or stored. Play age signals and derived values are not used for advertising, marketing, user profiling or analytics, or sent to advertising SDKs. Manual age selection and ad privacy settings remain separate, and Play responses do not overwrite the saved manual age selection.',
+					'Google states that the Play Age Signals client library collects no usage data. The API is a runtime interface with the Play Store, whose own processing is governed by the Google Play Terms of Service. API terms and data-safety information: https://developer.android.com/google/play/age-signals/overview'
+				]
+			},
+			{
 				title: 'Interstitial ads and consent choices',
 				body: [
-					'The game uses Google AdMob interstitial ads. A limited number may appear after you finish a month-end summary and all event results for that turn, before the next action screen. They do not appear during the tutorial or the first 180 seconds of a session. There are no banner ads, rewarded ads or rewards for watching ads. You can continue playing when ads are unavailable or not permitted.',
+					'The game uses Google AdMob interstitial ads. A limited number may appear after you finish a month-end summary and all event results for that turn, before the next action screen. They do not appear during the tutorial or the first 180 seconds of a session. There are no banner ads, rewarded ads or rewards for watching ads. If the game’s age-protection conditions are met, you can continue playing when ads are unavailable or not permitted.',
 					'For age groups eligible for ad requests, Google User Messaging Platform (UMP) updates consent information and presents required consent forms. Ads are prepared only when the consent status permits requests. Whether adult ads are personalized can depend on region, consent choices and Google’s policies.',
 					'Use Ad Privacy Settings on the title screen to review, change or withdraw available consent choices. If Google does not provide that settings form, the game explains that no settings are available to change. You can also reset or delete your advertising ID through Android’s advertising privacy settings. Menu names vary by Android version.'
 				]
