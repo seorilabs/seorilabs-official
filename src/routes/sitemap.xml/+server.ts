@@ -1,6 +1,7 @@
 import { content, site, type Locale } from '$lib/content';
 import { globalLegalDocs } from '$lib/legal/docs';
 import { matchPicturePrivacyPaths } from '$lib/matchPicturePrivacyContent';
+import { mergeLizardOddsPaths } from '$lib/mergeLizardOddsContent';
 import { landingProducts, liveProducts, productLegalDocs } from '$lib/products/derive';
 import { products } from '$lib/products/registry';
 
@@ -100,6 +101,13 @@ const groups: SitemapGroup[] = [
 		priority: '0.5',
 		lastmod: '2026-10-14',
 		pages: matchPicturePrivacyPaths.map(({ key, path }) => ({ path, hreflang: HREFLANG[key] }))
+	},
+
+	// 출시 전 제품의 확률 정보: 제품 원장에 넣지 않고 경로를 직접 둔다.
+	{
+		priority: '0.5',
+		lastmod: '2026-10-22',
+		pages: mergeLizardOddsPaths.map(({ key, path }) => ({ path, hreflang: HREFLANG[key] }))
 	},
 
 	// 제품별 법무 문서. 원장에서 파생되므로 새 제품을 추가해도 누락되지 않는다.
