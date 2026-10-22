@@ -7,12 +7,12 @@ export const ungeulPrivacyContent: Record<'ko' | 'en', PrivacyContent> = {
 		description:
 			'운글의 사주 입력, 풀이 요청, 광고와 선택적 사용 분석에 관한 개인정보 처리방침입니다.',
 		kicker: 'Ungeul Privacy Policy',
-		lastUpdated: '2026년 10월 19일',
+		lastUpdated: '2026년 10월 22일',
 		lastUpdatedLabel: '시행일 및 최종 수정일',
 		backLabel: '서리랩스 홈으로',
 		languageLabel: '언어',
 		intro:
-			'이 방침은 Seori Labs의 운글(Ungeul, com.seorilabs.ungeul)에 적용됩니다. 아래 Android v1.4.0의 동작은 해당 버전부터 적용되며, 이전 버전과 다른 마켓의 기능은 다를 수 있습니다. 제품별 처리에 대해서는 이 방침이 회사 공통 방침보다 우선합니다.',
+			'이 방침은 Seori Labs의 운글(Ungeul, com.seorilabs.ungeul)에 적용됩니다. 아래에 표시한 Android 버전별 동작은 해당 버전에 적용되며, 다른 버전과 마켓의 기능은 다를 수 있습니다. 제품별 처리에 대해서는 이 방침이 회사 공통 방침보다 우선합니다.',
 		sections: [
 			{
 				title: '앱이 처리하는 데이터',
@@ -26,6 +26,7 @@ export const ungeulPrivacyContent: Record<'ko' | 'en', PrivacyContent> = {
 					'네이티브 앱의 Google AdMob은 광고 요청과 노출 중 IP 주소, 대략적 지역, 허용된 기기 또는 광고 식별자, 광고 상호작용과 진단 정보를 처리할 수 있습니다. 개인 맞춤이 아닌 광고 요청도 광고 SDK의 모든 데이터 처리를 중지하는 것은 아닙니다. 지역과 제공자 요구에 따라 광고 개인정보 동의(UMP) 화면을 표시하며, Android v1.4.0에서는 제공자가 개인정보 선택 메뉴 제공을 요구하는 경우 설정의 광고 개인정보 항목을 제공합니다. AppsInToss 광고는 토스의 광고 기능과 정책을 따릅니다.',
 					'사용 분석이 켜져 있으면 Google Analytics for Firebase가 실행, 세션과 풀이 이용 등의 이벤트, 가명 설치 또는 브라우저 식별자, 앱과 기기 정보 및 대략적 지역을 처리합니다. Seori Labs Platform도 앱 사용 이벤트와 가명 식별자를 처리합니다. 네이티브 SDK는 해당 기능이 있는 버전에서 구매 상품, 가격, 통화, 수량 및 광고 측정 이벤트를 수집할 수 있습니다. GA4 이벤트에는 원본 사주 입력, 이름, 파생 명식, 로그인 계정 ID와 피드백 답변을 넣지 않습니다.',
 					'Android v1.4.0은 첫 선택 전 사용 분석을 끕니다. 허용 또는 거부를 선택하고 설정에서 이후 수집을 켜거나 끌 수 있습니다. 선택값, 안내 버전, 언어와 선택 시각을 앱에 저장하며, 꺼 둔 기간의 사용 기록을 모아 나중에 보내지 않습니다. 철회는 이후 분석 수집을 중지하며 이전 서버 기록의 삭제와는 다릅니다. 이전 버전과 다른 마켓에는 이 선택 화면이 없고 분석이 기본 활성화될 수 있습니다. GA4의 광고 ID 수집과 광고 개인화는 비활성화하며 광고 개인정보 선택은 별도로 처리합니다.',
+					'Android v1.4.1은 별도의 사용 분석 안내 화면 없이 홈을 엽니다. 기존에 켜거나 끈 선택을 보존합니다. 선택 기록이 없는 설치는 기존 개인정보 SDK의 최신 결과로 사전 동의와 별도 개인정보 옵션이 필요하지 않고 GDPR 적용 지역이 아님을 확인한 경우에만 분석을 기본으로 켭니다. 동의가 필요하거나 지역 확인에 실패하면 끄며 설정에서 직접 켜거나 끌 수 있습니다. 기본 활성화는 사용자가 동의했다는 선택 기록으로 저장하지 않습니다. 지역 확인 중과 분석이 꺼진 동안의 사용 기록은 나중에 보내기 위해 보관하지 않습니다.',
 					'사주용 출생지는 직접 입력한 장소이며 현재 GPS 위치를 조회하지 않습니다. 앱은 위치 권한, 연락처, 사진과 동영상 보관함, 마이크 또는 건강 정보 접근을 요구하지 않습니다. 공유를 선택하면 생성한 이미지나 글이 이용자가 고른 다른 앱 또는 상대방에게 전달될 수 있습니다.'
 				]
 			},
@@ -78,12 +79,12 @@ export const ungeulPrivacyContent: Record<'ko' | 'en', PrivacyContent> = {
 		description:
 			'Privacy Policy for birth inputs, reading requests, advertising and optional usage analytics in Ungeul.',
 		kicker: 'Ungeul Privacy Policy',
-		lastUpdated: 'October 19, 2026',
+		lastUpdated: 'October 22, 2026',
 		lastUpdatedLabel: 'Effective and last updated',
 		backLabel: 'Back to Seori Labs',
 		languageLabel: 'Language',
 		intro:
-			'This policy applies to Ungeul (com.seorilabs.ungeul), provided by Seori Labs. Features identified below as Android v1.4.0 apply from that version; earlier versions and other markets may differ. This product-specific policy takes precedence over the company policy for the processing described here.',
+			'This policy applies to Ungeul (com.seorilabs.ungeul), provided by Seori Labs. The version-specific Android behavior described below applies to the indicated version; other versions and markets may differ. This product-specific policy takes precedence over the company policy for the processing described here.',
 		sections: [
 			{
 				title: 'Data the App processes',
@@ -97,6 +98,7 @@ export const ungeulPrivacyContent: Record<'ko' | 'en', PrivacyContent> = {
 					'Google AdMob in native apps may process IP addresses, approximate location, permitted device or advertising identifiers, ad interactions and diagnostic information when requesting and displaying ads. Requesting non-personalized ads does not stop all advertising-SDK data processing. An ad privacy (UMP) screen is shown according to regional and provider requirements. Android v1.4.0 provides an Ad privacy option in Settings when the provider requires that option to be available. AppsInToss ads use Toss advertising functionality and policies.',
 					'When usage analytics is enabled, Google Analytics for Firebase processes events such as launches, sessions and reading use, pseudonymous installation or browser identifiers, app and device information, and approximate region. The Seori Labs Platform also processes App usage events and pseudonymous identifiers. Native SDKs may measure purchased products, prices, currencies, quantities and advertising events in versions with those features. GA4 events exclude original birth inputs, names, derived charts, login-account IDs and feedback answers.',
 					'Android v1.4.0 keeps usage analytics off before your first choice. You can allow or decline it and turn future collection on or off in Settings. The App stores your choice, notice version, language and choice time. Events from periods when analytics is off are not stored for later transmission. Withdrawal stops future analytics collection; it does not delete earlier server records. Earlier versions and other markets may lack this choice screen and enable analytics by default. GA4 advertising-ID collection and ad personalization are disabled, and ad privacy choices are managed separately.',
+					'Android v1.4.1 opens Home without a separate usage-analytics screen and preserves your earlier on or off choice. For installations without a saved choice, analytics starts on only when a fresh result from the existing privacy SDK confirms that consent and a separate privacy-options entry are not required and the region is outside GDPR applicability. Analytics stays off if consent is required or the region cannot be confirmed. You can turn it on or off in Settings. Default activation is not saved as a record of user consent. Events during the region check or while analytics is off are not retained for later transmission.',
 					'The birth place is a place you enter, not a reading of your current GPS location. The App does not request access to device location, contacts, photo or video libraries, microphone or health information. If you choose to share, the generated image or text may be sent to the app or recipient you select.'
 				]
 			},
