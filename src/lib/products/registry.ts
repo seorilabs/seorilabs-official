@@ -178,7 +178,7 @@ export const products: Product[] = [
 		status: 'live',
 		category: 'game',
 		hasLanding: false,
-		updatedOn: '2026-10-17',
+		updatedOn: '2026-10-23',
 		name: { ko: '가로세로 낱말 퍼즐', en: 'Korean Crossword Puzzle' },
 		tagline: {
 			ko: '매일 한 판씩 푸는 한글 가로세로 낱말 퍼즐',
@@ -191,7 +191,19 @@ export const products: Product[] = [
 			{ kind: 'apps-in-toss', searchName: '가로세로 낱말' }
 		],
 		media: { icon: '/products/crossword-puzzle/icon-256.webp' },
-		legal: []
+		legal: [
+			{
+				kind: 'privacy',
+				path: { ko: '/apps/crossword-puzzle/privacy/', en: '/en/apps/crossword-puzzle/privacy/' },
+				updated: '2026-10-23'
+			},
+			{
+				kind: 'account-deletion',
+				path: { ko: '/apps/crossword-puzzle/privacy/', en: '/en/apps/crossword-puzzle/privacy/' },
+				updated: '2026-10-23',
+				legacyAnchor: { path: '/apps/crossword-puzzle/privacy/', id: 'account-deletion' }
+			}
+		]
 	},
 	{
 		slug: 'jomul',
