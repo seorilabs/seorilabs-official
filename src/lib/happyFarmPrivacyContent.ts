@@ -61,8 +61,7 @@ export const happyFarmPrivacyContent: Record<'ko' | 'en', LegalDocContent> = {
 				id: 'rights',
 				title: '문의와 권리 행사',
 				body: [
-					'개인정보 열람, 정정, 삭제 또는 처리 정지에 관한 문의는 cs@seorilabs.com으로 보내 주세요. 이용하신 배포 채널과 앱 버전을 알려 주시면 관련 기록을 찾는 데 도움이 됩니다. 비밀번호나 인증 토큰은 보내지 마세요.',
-					'요청 처리에 필요한 경우 이용 기록과 요청자의 관계를 확인할 수 있습니다. 법령에 따른 제한이나 보관 의무가 있는 경우에는 그 이유와 처리 결과를 안내합니다.'
+					'개인정보 열람, 정정, 삭제 또는 처리 정지에 관한 문의는 cs@seorilabs.com으로 보내 주세요. 이용하신 배포 채널과 앱 버전을 알려 주시면 관련 기록을 찾는 데 도움이 됩니다. 비밀번호나 인증 토큰은 보내지 마세요.'
 				]
 			},
 			{
@@ -134,8 +133,7 @@ export const happyFarmPrivacyContent: Record<'ko' | 'en', LegalDocContent> = {
 				id: 'rights',
 				title: 'Questions and privacy requests',
 				body: [
-					'Contact cs@seorilabs.com to request access, correction, deletion or restriction of processing. Providing your distribution channel and app version can help us locate relevant records. Do not send passwords or authentication tokens.',
-					'We may need to verify the relationship between a request and the relevant activity. If a legal restriction or retention obligation applies, we will explain the reason and outcome of your request.'
+					'For questions about access, correction, deletion or restriction of processing, contact cs@seorilabs.com. Providing your distribution channel and app version can help us locate relevant records. Do not send passwords or authentication tokens.'
 				]
 			},
 			{
