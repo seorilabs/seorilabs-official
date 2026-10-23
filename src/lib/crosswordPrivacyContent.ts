@@ -23,7 +23,7 @@ export const crosswordPrivacyContent: Record<'ko' | 'en', PrivacyContent> = {
 				title: '사용 통계와 끄기',
 				body: [
 					'앱 개선을 위해 화면 이동, 퍼즐 시작과 완료, 첫 세 단어 안내, 입력과 힌트 사용, 광고 처리 결과 같은 이용 기록과 앱 버전, 배포 마켓, 실행 환경, 시각을 Google Firebase와 Google Analytics로 보냅니다. 분석 도구의 앱 설치 식별자와 기술 정보가 함께 처리될 수 있습니다. 앱인토스에서는 토스의 앱 분석 기능에도 이용 이벤트를 보냅니다.',
-					'1.2.0에서는 이전 선택이 없으면 사용 통계가 켜져 있습니다. 설정의 “사용 통계 보내기”를 끄면 이후 앱 이용 이벤트 전송을 멈추며, 이전에 끈 선택은 유지합니다. 광고 동의, 광고 보상, 알림 선택과는 별도입니다. iOS에서는 Firebase의 광고 저장, 광고 사용자 데이터와 광고 개인화 신호를 거부합니다.'
+					'1.2.0에서는 이전 선택이 없으면 사용 통계가 켜져 있습니다. 설정의 “사용 통계 보내기”를 끄면 이후 앱 이용 이벤트 전송을 멈추며, 이전에 끈 선택은 유지합니다. 광고 동의, 광고 보상, 알림 선택과는 별도입니다. iOS 1.2.0부터 Firebase의 광고 저장, 광고 사용자 데이터와 광고 개인화 신호를 거부합니다.'
 				]
 			},
 			{
@@ -82,7 +82,7 @@ export const crosswordPrivacyContent: Record<'ko' | 'en', PrivacyContent> = {
 				title: 'Usage analytics and opting out',
 				body: [
 					'To improve the app, we send events such as screen changes, puzzle starts and completions, first-three-word guidance, input and hint use, and ad results, with app version, distribution market, runtime and timestamps, to Google Firebase and Google Analytics. The analytics service may also process app installation identifiers and technical information. The AppsInToss version also sends usage events to Toss analytics.',
-					'From version 1.2.0, usage statistics are on when no previous choice exists. Turning off “사용 통계 보내기” (Send usage stats) in Settings stops subsequent app usage events, and a previous off choice is preserved. This setting is separate from ad consent, ad rewards and notifications. On iOS, Firebase ad storage, ad user data and ad personalization consent signals are denied.'
+					'From version 1.2.0, usage statistics are on when no previous choice exists. Turning off “사용 통계 보내기” (Send usage stats) in Settings stops subsequent app usage events, and a previous off choice is preserved. This setting is separate from ad consent, ad rewards and notifications. From iOS 1.2.0, Firebase ad storage, ad user data and ad personalization consent signals are denied.'
 				]
 			},
 			{
