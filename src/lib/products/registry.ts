@@ -265,7 +265,7 @@ export const products: Product[] = [
 		status: 'live',
 		category: 'game',
 		hasLanding: false,
-		updatedOn: '2026-10-17',
+		updatedOn: '2026-10-24',
 		name: { ko: '루시드 체스', en: 'Lucid Chess' },
 		tagline: {
 			ko: '루시드 렌즈로 후보 수를 보며 AI와 두는 체스',
@@ -278,7 +278,13 @@ export const products: Product[] = [
 			{ kind: 'apps-in-toss', searchName: '루시드 체스' }
 		],
 		media: { icon: '/products/lucid-chess/icon-256.webp' },
-		legal: []
+		legal: [
+			{
+				kind: 'privacy',
+				path: { ko: '/apps/lucid-chess/privacy/', en: '/en/apps/lucid-chess/privacy/' },
+				updated: '2026-10-24'
+			}
+		]
 	},
 	{
 		slug: 'lucid-reversi',
