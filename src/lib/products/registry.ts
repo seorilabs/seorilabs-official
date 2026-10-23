@@ -150,7 +150,13 @@ export const products: Product[] = [
 			{ kind: 'apps-in-toss', searchName: '행복한 농장 타이쿤' }
 		],
 		media: { icon: '/products/happy-farm/icon-256.webp' },
-		legal: []
+		legal: [
+			{
+				kind: 'privacy',
+				path: { ko: '/apps/happy-farm/privacy/', en: '/en/apps/happy-farm/privacy/' },
+				updated: '2026-10-23'
+			}
+		]
 	},
 	{
 		slug: 'spiritgate-defenders',
