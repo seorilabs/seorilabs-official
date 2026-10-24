@@ -1,18 +1,27 @@
 import { site, type Locale } from '$lib/content';
-import type { LegalPageContent } from '$lib/legalContent';
+import type { LegalDocContent } from '$lib/legal/types';
 
-export const cyclePairAccountDeletionContent: Record<Locale, LegalPageContent> = {
+export const cyclePairAccountDeletionContent: Record<Locale, LegalDocContent> = {
 	ko: {
 		title: '사이클 페어 계정 및 데이터 삭제',
 		description:
-			'서리랩스 사이클 페어 앱의 계정과 주기·컨디션 기록을 앱 안에서 삭제하거나 이메일로 삭제 요청하는 방법을 안내합니다.',
+			'사이클 페어에서 계정을 유지하고 선택한 기록을 삭제하거나, 계정과 연결된 데이터를 전체 삭제하는 방법을 안내합니다.',
 		kicker: 'Cycle Pair Account Deletion',
-		lastUpdated: '2026년 8월 9일',
+		lastUpdated: '2026년 10월 25일',
 		intro:
-			'사이클 페어는 Seori Labs가 제공합니다. 아래 방법으로 계정과 연결된 데이터를 영구 삭제할 수 있습니다.',
+			'사이클 페어는 Seori Labs가 제공합니다. 선택한 기록만 삭제하고 계정을 유지하거나, 계정과 연결된 데이터를 영구 삭제할 수 있습니다.',
 		sections: [
 			{
-				title: '앱에서 삭제',
+				id: 'delete-data-without-account',
+				title: '계정을 유지하고 개별 기록 삭제',
+				body: [
+					'1. 앱의 달력에서 삭제할 기록의 날짜를 선택하고 본인의 기록 상세를 엽니다.',
+					'2. 기록 삭제를 누른 뒤 확인창에서 삭제를 선택합니다. 이 작업은 되돌릴 수 없습니다.',
+					'선택한 날짜의 컨디션 기록만 삭제됩니다. 계정과 설정에 저장된 주기 시작 및 종료 기준은 유지됩니다. 계정과 연결된 데이터를 모두 지우려면 아래의 계정 삭제 절차를 따르세요.'
+				]
+			},
+			{
+				title: '앱에서 계정과 전체 데이터 삭제',
 				body: [
 					'1. 사이클 페어 앱을 엽니다.',
 					'2. 설정에서 개인정보 및 계정 영역을 찾습니다.',
@@ -29,7 +38,7 @@ export const cyclePairAccountDeletionContent: Record<Locale, LegalPageContent> =
 				]
 			},
 			{
-				title: '삭제되는 데이터',
+				title: '계정 전체 삭제 시 지워지는 데이터',
 				body: [
 					'생리 시작·종료일, 증상, 기분, 컨디션, 도움 선호, 메모 등 본인이 작성한 원본 기록이 삭제됩니다.',
 					'Pair 관계와 파트너에게 제공되던 projection이 삭제되고 파트너의 서버 접근이 즉시 회수됩니다.',
@@ -53,14 +62,23 @@ export const cyclePairAccountDeletionContent: Record<Locale, LegalPageContent> =
 	en: {
 		title: 'Cycle Pair Account and Data Deletion',
 		description:
-			'How to permanently delete your Cycle Pair account and cycle and condition entries in the app or request deletion by email.',
+			'How to delete selected Cycle Pair entries while keeping your account, or permanently delete your account and associated data.',
 		kicker: 'Cycle Pair Account Deletion',
-		lastUpdated: 'August 9, 2026',
+		lastUpdated: 'October 25, 2026',
 		intro:
-			'Cycle Pair is provided by Seori Labs. Use either option below to permanently delete your account and associated data.',
+			'Cycle Pair is provided by Seori Labs. You can delete selected entries while keeping your account, or permanently delete your account and associated data.',
 		sections: [
 			{
-				title: 'Delete in the app',
+				id: 'delete-data-without-account',
+				title: 'Delete individual entries and keep your account',
+				body: [
+					'1. In the app’s Calendar, select the date of the entry you want to delete and open your entry details.',
+					'2. Select Delete record, then confirm Delete. This cannot be undone.',
+					'Only the condition entry for the selected date is deleted. Your account and the cycle start and end settings are kept. To delete your account and all associated data, follow the account deletion steps below.'
+				]
+			},
+			{
+				title: 'Delete your account and all data in the app',
 				body: [
 					'1. Open Cycle Pair.',
 					'2. In Settings, find the privacy and account section.',
@@ -77,7 +95,7 @@ export const cyclePairAccountDeletionContent: Record<Locale, LegalPageContent> =
 				]
 			},
 			{
-				title: 'Data that is deleted',
+				title: 'Data removed when you delete your account',
 				body: [
 					'Your original entries — period start and end dates, symptoms, mood, condition, support preferences, and notes — are deleted.',
 					'The pair relationship and any partner projections are deleted, and the partner’s server access is revoked immediately.',
