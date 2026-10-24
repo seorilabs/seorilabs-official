@@ -1,0 +1,88 @@
+{
+	"schemaVersion": 1,
+	"regressionPaths": [
+		"src/routes/+layout.svelte",
+		"src/lib/ui/**",
+		"src/lib/legal/LegalDocPage.svelte",
+		"src/lib/seo/**",
+		"package.json",
+		"package-lock.json",
+		"svelte.config.js",
+		"vite.config.ts"
+	],
+	"features": [
+		{
+			"id": "home",
+			"core": true,
+			"paths": ["src/lib/HomePage.svelte", "src/routes/+page.svelte", "src/routes/en/+page.svelte"]
+		},
+		{
+			"id": "navigation-locales",
+			"core": true,
+			"paths": ["src/lib/ui/**", "src/lib/i18n/**", "src/routes/+layout.svelte"]
+		},
+		{
+			"id": "product-catalog",
+			"core": true,
+			"paths": [
+				"src/lib/products/registry.ts",
+				"src/lib/products/derive.ts",
+				"src/lib/products/AppsIndexPage.svelte",
+				"src/lib/products/appsIndexContent.ts",
+				"src/routes/apps/+page.svelte",
+				"src/routes/en/apps/+page.svelte"
+			]
+		},
+		{
+			"id": "product-landings",
+			"core": false,
+			"paths": [
+				"src/lib/products/ProductLandingPage.svelte",
+				"src/lib/products/landing.ts",
+				"src/lib/products/landings.ts",
+				"src/lib/products/copy/**",
+				"src/routes/apps/*/+page.svelte",
+				"src/routes/en/apps/*/+page.svelte"
+			]
+		},
+		{
+			"id": "legal-documents",
+			"core": true,
+			"paths": [
+				"src/lib/*Content.ts",
+				"src/lib/legal/**",
+				"src/routes/apps/*/privacy/**",
+				"src/routes/en/apps/*/privacy/**",
+				"src/routes/apps/*/account-deletion/**",
+				"src/routes/en/apps/*/account-deletion/**",
+				"src/routes/apps/*/terms/**",
+				"src/routes/en/apps/*/terms/**",
+				"src/routes/privacy/**",
+				"src/routes/en/privacy/**",
+				"src/routes/legal/**",
+				"src/routes/en/legal/**"
+			]
+		},
+		{
+			"id": "support-contact",
+			"core": false,
+			"paths": [
+				"src/routes/support/**",
+				"src/routes/en/support/**",
+				"src/routes/apps/*/support/**",
+				"src/routes/en/apps/*/support/**"
+			]
+		},
+		{
+			"id": "consent-analytics",
+			"core": false,
+			"foundation": true,
+			"paths": ["src/lib/analytics.ts", "src/lib/*Consent*", "src/lib/ui/*Consent*"]
+		},
+		{
+			"id": "seo-discovery",
+			"core": true,
+			"paths": ["src/lib/seo/**", "src/routes/sitemap.xml/**", "src/routes/robots.txt/**"]
+		}
+	]
+}
