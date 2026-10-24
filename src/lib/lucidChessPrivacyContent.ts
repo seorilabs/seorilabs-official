@@ -31,11 +31,19 @@ export const lucidChessPrivacyContent: Record<'ko' | 'en', PrivacyContent> = {
 				]
 			},
 			{
+				title: 'iOS 3.0.28 이상에서의 선택적 수집',
+				body: [
+					'iOS 3.0.28 이상에서는 게임 설정의 “사용 통계와 진단 보내기”가 기본으로 꺼져 있습니다. 직접 켜기 전에는 Firebase Analytics와 Crashlytics 및 선택적 서비스 서버 통계를 시작하지 않습니다. 이 설정은 Android와 앱인토스에는 적용되지 않습니다. 이전 iOS 버전은 위에 설명한 기존 수집 경로를 사용합니다.',
+					'설정을 끄면 새 통계와 진단 수집을 중단하고 전송 대기 자료를 비우도록 요청합니다. 이미 전송이 시작된 요청을 되돌리거나 서버에 저장된 자료를 자동 삭제하는 기능은 아닙니다. 이미 전송된 자료에는 아래 보관 및 삭제 절차가 적용됩니다.',
+					'선택을 꺼도 게임 저장과 비개인화 광고를 이용할 수 있습니다. 다시 켤 수 있도록 기존 서비스 식별자와 인증 갱신 정보는 기기에 유지합니다. 통계를 켜도 광고 저장, 광고 사용자 데이터와 광고 개인화 신호는 허용하지 않으며 ATT를 요청하지 않습니다. iOS 3.0.28 이상에서는 UMP 동의 창을 호출하지 않습니다. 게임 설정의 개인정보 처리방침 버튼에서 이 문서를 열 수 있습니다.'
+				]
+			},
+			{
 				title: '광고와 이용자 선택',
 				body: [
 					'네이티브 앱은 Google AdMob 전면광고를 대국 사이에 표시합니다. 현재 공개 버전에는 배너, 보상형 광고나 인앱 구매가 연결되어 있지 않습니다. 광고 제공, 측정과 부정 이용 방지를 위해 Google과 광고 파트너는 허용된 기기 또는 광고 식별자, IP 주소와 그로부터 추정한 대략적 위치, 광고 노출과 클릭 및 진단 정보를 처리할 수 있습니다.',
 					'Android는 Google UMP로 동의 상태를 확인하고 광고 요청이 허용된 뒤 광고를 요청합니다. 모든 요청을 비개인화로 고정하지 않으므로 광고 개인화 여부는 동의, 지역 및 제공자 설정에 따라 달라질 수 있습니다. iOS는 비개인화 광고를 요청하며 ATT 추적 권한을 요청하지 않도록 구성되어 있습니다. 비개인화 광고도 광고 횟수 제한, 측정과 부정 이용 방지를 위한 식별자 처리를 수반할 수 있습니다.',
-					'UMP가 개인정보 선택 화면을 요구하는 경우 앱 설정의 광고 개인정보 선택에서 선택을 다시 확인할 수 있습니다. 기기의 광고 개인정보 설정도 이용할 수 있습니다. 앱인토스 광고는 토스 호스트의 광고 기능과 고지에 따르며, 네이티브 AdMob 설정과 구분됩니다.'
+					'Android에서 UMP가 개인정보 선택 화면을 요구하는 경우 앱 설정의 광고 개인정보 선택에서 선택을 다시 확인할 수 있습니다. 기기의 광고 개인정보 설정도 이용할 수 있습니다. 앱인토스 광고는 토스 호스트의 광고 기능과 고지에 따르며, 네이티브 AdMob 설정과 구분됩니다.'
 				]
 			},
 			{
@@ -107,11 +115,19 @@ export const lucidChessPrivacyContent: Record<'ko' | 'en', PrivacyContent> = {
 				]
 			},
 			{
+				title: 'Optional collection in iOS 3.0.28 and later',
+				body: [
+					'In iOS 3.0.28 and later, “Send usage and diagnostics” in Game settings is off by default. Firebase Analytics, Crashlytics and optional service-server analytics do not start until you turn it on. This setting does not apply to Android or AppsInToss. Earlier iOS versions use the existing collection paths described above.',
+					'Turning the setting off stops new usage and diagnostic collection and requests that pending uploads be cleared. It does not reverse requests that have already started or automatically delete data stored on servers. The retention and deletion procedures below apply to data already sent.',
+					'You can still save games and receive non-personalised ads when the setting is off. Existing service identifiers and authentication refresh information remain on the device so you can turn it on again. Opting in does not permit ad storage, ad user data or ad personalisation signals, and does not request ATT permission. iOS 3.0.28 and later do not call the UMP consent form. The Privacy policy button in Game settings opens this notice.'
+				]
+			},
+			{
 				title: 'Advertising and your choices',
 				body: [
 					'The native apps show Google AdMob interstitial ads between games. The current public versions do not connect banner ads, rewarded ads or in-app purchases. To deliver and measure ads and prevent fraud, Google and advertising partners may process permitted device or advertising identifiers, IP addresses and approximate location inferred from them, ad impressions and clicks, and diagnostics.',
 					'Android checks consent using Google UMP and requests ads once ad requests are permitted. It does not force all requests to be non-personalised, so personalisation may depend on consent, region and provider settings. The iOS version requests non-personalised ads and is configured not to request ATT tracking permission. Non-personalised ads can still involve identifiers for frequency capping, measurement and fraud prevention.',
-					'When UMP requires a privacy choices form, you can revisit it through the advertising privacy choice in app settings. You can also use your device advertising privacy settings. AppsInToss ads use the Toss host advertising features and notices, separately from the native AdMob settings.'
+					'When UMP requires a privacy choices form on Android, you can revisit it through the advertising privacy choice in app settings. You can also use your device advertising privacy settings. AppsInToss ads use the Toss host advertising features and notices, separately from the native AdMob settings.'
 				]
 			},
 			{
