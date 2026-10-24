@@ -476,14 +476,17 @@ export const products: Product[] = [
 		category: 'game',
 		hasLanding: false,
 		releasedOn: '2026-10-09',
-		updatedOn: '2026-10-17',
-		name: { ko: '블룸핸드', en: 'Bloomhand' },
+		updatedOn: '2026-10-24',
+		name: { ko: '블룸핸드: 정원 카드 로그라이크', en: 'Bloomhand' },
 		tagline: {
-			ko: '씨앗 카드로 포커 족보를 만들어 꽃을 피우는 세로 한 손 로그라이크.',
-			en: 'A one-handed, portrait roguelike where seed cards bloom into flowers through poker hands.'
+			ko: '카드로 꽃을 피우는 한 손 정원 로그라이크. 10분이면 한 철',
+			en: 'Bloom poker hands into a garden — a one-handed 10-minute roguelike'
 		},
 		badges: { ko: ['게임'], en: ['Game'] },
-		channels: [{ kind: 'app-store', appId: '6815652277' }],
+		channels: [
+			{ kind: 'google-play', packageName: 'com.seorilabs.bloomhand' },
+			{ kind: 'app-store', appId: '6815652277' }
+		],
 		media: { icon: '/products/bloomhand/icon-256.webp' },
 		legal: [
 			{
@@ -616,21 +619,17 @@ export const products: Product[] = [
 	{
 		slug: 'vernhald',
 		order: 107,
-		status: 'upcoming',
+		status: 'live',
 		category: 'game',
 		hasLanding: false,
-		updatedOn: '2026-10-06',
+		updatedOn: '2026-10-24',
 		name: { ko: '베른할드 연대기', en: 'Vernhald Chronicles' },
-		// 스토어 등록 전이라 현재 게임 구성(스토리 없는 1인용 20라운드 오토체스)을 한 문장으로 썼다.
-		// 스토어 등록 시 등록 문구로 바꾼다.
 		tagline: {
-			ko: '말을 모으고 배치해 20라운드를 버티는 1인용 오토체스',
-			en: 'A single-player auto-chess game: gather pieces, place them, and survive 20 rounds.'
+			ko: '장난감 말을 합쳐 도전·무한모드와 정기 리그를 즐기는 오토체스',
+			en: 'Merge toy pieces for 20-round challenges, endless runs and a scheduled league.'
 		},
 		badges: { ko: ['게임'], en: ['Game'] },
-		// Google Play(com.seorilabs.vernhald)가 첫 마켓이며 아직 미공개다. App Store와 앱인토스는 그 뒤다.
-		// 공개가 확인되면 채널을 추가한다.
-		channels: [],
+		channels: [{ kind: 'google-play', packageName: 'com.seorilabs.vernhald' }],
 		media: { icon: '/products/vernhald/icon-256.webp' },
 		legal: [
 			{
