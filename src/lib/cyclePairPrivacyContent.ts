@@ -5,9 +5,9 @@ export const cyclePairPrivacyContent: Record<'ko' | 'en', PrivacyContent> = {
 	ko: {
 		title: '사이클 페어 개인정보 처리방침',
 		description:
-			'사이클 페어의 생리주기·컨디션 기록, 파트너 공유, 알림, 구독 처리에 관한 개인정보 처리방침입니다.',
+			'사이클 페어의 주기와 컨디션 기록, 파트너 공유, 알림에 관한 개인정보 처리방침입니다. 현재 무료 버전에는 광고와 인앱결제가 없습니다.',
 		kicker: 'Cycle Pair Privacy Policy',
-		lastUpdated: '2026년 10월 24일',
+		lastUpdated: '2026년 10월 25일',
 		lastUpdatedLabel: '시행일 및 최종 수정일',
 		backLabel: '서리랩스 홈으로',
 		languageLabel: '언어',
@@ -22,7 +22,7 @@ export const cyclePairPrivacyContent: Record<'ko' | 'en', PrivacyContent> = {
 					'파트너 공유 projection: 사용자가 필드별로 켠 항목만 별도 projection으로 생성되어, 연결된 정확히 한 명의 파트너에게만 제공됩니다. 기본값은 전부 비공개이며 원본 기록은 파트너에게 노출되지 않습니다.',
 					'초대코드: Pair 연결을 위해 앱이 생성하며 해시 형태로 저장합니다. 1회성이고 24시간 후 만료되며 만료 후 7일간 보존한 뒤 삭제합니다.',
 					'알림 토큰: 알림에 동의한 경우 기기 푸시 토큰만 저장합니다. 잠금화면 문구에는 건강정보를 넣지 않고 중립 문구만 사용합니다.',
-					'구독 entitlement: 구독을 구매한 경우 서버가 검증한 영수증 결과와 권한·환불 상태만 저장하며, 클라이언트가 직접 쓸 수 없습니다. 결제 카드번호와 은행계좌는 수집하지 않습니다.',
+					'현재 무료 버전은 광고와 인앱결제를 제공하지 않으며 구매 내역, 결제 카드번호와 은행계좌를 수집하지 않습니다.',
 					'진단과 사용성 데이터: 진단을 켠 경우 앱 안정성과 사용 흐름 확인을 위해 비민감 활동 이벤트와 오류 정보를 처리합니다. 설치 식별자, 기기 정보와 IP 주소로 추정한 대략적인 지역이 포함될 수 있습니다. 생리일, 증상, 주기 단계와 자유 텍스트 등 민감값은 포함하지 않습니다. 진단은 기본으로 꺼져 있고 설정에서 언제든 끌 수 있습니다.',
 					'수집하지 않는 것: 광고 식별자와 행태 추적, 정밀 위치, 연락처·주소록, 사진, 마이크, 정확한 배란일, 임신 가능성 수치, 피임 관련 판단값.'
 				]
@@ -32,7 +32,7 @@ export const cyclePairPrivacyContent: Record<'ko' | 'en', PrivacyContent> = {
 				body: [
 					'민감 건강정보는 앱의 핵심 기록 기능을 제공하기 위해 이용자의 명시적 동의에 근거해 처리합니다. 동의를 철회하면 기록과 공유를 중단할 수 있습니다.',
 					'파트너 공유는 이용자가 항목별로 켠 범위에서만, 이용자가 요청한 공유를 이행하기 위해 처리합니다. 공유 동의는 언제든 항목 단위로 철회할 수 있습니다.',
-					'계정 식별자와 구독 데이터는 인증, 권한 확인·복원, 결제 검증, 환불 반영, 부정 거래 방지, 법적 의무 준수를 위해 처리합니다.',
+					'계정 식별자는 인증, 계정 접근 보호와 Pair 연결을 위해 처리합니다.',
 					'진단·사용성 데이터는 앱 안정성 확인과 기능 개선을 위해 처리합니다.'
 				]
 			},
@@ -40,7 +40,7 @@ export const cyclePairPrivacyContent: Record<'ko' | 'en', PrivacyContent> = {
 				title: '처리 위탁과 국외 이전',
 				body: [
 					'Seori Labs는 개인정보를 판매하지 않으며 마케팅·광고 목적으로 공유하지 않습니다.',
-					'Google Firebase와 Google Cloud(Authentication, Firestore, Cloud Functions, Cloud Messaging, Analytics, Crashlytics, Performance, App Check)는 인증, 저장, 서버 처리, 알림, 진단을 위해 Seori Labs의 수탁자로서 데이터를 처리합니다. Google Play와 Apple App Store는 구독 결제와 영수증 검증을 처리합니다.',
+					'Google Firebase와 Google Cloud(Authentication, Firestore, Cloud Functions, Cloud Messaging, Analytics, Crashlytics, Performance, App Check)는 인증, 저장, 서버 처리, 알림, 진단을 위해 Seori Labs의 수탁자로서 데이터를 처리합니다.',
 					'Cloud Functions는 대한민국 서울 리전(asia-northeast3)에서, Firestore 기본 데이터베이스는 미국 멀티리전(nam5)에서 처리됩니다. 따라서 저장된 기록은 미국으로 이전되어 처리됩니다. Firebase Authentication 등 전역 서비스의 처리 위치는 Google의 데이터 위치 정책을 따릅니다.',
 					'서버로 전송되는 데이터는 HTTPS/TLS로 암호화됩니다.'
 				]
@@ -48,11 +48,10 @@ export const cyclePairPrivacyContent: Record<'ko' | 'en', PrivacyContent> = {
 			{
 				title: '보관과 삭제',
 				body: [
-					'계정을 삭제하면 서버가 본인 기록, Pair 관계와 파트너 projection, 초대코드, 알림 토큰, 구독 entitlement 문서, 인증 계정을 재귀적으로 삭제합니다. 자세한 절차는 계정 삭제 안내 페이지에서 확인할 수 있습니다.',
+					'계정을 삭제하면 서버가 본인 기록, Pair 관계와 파트너 projection, 초대코드, 알림 토큰, 인증 계정을 재귀적으로 삭제합니다. 자세한 절차는 계정 삭제 안내 페이지에서 확인할 수 있습니다.',
 					'초대코드는 만료 후 7일, 확인 완료된 캐시 tombstone은 30일간 보존한 뒤 자동 삭제합니다.',
 					'Pair를 해제하면 해제된 Pair 식별자의 재사용과 잘못된 재연결을 막기 위해 Pair 해제 기록을 보존합니다. 이 기록에는 Pair 식별자, 두 멤버의 계정 식별자, 해제 시각과 해제한 사람만 담기며 건강 기록은 포함되지 않습니다. 계정을 삭제하면 그 계정이 속했던 Pair의 해제 기록도 함께 삭제됩니다.',
 					'백업에 잔존하는 데이터는 삭제 요청일로부터 30일 이내에 파기합니다.',
-					'구독 결제 기록은 전자상거래 등에서의 소비자보호에 관한 법률 등 관계 법령이 정한 기간 동안 보존한 뒤 삭제하거나 비식별화합니다.',
 					`앱을 사용할 수 없는 경우 ${site.email}로 열람·삭제를 요청할 수 있습니다. 타인의 데이터 삭제를 막기 위해 최소한의 본인확인 정보를 요청할 수 있습니다.`
 				]
 			},
@@ -76,8 +75,7 @@ export const cyclePairPrivacyContent: Record<'ko' | 'en', PrivacyContent> = {
 			{
 				title: '아동과 최소 연령',
 				body: [
-					'이 앱은 만 17세 이상을 대상으로 제공합니다. 만 17세 미만 이용자를 대상으로 하지 않으며, 아동임을 알고 개인정보를 수집하지 않습니다.',
-					'미성년자는 보호자의 동의와 기기·스토어의 결제 보호 설정에 따라 인앱 구독을 이용해야 합니다.'
+					'이 앱은 만 17세 이상을 대상으로 제공합니다. 만 17세 미만 이용자를 대상으로 하지 않으며, 아동임을 알고 개인정보를 수집하지 않습니다.'
 				]
 			},
 			{
@@ -93,9 +91,9 @@ export const cyclePairPrivacyContent: Record<'ko' | 'en', PrivacyContent> = {
 	en: {
 		title: 'Cycle Pair Privacy Policy',
 		description:
-			'Privacy Policy for cycle and condition entries, partner sharing, notifications, and subscription processing in Cycle Pair.',
+			'Privacy Policy for cycle and condition entries, partner sharing, and notifications in Cycle Pair. The current free version has no ads or in-app purchases.',
 		kicker: 'Cycle Pair Privacy Policy',
-		lastUpdated: 'October 24, 2026',
+		lastUpdated: 'October 25, 2026',
 		lastUpdatedLabel: 'Effective and last updated',
 		backLabel: 'Back to Seori Labs',
 		languageLabel: 'Language',
@@ -110,7 +108,7 @@ export const cyclePairPrivacyContent: Record<'ko' | 'en', PrivacyContent> = {
 					'Partner projections: only the fields you switch on are written to a separate projection and delivered to exactly one linked partner. Everything is private by default, and original entries are never exposed to a partner.',
 					'Invitation codes: generated by the App for pair linking and stored as a hash. They are single-use, expire after 24 hours, and are deleted 7 days after expiry.',
 					'Notification tokens: if you allow notifications, we store only the device push token. Lock-screen text uses neutral wording and never contains health information.',
-					'Subscription entitlements: if you subscribe, we store only the server-validated receipt result and entitlement or refund status; clients cannot write it directly. We do not collect payment card or bank account details.',
+					'The current free version has no ads or in-app purchases. We do not collect purchase history, payment card details, or bank account details.',
 					'Diagnostics and usage data: when you enable diagnostics, we process non-sensitive activity events and error information to monitor reliability and flows. This may include installation identifiers, device information, and an approximate region inferred from your IP address. Period dates, symptoms, cycle phase, and free text are excluded. Diagnostics are off by default and can be turned off in Settings at any time.',
 					'The App does not collect advertising identifiers or behavioural tracking, precise location, contacts, photos, microphone recordings, exact ovulation dates, numerical pregnancy probabilities, or contraceptive determinations.'
 				]
@@ -120,7 +118,7 @@ export const cyclePairPrivacyContent: Record<'ko' | 'en', PrivacyContent> = {
 				body: [
 					'Sensitive health data is processed on the basis of your explicit consent to provide the App’s core journaling features. You may withdraw consent and stop recording and sharing at any time.',
 					'Partner sharing is processed only within the scope you switch on, to carry out the sharing you requested. Sharing consent can be withdrawn per field at any time.',
-					'Account identifiers and subscription data are processed to authenticate you, check and restore entitlements, validate purchases, apply refunds, prevent fraudulent transactions, and meet legal obligations.',
+					'Account identifiers are processed for authentication, account access protection, and pair linking.',
 					'Diagnostics and usage data are processed to monitor reliability and improve features.'
 				]
 			},
@@ -128,7 +126,7 @@ export const cyclePairPrivacyContent: Record<'ko' | 'en', PrivacyContent> = {
 				title: 'Processors and International Transfers',
 				body: [
 					'Seori Labs does not sell personal data and does not share it for marketing or advertising.',
-					'Google Firebase and Google Cloud (Authentication, Firestore, Cloud Functions, Cloud Messaging, Analytics, Crashlytics, Performance, App Check) process data as our processors for authentication, storage, server processing, notifications, and diagnostics. Google Play and the Apple App Store process subscription payments and receipt validation.',
+					'Google Firebase and Google Cloud (Authentication, Firestore, Cloud Functions, Cloud Messaging, Analytics, Crashlytics, Performance, App Check) process data as our processors for authentication, storage, server processing, notifications, and diagnostics.',
 					'Cloud Functions run in the Seoul region (asia-northeast3) and the default Firestore database runs in the United States multi-region (nam5). Stored entries are therefore transferred to and processed in the United States. Global services such as Firebase Authentication follow Google’s data-location policy.',
 					'Data sent to servers is encrypted in transit with HTTPS/TLS.'
 				]
@@ -136,11 +134,10 @@ export const cyclePairPrivacyContent: Record<'ko' | 'en', PrivacyContent> = {
 			{
 				title: 'Retention and Deletion',
 				body: [
-					'When you delete your account, the server recursively deletes your entries, the pair relationship and partner projections, invitation codes, notification tokens, subscription entitlement documents, and the authentication account. See the account deletion page for the full procedure.',
+					'When you delete your account, the server recursively deletes your entries, the pair relationship and partner projections, invitation codes, notification tokens, and the authentication account. See the account deletion page for the full procedure.',
 					'Invitation codes are retained for 7 days after expiry and acknowledged cache tombstones for 30 days, then deleted automatically.',
 					'When a pair is unlinked, we retain an unlink record to prevent reuse of the released pair identifier and incorrect re-linking. It contains only the pair identifier, both members’ account identifiers, and the unlink time and actor; it contains no health entries. Deleting your account also deletes the unlink records for pairs your account belonged to.',
 					'Data remaining in backups is destroyed within 30 days of the deletion request.',
-					'Subscription transaction records are retained for the period required by applicable consumer-protection and e-commerce law, then deleted or de-identified.',
 					`If you cannot use the App, send access or deletion requests to ${site.email}. We may request the minimum information needed to verify your identity and prevent deletion of another person’s data.`
 				]
 			},
@@ -164,8 +161,7 @@ export const cyclePairPrivacyContent: Record<'ko' | 'en', PrivacyContent> = {
 			{
 				title: 'Children and Minimum Age',
 				body: [
-					'The App is offered to people aged 17 and over. It is not directed to users under 17, and we do not knowingly collect personal data from children.',
-					'Minors should use in-app subscriptions only with a guardian’s consent and the payment protections configured on the device and store account.'
+					'The App is offered to people aged 17 and over. It is not directed to users under 17, and we do not knowingly collect personal data from children.'
 				]
 			},
 			{
