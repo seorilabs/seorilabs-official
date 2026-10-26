@@ -5,33 +5,33 @@ export const crosswordPrivacyContent: Record<'ko' | 'en', PrivacyContent> = {
 		title: '가로세로 낱말 퍼즐 개인정보 처리방침',
 		description: '퍼즐 기록, 자동 계정, 사용 통계, 광고와 데이터 삭제 요청을 안내합니다.',
 		kicker: 'Crossword Puzzle Privacy Policy',
-		lastUpdated: '2026년 10월 23일',
+		lastUpdated: '2026년 10월 27일',
 		lastUpdatedLabel: '시행일 및 최종 수정일',
 		backLabel: '서리랩스 홈으로',
 		languageLabel: '언어',
 		intro:
-			'이 방침은 Seori Labs의 가로세로 낱말 퍼즐에 적용됩니다. 앱 식별자는 com.seorilabs.crosswordpuzzle, 앱인토스 식별자는 crossword-puzzle-game입니다. 이 제품의 데이터 처리에는 공통 방침보다 이 문서가 우선합니다. 사용 통계 설정과 iOS 광고 동의 보완은 1.2.0부터 적용하며, 이전 버전의 화면과 설정은 다를 수 있습니다.',
+			'이 방침은 Seori Labs의 가로세로 낱말 퍼즐에 적용됩니다. 앱 식별자는 com.seorilabs.crosswordpuzzle, 앱인토스 식별자는 crossword-puzzle-game입니다. 이 제품의 데이터 처리에는 공통 방침보다 이 문서가 우선합니다. 사용 통계 설정과 iOS 광고 동의 보완은 1.2.0부터 적용합니다. 1.3.1부터 한국어와 영어 기록을 언어별로 관리하며, 글자 힌트와 보상형 광고를 제거하고 완료 결과에서 이동할 때 전면광고를 제공합니다. 이전 버전의 화면과 설정은 다를 수 있습니다.',
 		sections: [
 			{
 				title: '퍼즐 기록과 자동 계정',
 				body: [
-					'퍼즐에 입력한 글자, 진행률, 완료 기록, 힌트 잔액과 설정을 기기에 저장합니다. 이 기록을 기기 사이에 동기화하는 기능은 제공하지 않습니다. 앱 삭제나 저장소 초기화로 기기 기록이 사라질 수 있습니다.',
+					'퍼즐에 입력한 글자, 언어별 진행률과 완료 기록, 언어 선택과 설정을 기기에 저장합니다. 이전 버전의 저장을 복원하기 위한 과거 힌트 값과 확정된 글자도 기기에 남을 수 있습니다. 이 기록을 기기 사이에 동기화하는 기능은 제공하지 않습니다. 앱 삭제나 저장소 초기화로 기기 기록이 사라질 수 있습니다.',
 					'온라인 서비스는 이름이나 이메일을 입력받는 회원가입 대신 Seori Platform과 Firebase가 발급한 가명 계정 식별자와 인증 토큰을 사용합니다. 로그인 상태를 복원하고, 서비스 이용 상태와 앱 버전, 실행 환경, 접속 시각 등을 처리해 인증, 운영 상태 확인과 업데이트 안내에 사용합니다. 이 운영 처리는 사용 통계 설정과 별개입니다. 가명 식별자를 완전히 익명인 정보로 취급하지 않습니다.'
 				]
 			},
 			{
 				title: '사용 통계와 끄기',
 				body: [
-					'앱 개선을 위해 화면 이동, 퍼즐 시작과 완료, 첫 세 단어 안내, 입력과 힌트 사용, 광고 처리 결과 같은 이용 기록과 앱 버전, 배포 마켓, 실행 환경, 시각을 Google Firebase와 Google Analytics로 보냅니다. 분석 도구의 앱 설치 식별자와 기술 정보가 함께 처리될 수 있습니다. 앱인토스에서는 토스의 앱 분석 기능에도 이용 이벤트를 보냅니다.',
-					'1.2.0에서는 이전 선택이 없으면 사용 통계가 켜져 있습니다. 설정의 “사용 통계 보내기”를 끄면 이후 앱 이용 이벤트 전송을 멈추며, 이전에 끈 선택은 유지합니다. 광고 동의, 광고 보상, 알림 선택과는 별도입니다. iOS 1.2.0부터 Firebase의 광고 저장, 광고 사용자 데이터와 광고 개인화 신호를 거부합니다.'
+					'앱 개선을 위해 화면 이동, 퍼즐 시작과 완료, 첫 세 단어 안내, 글자 입력, 광고 요청, 노출, 닫힘과 실패 같은 이용 기록과 콘텐츠 언어, 화면 언어, 일일 판 순번, 앱 버전, 배포 마켓, 실행 환경, 시각을 Google Firebase와 Google Analytics로 보냅니다. 분석 도구의 앱 설치 식별자와 기술 정보가 함께 처리될 수 있습니다. 앱인토스에서는 토스의 앱 분석 기능에도 이용 이벤트를 보냅니다.',
+					'1.2.0부터 이전 선택이 없으면 사용 통계가 켜져 있습니다. 설정의 “사용 통계 보내기”를 끄면 이후 앱 이용 이벤트 전송을 멈추며, 이전에 끈 선택은 유지합니다. 광고 동의와 알림 선택과는 별도입니다. iOS 1.2.0부터 Firebase의 광고 저장, 광고 사용자 데이터와 광고 개인화 신호를 거부합니다.'
 				]
 			},
 			{
 				title: '광고와 순위',
 				body: [
-					'추가 힌트를 위해 사용자가 선택한 보상형 광고를 제공합니다. Android와 iOS는 Google AdMob에 비개인화 광고를 요청합니다. 광고 제공, 측정과 부정 이용 방지를 위해 IP 주소와 그로부터 추정한 대략적 위치, 기기와 앱 식별자, 광고 상호작용, 진단과 성능 정보가 처리될 수 있습니다. 비개인화 광고도 이러한 처리를 수반할 수 있습니다.',
-					'iOS 1.2.0은 ATT 추적 허락과 Google UMP 화면을 요청하지 않으며, 광고 초기화 전에 이전 IABTCF_ 동의 값을 지웁니다. 유럽경제지역, 영국과 스위스에서는 제한 광고가 제공되거나 광고를 이용할 수 없을 수 있습니다. Android의 UMP와 설정의 광고 개인정보 선택은 유지합니다. 앱인토스 광고는 토스가 제공하는 광고 기능과 해당 정책을 따릅니다.',
-					'순위 기능은 Android의 Google Play 게임즈, iOS의 Game Center와 앱인토스의 순위 서비스에 점수를 제출하거나 순위를 표시합니다. 프로필과 점수의 공개 범위, 해당 서비스에 저장한 기록의 삭제는 각 플랫폼의 계정 설정과 정책을 따릅니다.'
+					'1.3.1부터 한 판을 완료한 결과에서 다음 판으로 이동하거나, 마지막 판의 결과에서 홈으로 이동할 때 전면광고가 표시될 수 있습니다. 광고가 준비되지 않았거나 오류가 나면 바로 이동합니다. 힌트와 보상형 광고는 제공하지 않습니다. 이전 버전에는 추가 힌트를 위한 보상형 광고가 있을 수 있습니다. Android와 iOS는 Google AdMob에 비개인화 광고를 요청합니다. 광고 제공, 측정과 부정 이용 방지를 위해 IP 주소와 그로부터 추정한 대략적 위치, 기기와 앱 식별자, 광고 상호작용, 진단과 성능 정보가 처리될 수 있습니다. 비개인화 광고도 이러한 처리를 수반할 수 있습니다.',
+					'iOS 1.2.0부터 ATT 추적 허락과 Google UMP 화면을 요청하지 않으며, 광고 초기화 전에 이전 IABTCF_ 동의 값을 지웁니다. 유럽경제지역, 영국과 스위스에서는 제한 광고가 제공되거나 광고를 이용할 수 없을 수 있습니다. Android의 UMP와 설정의 광고 개인정보 선택은 유지합니다. 앱인토스 광고는 토스가 제공하는 광고 기능과 해당 정책을 따릅니다.',
+					'영어 점수는 한국어 순위에 제출하지 않으며, 영어 전용 순위가 설정되기 전에는 영어 순위 버튼을 표시하지 않습니다. 한국어 순위 기능은 Android의 Google Play 게임즈, iOS의 Game Center와 앱인토스의 순위 서비스에 점수를 제출하거나 순위를 표시합니다. 프로필과 점수의 공개 범위, 해당 서비스에 저장한 기록의 삭제는 각 플랫폼의 계정 설정과 정책을 따릅니다.'
 				]
 			},
 			{
@@ -64,33 +64,33 @@ export const crosswordPrivacyContent: Record<'ko' | 'en', PrivacyContent> = {
 		description:
 			'Puzzle records, automatic accounts, usage analytics, ads and data deletion requests.',
 		kicker: 'Crossword Puzzle Privacy Policy',
-		lastUpdated: 'October 23, 2026',
+		lastUpdated: 'October 27, 2026',
 		lastUpdatedLabel: 'Effective and last updated',
 		backLabel: 'Back to Seori Labs',
 		languageLabel: 'Language',
 		intro:
-			'This policy applies to the Crossword Puzzle game provided by Seori Labs, with app identifier com.seorilabs.crosswordpuzzle and AppsInToss identifier crossword-puzzle-game. It takes precedence over our general policy for this product. The usage statistics setting and revised iOS ad consent behavior apply from version 1.2.0; earlier versions may have different screens and settings.',
+			'This policy applies to the Crossword Puzzle game provided by Seori Labs, with app identifier com.seorilabs.crosswordpuzzle and AppsInToss identifier crossword-puzzle-game. It takes precedence over our general policy for this product. The usage statistics setting and revised iOS ad consent behavior apply from version 1.2.0. From version 1.3.1, Korean and English puzzle records are kept separately, letter hints and rewarded ads are removed, and interstitial ads may appear when leaving a completed puzzle result. Earlier versions may have different screens and settings.',
 		sections: [
 			{
 				title: 'Puzzle records and automatic accounts',
 				body: [
-					'Entered letters, progress, completion records, hint balance and settings are stored on your device. We do not provide synchronization of these puzzle records between devices. Removing the app or clearing its storage may erase them.',
+					'Entered letters, progress and completion records for each language, your language choice and settings are stored on your device. Historical hint values and confirmed letters may remain locally to restore saves from earlier versions. We do not provide synchronization of these puzzle records between devices. Removing the app or clearing its storage may erase them.',
 					'Online services use a pseudonymous account identifier and authentication token issued through Seori Platform and Firebase instead of registration with a name or email. Login state, service activity, app version, runtime and connection times are processed for authentication, operations and update notices. This operational processing is separate from the usage statistics setting. We do not treat pseudonymous identifiers as fully anonymous information.'
 				]
 			},
 			{
 				title: 'Usage analytics and opting out',
 				body: [
-					'To improve the app, we send events such as screen changes, puzzle starts and completions, first-three-word guidance, input and hint use, and ad results, with app version, distribution market, runtime and timestamps, to Google Firebase and Google Analytics. The analytics service may also process app installation identifiers and technical information. The AppsInToss version also sends usage events to Toss analytics.',
-					'From version 1.2.0, usage statistics are on when no previous choice exists. Turning off “사용 통계 보내기” (Send usage stats) in Settings stops subsequent app usage events, and a previous off choice is preserved. This setting is separate from ad consent, ad rewards and notifications. From iOS 1.2.0, Firebase ad storage, ad user data and ad personalization consent signals are denied.'
+					'To improve the app, we send events such as screen changes, puzzle starts and completions, first-three-word guidance, letter input, and ad requests, impressions, closes and failures, with content language, interface language, daily puzzle sequence, app version, distribution market, runtime and timestamps, to Google Firebase and Google Analytics. The analytics service may also process app installation identifiers and technical information. The AppsInToss version also sends usage events to Toss analytics.',
+					'From version 1.2.0, usage statistics are on when no previous choice exists. Turning off “사용 통계 보내기” (Send usage stats) in Settings stops subsequent app usage events, and a previous off choice is preserved. This setting is separate from ad consent and notifications. From iOS 1.2.0, Firebase ad storage, ad user data and ad personalization consent signals are denied.'
 				]
 			},
 			{
 				title: 'Ads and leaderboards',
 				body: [
-					'We offer optional rewarded ads for extra hints. Android and iOS request non-personalized ads from Google AdMob. Ad delivery, measurement and fraud prevention may involve IP addresses and derived approximate location, device and app identifiers, ad interactions, diagnostics and performance information. Non-personalized ads may still involve this processing.',
-					'iOS 1.2.0 does not request ATT tracking permission or show Google UMP forms, and removes earlier IABTCF_ consent values before ad initialization. Limited ads or no ads may be available in the EEA, UK and Switzerland. Android retains UMP and the advertising privacy choices in Settings. AppsInToss ads use Toss advertising services and policies.',
-					'Leaderboards submit scores or display rankings through Google Play Games on Android, Game Center on iOS and the AppsInToss ranking service. Profile and score visibility and deletion of records held by those services follow the platform account settings and policies.'
+					'From version 1.3.1, an interstitial ad may appear when moving from a completed puzzle result to the next puzzle, or from the last result back home. If an ad is not ready or fails, the app continues immediately. Hints and rewarded ads are no longer offered. Earlier versions may offer rewarded ads for extra hints. Android and iOS request non-personalized ads from Google AdMob. Ad delivery, measurement and fraud prevention may involve IP addresses and derived approximate location, device and app identifiers, ad interactions, diagnostics and performance information. Non-personalized ads may still involve this processing.',
+					'From version 1.2.0, iOS does not request ATT tracking permission or show Google UMP forms, and removes earlier IABTCF_ consent values before ad initialization. Limited ads or no ads may be available in the EEA, UK and Switzerland. Android retains UMP and the advertising privacy choices in Settings. AppsInToss ads use Toss advertising services and policies.',
+					'English scores are not submitted to Korean leaderboards, and the English leaderboard button is hidden until a separate English leaderboard is configured. Korean leaderboards submit scores or display rankings through Google Play Games on Android, Game Center on iOS and the AppsInToss ranking service. Profile and score visibility and deletion of records held by those services follow the platform account settings and policies.'
 				]
 			},
 			{
