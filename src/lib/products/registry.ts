@@ -178,11 +178,11 @@ export const products: Product[] = [
 		status: 'live',
 		category: 'game',
 		hasLanding: false,
-		updatedOn: '2026-10-23',
-		name: { ko: '가로세로 낱말 퍼즐', en: 'Korean Crossword Puzzle' },
+		updatedOn: '2026-10-27',
+		name: { ko: '가로세로 낱말 퍼즐', en: 'Daily Word Play' },
 		tagline: {
-			ko: '매일 한 판씩 푸는 한글 가로세로 낱말 퍼즐',
-			en: 'A daily Korean-language crossword. Korean only.'
+			ko: '글자 타일로 푸는 가로세로 퍼즐. App Store 1.3.1부터 한국어와 영어로 하루 다섯 판씩.',
+			en: 'Crosswords with letter tiles. App Store version 1.3.1 adds five daily puzzles each in English and Korean.'
 		},
 		badges: { ko: ['게임'], en: ['Game'] },
 		channels: [
@@ -195,12 +195,12 @@ export const products: Product[] = [
 			{
 				kind: 'privacy',
 				path: { ko: '/apps/crossword-puzzle/privacy/', en: '/en/apps/crossword-puzzle/privacy/' },
-				updated: '2026-10-23'
+				updated: '2026-10-27'
 			},
 			{
 				kind: 'account-deletion',
 				path: { ko: '/apps/crossword-puzzle/privacy/', en: '/en/apps/crossword-puzzle/privacy/' },
-				updated: '2026-10-23',
+				updated: '2026-10-27',
 				legacyAnchor: { path: '/apps/crossword-puzzle/privacy/', id: 'account-deletion' }
 			}
 		]
