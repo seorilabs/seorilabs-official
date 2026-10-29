@@ -6,7 +6,7 @@ export const saltCompassPrivacyContent: Record<'ko' | 'en', PrivacyContent> = {
 		description:
 			'소금과 나침반의 가명 계정, 클라우드 저장, 이용 통계, 오류 보고, 보상형 광고, 인앱 결제와 데이터 삭제 안내입니다.',
 		kicker: 'Salt & Compass Privacy Policy',
-		lastUpdated: '2026년 9월 25일',
+		lastUpdated: '2026년 10월 29일',
 		lastUpdatedLabel: '시행일 및 최종 수정일',
 		backLabel: '서리랩스 홈으로',
 		languageLabel: '언어',
@@ -43,8 +43,8 @@ export const saltCompassPrivacyContent: Record<'ko' | 'en', PrivacyContent> = {
 				title: '보상형 광고와 Google AdMob',
 				body: [
 					'광고는 이용자가 “광고 보고 …” 버튼을 직접 눌렀을 때만 보는 보상형 광고이며 전면 광고는 없습니다. Google Play와 App Store 버전에서 광고 기능을 켜면 Google AdMob이 광고를 제공합니다. 광고 기능이 꺼진 버전에서는 AdMob을 초기화하지 않고 광고를 요청하지 않습니다.',
-					'광고를 요청하고 표시할 때 Google AdMob은 광고 제공·측정·부정 이용 방지·분석을 위해 광고 식별자(Android 광고 ID, 앱 세트 ID, iOS IDFA 및 IDFV), 기기 정보와 광고 상호작용, 앱·SDK 성능과 진단 정보, IP 주소와 그로부터 추정한 대략적 위치를 수집하고 Google과 광고 파트너가 자체 목적으로도 처리할 수 있습니다. 게임 자체는 기기의 위치 정보를 읽지 않습니다.',
-					'iOS에서는 광고 추적이 필요한 경우 앱 추적 투명성(ATT) 권한을 요청하며, 허용하지 않으면 IDFA를 광고에 사용하지 않습니다. 설정 → 개인정보 보호 및 보안 → 추적에서 언제든 바꿀 수 있습니다. Android에서는 설정 → 개인정보 보호(또는 Google) → 광고에서 광고 ID를 재설정하거나 삭제할 수 있습니다. 광고 ID를 삭제하거나 추적을 거부해도 게임과 보상형 광고는 이용할 수 있으며, 비개인화 광고가 표시될 수 있습니다.',
+					'광고를 요청하고 표시할 때 Google AdMob은 광고 제공·측정·부정 이용 방지·분석을 위해 광고 및 기기 식별자(Android 광고 ID, 앱 세트 ID, iOS IDFV 등), 기기 정보와 광고 상호작용, 앱·SDK 성능과 진단 정보, IP 주소와 그로부터 추정한 대략적 위치를 수집하고 Google과 광고 파트너가 자체 목적으로도 처리할 수 있습니다. 게임 자체는 기기의 위치 정보를 읽지 않습니다.',
+					'iOS 1.0.0부터는 교차 앱 추적을 사용하지 않고 비개인화 광고만 요청합니다. ATT 권한과 UMP 광고 동의 양식을 요청하지 않으며, 광고 초기화 전에 이전 광고 동의 값을 지우고 게시자 자체 식별자와 광고 쿠키 동의 설정을 끕니다. 동의 정보가 필요한 지역에서는 제한 광고가 제공되거나 광고를 표시하지 못할 수 있습니다. 기존 사용 통계 선택은 유지하며 설정에서 끌 수 있습니다. 이전 iOS 버전은 ATT 허용 여부에 따라 IDFA 사용을 제한했습니다. Android는 기존 광고 동의 절차를 유지하며 기기 설정의 개인정보 보호 또는 Google의 광고 메뉴에서 광고 ID를 재설정하거나 삭제할 수 있습니다.',
 					'Google의 데이터 처리 방식은 https://policies.google.com/technologies/partner-sites 와 https://policies.google.com/privacy 에서 확인할 수 있습니다.'
 				]
 			},
@@ -105,7 +105,7 @@ export const saltCompassPrivacyContent: Record<'ko' | 'en', PrivacyContent> = {
 		description:
 			'Pseudonymous accounts, cloud saves, usage analytics, error reports, rewarded ads, in-app purchases and data deletion in Salt & Compass.',
 		kicker: 'Salt & Compass Privacy Policy',
-		lastUpdated: 'September 25, 2026',
+		lastUpdated: 'October 29, 2026',
 		lastUpdatedLabel: 'Effective and last updated',
 		backLabel: 'Back to Seori Labs',
 		languageLabel: 'Language',
@@ -142,8 +142,8 @@ export const saltCompassPrivacyContent: Record<'ko' | 'en', PrivacyContent> = {
 				title: 'Rewarded ads and Google AdMob',
 				body: [
 					'The only ads are rewarded ads that play only when you tap a “Watch ad …” button yourself; there are no interstitial ads. In the Google Play and App Store versions, ads are served by Google AdMob once the ad feature is enabled. Versions with ads turned off do not initialize AdMob or request ads.',
-					'When requesting and showing ads, Google AdMob collects advertising identifiers (Android advertising ID, app set ID, iOS IDFA and IDFV), device information and ad interactions, app and SDK performance and diagnostic information, and your IP address and the approximate location derived from it, for ad delivery, measurement, fraud prevention and analytics. Google and its advertising partners may also process this information for their own purposes. The game itself does not read your device location.',
-					'On iOS, where ad tracking applies, we ask for permission through App Tracking Transparency (ATT); if you do not allow it, the IDFA is not used for ads. You can change this at any time in Settings → Privacy & Security → Tracking. On Android, you can reset or delete your advertising ID in Settings → Privacy (or Google) → Ads. Deleting the advertising ID or declining tracking does not stop you from playing or watching rewarded ads; you may see non-personalized ads.',
+					'When requesting and showing ads, Google AdMob collects advertising and device identifiers (such as Android advertising ID, app set ID and iOS IDFV), device information and ad interactions, app and SDK performance and diagnostic information, and your IP address and the approximate location derived from it, for ad delivery, measurement, fraud prevention and analytics. Google and its advertising partners may also process this information for their own purposes. The game itself does not read your device location.',
+					'Starting with iOS version 1.0.0, we do not use cross-app tracking and request only non-personalized ads. We do not request ATT permission or show a UMP advertising consent form. Before ads initialize, we clear previous advertising consent values and disable publisher first-party ID and advertising cookie consent. Limited ads may be served, or ads may be unavailable, in regions requiring consent information. Your existing usage statistics choice is preserved and can be turned off in Settings. Earlier iOS versions restricted IDFA use according to ATT permission. Android retains its existing advertising consent flow; you can reset or delete the advertising ID in the device privacy or Google Ads settings.',
 					'Learn how Google uses data at https://policies.google.com/technologies/partner-sites and https://policies.google.com/privacy.'
 				]
 			},
