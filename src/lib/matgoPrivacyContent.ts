@@ -35,7 +35,7 @@ export const matgoPrivacyContent: Record<'ko' | 'en', PrivacyContent> = {
 				body: [
 					'1.1.0부터 Android와 iOS에서 Google의 Firebase Analytics를 사용합니다. 분석을 켜면 설치와 세션, 안내 시작과 완료, 대국 시작과 종료, 재대국 선택, 오늘의 판 완료와 광고 결과를 수집합니다. 마켓, 앱 버전, AI 정책 버전, 신규 또는 기존 설치 구분도 전송합니다. 첫 판 완료율과 재방문율을 집계해 게임을 개선하는 데 사용합니다. 이름, 이메일, 계정, 실제 손패와 전체 저장 파일은 분석에 보내지 않습니다.',
 					'SDK는 재설정 가능한 앱 인스턴스 식별자, 앱 상호작용, 기기와 운영체제 정보, IP 주소에서 유추한 대략적인 지역을 처리할 수 있습니다. 앱 인스턴스 식별자는 같은 설치의 이벤트와 재방문을 연결합니다. 이 앱은 분석의 광고 식별자와 광고 개인화 신호를 끕니다. iOS는 IDFA 기능이 없는 FirebaseAnalyticsCore를 사용하고 IDFV 수집도 끕니다. 다른 회사의 앱이나 웹 데이터와 합쳐 광고 추적에 사용하지 않습니다.',
-					'설정의 “사용 분석 보내기”에서 수집 여부를 바꿀 수 있고 선택은 재실행과 업데이트 후에도 유지됩니다. 끄면 이후 분석 전송을 중단하고 기기에 있는 SDK 분석 데이터를 초기화합니다. 이미 서버로 전송한 정보가 이 동작으로 즉시 모두 삭제되는 것은 아닙니다. 분석을 끄거나 인터넷이 없어도 대국과 저장은 사용할 수 있습니다.',
+					'처음 실행할 때 꺼져 있는 분석 선택 항목에서 허용 여부를 고릅니다. 허용하지 않고 계속해도 대국과 저장을 사용할 수 있습니다. 허용 전에는 분석을 전송하지 않으며, 설정의 “사용 분석 보내기”에서 이후 선택을 바꿀 수 있습니다. 선택은 재실행과 업데이트 후에도 유지됩니다. 끄면 이후 분석 전송을 중단하고 기기에 있는 SDK 분석 데이터를 초기화합니다. 이미 서버로 전송한 정보가 이 동작으로 즉시 모두 삭제되는 것은 아닙니다. 분석을 끄거나 인터넷이 없어도 대국과 저장은 사용할 수 있습니다.',
 					'1.0.10 이하의 iOS 버전에는 분석 SDK가 없으며 iOS의 광고와 인앱 결제는 계속 제공하지 않습니다. Android 광고의 데이터 처리는 위 항목에서 별도로 설명합니다.'
 				]
 			},
@@ -104,7 +104,7 @@ export const matgoPrivacyContent: Record<'ko' | 'en', PrivacyContent> = {
 				body: [
 					'From version 1.1.0, Android and iOS use Google Firebase Analytics. When enabled, analytics records installation and session events, tutorial starts and completions, match starts and results, rematch choices, daily-match completions, and ad outcomes. Events include the market, app and AI policy versions, and whether the installation is new or existing. We use these to measure first-match completion and return rates and improve the game. We do not send names, email addresses, accounts, actual card hands, or complete save files to analytics.',
 					'The SDK may process a resettable app-instance identifier, product interactions, device and operating-system information, and an approximate region inferred from the IP address. The app-instance identifier connects events and return visits from the same installation. Advertising identifiers and ad personalization signals are disabled for analytics. On iOS, we use FirebaseAnalyticsCore without IDFA capability and disable IDFV collection. We do not combine this data with other companies’ app or website data for advertising tracking.',
-					'Change collection using “Send usage analytics” in Settings. Your choice remains after restarts and updates. Turning it off stops further analytics collection and resets local SDK analytics data. This does not immediately delete all information already sent to servers. Matches and saving remain available when analytics is off or the device is offline.',
+					'On first launch, the analytics switch starts off and you choose whether to enable it. You can continue without enabling it and still play and save. No analytics is sent before you allow it. Change your choice later using “Send usage analytics” in Settings. Your choice remains after restarts and updates. Turning it off stops further analytics collection and resets local SDK analytics data. This does not immediately delete all information already sent to servers. Matches and saving remain available when analytics is off or the device is offline.',
 					'iOS versions 1.0.10 and earlier contain no analytics SDK. The iOS app continues to have no ads or in-app purchases. Android ad processing is described separately above.'
 				]
 			},
