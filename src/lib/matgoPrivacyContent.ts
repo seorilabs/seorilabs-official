@@ -5,9 +5,9 @@ export const matgoPrivacyContent: Record<'ko' | 'en', PrivacyContent> = {
 	ko: {
 		title: '달빛 맞고 개인정보 처리방침',
 		description:
-			'달빛 맞고의 기기 내 저장, Android 광고 데이터, iOS 데이터 처리와 삭제 안내입니다.',
+			'달빛 맞고의 기기 내 저장, 1.1.0부터의 선택형 사용 분석, Android 광고 데이터와 삭제 안내입니다.',
 		kicker: 'Moonlight Matgo Privacy Policy',
-		lastUpdated: '2026년 9월 24일',
+		lastUpdated: '2026년 10월 30일',
 		lastUpdatedLabel: '시행일 및 최종 수정일',
 		backLabel: '서리랩스 홈으로',
 		languageLabel: '언어',
@@ -17,7 +17,7 @@ export const matgoPrivacyContent: Record<'ko' | 'en', PrivacyContent> = {
 			{
 				title: '기기에 저장하는 정보',
 				body: [
-					'진행 중인 대국, 결과·복기 기록, 게임 내 냥·매듭, 라이벌 진행 상태, 언어·화면·소리 설정, 18세 이상 확인 여부를 기기에 저장합니다. 이어하기와 설정 유지에 사용하며 서리랩스 서버로 전송하지 않습니다.',
+					'진행 중인 대국, 결과·복기 기록, 게임 내 냥·매듭, 라이벌 진행 상태, 언어·화면·소리 설정, 18세 이상 확인 여부를 기기에 저장합니다. 이어하기와 설정 유지에 사용합니다. 전체 저장 파일, 손패와 복기 명령은 서버로 전송하지 않습니다. 아래 사용 분석을 켠 경우 대국의 시작과 완료 같은 이벤트는 별도로 전송됩니다.',
 					'냥과 매듭은 현금화, 실물 교환 또는 다른 이용자에게 이전할 수 없는 게임 내 값입니다. 금융 계좌나 결제 정보와 연결되지 않습니다.',
 					'생년월일·신분증을 받지 않습니다. 앱에 회원가입, 온라인 대전, 게임 데이터 서버 동기화 또는 인앱 결제 기능은 없습니다.'
 				]
@@ -31,16 +31,19 @@ export const matgoPrivacyContent: Record<'ko' | 'en', PrivacyContent> = {
 				]
 			},
 			{
-				title: 'iOS 버전',
+				title: '선택형 사용 분석과 iOS 버전',
 				body: [
-					'현재 iOS 버전에는 광고 SDK, 이용 분석 SDK, 원격 오류 보고 또는 이용자 추적 기능이 없습니다. iOS 앱은 게임 진행과 설정을 기기에 보관하며 앱에서 개인정보나 게임 데이터를 서리랩스 또는 제3자 서버로 수집·전송하지 않습니다.'
+					'1.1.0부터 Android와 iOS에서 Google의 Firebase Analytics를 사용합니다. 분석을 켜면 설치와 세션, 안내 시작과 완료, 대국 시작과 종료, 재대국 선택, 오늘의 판 완료와 광고 결과를 수집합니다. 마켓, 앱 버전, AI 정책 버전, 신규 또는 기존 설치 구분도 전송합니다. 첫 판 완료율과 재방문율을 집계해 게임을 개선하는 데 사용합니다. 이름, 이메일, 계정, 실제 손패와 전체 저장 파일은 분석에 보내지 않습니다.',
+					'SDK는 재설정 가능한 앱 인스턴스 식별자, 앱 상호작용, 기기와 운영체제 정보, IP 주소에서 유추한 대략적인 지역을 처리할 수 있습니다. 앱 인스턴스 식별자는 같은 설치의 이벤트와 재방문을 연결합니다. 이 앱은 분석의 광고 식별자와 광고 개인화 신호를 끕니다. iOS는 IDFA 기능이 없는 FirebaseAnalyticsCore를 사용하고 IDFV 수집도 끕니다. 다른 회사의 앱이나 웹 데이터와 합쳐 광고 추적에 사용하지 않습니다.',
+					'처음 실행할 때 꺼져 있는 분석 선택 항목에서 허용 여부를 고릅니다. 허용하지 않고 계속해도 대국과 저장을 사용할 수 있습니다. 허용 전에는 분석을 전송하지 않으며, 설정의 “사용 분석 보내기”에서 이후 선택을 바꿀 수 있습니다. 선택은 재실행과 업데이트 후에도 유지됩니다. 끄면 이후 분석 전송을 중단하고 기기에 있는 SDK 분석 데이터를 초기화합니다. 이미 서버로 전송한 정보가 이 동작으로 즉시 모두 삭제되는 것은 아닙니다. 분석을 끄거나 인터넷이 없어도 대국과 저장은 사용할 수 있습니다.',
+					'1.0.10 이하의 iOS 버전에는 분석 SDK가 없으며 iOS의 광고와 인앱 결제는 계속 제공하지 않습니다. Android 광고의 데이터 처리는 위 항목에서 별도로 설명합니다.'
 				]
 			},
 			{
 				title: '보관과 삭제',
 				body: [
 					'기기 내 게임 데이터는 이용자가 초기화하거나 앱 데이터를 삭제할 때까지 남습니다. 앱 설정의 “전체 데이터 초기화” 또는 운영체제의 앱 삭제 기능으로 제거할 수 있습니다. 서리랩스는 게임 기록의 서버 사본이 없어 삭제된 대국을 복구할 수 없습니다.',
-					'운영체제 백업을 켠 경우 백업 사본은 해당 서비스의 정책에 따라 관리됩니다. Android 광고 데이터의 접근·삭제 선택은 Google 계정 및 기기 광고 설정과 Google의 개인정보 도구에서 확인해 주세요.'
+					'운영체제 백업을 켠 경우 백업 사본은 해당 서비스의 정책에 따라 관리됩니다. Android 광고 데이터의 접근·삭제 선택은 Google 계정 및 기기 광고 설정과 Google의 개인정보 도구에서 확인해 주세요. Google Analytics의 상세 이벤트와 사용자 데이터 보관은 2개월로 설정하며, 새 활동이 있어도 사용자 식별자의 보관 기간을 다시 늘리지 않습니다. 접근이 제한된 Google BigQuery의 원시 이벤트 테이블은 생성 후 최대 60일 동안 보관하고 만료되면 삭제합니다. 개인을 식별하지 않는 집계 통계는 게임 개선을 위해 더 오래 보관할 수 있습니다. 수집과 삭제에 관한 문의는 아래 연락처로 보낼 수 있습니다.'
 				]
 			},
 			{
@@ -66,14 +69,14 @@ export const matgoPrivacyContent: Record<'ko' | 'en', PrivacyContent> = {
 			}
 		],
 		footerNote:
-			'게임 진행 기록은 기기에 저장됩니다. Android 광고는 Google Mobile Ads를 통해 별도 데이터를 처리할 수 있습니다.'
+			'게임 진행 기록은 기기에 저장됩니다. 1.1.0의 선택형 사용 분석과 Android 광고 데이터는 위 설명에 따라 별도로 처리합니다.'
 	},
 	en: {
 		title: 'Moonlight Matgo Privacy Policy',
 		description:
-			'Privacy Policy for local game data, Android advertising, iOS data practices, and deletion.',
+			'Privacy Policy for local game data, optional analytics from version 1.1.0, Android advertising, and deletion.',
 		kicker: 'Moonlight Matgo Privacy Policy',
-		lastUpdated: 'September 24, 2026',
+		lastUpdated: 'October 30, 2026',
 		lastUpdatedLabel: 'Effective and last updated',
 		backLabel: 'Back to Seori Labs',
 		languageLabel: 'Language',
@@ -83,7 +86,7 @@ export const matgoPrivacyContent: Record<'ko' | 'en', PrivacyContent> = {
 			{
 				title: 'Data Stored on Your Device',
 				body: [
-					'We store ongoing matches, results and reviews, in-game Nyang and Knots, rival progress, language, display and sound settings, and your confirmation that you are at least 18 on your device. This supports resuming play and retaining settings. We do not send this gameplay data to a Seori Labs server.',
+					'We store ongoing matches, results and reviews, in-game Nyang and Knots, rival progress, language, display and sound settings, and your confirmation that you are at least 18 on your device. This supports resuming play and retaining settings. We do not transmit complete save files, card hands, or replay commands. If you enable the analytics described below, events such as starting and finishing a match are sent separately.',
 					'Nyang and Knots have no cash value and cannot be exchanged for goods or transferred to another player. They are not linked to financial accounts or payment details.',
 					'We do not ask for a date of birth or identity document. The app has no account, online multiplayer, game-data server sync, or in-app purchase feature.'
 				]
@@ -97,16 +100,19 @@ export const matgoPrivacyContent: Record<'ko' | 'en', PrivacyContent> = {
 				]
 			},
 			{
-				title: 'iOS Version',
+				title: 'Optional Usage Analytics and the iOS Version',
 				body: [
-					'The current iOS version contains no ad SDK, usage analytics SDK, remote crash reporting, or user tracking. It stores gameplay and settings on your device and does not collect or send personal or gameplay data from the app to Seori Labs or third-party servers.'
+					'From version 1.1.0, Android and iOS use Google Firebase Analytics. When enabled, analytics records installation and session events, tutorial starts and completions, match starts and results, rematch choices, daily-match completions, and ad outcomes. Events include the market, app and AI policy versions, and whether the installation is new or existing. We use these to measure first-match completion and return rates and improve the game. We do not send names, email addresses, accounts, actual card hands, or complete save files to analytics.',
+					'The SDK may process a resettable app-instance identifier, product interactions, device and operating-system information, and an approximate region inferred from the IP address. The app-instance identifier connects events and return visits from the same installation. Advertising identifiers and ad personalization signals are disabled for analytics. On iOS, we use FirebaseAnalyticsCore without IDFA capability and disable IDFV collection. We do not combine this data with other companies’ app or website data for advertising tracking.',
+					'On first launch, the analytics switch starts off and you choose whether to enable it. You can continue without enabling it and still play and save. No analytics is sent before you allow it. Change your choice later using “Share usage analytics” in Settings. Your choice remains after restarts and updates. Turning it off stops further analytics collection and resets local SDK analytics data. This does not immediately delete all information already sent to servers. Matches and saving remain available when analytics is off or the device is offline.',
+					'iOS versions 1.0.10 and earlier contain no analytics SDK. The iOS app continues to have no ads or in-app purchases. Android ad processing is described separately above.'
 				]
 			},
 			{
 				title: 'Retention and Deletion',
 				body: [
 					'Local game data stays on your device until you reset it or delete the app’s data. Use “Reset all data” in app settings or your operating system’s app deletion controls. Seori Labs has no server copy of game records and cannot restore deleted matches.',
-					'If operating-system backup is enabled, that service governs backup copies. For Android ad data access and deletion choices, use your Google account and device ad settings or Google’s privacy tools.'
+					'If operating-system backup is enabled, that service governs backup copies. For Android ad data access and deletion choices, use your Google account and device ad settings or Google’s privacy tools. Google Analytics is configured to retain detailed event and user data for two months without extending the user-identifier retention period for new activity. Raw event tables in access-restricted Google BigQuery are retained for at most 60 days after creation and deleted when they expire. Aggregated statistics that do not identify individuals may be retained longer to improve the game. Contact us below about collection or deletion.'
 				]
 			},
 			{
@@ -132,6 +138,6 @@ export const matgoPrivacyContent: Record<'ko' | 'en', PrivacyContent> = {
 			}
 		],
 		footerNote:
-			'Gameplay records stay on your device. Android ads may process separate data through Google Mobile Ads.'
+			'Gameplay records stay on your device. Optional analytics in version 1.1.0 and Android ad data are processed separately as described above.'
 	}
 };
