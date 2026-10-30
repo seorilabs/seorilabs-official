@@ -43,7 +43,7 @@ export const matgoPrivacyContent: Record<'ko' | 'en', PrivacyContent> = {
 				title: '보관과 삭제',
 				body: [
 					'기기 내 게임 데이터는 이용자가 초기화하거나 앱 데이터를 삭제할 때까지 남습니다. 앱 설정의 “전체 데이터 초기화” 또는 운영체제의 앱 삭제 기능으로 제거할 수 있습니다. 서리랩스는 게임 기록의 서버 사본이 없어 삭제된 대국을 복구할 수 없습니다.',
-					'운영체제 백업을 켠 경우 백업 사본은 해당 서비스의 정책에 따라 관리됩니다. Android 광고 데이터의 접근·삭제 선택은 Google 계정 및 기기 광고 설정과 Google의 개인정보 도구에서 확인해 주세요. 사용 분석 데이터는 Google Analytics와 접근이 제한된 Google BigQuery에서 처리하며 서비스 개선 통계에 필요한 기간 동안 보관합니다. 수집과 삭제에 관한 문의는 아래 연락처로 보낼 수 있습니다.'
+					'운영체제 백업을 켠 경우 백업 사본은 해당 서비스의 정책에 따라 관리됩니다. Android 광고 데이터의 접근·삭제 선택은 Google 계정 및 기기 광고 설정과 Google의 개인정보 도구에서 확인해 주세요. Google Analytics의 상세 이벤트와 사용자 데이터 보관은 2개월로 설정하며, 새 활동이 있어도 사용자 식별자의 보관 기간을 다시 늘리지 않습니다. 접근이 제한된 Google BigQuery의 원시 이벤트 테이블은 생성 후 최대 60일 동안 보관하고 만료되면 삭제합니다. 개인을 식별하지 않는 집계 통계는 게임 개선을 위해 더 오래 보관할 수 있습니다. 수집과 삭제에 관한 문의는 아래 연락처로 보낼 수 있습니다.'
 				]
 			},
 			{
@@ -104,7 +104,7 @@ export const matgoPrivacyContent: Record<'ko' | 'en', PrivacyContent> = {
 				body: [
 					'From version 1.1.0, Android and iOS use Google Firebase Analytics. When enabled, analytics records installation and session events, tutorial starts and completions, match starts and results, rematch choices, daily-match completions, and ad outcomes. Events include the market, app and AI policy versions, and whether the installation is new or existing. We use these to measure first-match completion and return rates and improve the game. We do not send names, email addresses, accounts, actual card hands, or complete save files to analytics.',
 					'The SDK may process a resettable app-instance identifier, product interactions, device and operating-system information, and an approximate region inferred from the IP address. The app-instance identifier connects events and return visits from the same installation. Advertising identifiers and ad personalization signals are disabled for analytics. On iOS, we use FirebaseAnalyticsCore without IDFA capability and disable IDFV collection. We do not combine this data with other companies’ app or website data for advertising tracking.',
-					'On first launch, the analytics switch starts off and you choose whether to enable it. You can continue without enabling it and still play and save. No analytics is sent before you allow it. Change your choice later using “Send usage analytics” in Settings. Your choice remains after restarts and updates. Turning it off stops further analytics collection and resets local SDK analytics data. This does not immediately delete all information already sent to servers. Matches and saving remain available when analytics is off or the device is offline.',
+					'On first launch, the analytics switch starts off and you choose whether to enable it. You can continue without enabling it and still play and save. No analytics is sent before you allow it. Change your choice later using “Share usage analytics” in Settings. Your choice remains after restarts and updates. Turning it off stops further analytics collection and resets local SDK analytics data. This does not immediately delete all information already sent to servers. Matches and saving remain available when analytics is off or the device is offline.',
 					'iOS versions 1.0.10 and earlier contain no analytics SDK. The iOS app continues to have no ads or in-app purchases. Android ad processing is described separately above.'
 				]
 			},
@@ -112,7 +112,7 @@ export const matgoPrivacyContent: Record<'ko' | 'en', PrivacyContent> = {
 				title: 'Retention and Deletion',
 				body: [
 					'Local game data stays on your device until you reset it or delete the app’s data. Use “Reset all data” in app settings or your operating system’s app deletion controls. Seori Labs has no server copy of game records and cannot restore deleted matches.',
-					'If operating-system backup is enabled, that service governs backup copies. For Android ad data access and deletion choices, use your Google account and device ad settings or Google’s privacy tools. Usage analytics is processed in Google Analytics and access-restricted Google BigQuery and retained for as long as needed to produce service-improvement statistics. Contact us below about collection or deletion.'
+					'If operating-system backup is enabled, that service governs backup copies. For Android ad data access and deletion choices, use your Google account and device ad settings or Google’s privacy tools. Google Analytics is configured to retain detailed event and user data for two months without extending the user-identifier retention period for new activity. Raw event tables in access-restricted Google BigQuery are retained for at most 60 days after creation and deleted when they expire. Aggregated statistics that do not identify individuals may be retained longer to improve the game. Contact us below about collection or deletion.'
 				]
 			},
 			{
