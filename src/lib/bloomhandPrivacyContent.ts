@@ -6,13 +6,24 @@ export const bloomhandPrivacyContent: Record<'ko' | 'en', PrivacyContent> = {
 		description:
 			'블룸핸드의 가명 계정, 끝없는 도전 순위(토종·개량 리그), Google Play 게임즈·Game Center, 이용 통계, 보상형 광고, 친구 상자를 포함한 인앱 결제와 선택형 계정 연결, 계정·데이터 삭제 안내입니다.',
 		kicker: 'Bloomhand Privacy Policy',
-		lastUpdated: '2026년 10월 14일',
+		lastUpdated: '2026년 10월 31일',
 		lastUpdatedLabel: '시행일 및 최종 수정일',
 		backLabel: '서리랩스 홈으로',
 		languageLabel: '언어',
 		intro:
-			'이 방침은 Seori Labs가 제공하는 「블룸핸드」(Bloomhand, 앱 식별자 com.seorilabs.bloomhand)에 적용됩니다. 이 게임의 데이터 처리에는 공통 개인정보 처리방침보다 이 문서가 우선합니다. 이름·이메일 입력이나 로그인 없이 게임을 즐길 수 있고, 온라인 기능에는 자동 생성한 가명 계정이 사용됩니다.',
+			'이 방침은 Seori Labs가 제공하는 「블룸핸드」(Bloomhand, 앱 식별자 com.seorilabs.bloomhand)에 적용됩니다. 이 게임의 데이터 처리에는 공통 개인정보 처리방침보다 이 문서가 우선합니다. 이름·이메일 입력이나 로그인 없이 게임을 즐길 수 있고, 온라인 기능에는 자동 생성한 가명 계정이 사용됩니다. 앱인토스 버전에는 아래 ‘앱인토스’ 항목을 우선 적용하며, 그 밖의 마켓별 설명은 해당 마켓에만 적용됩니다.',
 		sections: [
+			{
+				title: '앱인토스',
+				body: [
+					'진행 중인 판과 씨앗, 도감, 업적, 설정은 토스 안의 Web 저장소에 둡니다. 토스의 앱 데이터나 Web 저장소가 지워지면 이 기록도 사라질 수 있습니다.',
+					'친구 상자 구매와 복원을 위해 토스 로그인을 사용합니다. 토스가 검증한 앱 범위 사용자 키를 서버에서 SHA-256 해시로 바꿔 같은 Firebase 가명 계정과 Platform 상자 원장에 연결합니다. 원본 사용자 키는 저장하거나 앱에 반환하지 않습니다. 토스 로그인 동의 화면에는 이름이 필수 항목으로 표시되지만, 서버는 이름을 해독하거나 사용, 저장하지 않습니다. 이메일, 성별, 생년월일, 내외국인 정보, 전화번호와 CI는 요청하지 않습니다.',
+					'결제는 토스가 처리하며 Seori Labs는 카드번호와 계좌 정보를 받지 않습니다. 상품 ID와 주문 ID를 서버로 보내 토스 서버에서 결제를 검증한 뒤 상자를 지급합니다. 미완료 주문은 다시 확인하고 검증한 지급에만 완료를 알립니다. 상자 확률과 보장 규칙, 개량 리그 사용 제한, 구매와 상자 원장의 보관 기준은 아래 인앱 결제 설명과 같습니다. 앱인토스에서는 상자 구매 전에 토스 로그인이 필요합니다.',
+					'사용 통계 보내기를 선택한 경우 게임 내 행동과 버전, 언어, 실행 환경을 토스 분석 SDK로 보냅니다. 이 버전의 게임 행동 통계에는 Google Analytics SDK를 사용하지 않으며, 토스의 분석 데이터 처리는 토스 개인정보 처리방침을 따릅니다. 설정에서 끄면 이후 전송을 멈춥니다.',
+					'사용자가 선택한 보상형 광고 두 자리만 토스 통합 광고 SDK로 제공합니다. 토스와 Google AdMob은 광고 제공, 측정과 부정 방지를 위해 광고 식별자, 기기와 네트워크 정보, 광고 노출과 클릭을 각 정책 및 기기 동의 설정에 따라 처리할 수 있습니다. Seori Labs는 광고 식별자를 구매 계정에 연결하지 않습니다. 전면 광고는 제공하지 않습니다.',
+					'토스에서 연결을 끊는 것과 게임의 계정 삭제는 다릅니다. 서버 기록 삭제를 원하면 게임 설정의 계정 삭제 또는 이 페이지의 문의 절차를 이용해 주세요. 상자 구매 원장은 중복 지급 방지와 환불, 분쟁 대응을 위해 인앱 결제 항목에 적은 기준으로 보관합니다.'
+				]
+			},
 			{
 				title: '게임 기록',
 				body: [
@@ -95,13 +106,24 @@ export const bloomhandPrivacyContent: Record<'ko' | 'en', PrivacyContent> = {
 		description:
 			'Pseudonymous accounts, Endless challenge rankings (Heirloom and Hybrid leagues), Google Play Games and Game Center, usage analytics, rewarded ads, in-app purchases including Friend Boxes, optional account linking, and account and data deletion in Bloomhand.',
 		kicker: 'Bloomhand Privacy Policy',
-		lastUpdated: 'October 14, 2026',
+		lastUpdated: 'October 31, 2026',
 		lastUpdatedLabel: 'Effective and last updated',
 		backLabel: 'Back to Seori Labs',
 		languageLabel: 'Language',
 		intro:
 			'This policy applies to Bloomhand (블룸핸드, app identifier com.seorilabs.bloomhand), provided by Seori Labs. It takes precedence over our general policy for this game. No sign-in, name or email is required to play; online features use an automatically created pseudonymous account.',
 		sections: [
+			{
+				title: 'AppsInToss',
+				body: [
+					'Your current run, seeds, collection, achievements and settings are kept in web storage inside Toss. Clearing Toss app data or web storage may remove these records.',
+					'Friend Box purchases and recovery use Toss login. The server immediately hashes the verified app-scoped Toss user key with SHA-256 and connects it to the same Firebase pseudonymous account and Platform box ledger. The original key is not stored or returned to the app. The Toss consent screen lists your name as required, but our server does not decrypt, use or store it. We do not request email, gender, date of birth, nationality, phone number or CI.',
+					'Toss processes payments; Seori Labs does not receive card or bank account numbers. Product and order IDs are sent to our server, which verifies the payment with Toss before granting boxes. Pending orders are checked again, and fulfillment is confirmed only after verified granting. The odds, guarantee rules, Hybrid League restriction and purchase and box ledger retention follow the in-app purchase section below. Toss login is required before buying boxes in AppsInToss.',
+					'If you opt into usage analytics, in-game events, version, language and runtime are sent through the Toss analytics SDK. This version does not use the Google Analytics SDK for gameplay events. Toss processes its analytics data under its own privacy policy. Turning usage analytics off in settings stops future sending.',
+					'Only the two user-selected rewarded ad placements use the Toss integrated ad SDK. Toss and Google AdMob may process advertising identifiers, device and network information, impressions and clicks for ad delivery, measurement and fraud prevention under their policies and device consent settings. Seori Labs does not link advertising identifiers to purchase accounts. We do not show interstitial ads.',
+					'Disconnecting the service in Toss and deleting the game account are separate actions. To delete server records, use Delete account in game settings or the contact procedure on this page. Purchase and box ledgers are retained for duplicate-grant prevention, refunds and disputes as described under in-app purchases.'
+				]
+			},
 			{
 				title: 'Game records',
 				body: [
