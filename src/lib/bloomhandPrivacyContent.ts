@@ -111,7 +111,7 @@ export const bloomhandPrivacyContent: Record<'ko' | 'en', PrivacyContent> = {
 		backLabel: 'Back to Seori Labs',
 		languageLabel: 'Language',
 		intro:
-			'This policy applies to Bloomhand (블룸핸드, app identifier com.seorilabs.bloomhand), provided by Seori Labs. It takes precedence over our general policy for this game. No sign-in, name or email is required to play; online features use an automatically created pseudonymous account.',
+			'This policy applies to Bloomhand (블룸핸드, app identifier com.seorilabs.bloomhand), provided by Seori Labs. It takes precedence over our general policy for this game. No sign-in, name or email is required to play; online features use an automatically created pseudonymous account. For AppsInToss, the AppsInToss section below takes precedence. Other market-specific descriptions apply only to those markets.',
 		sections: [
 			{
 				title: 'AppsInToss',
