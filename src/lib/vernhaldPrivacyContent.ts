@@ -7,13 +7,24 @@ export const vernhaldPrivacyContent: Record<'ko' | 'en', PrivacyContent> = {
 		description:
 			'베른할드 연대기의 기기 내 저장, 선택형 이용 통계, 보상형 광고, 인앱 구매에 관한 개인정보 처리방침입니다.',
 		kicker: 'Vernhald Chronicles Privacy Policy',
-		lastUpdated: '2026년 10월 18일',
+		lastUpdated: '2026년 11월 3일',
 		lastUpdatedLabel: '시행일 및 최종 수정일',
 		backLabel: '서리랩스 홈으로',
 		languageLabel: '언어',
 		intro:
-			'이 방침은 Seori Labs가 제공하는 「베른할드 연대기」(패키지명 com.seorilabs.vernhald, 이하 “앱”)에 적용됩니다. 도전과 무한모드는 오프라인으로 플레이할 수 있으며, 선택형 정기 리그에는 인터넷 연결이 필요합니다. 앱의 실제 데이터 처리와 스토어 표시가 공통 방침과 다른 경우 이 제품별 방침이 우선합니다.',
+			'이 방침은 Seori Labs가 제공하는 「베른할드 연대기」(네이티브 패키지명 com.seorilabs.vernhald, 앱인토스 appName vernhald, 이하 “앱”)에 적용됩니다. 네이티브 앱의 도전과 무한모드는 오프라인으로 플레이할 수 있으며, 선택형 정기 리그에는 인터넷 연결이 필요합니다. 앱의 실제 데이터 처리와 스토어 표시가 공통 방침과 다른 경우 이 제품별 방침이 우선합니다.',
 		sections: [
+			{
+				title: '앱인토스 버전',
+				body: [
+					'앱인토스 버전은 토스 안에서 실행되며 인터넷 연결이 필요합니다. 토스 SDK가 발급한 미니앱별 사용자 식별키를 해시하여 저장 공간과 서버 이용자를 구분합니다. 서버는 짧게 유효한 일회용 인증 코드를 토스에 교환해 이용자를 확인하며, 기기가 직접 보낸 사용자 식별키만으로 인증하지 않습니다. 서버 접속 세션은 1시간 뒤 만료되며 만료된 세션 자료는 자동 삭제 대상으로 처리합니다.',
+					'진행 상황·설정·보유 상품의 기기 사본은 토스 WebView의 브라우저 저장소에 이용자별로 저장합니다. 토스 앱이나 브라우저 저장 데이터를 지우면 기기 내 진행이 사라질 수 있습니다. 구매 복원은 게임 진행·덱·점수를 복구하거나 다른 마켓의 저장과 병합하지 않습니다.',
+					'앱인토스에서도 이용 통계를 공유할지 처음 실행할 때 묻고, 설정에서 끌 수 있습니다. 공유를 켠 경우 게임·보상형 광고·상품 이벤트와 앱 마켓·플랫폼·버전을 토스 분석 SDK로 보냅니다. 토스 SDK는 이벤트에 미니앱 사용자 식별키를 포함합니다. 앱인토스 버전에는 Firebase 애널리틱스와 Crashlytics를 연결하지 않습니다.',
+					'보상형 광고는 앱인토스 인앱 광고 SDK로 제공하며, 토스와 연결된 광고 파트너가 광고 요청·기기·진단·상호작용 정보를 각 정책에 따라 처리할 수 있습니다. 광고를 끝까지 본 경우에만 해당 보상을 제공하고 노출 빈도를 제한합니다.',
+					'일회성 상품은 토스의 인앱결제로 구입합니다. 서버는 토스 주문번호·상품·구매 및 환불 상태를 확인하고 토스 이용자별 권한과 주문 연결을 저장하여 상품 제공·같은 토스 계정의 복원·부정 이용 방지에 사용합니다. 결제 수단 정보는 Seori Labs가 받지 않습니다. 앱인토스, Google Play와 App Store 사이의 구매 공유는 제공하지 않습니다.',
+					'이 항목은 앱인토스 버전에 적용됩니다. 아래의 Firebase 익명 인증·App Check·애널리틱스·Crashlytics, 직접 연동한 AdMob, Google Play와 App Store 결제에 관한 설명은 네이티브 앱에 적용됩니다. 토스 자체 서비스의 데이터 처리는 토스 개인정보처리방침도 따릅니다.'
+				]
+			},
 			{
 				title: '계정과 식별자',
 				body: [
@@ -125,13 +136,24 @@ export const vernhaldPrivacyContent: Record<'ko' | 'en', PrivacyContent> = {
 		description:
 			'How Vernhald Chronicles handles on-device saves, optional usage statistics, rewarded ads, and in-app purchases.',
 		kicker: 'Vernhald Chronicles Privacy Policy',
-		lastUpdated: '18 October 2026',
+		lastUpdated: '3 November 2026',
 		lastUpdatedLabel: 'Effective and last updated',
 		backLabel: 'Back to Seori Labs',
 		languageLabel: 'Language',
 		intro:
-			'This policy applies to Vernhald Chronicles (package com.seorilabs.vernhald, the “app”), provided by Seori Labs. Challenge and Endless modes can be played offline; the optional scheduled league requires an internet connection. Where the app’s actual processing or store disclosure differs from our general policy, this product policy prevails.',
+			'This policy applies to Vernhald Chronicles (native package com.seorilabs.vernhald and Apps in Toss appName vernhald, the “app”), provided by Seori Labs. For the native app, Challenge and Endless modes can be played offline; the optional scheduled league requires an internet connection. Where the app’s actual processing or store disclosure differs from our general policy, this product policy prevails.',
 		sections: [
+			{
+				title: 'Apps in Toss version',
+				body: [
+					'The Apps in Toss version runs inside Toss and requires an internet connection. We hash the miniapp-specific anonymous identifier issued by the Toss SDK to separate local saves and server users. Our server exchanges a short-lived, one-time authentication code with Toss to verify the user; it does not authenticate a user from an identifier supplied directly by the device. Server sessions expire after one hour, and expired session records are scheduled for automatic deletion.',
+					'Progress, settings and an on-device copy of product ownership are stored per user in the Toss WebView browser storage. Clearing Toss or browser storage may remove local progress. Purchase restoration does not recover progress, decks or scores or merge saves across markets.',
+					'On first launch, the Apps in Toss version asks whether you want to share usage statistics; you can turn sharing off in Settings. When sharing is enabled, game, rewarded-ad and product events, together with the app market, platform and version, are sent through Toss Analytics. The Toss SDK includes the miniapp user identifier in its events. This version does not integrate Firebase Analytics or Crashlytics.',
+					'Rewarded ads use the Apps in Toss advertising SDK. Toss and its connected advertising partners may process ad request, device, diagnostic and interaction information under their policies. Rewards are granted only after the ad reward event, and ad frequency is limited.',
+					'One-time products use Toss in-app purchases. Our server verifies the Toss order ID, product, purchase and refund status and stores the order and entitlement links for the Toss user to deliver products, restore purchases on the same Toss account and prevent fraud. Seori Labs does not receive payment method details. Purchases are not shared across Apps in Toss, Google Play and the App Store.',
+					'This section applies to the Apps in Toss version. The Firebase Anonymous Authentication, App Check, Analytics and Crashlytics, directly integrated AdMob, Google Play and App Store sections below describe the native apps. Toss processing for its own services is also governed by the Toss Privacy Policy.'
+				]
+			},
 			{
 				title: 'Accounts and identifiers',
 				body: [
