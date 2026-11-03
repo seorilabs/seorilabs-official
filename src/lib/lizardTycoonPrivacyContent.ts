@@ -7,7 +7,7 @@ export const lizardTycoonPrivacyContent: Record<'ko' | 'en', PrivacyContent> = {
 		description:
 			'내 도마뱀 키우기: 픽셀 테라리움 육성의 게임 데이터, 분석, 인앱결제 및 보상형 광고 처리에 관한 개인정보 처리방침입니다.',
 		kicker: 'Lizard Terrarium Privacy Policy',
-		lastUpdated: '2026년 10월 18일',
+		lastUpdated: '2026년 11월 4일',
 		lastUpdatedLabel: '시행일 및 최종 수정일',
 		backLabel: '서리랩스 홈으로',
 		languageLabel: '언어',
@@ -18,7 +18,7 @@ export const lizardTycoonPrivacyContent: Record<'ko' | 'en', PrivacyContent> = {
 				title: '앱이 처리하는 데이터',
 				body: [
 					'게임 진행 상황과 설정은 이용자의 기기에만 저장되며 Seori Labs 서버로 전송되지 않습니다. 앱을 삭제하면 기기에 저장된 진행 상황도 삭제됩니다.',
-					'서비스 품질을 확인하기 위해 Google Analytics for Firebase로 화면 조회, 탭, 튜토리얼 진행, 도마뱀 돌보기와 같은 앱·게임 내 상호작용 및 앱 인스턴스에 연결된 분석 식별자를 수집합니다. 이름, 이메일, 전화번호 또는 광고 ID와 연결하지 않으며 광고나 교차 앱 추적에 사용하지 않습니다.',
+					'서비스 품질과 광고 유입의 성과를 집계하기 위해 Google Analytics for Firebase와 Seori Labs의 분석 서비스로 최초 실행, 화면 조회, 탭, 튜토리얼 진행, 도마뱀 돌보기와 같은 앱·게임 내 상호작용 및 앱 인스턴스에 연결된 분석 식별자를 처리합니다. 이름, 이메일, 전화번호 또는 광고 ID와 연결하지 않으며 개인화 광고나 교차 앱 추적에 사용하지 않습니다.',
 					'서비스 안정성을 확인하기 위해 릴리스 빌드에서 발생한 GDScript 오류의 앱 내부 파일 경로(res://), 코드 라인, 오류 유형과 허용 목록 오류 분류, 최대 2개의 파일·함수·라인 프레임을 진단 데이터로 처리합니다. 같은 파일·라인은 실행 세션당 1회, 실행 세션당 전체 20건으로 제한합니다. 오류 원문, 로컬·멤버 변수, 게임 저장 내용, 기기의 절대 사용자 경로는 수집하지 않습니다.',
 					'iOS 버전은 Firebase Crashlytics로 네이티브 비정상 종료의 호출 경로, 앱 버전과 실행 단계, 기기·OS 정보, Crashlytics 설치 UUID와 Firebase installation ID, 비정상 종료 직전의 기존 가명 분석 이벤트를 처리합니다. 제한된 GDScript 오류도 안정성 확인에 사용합니다. 계정 ID, 도마뱀 이름, 저장 내용과 인증 토큰을 진단에 첨부하지 않으며 광고·교차 앱 추적에 사용하지 않습니다. Crashlytics는 iOS 버전에만 적용됩니다.',
 					'Google Play와 Apple App Store에서는 기존 구매 권한 확인과 복원을 위해 Firebase 익명 설치 사용자 ID를 사용합니다. AppsInToss에서는 토스 로그인으로 받은 앱 범위 사용자 키를 서버에서 즉시 SHA-256 처리한 Platform 사용자 식별자를 사용합니다. 원본 사용자 키는 저장하거나 앱에 반환하지 않습니다.',
@@ -33,7 +33,7 @@ export const lizardTycoonPrivacyContent: Record<'ko' | 'en', PrivacyContent> = {
 				body: [
 					'분석·진단 데이터는 앱 안정성 확인, 사용 흐름 및 기능 개선을 위해 처리합니다.',
 					'마켓별 가명 사용자 식별자와 구매 데이터는 유료 권한 확인·복원, 구매 검증, 환불 반영, 중복 및 부정 거래 방지, 법적 의무 준수를 위해 처리합니다.',
-					'선택적 인앱결제 데이터는 이용자가 구매 기능을 사용할 때만 처리됩니다. 분석 수집은 출시 빌드에서 앱 운영에 필요한 형태로 동작합니다.'
+					'선택적 인앱결제 데이터는 이용자가 구매 기능을 사용할 때만 처리됩니다. iOS 1.9.6부터는 앱 설정 첫 화면의 “사용 통계 보내기”에서 게임 행동 통계를 끄거나 다시 켤 수 있습니다. 선택 이력이 없으면 켬으로 시작하고 선택은 앱을 다시 실행해도 유지됩니다. 끄면 새 게임 행동 통계 수집을 중단하며, 구매 검증·복원, 계정·지갑과 장애 진단에 필요한 처리는 별도로 유지됩니다. iOS Firebase의 광고 저장, 광고 사용자 데이터와 광고 개인화 신호는 거부합니다.'
 				]
 			},
 			{
@@ -97,7 +97,7 @@ export const lizardTycoonPrivacyContent: Record<'ko' | 'en', PrivacyContent> = {
 		description:
 			'Privacy Policy for game data, analytics, in-app purchase, and rewarded ad processing in Lizard Terrarium.',
 		kicker: 'Lizard Terrarium Privacy Policy',
-		lastUpdated: 'October 18, 2026',
+		lastUpdated: 'November 4, 2026',
 		lastUpdatedLabel: 'Effective and last updated',
 		backLabel: 'Back to Seori Labs',
 		languageLabel: 'Language',
@@ -108,7 +108,7 @@ export const lizardTycoonPrivacyContent: Record<'ko' | 'en', PrivacyContent> = {
 				title: 'Data the App Processes',
 				body: [
 					'Game progress and settings are stored only on your device and are not sent to Seori Labs servers. Removing the App also removes this local progress.',
-					'To understand service quality, Google Analytics for Firebase collects screen views, taps, tutorial progress, lizard-care actions, other in-app or gameplay interactions, and an analytics identifier associated with the app instance. We do not link this data to a name, email address, phone number, or advertising ID, and do not use it for advertising or cross-app tracking.',
+					'To understand service quality and report acquisition-campaign performance in aggregate, Google Analytics for Firebase and Seori Labs analytics services process first opens, screen views, taps, tutorial progress, lizard-care actions, other in-app or gameplay interactions, and an analytics identifier associated with the app instance. We do not link this data to a name, email address, phone number, or advertising ID, and do not use it for personalized advertising or cross-app tracking.',
 					'To monitor reliability, release builds process diagnostic data from GDScript errors: the app-relative file path (res://), code line, error type and allowlisted classification, and up to two stack frames containing file, function, and line information. We limit reports from the same file and line to once per session and cap each session at 20 reports. We do not collect the raw error message, local or member variables, saved game data, or absolute user paths from the device.',
 					'The iOS version uses Firebase Crashlytics to process native crash stack traces, app version and startup phase, device and OS information, Crashlytics installation UUIDs and Firebase installation IDs, and existing pseudonymous analytics events immediately before a crash. Limited GDScript diagnostics also help monitor reliability. We do not attach account IDs, lizard names, saved game contents, or authentication tokens to diagnostics, or use them for advertising or cross-app tracking. Crashlytics applies only to the iOS version.',
 					'On Google Play and the Apple App Store, the App uses a Firebase anonymous installation user ID to check and restore existing purchase entitlements. On AppsInToss, we immediately transform the app-scoped user key received through Toss Login with SHA-256 and use the result as a Platform user identifier. We do not store the original user key or return it to the App.',
@@ -123,7 +123,7 @@ export const lizardTycoonPrivacyContent: Record<'ko' | 'en', PrivacyContent> = {
 				body: [
 					'Analytics and diagnostic data are processed to monitor reliability and improve App flows and features.',
 					'Market-specific pseudonymous user identifiers and purchase data are processed to check and restore paid entitlements, validate purchases, apply refunds, prevent duplicate or fraudulent transactions, and meet legal obligations.',
-					'Optional in-app purchase data is processed only when you use a purchase feature. Analytics collection operates as part of the released App service.'
+					'Optional in-app purchase data is processed only when you use a purchase feature. Starting with iOS version 1.9.6, you can turn gameplay statistics off or on under “Usage statistics” on the first Settings screen. Collection starts on when no choice has been saved, and your choice is kept across app restarts. Turning it off stops collection of new gameplay statistics; processing needed for purchase validation and restoration, accounts and wallets, and crash diagnostics remains separate. Firebase ad storage, ad user data, and ad personalization signals are denied on iOS.'
 				]
 			},
 			{
