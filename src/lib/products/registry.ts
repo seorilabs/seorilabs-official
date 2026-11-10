@@ -667,7 +667,7 @@ export const products: Product[] = [
 		},
 		badges: { ko: ['출시 준비', '전면광고'], en: ['In preparation', 'Interstitial ads'] },
 		channels: [],
-		media: {},
+		media: { icon: '/products/gather-puzzle/icon-256.webp' },
 		legal: [
 			{
 				kind: 'privacy',
