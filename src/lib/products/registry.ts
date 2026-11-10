@@ -510,17 +510,20 @@ export const products: Product[] = [
 	{
 		slug: 'salt-compass',
 		order: 104,
-		status: 'upcoming',
+		status: 'live',
 		category: 'game',
 		hasLanding: false,
-		updatedOn: '2026-09-25',
-		name: { ko: '소금과 나침반', en: 'Salt & Compass' },
+		updatedOn: '2026-11-10',
+		name: { ko: '소금과 나침반: 항해 교역 모험', en: 'Salt & Compass: Sailing Trade' },
 		tagline: {
-			ko: '바람을 읽고 교역하며 세계 지도를 채우는 세로형 항해 모험',
-			en: 'Read the wind, trade across the real world and fill in your chart.'
+			ko: '가챠 없는 항해 교역 모험. 바람을 읽고 항로를 골라 교역하며 손그림 세계지도를 채우세요',
+			en: 'A no-gacha age-of-sail trading adventure. Read the wind and fill the world map.'
 		},
 		badges: { ko: ['게임'], en: ['Game'] },
-		channels: [],
+		channels: [
+			{ kind: 'google-play', packageName: 'com.seorilabs.saltcompass' },
+			{ kind: 'app-store', appId: '6815764362' }
+		],
 		media: { icon: '/products/salt-compass/icon-256.webp' },
 		legal: [
 			{
@@ -567,17 +570,20 @@ export const products: Product[] = [
 	{
 		slug: 'cycle-pair',
 		order: 103,
-		status: 'upcoming',
+		status: 'live',
 		category: 'app',
 		hasLanding: false,
-		updatedOn: '2026-09-25',
+		updatedOn: '2026-11-10',
 		name: { ko: '사이클 페어 : 내 기분, 주기, 컨디션을 알려요', en: 'Cycle Pair' },
 		tagline: {
-			ko: '생리주기를 함께 이해하고 대비하는 커플 케어 앱',
-			en: 'A private cycle and condition sharing app for two.'
+			ko: '내 몸과 마음을 기록하고, 원하는 만큼만 파트너와 나눠요',
+			en: 'Track your mood and cycle. Share only what you choose.'
 		},
 		badges: { ko: ['생활 앱'], en: ['App'] },
-		channels: [],
+		channels: [
+			{ kind: 'google-play', packageName: 'com.seorilabs.cyclepair' },
+			{ kind: 'app-store', appId: '6792393652' }
+		],
 		media: { icon: '/products/cycle-pair/icon-256.webp' },
 		legal: [
 			{
@@ -622,14 +628,17 @@ export const products: Product[] = [
 		status: 'live',
 		category: 'game',
 		hasLanding: false,
-		updatedOn: '2026-10-24',
+		updatedOn: '2026-11-10',
 		name: { ko: '베른할드 연대기', en: 'Vernhald Chronicles' },
 		tagline: {
 			ko: '장난감 말을 합쳐 도전·무한모드와 정기 리그를 즐기는 오토체스',
 			en: 'Merge toy pieces for 20-round challenges, endless runs and a scheduled league.'
 		},
 		badges: { ko: ['게임'], en: ['Game'] },
-		channels: [{ kind: 'google-play', packageName: 'com.seorilabs.vernhald' }],
+		channels: [
+			{ kind: 'google-play', packageName: 'com.seorilabs.vernhald' },
+			{ kind: 'app-store', appId: '6820105088' }
+		],
 		media: { icon: '/products/vernhald/icon-256.webp' },
 		legal: [
 			{
