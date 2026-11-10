@@ -12,7 +12,7 @@ export const gatherPuzzlePrivacyContent: Record<'ko' | 'en', LegalDocContent> = 
 			{
 				title: '기기에 저장하는 정보',
 				body: [
-					'퍼즐 진행, 현재 판과 이동 기록, 별과 게임 재화, 친구 도감, 장식 배치, 설정, 로컬 플레이 통계와 광고 빈도 기록을 기기에 저장합니다. 게임 계정이나 별도의 클라우드 저장 서비스를 제공하지 않고, 이 게임 기록을 당사 서버로 업로드하지 않습니다. 설정의 플레이 통계를 끄면 기기에 기록한 통계 내역을 지웁니다.'
+					'퍼즐 진행, 현재 판과 이동 기록, 별과 게임 재화, 친구 도감, 장식 배치, 설정과 광고 빈도 기록을 기기에 저장합니다. 게임 계정이나 별도의 클라우드 저장 서비스를 제공하지 않고, 이 게임 기록을 당사 서버로 업로드하지 않습니다. 플레이 통계는 실행 중 메모리에 최근 기록 최대 200개만 보관합니다. 앱을 종료하거나 설정에서 플레이 통계를 끄면 이 임시 이력이 사라지며 서버로 보내지 않습니다.'
 				]
 			},
 			{
@@ -65,7 +65,7 @@ export const gatherPuzzlePrivacyContent: Record<'ko' | 'en', LegalDocContent> = 
 			{
 				title: 'Information stored on your device',
 				body: [
-					'Puzzle progress, the current board and moves, stars and game currencies, your friend collection, decorations, settings, local play statistics, and ad-frequency records are stored on your device. We do not provide a game account or a separate cloud-save service and do not upload these game records to our servers. Turning off Play stats in settings clears the locally recorded statistics.'
+					'Puzzle progress, the current board and moves, stars and game currencies, your friend collection, decorations, settings, and ad-frequency records are stored on your device. We do not provide a game account or a separate cloud-save service and do not upload these game records to our servers. Play statistics keep at most 200 recent events in memory while the app is running. This temporary history is cleared when the app closes or you turn off Play stats in settings, and is not sent to a server.'
 				]
 			},
 			{
