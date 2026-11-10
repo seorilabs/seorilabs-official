@@ -4,4 +4,4 @@ Gather Puzzle의 승인된 Android 첫 공개 출시를 위해 한국어·영어
 
 로컬 진행 저장과 실행 중 메모리 통계, Google 전면광고·UMP, 보호 설정, 삭제·문의 기준을 실제 앱 소스에 맞춘다. 제품 원장은 upcoming이며 스토어 공개·SDK 실증을 주장하지 않는다. 아이콘은 같은 제품의 기존 벡터 아트에서 만든512px 아이콘을256px WebP로 줄인다.
 
-기준은 실제 GitHub Pages 게시 SHA abbf0d051c9af7332ec69bf986e82bd98af2dbf3이다. L1/dev에서 lint·타입·전체 정적빌드와87개 경로 검사, 양언어 본문·canonical·hreflang·sitemap·언어 전환·카드 아이콘을 확인한다. 별도 독립 개인정보 문안 검수도 받는다. 공개 후 두 URL의 HTTP200과 실제 내용을 읽은 뒤 Play 개인정보 URL에 사용한다. 기기 사용은 없고 외부 게시 범위는 이 개인정보 페이지와 해당 원장 항목이다. 원본 승인·앱 코드·광고 SDK·스토어 출시 판정의 정본은 seorilabs/gather-puzzle이며 이 문서가 그 승인을 넓히지 않는다.
+기준은 실제 GitHub Pages 게시 SHA abbf0d051c9af7332ec69bf986e82bd98af2dbf3이다. L1/dev에서 lint·타입·전체 정적빌드, 고정 URL 검사와 빌드 산출물의 경로 검사, 양언어 본문·canonical·hreflang·sitemap·언어 전환·카드 아이콘을 확인한다. 별도 독립 개인정보 문안 검수도 받는다. 공개 후 두 URL의 HTTP200과 실제 내용을 읽은 뒤 Play 개인정보 URL에 사용한다. 기기 사용은 없고 외부 게시 범위는 이 개인정보 페이지와 해당 원장 항목이다. 원본 승인·앱 코드·광고 SDK·스토어 출시 판정의 정본은 seorilabs/gather-puzzle이며 이 문서가 그 승인을 넓히지 않는다.
