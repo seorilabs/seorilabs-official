@@ -1,11 +1,11 @@
 {
-  "schemaVersion": 1,
-  "level": "L1",
-  "baseline": "5af8cbdcf7f166accc30b0464dd6c1d692d9371e",
-  "changedFeatures": ["product-catalog", "home"],
-  "environments": ["dev"],
-  "redesign": false,
-  "foundationRerun": false,
-  "floorOverrides": [],
-  "release": null
+	"schemaVersion": 1,
+	"level": "L1",
+	"baseline": "5af8cbdcf7f166accc30b0464dd6c1d692d9371e",
+	"changedFeatures": ["product-catalog", "home"],
+	"environments": ["dev"],
+	"redesign": false,
+	"foundationRerun": false,
+	"floorOverrides": [],
+	"release": null
 }

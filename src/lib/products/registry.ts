@@ -652,5 +652,28 @@ export const products: Product[] = [
 				updated: '2026-10-06'
 			}
 		]
+	},
+	{
+		slug: 'gather-puzzle',
+		order: 108,
+		status: 'upcoming',
+		category: 'game',
+		hasLanding: false,
+		updatedOn: '2026-11-11',
+		name: { ko: 'Gather Puzzle', en: 'Gather Puzzle' },
+		tagline: {
+			ko: '흩어진 숲 친구들을 한 무리로 모으고 나만의 작은 숲을 꾸며요.',
+			en: 'Bring forest friends together and decorate your own little woodland.'
+		},
+		badges: { ko: ['출시 준비', '전면광고'], en: ['In preparation', 'Interstitial ads'] },
+		channels: [],
+		media: { icon: '/products/gather-puzzle/icon-256.webp' },
+		legal: [
+			{
+				kind: 'privacy',
+				path: { ko: '/apps/gather-puzzle/privacy/', en: '/en/apps/gather-puzzle/privacy/' },
+				updated: '2026-11-11'
+			}
+		]
 	}
 ];
