@@ -677,6 +677,29 @@ export const products: Product[] = [
 		]
 	},
 	{
+		slug: 'slot-defense',
+		order: 110,
+		status: 'upcoming',
+		category: 'game',
+		hasLanding: false,
+		updatedOn: '2026-11-11',
+		name: { ko: 'Slot Defense', en: 'Slot Defense' },
+		tagline: {
+			ko: '릴에서 얻은 영웅으로 도시를 지키는 전략 디펜스',
+			en: 'A reel-driven strategy defense game'
+		},
+		badges: { ko: ['비공개 테스트 준비'], en: ['Preparing private tests'] },
+		channels: [],
+		media: { icon: '/products/slot-defense/icon.svg' },
+		legal: [
+			{
+				kind: 'privacy',
+				path: { ko: '/apps/slot-defense/privacy/', en: '/en/apps/slot-defense/privacy/' },
+				updated: '2026-11-11'
+			}
+		]
+	},
+	{
 		slug: 'titanstride',
 		order: 109,
 		status: 'upcoming',
