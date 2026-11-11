@@ -690,7 +690,7 @@ export const products: Product[] = [
 		},
 		badges: { ko: ['비공개 테스트 준비'], en: ['Preparing private tests'] },
 		channels: [],
-		media: { icon: '/products/titanstride/icon-512.png' },
+		media: { icon: '/products/titanstride/icon-256.webp' },
 		legal: [
 			{
 				kind: 'privacy',
