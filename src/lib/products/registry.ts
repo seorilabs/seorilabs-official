@@ -675,5 +675,28 @@ export const products: Product[] = [
 				updated: '2026-11-11'
 			}
 		]
+	},
+	{
+		slug: 'titanstride',
+		order: 109,
+		status: 'upcoming',
+		category: 'game',
+		hasLanding: false,
+		updatedOn: '2026-11-11',
+		name: { ko: 'Titanstride', en: 'Titanstride' },
+		tagline: {
+			ko: '게이트를 골라 부대를 이끌고 120단계 캠페인에 도전하세요.',
+			en: 'Lead your squad through gates in a 120-stage campaign.'
+		},
+		badges: { ko: ['비공개 테스트 준비'], en: ['Preparing private tests'] },
+		channels: [],
+		media: { icon: '/products/titanstride/icon-512.png' },
+		legal: [
+			{
+				kind: 'privacy',
+				path: { ko: '/apps/titanstride/privacy/', en: '/en/apps/titanstride/privacy/' },
+				updated: '2026-11-11'
+			}
+		]
 	}
 ];
