@@ -108,12 +108,12 @@ export const privacyContent: Record<PrivacyLocaleKey, PrivacyContent> = {
 		description:
 			'서리랩스 웹사이트, 앱, 서비스에 적용되는 개인정보 처리방침입니다. 앱별 데이터 처리가 다른 경우 별도 앱 정책이 우선 적용됩니다.',
 		kicker: 'Privacy Policy',
-		lastUpdated: '2026년 10월 13일',
+		lastUpdated: '2026년 11월 12일',
 		lastUpdatedLabel: '최종 수정일',
 		backLabel: '홈으로',
 		languageLabel: '언어',
 		intro:
-			'이 개인정보 처리방침은 서리랩스가 운영하는 웹사이트, 앱, 서비스 중 이 문서로 연결되는 서비스에 적용됩니다. 특정 앱이나 서비스에서 별도 개인정보 처리방침을 제공하는 경우 해당 별도 문서가 우선합니다.',
+			'이 개인정보 처리방침은 서리랩스가 운영하는 웹사이트, 앱, 서비스 중 이 문서로 연결되는 서비스에 적용됩니다. 여기에는 Google Play에 개발자명 Seolee Apps로 등록된 오늘도 도전자(Today Challenger, Android 패키지: com.seorilabs.todaychallenger)가 포함됩니다. 특정 앱이나 서비스에서 별도 개인정보 처리방침을 제공하는 경우 해당 별도 문서가 우선합니다.',
 		sections: [
 			{
 				title: '수집하는 정보',
@@ -185,12 +185,12 @@ export const privacyContent: Record<PrivacyLocaleKey, PrivacyContent> = {
 		description:
 			'Privacy Policy for Seori Labs websites, apps, and services. Product-specific notices apply first when an app handles data differently.',
 		kicker: 'Privacy Policy',
-		lastUpdated: 'October 13, 2026',
+		lastUpdated: 'November 12, 2026',
 		lastUpdatedLabel: 'Last updated',
 		backLabel: 'Back home',
 		languageLabel: 'Language',
 		intro:
-			'This Privacy Policy applies to Seori Labs websites, apps, and services that link to this document. If a specific app or service provides a separate privacy notice, that product-specific notice applies first.',
+			'This Privacy Policy applies to Seori Labs websites, apps, and services that link to this document. This includes Today Challenger (오늘도 도전자, Android package: com.seorilabs.todaychallenger), listed on Google Play under the developer name Seolee Apps. If a specific app or service provides a separate privacy notice, that product-specific notice applies first.',
 		sections: [
 			{
 				title: 'Information We Collect',
@@ -262,12 +262,12 @@ export const privacyContent: Record<PrivacyLocaleKey, PrivacyContent> = {
 		description:
 			'Seori Labs のウェブサイト、アプリ、サービスに適用されるプライバシーポリシーです。アプリごとにデータの取り扱いが異なる場合は、個別のアプリポリシーが優先して適用されます。',
 		kicker: 'Privacy Policy',
-		lastUpdated: '2026年10月13日',
+		lastUpdated: '2026年11月12日',
 		lastUpdatedLabel: '最終更新日',
 		backLabel: 'ホームへ',
 		languageLabel: '言語',
 		intro:
-			'このプライバシーポリシーは、Seori Labs が運営するウェブサイト、アプリ、サービスのうち、本ドキュメントにリンクされているサービスに適用されます。特定のアプリまたはサービスが個別のプライバシー通知を提供する場合は、その個別の通知が優先されます。',
+			'このプライバシーポリシーは、Seori Labs が運営するウェブサイト、アプリ、サービスのうち、本ドキュメントにリンクされているサービスに適用されます。Google Play に開発者名 Seolee Apps で掲載されている Today Challenger（오늘도 도전자、Android パッケージ: com.seorilabs.todaychallenger）も含まれます。特定のアプリまたはサービスが個別のプライバシー通知を提供する場合は、その個別の通知が優先されます。',
 		sections: [
 			{
 				title: '収集する情報',
@@ -339,12 +339,12 @@ export const privacyContent: Record<PrivacyLocaleKey, PrivacyContent> = {
 		description:
 			'本隐私政策适用于 Seori Labs 的网站、应用和服务。当某款应用对数据的处理方式不同时，将优先适用该应用的单独政策。',
 		kicker: 'Privacy Policy',
-		lastUpdated: '2026年10月13日',
+		lastUpdated: '2026年11月12日',
 		lastUpdatedLabel: '最后更新',
 		backLabel: '返回首页',
 		languageLabel: '语言',
 		intro:
-			'本隐私政策适用于 Seori Labs 运营并链接至本文档的网站、应用和服务。如果某款应用或服务提供了单独的隐私声明，则以该单独声明为准。',
+			'本隐私政策适用于 Seori Labs 运营并链接至本文档的网站、应用和服务。其中包括在 Google Play 以开发者名称 Seolee Apps 上架的 Today Challenger（오늘도 도전자，Android 软件包：com.seorilabs.todaychallenger）。如果某款应用或服务提供了单独的隐私声明，则以该单独声明为准。',
 		sections: [
 			{
 				title: '我们收集的信息',
@@ -415,12 +415,12 @@ export const privacyContent: Record<PrivacyLocaleKey, PrivacyContent> = {
 		description:
 			'本隱私權政策適用於 Seori Labs 的網站、應用程式與服務。當某款應用程式對資料的處理方式不同時，將優先適用該應用程式的個別政策。',
 		kicker: 'Privacy Policy',
-		lastUpdated: '2026年10月13日',
+		lastUpdated: '2026年11月12日',
 		lastUpdatedLabel: '最後更新',
 		backLabel: '返回首頁',
 		languageLabel: '語言',
 		intro:
-			'本隱私權政策適用於 Seori Labs 營運並連結至本文件的網站、應用程式與服務。若特定應用程式或服務提供個別的隱私權聲明，則以該個別聲明為準。',
+			'本隱私權政策適用於 Seori Labs 營運並連結至本文件的網站、應用程式與服務。其中包括在 Google Play 以開發人員名稱 Seolee Apps 上架的 Today Challenger（오늘도 도전자，Android 套件：com.seorilabs.todaychallenger）。若特定應用程式或服務提供個別的隱私權聲明，則以該個別聲明為準。',
 		sections: [
 			{
 				title: '我們收集的資訊',
@@ -492,12 +492,12 @@ export const privacyContent: Record<PrivacyLocaleKey, PrivacyContent> = {
 		description:
 			'Datenschutzerklärung für die Websites, Apps und Dienste von Seori Labs. Produktspezifische Hinweise gelten vorrangig, wenn eine App Daten anders verarbeitet.',
 		kicker: 'Privacy Policy',
-		lastUpdated: '13. Oktober 2026',
+		lastUpdated: '12. November 2026',
 		lastUpdatedLabel: 'Zuletzt aktualisiert',
 		backLabel: 'Zur Startseite',
 		languageLabel: 'Sprache',
 		intro:
-			'Diese Datenschutzerklärung gilt für die Websites, Apps und Dienste von Seori Labs, die auf dieses Dokument verweisen. Stellt eine bestimmte App oder ein bestimmter Dienst einen eigenen Datenschutzhinweis bereit, so gilt dieser produktspezifische Hinweis vorrangig.',
+			'Diese Datenschutzerklärung gilt für die Websites, Apps und Dienste von Seori Labs, die auf dieses Dokument verweisen. Dazu gehört Today Challenger (오늘도 도전자, Android-Paket: com.seorilabs.todaychallenger), das bei Google Play unter dem Entwicklernamen Seolee Apps aufgeführt ist. Stellt eine bestimmte App oder ein bestimmter Dienst einen eigenen Datenschutzhinweis bereit, so gilt dieser produktspezifische Hinweis vorrangig.',
 		sections: [
 			{
 				title: 'Welche Daten wir erheben',
@@ -569,12 +569,12 @@ export const privacyContent: Record<PrivacyLocaleKey, PrivacyContent> = {
 		description:
 			'Politique de confidentialité des sites web, applications et services de Seori Labs. Des mentions spécifiques à un produit s’appliquent en priorité lorsqu’une application traite les données différemment.',
 		kicker: 'Privacy Policy',
-		lastUpdated: '13 octobre 2026',
+		lastUpdated: '12 novembre 2026',
 		lastUpdatedLabel: 'Dernière mise à jour',
 		backLabel: 'Accueil',
 		languageLabel: 'Langue',
 		intro:
-			'Cette politique de confidentialité s’applique aux sites web, applications et services de Seori Labs qui renvoient à ce document. Si une application ou un service particulier fournit un avis de confidentialité distinct, cet avis spécifique au produit prévaut.',
+			'Cette politique de confidentialité s’applique aux sites web, applications et services de Seori Labs qui renvoient à ce document. Cela inclut Today Challenger (오늘도 도전자, package Android : com.seorilabs.todaychallenger), disponible sur Google Play sous le nom de développeur Seolee Apps. Si une application ou un service particulier fournit un avis de confidentialité distinct, cet avis spécifique au produit prévaut.',
 		sections: [
 			{
 				title: 'Informations que nous collectons',
@@ -646,12 +646,12 @@ export const privacyContent: Record<PrivacyLocaleKey, PrivacyContent> = {
 		description:
 			'Política de privacidad de los sitios web, las aplicaciones y los servicios de Seori Labs. Los avisos específicos de cada producto se aplican con prioridad cuando una aplicación trata los datos de forma diferente.',
 		kicker: 'Privacy Policy',
-		lastUpdated: '13 de octubre de 2026',
+		lastUpdated: '12 de noviembre de 2026',
 		lastUpdatedLabel: 'Última actualización',
 		backLabel: 'Inicio',
 		languageLabel: 'Idioma',
 		intro:
-			'Esta Política de privacidad se aplica a los sitios web, las aplicaciones y los servicios de Seori Labs que enlazan con este documento. Si una aplicación o un servicio concreto proporciona un aviso de privacidad independiente, prevalecerá ese aviso específico del producto.',
+			'Esta Política de privacidad se aplica a los sitios web, las aplicaciones y los servicios de Seori Labs que enlazan con este documento. Esto incluye Today Challenger (오늘도 도전자, paquete de Android: com.seorilabs.todaychallenger), publicado en Google Play con el nombre de desarrollador Seolee Apps. Si una aplicación o un servicio concreto proporciona un aviso de privacidad independiente, prevalecerá ese aviso específico del producto.',
 		sections: [
 			{
 				title: 'Información que recopilamos',
