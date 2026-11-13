@@ -53,6 +53,11 @@ const LEGAL_INDEX_UPDATED = latest(
 const groups: SitemapGroup[] = [
 	{
 		priority: '0.5',
+		lastmod: '2026-11-14',
+		pages: pair('/apps/jangi/privacy/', '/en/apps/jangi/privacy/')
+	},
+	{
+		priority: '0.5',
 		lastmod: '2026-11-13',
 		pages: pair('/apps/my-little-parasite/support/', '/en/apps/my-little-parasite/support/')
 	},
