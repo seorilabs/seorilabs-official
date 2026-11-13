@@ -721,5 +721,45 @@ export const products: Product[] = [
 				updated: '2026-11-11'
 			}
 		]
+	},
+	{
+		slug: 'my-little-parasite',
+		order: 112,
+		status: 'upcoming',
+		category: 'game',
+		hasLanding: false,
+		updatedOn: '2026-11-13',
+		name: {
+			ko: 'My Little Parasite',
+			en: 'My Little Parasite'
+		},
+		tagline: {
+			ko: '화면 틈에서 만난 작은 생명과 함께하는 일주일',
+			en: 'Share a week with a little life in the seams of your screen'
+		},
+		badges: {
+			ko: ['출시 준비 중', '광고 없음'],
+			en: ['In development', 'No ads']
+		},
+		channels: [],
+		media: {},
+		legal: [
+			{
+				kind: 'privacy',
+				path: {
+					ko: '/apps/my-little-parasite/privacy/',
+					en: '/en/apps/my-little-parasite/privacy/'
+				},
+				updated: '2026-11-13'
+			},
+			{
+				kind: 'account-deletion',
+				path: {
+					ko: '/apps/my-little-parasite/account-deletion/',
+					en: '/en/apps/my-little-parasite/account-deletion/'
+				},
+				updated: '2026-11-13'
+			}
+		]
 	}
 ];

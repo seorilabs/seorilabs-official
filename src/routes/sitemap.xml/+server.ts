@@ -53,6 +53,11 @@ const LEGAL_INDEX_UPDATED = latest(
 const groups: SitemapGroup[] = [
 	{
 		priority: '0.5',
+		lastmod: '2026-11-13',
+		pages: pair('/apps/my-little-parasite/support/', '/en/apps/my-little-parasite/support/')
+	},
+	{
+		priority: '0.5',
 		lastmod: '2026-10-28',
 		pages: pair('/apps/monster-party/privacy/', '/en/apps/monster-party/privacy/')
 	},
