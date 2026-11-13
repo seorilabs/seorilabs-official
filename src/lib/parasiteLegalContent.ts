@@ -11,7 +11,7 @@ export const parasitePrivacy: Record<'ko' | 'en', LegalDocContent> = {
 		kicker: 'My Little Parasite',
 		description: '오프라인 저장, 선택형 계정, 꾸미기 구매, 위젯과 플레이 통계의 처리 안내입니다.',
 		intro:
-			'Seori Labs가 제공하는 My Little Parasite에 적용되는 방침입니다. Google Play 개발자 표시명은 Seolee Apps이며 앱 식별자는 com.seorilabs.mylittleparasite입니다. 이 게임에는 이 제품별 방침이 공통 방침보다 우선합니다.',
+			'Seori Labs가 제공하는 My Little Parasite에 적용되는 방침입니다. Google Play 개발자 표시명은 Seori Labs이며 앱 식별자는 com.seorilabs.mylittleparasite입니다. 이 게임에는 이 제품별 방침이 공통 방침보다 우선합니다.',
 		sections: [
 			{
 				title: '기기 저장과 위젯',
@@ -75,7 +75,7 @@ export const parasitePrivacy: Record<'ko' | 'en', LegalDocContent> = {
 		description:
 			'How offline saves, optional accounts, cosmetic purchases, widgets and play statistics are handled.',
 		intro:
-			'This policy applies to My Little Parasite, provided by Seori Labs. The Google Play developer display name is Seolee Apps and the app identifier is com.seorilabs.mylittleparasite. This product policy takes precedence over our general policy for this game.',
+			'This policy applies to My Little Parasite, provided by Seori Labs. The Google Play developer display name is Seori Labs and the app identifier is com.seorilabs.mylittleparasite. This product policy takes precedence over our general policy for this game.',
 		sections: [
 			{
 				title: 'Device saves and widgets',
@@ -141,7 +141,7 @@ export const parasiteDeletion: Record<'ko' | 'en', LegalDocContent> = {
 		description: '앱 안에서 또는 이메일로 계정 삭제를 요청하는 방법입니다.',
 		kicker: 'My Little Parasite',
 		intro:
-			'Seori Labs의 My Little Parasite(com.seorilabs.mylittleparasite, Google Play 개발자 Seolee Apps) 계정과 클라우드 기록 삭제를 요청할 수 있습니다.',
+			'Seori Labs의 My Little Parasite(com.seorilabs.mylittleparasite, Google Play 개발자 Seori Labs) 계정과 클라우드 기록 삭제를 요청할 수 있습니다.',
 		sections: [
 			{
 				title: '앱에서 요청하기',
@@ -173,7 +173,7 @@ export const parasiteDeletion: Record<'ko' | 'en', LegalDocContent> = {
 		description: 'Request account deletion in the app or by email.',
 		kicker: 'My Little Parasite',
 		intro:
-			'Request deletion of your My Little Parasite account and cloud records. The app is provided by Seori Labs, listed on Google Play under Seolee Apps, with identifier com.seorilabs.mylittleparasite.',
+			'Request deletion of your My Little Parasite account and cloud records. The app is provided by Seori Labs, listed on Google Play under Seori Labs, with identifier com.seorilabs.mylittleparasite.',
 		sections: [
 			{
 				title: 'Request in the app',
