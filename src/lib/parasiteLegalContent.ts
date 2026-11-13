@@ -9,9 +9,10 @@ export const parasitePrivacy: Record<'ko' | 'en', LegalDocContent> = {
 		footerNote: '문의와 개인정보 권리 요청: cs@seorilabs.com',
 		title: 'My Little Parasite 개인정보 처리방침',
 		kicker: 'My Little Parasite',
-		description: '오프라인 저장, 선택형 계정, 꾸미기 구매, 위젯과 플레이 통계의 처리 안내입니다.',
+		description:
+			'오프라인 저장, 선택형 계정, Android 배너 광고, iOS 꾸미기 구매, 위젯과 플레이 통계의 처리 안내입니다.',
 		intro:
-			'Seori Labs가 제공하는 My Little Parasite에 적용되는 방침입니다. Google Play 개발자 표시명은 Seori Labs이며 앱 식별자는 com.seorilabs.mylittleparasite입니다. 이 게임에는 이 제품별 방침이 공통 방침보다 우선합니다.',
+			'Seori Labs가 제공하는 My Little Parasite에 적용되는 방침입니다. Google Play 개발자 표시명은 Seolee Apps이며 앱 식별자는 com.seorilabs.mylittleparasite입니다. 이 게임에는 이 제품별 방침이 공통 방침보다 우선합니다.',
 		sections: [
 			{
 				title: '기기 저장과 위젯',
@@ -28,19 +29,19 @@ export const parasitePrivacy: Record<'ko' | 'en', LegalDocContent> = {
 			{
 				title: '구매와 복원',
 				body: [
-					'꾸미기 상품 결제는 Google Play와 Apple App Store가 처리합니다. Seori Labs는 카드번호나 계좌 정보를 받지 않습니다. 상품과 거래 식별자, 영수증 또는 구매 토큰, 가명 계정 참조를 사용해 서버에서 구매를 검증하고 구매 권리를 복원하거나 환불에 따른 권리 종료를 반영합니다. 미완료 구매 증명은 처리가 끝날 때까지 기기에 보관합니다. 구매 원장은 중복 지급 방지와 구매 복원, 환불 및 분쟁 대응을 위해 보관하며 계정 삭제 후에도 구매 처리 기록은 남습니다.'
+					'Android 버전에는 유료 꾸미기 상품 판매가 없습니다. iOS 꾸미기 상품 결제는 Apple App Store가 처리합니다. Seori Labs는 카드번호나 계좌 정보를 받지 않습니다. 상품과 거래 식별자, 영수증 또는 구매 토큰, 가명 계정 참조를 사용해 서버에서 구매를 검증하고 구매 권리를 복원하거나 환불에 따른 권리 종료를 반영합니다. 미완료 구매 증명은 처리가 끝날 때까지 기기에 보관합니다. 구매 원장은 중복 지급 방지와 구매 복원, 환불 및 분쟁 대응을 위해 보관하며 계정 삭제 후에도 구매 처리 기록은 남습니다.'
 				]
 			},
 			{
 				title: '선택형 플레이 통계',
 				body: [
-					'플레이 통계 보내기는 기본적으로 꺼져 있습니다. 설정에서 켜면 첫 교감, 성장, 작별, 두 번째 개체 시작, 재회, 위젯 진입과 구매 복원 결과를 수집합니다. 무작위 설치 식별자, 이벤트 시각, 앱 버전, 언어와 실행 플랫폼을 Seori Platform과 Google Analytics에서 처리합니다. 개체 이름, 개별 추억 내용, 로그인 증명과 구매 토큰은 통계에 넣지 않습니다. 끄면 이후 수집과 전송을 멈추고 아직 보내지 않은 SDK 이벤트를 비웁니다. 전송된 자료의 삭제는 아래 연락처로 요청할 수 있습니다.'
+					'플레이 통계 보내기는 기본적으로 꺼져 있습니다. 설정에서 켜면 첫 교감, 성장, 작별, 두 번째 개체 시작, 재회, 위젯 진입과 구매 복원 결과, 광고 요청·노출·실패 상태를 수집합니다. 무작위 설치 식별자, 이벤트 시각, 앱 버전, 언어와 실행 플랫폼을 Seori Platform과 Google Analytics에서 처리합니다. 개체 이름, 개별 추억 내용, 로그인 증명과 구매 토큰은 통계에 넣지 않습니다. 끄면 이후 수집과 전송을 멈추고 아직 보내지 않은 SDK 이벤트를 비웁니다. 전송된 자료의 삭제는 아래 연락처로 요청할 수 있습니다.'
 				]
 			},
 			{
 				title: '처리 목적과 서비스 제공자',
 				body: [
-					'계정 복원, 안전한 저장, 구매 확인과 서비스 운영에 Google Firebase, Google Cloud와 Seori Platform을 사용합니다. Firebase App Check, Google Play Integrity와 Apple App Attest는 앱의 진위와 부정 요청을 확인하기 위해 앱 및 기기 무결성 정보와 보안 토큰을 처리합니다. 온라인 통신에는 IP 주소 등의 통신 정보가 수반될 수 있습니다. 클라우드 게임 기록은 서울 리전에 저장하며, Google과 Apple은 관련 자료를 이용자 국가 밖에서도 처리할 수 있습니다. 통신은 HTTPS/TLS를 사용합니다. 이 게임에는 광고나 광고 식별자 기반 추적이 없습니다.'
+					'계정 복원, 안전한 저장, 구매 확인과 서비스 운영에 Google Firebase, Google Cloud와 Seori Platform을 사용합니다. Firebase App Check, Google Play Integrity와 Apple App Attest는 앱의 진위와 부정 요청을 확인하기 위해 앱 및 기기 무결성 정보와 보안 토큰을 처리합니다. 온라인 통신에는 IP 주소 등의 통신 정보가 수반될 수 있습니다. 클라우드 게임 기록은 서울 리전에 저장하며, Google과 Apple은 관련 자료를 이용자 국가 밖에서도 처리할 수 있습니다. 통신은 HTTPS/TLS를 사용합니다. Android 버전에는 Google AdMob 하단 배너 광고 1개가 있습니다. iOS 버전에는 광고가 없습니다. Android 광고 SDK는 광고 제공과 부정 사용 방지, 진단을 위해 IP 주소, 기기 및 앱 정보, 식별자와 광고 상호작용 정보를 처리할 수 있습니다. 문맥형 광고를 요청하고 보수적인 동의 연령 설정과 G 등급 광고 제한을 적용합니다. 광고 관련 동의 상태를 확인한 후 광고를 요청하며, 필요한 개인정보 선택은 게임 설정의 광고 개인정보 선택에서 다시 열 수 있습니다. 선택형 플레이 통계 설정과 광고 SDK의 정보 처리는 별도입니다. 광고 제공자 정보는 https://policies.google.com/technologies/ads 에서 확인할 수 있습니다.'
 				]
 			},
 			{
@@ -73,9 +74,9 @@ export const parasitePrivacy: Record<'ko' | 'en', LegalDocContent> = {
 		title: 'My Little Parasite Privacy Policy',
 		kicker: 'My Little Parasite',
 		description:
-			'How offline saves, optional accounts, cosmetic purchases, widgets and play statistics are handled.',
+			'How offline saves, optional accounts, Android banner ads, iOS cosmetic purchases, widgets and play statistics are handled.',
 		intro:
-			'This policy applies to My Little Parasite, provided by Seori Labs. The Google Play developer display name is Seori Labs and the app identifier is com.seorilabs.mylittleparasite. This product policy takes precedence over our general policy for this game.',
+			'This policy applies to My Little Parasite, provided by Seori Labs. The Google Play developer display name is Seolee Apps and the app identifier is com.seorilabs.mylittleparasite. This product policy takes precedence over our general policy for this game.',
 		sections: [
 			{
 				title: 'Device saves and widgets',
@@ -92,19 +93,19 @@ export const parasitePrivacy: Record<'ko' | 'en', LegalDocContent> = {
 			{
 				title: 'Purchases and restoration',
 				body: [
-					'Google Play and the Apple App Store process payments for cosmetic packs. Seori Labs does not receive card numbers or bank account details. Product and transaction identifiers, receipts or purchase tokens, and pseudonymous account references are used to verify purchases on our server, restore access and apply confirmed revocations. Unfinished purchase proofs stay on the device until processing completes. Purchase ledger records are retained to prevent duplicate fulfillment and support restoration, refunds and disputes; purchase processing records remain after account deletion.'
+					'The Android version does not sell cosmetic packs. The Apple App Store processes iOS cosmetic purchases. Seori Labs does not receive card numbers or bank account details. Product and transaction identifiers, receipts or purchase tokens, and pseudonymous account references are used to verify purchases on our server, restore access and apply confirmed revocations. Unfinished purchase proofs stay on the device until processing completes. Purchase ledger records are retained to prevent duplicate fulfillment and support restoration, refunds and disputes; purchase processing records remain after account deletion.'
 				]
 			},
 			{
 				title: 'Optional play statistics',
 				body: [
-					'Share play statistics is off by default. If enabled in Settings, we collect first interaction, growth, farewell, second-creature start, reunion, widget entry and purchase restoration outcomes. Seori Platform and Google Analytics process a random installation identifier, event time, app version, language and platform. Creature names, individual memory contents, sign-in proofs and purchase tokens are excluded from analytics. Turning the setting off stops future collection and transmission and clears unsent SDK events. You can request deletion of previously sent information through the contact below.'
+					'Share play statistics is off by default. If enabled in Settings, we collect first interaction, growth, farewell, second-creature start, reunion, widget entry, purchase restoration outcomes and ad request, impression or failure states. Seori Platform and Google Analytics process a random installation identifier, event time, app version, language and platform. Creature names, individual memory contents, sign-in proofs and purchase tokens are excluded from analytics. Turning the setting off stops future collection and transmission and clears unsent SDK events. You can request deletion of previously sent information through the contact below.'
 				]
 			},
 			{
 				title: 'Purposes and service providers',
 				body: [
-					'We use Google Firebase, Google Cloud and Seori Platform for account recovery, safe storage, purchase verification and operation. Firebase App Check, Google Play Integrity and Apple App Attest process app and device integrity information and security tokens to verify the app and prevent abuse. Online connections may involve network information such as IP addresses. Cloud game records are stored in the Seoul region; Google and Apple may process related information outside your country. Connections use HTTPS/TLS. This game has no ads or advertising-identifier-based tracking.'
+					'We use Google Firebase, Google Cloud and Seori Platform for account recovery, safe storage, purchase verification and operation. Firebase App Check, Google Play Integrity and Apple App Attest process app and device integrity information and security tokens to verify the app and prevent abuse. Online connections may involve network information such as IP addresses. Cloud game records are stored in the Seoul region; Google and Apple may process related information outside your country. Connections use HTTPS/TLS. Android includes one Google AdMob banner at the bottom of the screen; iOS has no ads. The Android advertising SDK may process IP addresses, device and app information, identifiers and ad interactions to deliver ads, prevent fraud and diagnose problems. We request contextual ads with conservative consent-age treatment and a G-rated ad-content limit. Ads are requested after checking consent status. Required privacy options can be reopened through Ad privacy choices in Settings. Advertising SDK processing is separate from the optional play-statistics setting. See https://policies.google.com/technologies/ads for provider information.'
 				]
 			},
 			{
@@ -141,7 +142,7 @@ export const parasiteDeletion: Record<'ko' | 'en', LegalDocContent> = {
 		description: '앱 안에서 또는 이메일로 계정 삭제를 요청하는 방법입니다.',
 		kicker: 'My Little Parasite',
 		intro:
-			'Seori Labs의 My Little Parasite(com.seorilabs.mylittleparasite, Google Play 개발자 Seori Labs) 계정과 클라우드 기록 삭제를 요청할 수 있습니다.',
+			'Seori Labs의 My Little Parasite(com.seorilabs.mylittleparasite, Google Play 개발자 Seolee Apps) 계정과 클라우드 기록 삭제를 요청할 수 있습니다.',
 		sections: [
 			{
 				title: '앱에서 요청하기',
@@ -173,7 +174,7 @@ export const parasiteDeletion: Record<'ko' | 'en', LegalDocContent> = {
 		description: 'Request account deletion in the app or by email.',
 		kicker: 'My Little Parasite',
 		intro:
-			'Request deletion of your My Little Parasite account and cloud records. The app is provided by Seori Labs, listed on Google Play under Seori Labs, with identifier com.seorilabs.mylittleparasite.',
+			'Request deletion of your My Little Parasite account and cloud records. The app is provided by Seori Labs, listed on Google Play under Seolee Apps, with identifier com.seorilabs.mylittleparasite.',
 		sections: [
 			{
 				title: 'Request in the app',
@@ -219,7 +220,7 @@ export const parasiteSupport: Record<'ko' | 'en', LegalDocContent> = {
 			{
 				title: '구매 복원',
 				body: [
-					'상점의 구매 복원을 이용하세요. 꾸미기 상품은 서버에서 검증된 후 사용할 수 있습니다. 마켓 승인 대기 중에는 지급되지 않으며, 통신이 끊겼다면 다시 연결한 뒤 복원을 시도하세요.'
+					'Android에는 유료 판매나 구매 복원이 없습니다. iOS에서는 상점의 구매 복원을 이용하세요. 꾸미기 상품은 서버에서 검증된 후 사용할 수 있습니다. 마켓 승인 대기 중에는 지급되지 않으며, 통신이 끊겼다면 다시 연결한 뒤 복원을 시도하세요.'
 				]
 			},
 			{
@@ -251,7 +252,7 @@ export const parasiteSupport: Record<'ko' | 'en', LegalDocContent> = {
 			{
 				title: 'Restore purchases',
 				body: [
-					'Use Restore purchases in the shop. Cosmetic packs become available after server verification. Pending store approval does not grant a pack; reconnect and retry restoration if the connection failed.'
+					'Android has no paid sales or purchase restoration. On iOS, use Restore purchases in the shop. Cosmetic packs become available after server verification. Pending store approval does not grant a pack; reconnect and retry restoration if the connection failed.'
 				]
 			},
 			{
