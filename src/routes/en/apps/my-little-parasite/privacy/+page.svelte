@@ -13,7 +13,7 @@
 	]}
 	contactHref="mailto:cs@seorilabs.com?subject=My%20Little%20Parasite%20support"
 	relatedLinks={[
-		{ label: 'Privacy policy', href: '/en/apps/my-little-parasite/privacy/' },
-		{ label: 'Account deletion', href: '/en/apps/my-little-parasite/account-deletion/' }
+		{ label: 'Account deletion', href: '/en/apps/my-little-parasite/account-deletion/' },
+		{ label: 'Support', href: '/en/apps/my-little-parasite/support/' }
 	]}
 />

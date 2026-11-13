@@ -13,7 +13,7 @@
 	]}
 	contactHref="mailto:cs@seorilabs.com?subject=My%20Little%20Parasite%20support"
 	relatedLinks={[
-		{ label: '개인정보 처리방침', href: '/apps/my-little-parasite/privacy/' },
-		{ label: '계정 삭제', href: '/apps/my-little-parasite/account-deletion/' }
+		{ label: '계정 삭제', href: '/apps/my-little-parasite/account-deletion/' },
+		{ label: '이용 안내', href: '/apps/my-little-parasite/support/' }
 	]}
 />
