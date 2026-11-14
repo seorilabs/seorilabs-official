@@ -51,7 +51,8 @@ export const bakehandPrivacyContent: Record<'ko' | 'en', LegalDocContent> = {
 	},
 	en: {
 		title: 'Bakehand Privacy Policy',
-		description: 'Local saves, usage statistics and crash reports, purchases, and support inquiries in Bakehand.',
+		description:
+			'Local saves, usage statistics and crash reports, purchases, and support inquiries in Bakehand.',
 		kicker: 'Bakehand Privacy Policy',
 		lastUpdated: 'November 14, 2026',
 		intro:

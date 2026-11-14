@@ -7,5 +7,8 @@
 	locale="en"
 	content={bakehandPrivacyContent.en}
 	docKind="privacy"
-	productSlug="bakehand"
+	documentPaths={[
+		{ key: 'ko', path: '/apps/bakehand/privacy/' },
+		{ key: 'en', path: '/en/apps/bakehand/privacy/' }
+	]}
 />
