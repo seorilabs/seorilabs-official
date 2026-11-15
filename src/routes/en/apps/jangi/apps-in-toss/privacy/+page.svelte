@@ -1,0 +1,20 @@
+<script lang="ts">
+	import LegalDocPage from '$lib/legal/LegalDocPage.svelte';
+	import { hansuJanggiAitPrivacyContent } from '$lib/hansuJanggiAitPrivacyContent';
+</script>
+
+<LegalDocPage
+	locale="en"
+	content={hansuJanggiAitPrivacyContent.en}
+	docKind="privacy"
+	documentPaths={[
+		{ key: 'ko', path: '/apps/jangi/apps-in-toss/privacy/' },
+		{ key: 'en', path: '/en/apps/jangi/apps-in-toss/privacy/' }
+	]}
+	contactHref="mailto:wellknowngeek@gmail.com"
+	relatedLinks={[
+		{ label: 'Toss Privacy Policy', href: 'https://toss.im/privacy-policy' },
+		{ label: 'Google Privacy Policy', href: 'https://policies.google.com/privacy' },
+		{ label: 'Google Play version', href: '/en/apps/jangi/privacy/' }
+	]}
+/>
