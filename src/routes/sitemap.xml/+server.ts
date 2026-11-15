@@ -64,6 +64,11 @@ const groups: SitemapGroup[] = [
 	},
 	{
 		priority: '0.5',
+		lastmod: '2026-11-15',
+		pages: pair('/apps/jangi/apps-in-toss/privacy/', '/en/apps/jangi/apps-in-toss/privacy/')
+	},
+	{
+		priority: '0.5',
 		lastmod: '2026-11-13',
 		pages: pair('/apps/my-little-parasite/support/', '/en/apps/my-little-parasite/support/')
 	},
