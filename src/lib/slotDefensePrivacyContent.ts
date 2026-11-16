@@ -13,30 +13,30 @@ export const slotDefensePrivacyContent: Record<'ko' | 'en', LegalDocContent> = {
 			{
 				title: '기기에 저장하는 게임 기록',
 				body: [
-					'캠페인 진행, 영웅과 강화, 전투 복구 기록, 일일 도전과 엔드리스 기록, 설정, 그리고 중복 지급을 막기 위한 구매 처리 기록은 기기에 저장합니다. 게임 계정과 클라우드 진행 저장은 없습니다. 인터넷 없이 플레이할 수 있으며 앱 삭제나 데이터 초기화 시 진행이 사라질 수 있습니다. 영구 구매 상품은 스토어의 구매 복원으로 다시 받을 수 있습니다.'
+					'캠페인 진행, 영웅과 강화, 전투 복구 기록, 일일 도전과 무한 방어 기록, 설정, 그리고 중복 지급을 막기 위한 구매 처리 기록은 기기에 저장합니다. 게임 계정과 클라우드 진행 저장은 없습니다. 인터넷 없이 플레이할 수 있으며 앱 삭제나 데이터 초기화 시 진행이 사라질 수 있습니다. 영구 구매 상품은 스토어의 구매 복원으로 다시 받을 수 있습니다.'
 				]
 			},
 			{
 				title: '이용 통계, 오류 보고와 원격 설정',
 				body: [
-					'앱은 Google Firebase Analytics와 Crashlytics를 사용합니다. 설정의 데이터 분석 허용은 기본으로 켜져 있습니다. 화면 이동, 튜토리얼, 전투, 보상, 강화, 광고 시청과 구매 결과 같은 게임 이벤트와 앱 버전, 언어, 실행 환경을 보냅니다. Firebase는 앱 인스턴스와 설치 식별자, 기기 모델과 운영체제, 세션 및 국가 수준 위치 정보를 처리할 수 있습니다. 게임은 사용자 ID를 보내지 않습니다.',
+					'앱은 Google Firebase Analytics와 Crashlytics를 사용합니다. 설정의 이용 통계 항목은 기본으로 켜져 있습니다. 화면 이동, 튜토리얼, 전투, 보상, 강화, 광고 시청과 구매 결과 같은 게임 이벤트와 앱 버전, 언어, 실행 환경을 보냅니다. Firebase는 앱 인스턴스와 설치 식별자, 기기 모델과 운영체제, 세션 및 국가 수준 위치 정보를 처리할 수 있습니다. 게임은 사용자 ID를 보내지 않습니다.',
 					'Crashlytics는 충돌 스택, 설치 식별자, 기기와 앱 상태, 진단 기록을 처리합니다. 오류 메시지 본문이나 게임 저장 파일은 보내지 않습니다.',
 					'앱은 Firebase Remote Config에서 광고 표시 여부와 업데이트 안내 같은 설정 값을 받아 옵니다. 이 과정에서 설치 식별자와 앱, 기기 정보가 처리될 수 있습니다.',
-					'설정에서 데이터 분석 허용을 끄면 새 게임 이벤트와 진단 기록 전송을 멈추고 보내지 않은 이벤트를 버립니다. Crashlytics 수집 중단은 다음 실행부터 적용됩니다. 이미 전송된 자료의 삭제는 cs@seorilabs.com으로 문의할 수 있습니다.'
+					'설정에서 이용 통계를 끄면 새 게임 이벤트와 진단 기록 전송을 멈추고 보내지 않은 이벤트를 버립니다. Crashlytics 수집 중단은 다음 실행부터 적용됩니다. 이미 전송된 자료의 삭제는 cs@seorilabs.com으로 문의할 수 있습니다.'
 				]
 			},
 			{
 				title: '보상형 광고와 동의',
 				body: [
 					'광고는 플레이어가 직접 고를 때만 나옵니다. 결과 보상 2배, 이어하기, 일일 보급 버튼을 누르면 Google AdMob 보상형 광고를 보여 주고, 끝까지 시청하면 기기에서 보상을 지급합니다. 전면 광고와 배너 광고는 없습니다. 광고를 볼 수 없거나 광고 요청이 허용되지 않아도 게임은 그대로 이용할 수 있습니다.',
-					'Google Mobile Ads SDK와 User Messaging Platform(UMP)은 광고 제공, 측정, 진단, 동의 관리와 부정 이용 방지를 위해 IP 주소, 광고와 앱 상호작용, 성능과 진단 정보, 앱 또는 기기 식별자를 처리하고 공유할 수 있습니다. Android에서는 광고 ID가 쓰일 수 있고 Android 설정에서 재설정하거나 삭제할 수 있습니다. iOS에서는 앱 추적 허용을 요청하지 않으며 개인 맞춤이 아닌 광고만 요청합니다. IP 주소로 대략적인 위치를 추정할 수 있습니다.',
-					'앱은 실행할 때마다 동의 상태를 확인하고 SDK가 광고 요청을 허용한 경우에만 광고를 준비합니다. 유럽 경제 지역, 영국, 스위스와 미국 일부 주에서는 동의나 선택 양식이 나올 수 있으며, 설정의 광고 개인정보 선택에서 언제든 다시 바꿀 수 있습니다.'
+					'Google Mobile Ads SDK와 User Messaging Platform(UMP)은 광고 제공, 측정, 진단, 동의 관리와 부정 이용 방지를 위해 IP 주소, 광고와 앱 상호작용, 성능과 진단 정보, 앱 또는 기기 식별자를 처리하고 공유할 수 있습니다. Android에서는 동의 상태와 지역 규정이 허용하는 범위에서 맞춤 광고가 나올 수 있고, 광고 ID가 쓰일 수 있습니다. 광고 ID는 Android 설정에서 재설정하거나 삭제할 수 있습니다. iOS에서는 앱 추적 허용을 요청하지 않으며 개인 맞춤이 아닌 광고만 요청합니다. IP 주소로 대략적인 위치를 추정할 수 있습니다.',
+					'앱은 실행할 때마다 동의 상태를 확인하고 SDK가 광고 요청을 허용한 경우에만 광고를 준비합니다. 유럽 경제 지역, 영국, 스위스와 미국 일부 주에서는 동의나 선택 양식이 나올 수 있으며, 설정의 광고 개인정보 설정에서 언제든 다시 바꿀 수 있습니다.'
 				]
 			},
 			{
 				title: '인앱 구매',
 				body: [
-					'합금 묶음, 스타터 팩, 광고 없이 보상 받기, 영웅 같은 상품은 Google Play 결제 또는 Apple App Store로 판매합니다. 결제와 카드 정보는 각 스토어가 처리하며 당사는 받지 않습니다. 앱은 상품 ID, 구매 상태와 스토어가 발급한 주문 또는 거래 식별자를 받아 기기에서 보상을 한 번만 지급하는 데 사용합니다. 유료 무작위 상품은 판매하지 않습니다.',
+					'합금 팩, 스타터 팩, 광고 없이 보상 받기, 영웅 같은 상품은 Google Play 결제 또는 Apple App Store로 판매합니다. 결제와 카드 정보는 각 스토어가 처리하며 당사는 받지 않습니다. 앱은 상품 ID, 구매 상태와 스토어가 발급한 주문 또는 거래 식별자를 받아 기기에서 보상을 한 번만 지급하는 데 사용합니다. 유료 무작위 상품은 판매하지 않습니다.',
 					'환불과 구독이 아닌 구매 내역은 각 스토어의 절차를 따릅니다. 구매 문제는 주문 번호와 함께 cs@seorilabs.com으로 문의하세요.',
 					'게임은 위치, 연락처, 사진, 카메라와 마이크 권한을 요청하지 않습니다.'
 				]
@@ -81,17 +81,17 @@ export const slotDefensePrivacyContent: Record<'ko' | 'en', LegalDocContent> = {
 			{
 				title: 'Analytics, crash reports and remote configuration',
 				body: [
-					'The app uses Google Firebase Analytics and Crashlytics. The data analytics setting is on by default. We send game events such as screen changes, tutorial steps, battles, rewards, upgrades, ad views and purchase results, with app version, language and runtime. Firebase may process app-instance and installation identifiers, device model and operating system, sessions and country-level location. The game does not set a user ID.',
+					'The app uses Google Firebase Analytics and Crashlytics. The analytics setting is on by default. We send game events such as screen changes, tutorial steps, battles, rewards, upgrades, ad views and purchase results, with app version, language and runtime. Firebase may process app-instance and installation identifiers, device model and operating system, sessions and country-level location. The game does not set a user ID.',
 					'Crashlytics processes crash stacks, installation identifiers, device and app state, and diagnostic records. It does not send error-message bodies or game save files.',
 					'The app fetches settings such as whether ads are shown and update notices from Firebase Remote Config, which may process installation identifiers and app and device information.',
-					'Turning off data analytics in Settings stops new game events and diagnostic logging and discards queued events. Crashlytics changes take effect on the next launch. Contact cs@seorilabs.com about deleting data already sent.'
+					'Turning off analytics in Settings stops new game events and diagnostic logging and discards queued events. Crashlytics changes take effect on the next launch. Contact cs@seorilabs.com about deleting data already sent.'
 				]
 			},
 			{
 				title: 'Rewarded ads and consent',
 				body: [
 					'Ads appear only when you choose them. Tapping double rewards, continue or daily supply shows a Google AdMob rewarded ad, and the reward is granted on your device after you finish watching. There are no interstitial or banner ads. The game remains playable when ads are unavailable or requests are not permitted.',
-					'Google Mobile Ads SDK and User Messaging Platform (UMP) may process and share IP addresses, ad and app interactions, performance and diagnostic information, and app- or device-scoped identifiers for advertising, measurement, diagnostics, consent management and fraud prevention. On Android the advertising ID may be used; you can reset or delete it in Android settings. On iOS the app does not ask for tracking permission and requests only non-personalized ads. IP addresses can infer approximate location.',
+					'Google Mobile Ads SDK and User Messaging Platform (UMP) may process and share IP addresses, ad and app interactions, performance and diagnostic information, and app- or device-scoped identifiers for advertising, measurement, diagnostics, consent management and fraud prevention. On Android, personalized ads may be shown where your consent choices and local rules allow, and the advertising ID may be used; you can reset or delete it in Android settings. On iOS the app does not ask for tracking permission and requests only non-personalized ads. IP addresses can infer approximate location.',
 					'The app checks consent each session and prepares ads only when the SDK permits requests. In the EEA, the UK, Switzerland and some US states a consent or choice form may appear, and you can change your choice any time in Settings under ad privacy choices.'
 				]
 			},
