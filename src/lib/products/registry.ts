@@ -761,5 +761,25 @@ export const products: Product[] = [
 				updated: '2026-11-13'
 			}
 		]
+	},
+	{
+		slug: 'malang',
+		order: 113,
+		status: 'upcoming',
+		category: 'game',
+		hasLanding: false,
+		updatedOn: '2026-11-17',
+		name: { ko: 'Malang: Squishy ASMR Toys', en: 'Malang: Squishy ASMR Toys' },
+		tagline: { ko: '말랑말랑 ASMR 장난감', en: 'Squishy ASMR toys' },
+		badges: { ko: ['출시 준비 중', '광고 없음'], en: ['In preparation', 'No ads'] },
+		channels: [],
+		media: { icon: '/products/malang/icon-256.webp' },
+		legal: [
+			{
+				kind: 'privacy',
+				path: { ko: '/apps/malang/privacy/', en: '/en/apps/malang/privacy/' },
+				updated: '2026-11-17'
+			}
+		]
 	}
 ];
