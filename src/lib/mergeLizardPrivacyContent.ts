@@ -113,14 +113,14 @@ export const mergeLizardPrivacyContent: Record<'ko' | 'en', LegalDocContent> = {
 				id: 'account-deletion',
 				title: '계정과 데이터 삭제',
 				body: [
-					'앱 설정의 “계정과 서버 데이터 삭제”에서 직접 삭제하거나, 앱을 다시 설치하지 않고 cs@seorilabs.com으로 요청할 수 있습니다.',
+					`앱 설정의 “계정과 서버 데이터 삭제”에서 직접 삭제하거나, 앱을 다시 설치하지 않고 ${site.email}으로 요청할 수 있습니다.`,
 					`삭제 방법, 지워지는 데이터와 남는 기록, 처리 기간은 계정 삭제 안내(${pathFor(mergeLizardAccountDeletionPaths, 'ko')})에 적었습니다.`
 				]
 			},
 			{
 				title: '이용자의 권리',
 				body: [
-					'이용자는 자신의 개인정보 열람, 정정, 삭제, 처리 정지를 요청할 수 있습니다. cs@seorilabs.com으로 요청해 주세요. 앱 설정에서 지원 코드를 볼 수 있다면 함께 보내 주시면 계정을 찾는 데 도움이 됩니다.',
+					`이용자는 자신의 개인정보 열람, 정정, 삭제, 처리 정지를 요청할 수 있습니다. ${site.email}으로 요청해 주세요. 앱 설정에서 지원 코드를 볼 수 있다면 함께 보내 주시면 계정을 찾는 데 도움이 됩니다.`,
 					'게스트 계정은 이름이나 이메일과 연결되어 있지 않아, 다른 사람의 데이터를 처리하지 않도록 확인 절차를 안내할 수 있습니다. 비밀번호나 결제 정보는 보내지 마세요.'
 				]
 			},
@@ -226,14 +226,14 @@ export const mergeLizardPrivacyContent: Record<'ko' | 'en', LegalDocContent> = {
 				id: 'account-deletion',
 				title: 'Account and data deletion',
 				body: [
-					'You can delete your account and server data directly from the App’s Settings, or request deletion by emailing cs@seorilabs.com without reinstalling the App.',
+					`You can delete your account and server data directly from the App’s Settings, or request deletion by emailing ${site.email} without reinstalling the App.`,
 					`The deletion page (${pathFor(mergeLizardAccountDeletionPaths, 'en')}) explains how to request deletion, which data is deleted, which records are kept, and how long it takes.`
 				]
 			},
 			{
 				title: 'Your rights',
 				body: [
-					'You can ask to access, correct, or delete your personal data, or to stop its processing, by emailing cs@seorilabs.com. If you can see a support code in the App’s Settings, please include it so we can find your account.',
+					`You can ask to access, correct, or delete your personal data, or to stop its processing, by emailing ${site.email}. If you can see a support code in the App’s Settings, please include it so we can find your account.`,
 					'Guest accounts are not linked to a name or email address, so we may ask you to complete a verification step to avoid acting on someone else’s data. Do not send passwords or payment details.'
 				]
 			},
