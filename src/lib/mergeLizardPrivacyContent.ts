@@ -33,7 +33,7 @@ export const mergeLizardPrivacyContent: Record<'ko' | 'en', LegalDocContent> = {
 		description:
 			'앰버 리자드(Amber Lizards)의 게스트 계정, 게임 행동 지표, 보상형 광고, 인앱 구매와 데이터 삭제에 관한 개인정보 처리방침입니다.',
 		kicker: 'Amber Lizards Privacy Policy',
-		lastUpdated: '2026년 11월 20일',
+		lastUpdated: '2026년 11월 21일',
 		lastUpdatedLabel: '시행일 및 최종 수정일',
 		backLabel: '서리랩스 홈으로',
 		languageLabel: '언어',
@@ -66,7 +66,7 @@ export const mergeLizardPrivacyContent: Record<'ko' | 'en', LegalDocContent> = {
 				title: '보상형 광고',
 				body: [
 					'광고는 이용자가 버튼을 눌러 고를 때만 나오는 Google AdMob 보상형 광고뿐이며, 광고를 보지 않아도 게임을 계속할 수 있습니다. 광고 콘텐츠 등급은 최대 T(청소년)로 제한합니다.',
-					'Google Mobile Ads SDK는 광고 제공, 성과 측정, 부정 이용 방지를 위해 IP 주소와 그로부터 추정한 대략적 위치, 광고 요청과 노출, 클릭 같은 광고 상호작용, 앱과 SDK의 진단 정보를 처리합니다. Android에서는 광고 ID도 처리합니다. Google은 이 데이터를 자체 정책에 따라 처리합니다.',
+					'Google Mobile Ads SDK는 광고 제공, 성과 측정, 부정 이용 방지를 위해 IP 주소와 그로부터 추정한 대략적 위치, 광고 요청과 노출, 클릭 같은 광고 상호작용, 앱과 SDK의 진단 정보를 처리합니다. Android에서는 광고 ID도 처리합니다. iOS에서는 광고 식별자(IDFA)를 받을 수 없으며, 광고 제공과 부정 이용 방지를 위해 이 앱 또는 같은 개발자의 앱 안에서만 쓰이는 기기 식별자를 처리할 수 있습니다. Google은 이 데이터를 자체 정책에 따라 처리합니다.',
 					'Android에서는 유럽경제지역, 영국, 스위스처럼 동의가 필요한 지역의 이용자에게 첫 광고 전에 Google의 동의 양식(UMP)을 보여 주고, 광고 요청은 그 선택을 따릅니다. 이 지역의 이용자는 설정의 “광고 개인정보 선택”에서 선택을 바꾸거나 철회할 수 있습니다. 그 밖의 지역에서는 Google 정책에 따라 맞춤 광고가 표시될 수 있습니다.',
 					'iOS 앱은 추적하지 않습니다. 앱 추적 투명성(ATT) 허락을 묻지 않고, 광고 식별자(IDFA)를 쓰지 않으며, 비맞춤 광고만 요청합니다. iOS에서는 UMP 동의 양식도 띄우지 않으며, 유럽경제지역, 영국, 스위스의 iOS 광고 요청에는 Google의 제한 광고가 제공될 수 있습니다.',
 					'광고를 끝까지 보면 Google AdMob이 서리랩스 서버에 시청 결과를 알리는 서버 확인(SSV)을 거쳐 보상을 지급합니다. 이를 위해 광고 요청에 가명 플랫폼 사용자 ID와 보상 요청 ID를 담고, 서버에는 광고 위치, 보상 종류와 양, 처리 상태와 시각, 지원 코드를 저장합니다.'
@@ -146,7 +146,7 @@ export const mergeLizardPrivacyContent: Record<'ko' | 'en', LegalDocContent> = {
 		description:
 			'Privacy Policy for the guest account, gameplay analytics, rewarded ads, in-app purchases, and data deletion in Amber Lizards.',
 		kicker: 'Amber Lizards Privacy Policy',
-		lastUpdated: 'November 20, 2026',
+		lastUpdated: 'November 21, 2026',
 		lastUpdatedLabel: 'Effective and last updated',
 		backLabel: 'Back to Seori Labs',
 		languageLabel: 'Language',
@@ -179,7 +179,7 @@ export const mergeLizardPrivacyContent: Record<'ko' | 'en', LegalDocContent> = {
 				title: 'Rewarded ads',
 				body: [
 					'The only ads are Google AdMob rewarded ads that appear when you choose them by tapping a button, and you can keep playing without watching ads. Ad content is limited to a maximum rating of T (Teen).',
-					'To deliver and measure ads and to prevent fraud, the Google Mobile Ads SDK processes your IP address and the approximate location inferred from it, ad interactions such as requests, impressions, and clicks, and app and SDK diagnostic information. On Android it also processes the advertising ID. Google processes this data under its own policies.',
+					'To deliver and measure ads and to prevent fraud, the Google Mobile Ads SDK processes your IP address and the approximate location inferred from it, ad interactions such as requests, impressions, and clicks, and app and SDK diagnostic information. On Android it also processes the advertising ID. On iOS it cannot receive the advertising identifier (IDFA), and it may process device identifiers that are limited to this app or to apps from the same developer to deliver ads and prevent fraud. Google processes this data under its own policies.',
 					'On Android, users in regions that require consent, such as the European Economic Area, the United Kingdom, and Switzerland, see Google’s consent form (UMP) before the first ad, and ad requests follow that choice. Users in those regions can change or withdraw their choice under “Ad privacy choices” in Settings. In other regions, personalized ads may be shown under Google’s policies.',
 					'The iOS app does not track you. It does not ask for App Tracking Transparency (ATT) permission, does not use the advertising identifier (IDFA), and requests non-personalized ads only. The iOS app does not show the UMP consent form, and iOS ad requests from the European Economic Area, the United Kingdom, and Switzerland may be served as Google limited ads.',
 					'When you watch an ad to the end, Google AdMob reports the result to our server through server-side verification (SSV), and the reward is granted after that check. For this, the ad request carries your pseudonymous platform user ID and a reward request ID, and our server stores the ad placement, reward type and amount, processing status and timestamps, and your support code.'
