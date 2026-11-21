@@ -40,15 +40,22 @@ export const fourAlikePrivacyContent: Record<'ko' | 'en', PrivacyContent> = {
 				title: '익명 사용 통계와 Google Analytics 4',
 				body: [
 					'게임을 개선하기 위해 Google Analytics 4로 익명 사용 통계를 보냅니다. 보내는 내용은 앱이 기기에서 임의로 만든 익명 식별자, 판 시작과 종료, 실수 수, 부스터 사용, 광고 시청 여부 같은 게임 이벤트, 앱 버전과 플랫폼입니다.',
-					'이 통계는 계정이나 연락처와 연결하지 않으며 광고 개인화에 쓰지 않습니다. 앱 설정에서 분석을 끄면 통계를 보내지 않습니다.'
+					'이 통계는 계정이나 연락처와 연결하지 않으며 광고 개인화에 쓰지 않습니다. 앱 설정에서 분석을 끄면 통계를 보내지 않습니다.',
+					'통계는 암호화된 연결(HTTPS)로 보내며 Google Analytics에 최대 14개월 동안 보관한 뒤 삭제됩니다.'
+				]
+			},
+			{
+				title: '설정 파일 내려받기',
+				body: [
+					'앱은 광고 빈도 같은 운영 설정 값을 받으려고 실행할 때 공개된 설정 파일을 내려받습니다. 이 파일은 GitHub Pages에 있으며, 내려받는 과정에서 호스팅 사업자인 GitHub가 IP 주소 같은 접속 기록을 처리할 수 있습니다. 이 요청에는 식별자나 게임 진행 정보를 싣지 않습니다.'
 				]
 			},
 			{
 				title: '제3자 제공, 판매와 국외 처리',
 				body: [
 					'서리랩스는 개인정보를 판매하지 않습니다.',
-					'이 게임에서 정보를 처리하는 외부 서비스는 위에서 설명한 Google AdMob과 Google Analytics 4입니다.',
-					'Google 서비스는 이용자의 국가 밖에서 정보를 처리할 수 있습니다. 처리 장소, 보관 기간, 국외 이전 보호조치는 Google과 해당 광고 파트너가 공개한 정책을 따릅니다. Google 개인정보처리방침: https://policies.google.com/privacy , 광고 기술 안내: https://policies.google.com/technologies/ads'
+					'이 게임에서 정보를 처리하는 외부 서비스는 위에서 설명한 Google AdMob, Google Analytics 4, 그리고 설정 파일을 제공하는 GitHub Pages입니다.',
+					'이 서비스들은 이용자의 국가 밖에서 정보를 처리할 수 있습니다. 광고와 관련한 처리 장소, 보관 기간, 국외 이전 보호조치는 Google과 해당 광고 파트너가 공개한 정책을 따릅니다. Google 개인정보처리방침: https://policies.google.com/privacy , 광고 기술 안내: https://policies.google.com/technologies/ads'
 				]
 			},
 			{
@@ -111,15 +118,22 @@ export const fourAlikePrivacyContent: Record<'ko' | 'en', PrivacyContent> = {
 				title: 'Anonymous usage statistics and Google Analytics 4',
 				body: [
 					'To improve the game, we send anonymous usage statistics to Google Analytics 4. They consist of an anonymous identifier that the app generates at random on your device, game events such as round starts and ends, the number of mistakes, booster use and whether an ad was watched, and the app version and platform.',
-					'These statistics are not linked to an account or contact details and are not used to personalize ads. If you turn off analytics in the app settings, they are no longer sent.'
+					'These statistics are not linked to an account or contact details and are not used to personalize ads. If you turn off analytics in the app settings, they are no longer sent.',
+					'The statistics are sent over an encrypted connection (HTTPS) and are kept in Google Analytics for up to 14 months before they are deleted.'
+				]
+			},
+			{
+				title: 'Downloading the settings file',
+				body: [
+					'When it starts, the app downloads a public settings file to get operating values such as ad frequency. The file is hosted on GitHub Pages, and GitHub, as the hosting provider, may process connection records such as your IP address when the file is downloaded. The request carries no identifier and no game progress.'
 				]
 			},
 			{
 				title: 'Sharing, sale and processing outside your country',
 				body: [
 					'Seori Labs does not sell personal information.',
-					'The external services that process information in this game are Google AdMob and Google Analytics 4, as described above.',
-					'Google services may process information outside your country. Processing locations, retention periods and international-transfer safeguards are governed by the published policies of Google and the relevant advertising partners. Google Privacy Policy: https://policies.google.com/privacy , advertising technologies: https://policies.google.com/technologies/ads'
+					'The external services that process information in this game are Google AdMob, Google Analytics 4 and GitHub Pages, which serves the settings file, as described above.',
+					'These services may process information outside your country. For advertising, processing locations, retention periods and international-transfer safeguards are governed by the published policies of Google and the relevant advertising partners. Google Privacy Policy: https://policies.google.com/privacy , advertising technologies: https://policies.google.com/technologies/ads'
 				]
 			},
 			{
