@@ -403,7 +403,7 @@ export const products: Product[] = [
 			en: 'Only essential features. All data is stored only on the phone.'
 		},
 		badges: { ko: ['생활 앱'], en: ['App'] },
-		// 구 네임스페이스(com.github.magicsih.babycareapp / com.github.magicsih.BabyCareApp) 번들이다.
+		// Google Play 패키지는 com.github.magicsih.babycareapp, App Store 번들 ID는 com.github.magicsih.BabyCareApp이다.
 		channels: [
 			{ kind: 'google-play', packageName: 'com.github.magicsih.babycareapp' },
 			{ kind: 'app-store', appId: '1494547124' }
@@ -882,7 +882,8 @@ export const products: Product[] = [
 		category: 'game',
 		hasLanding: false,
 		updatedOn: '2026-11-21',
-		name: { ko: '내 새끼 대학 보내기', en: '내 새끼 대학 보내기 (Keeum)' },
+		// Google Play는 한국어 등록명만 제공한다.
+		name: { ko: '내 새끼 대학 보내기', en: 'Keeum' },
 		tagline: {
 			ko: '아이의 속도를 살피며, 대학 입시까지 함께 자라는 그림책 육성 게임',
 			en: 'A picture book nurturing game that grows alongside your child all the way to college entrance exams while monitoring their pace'
