@@ -66,11 +66,6 @@ const groups: SitemapGroup[] = [
 	},
 	{
 		priority: '0.5',
-		lastmod: '2026-11-14',
-		pages: pair('/apps/jangi/privacy/', '/en/apps/jangi/privacy/')
-	},
-	{
-		priority: '0.5',
 		lastmod: '2026-11-15',
 		pages: pair('/apps/jangi/apps-in-toss/privacy/', '/en/apps/jangi/apps-in-toss/privacy/')
 	},
@@ -78,11 +73,6 @@ const groups: SitemapGroup[] = [
 		priority: '0.5',
 		lastmod: '2026-11-13',
 		pages: pair('/apps/my-little-parasite/support/', '/en/apps/my-little-parasite/support/')
-	},
-	{
-		priority: '0.5',
-		lastmod: '2026-10-28',
-		pages: pair('/apps/monster-party/privacy/', '/en/apps/monster-party/privacy/')
 	},
 	{
 		priority: '0.5',
@@ -96,14 +86,9 @@ const groups: SitemapGroup[] = [
 	},
 	{
 		priority: '0.5',
-		lastmod: '2026-10-21',
-		pages: pair('/apps/paper-craft-print/privacy/', '/en/apps/paper-craft-print/privacy/')
-	},
-	...['privacy', 'support'].map((kind) => ({
-		priority: '0.5',
 		lastmod: '2026-10-20',
-		pages: pair(`/apps/memorize-all/${kind}/`, `/en/apps/memorize-all/${kind}/`)
-	})),
+		pages: pair('/apps/memorize-all/support/', '/en/apps/memorize-all/support/')
+	},
 	{ priority: '1.0', lastmod: HOME_UPDATED, pages: pair('/', '/en/') },
 	{ priority: '0.9', lastmod: APPS_UPDATED, pages: pair('/apps/', '/en/apps/') },
 	{ priority: '0.5', lastmod: LEGAL_INDEX_UPDATED, pages: pair('/legal/', '/en/legal/') },
@@ -114,12 +99,6 @@ const groups: SitemapGroup[] = [
 		lastmod: product.updatedOn,
 		pages: pair(`/apps/${product.slug}/`, `/en/apps/${product.slug}/`)
 	})),
-
-	{
-		priority: '0.5',
-		lastmod: '2026-10-21',
-		pages: pair('/apps/keeum/privacy/', '/en/apps/keeum/privacy/')
-	},
 
 	// 회사 공통 법무 문서. 개인정보처리방침은 8개 언어를 한 그룹으로 묶는다.
 	...globalLegalDocs.map((doc) => ({

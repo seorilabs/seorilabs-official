@@ -1,0 +1,14 @@
+{
+	"schemaVersion": 1,
+	"level": "L1",
+	"baseline": "30e55eb59d1183ca569f2213d7d2f608d5e3c822",
+	"changedFeatures": ["product-catalog", "home", "legal-documents", "seo-discovery"],
+	"environments": ["dev"],
+	"redesign": false,
+	"foundationRerun": false,
+	"floorOverrides": [],
+	"release": {
+		"markets": ["web"],
+		"until": "public"
+	}
+}
