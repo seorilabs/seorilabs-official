@@ -292,15 +292,16 @@ export const products: Product[] = [
 		status: 'live',
 		category: 'game',
 		hasLanding: false,
-		updatedOn: '2026-10-17',
+		updatedOn: '2026-11-21',
 		name: { ko: '루시드 리버시', en: 'Lucid Reversi' },
 		tagline: {
 			ko: '선명한 보드와 큼직한 흑백 돌로 다음 수가 잘 보이는, AI와 한 판 붙는 모바일 리버시',
 			en: 'A mobile reversi game for quick matches against AI, with a clear board and instant move feedback.'
 		},
 		badges: { ko: ['게임'], en: ['Game'] },
-		// 네이티브 번들 ID는 구 네임스페이스(com.etlegame.reversi)이며 iOS만 제공한다.
+		// 네이티브 식별자는 구 네임스페이스(com.etlegame.reversi)를 유지한다.
 		channels: [
+			{ kind: 'google-play', packageName: 'com.etlegame.reversi' },
 			{ kind: 'app-store', appId: '994468960' },
 			{ kind: 'apps-in-toss', searchName: '루시드 리버시' }
 		],
@@ -394,7 +395,7 @@ export const products: Product[] = [
 		status: 'live',
 		category: 'app',
 		hasLanding: false,
-		updatedOn: '2026-09-25',
+		updatedOn: '2026-11-21',
 		name: { ko: '수유로그', en: 'Baby Feeding Logger' },
 		// App Store에 부제와 짧은 설명이 없어 스토어 설명문의 문장을 그대로 옮겼다.
 		tagline: {
@@ -402,8 +403,11 @@ export const products: Product[] = [
 			en: 'Only essential features. All data is stored only on the phone.'
 		},
 		badges: { ko: ['생활 앱'], en: ['App'] },
-		// 구 네임스페이스(com.github.magicsih.BabyCareApp) 번들이고 App Store에만 있다.
-		channels: [{ kind: 'app-store', appId: '1494547124' }],
+		// 구 네임스페이스(com.github.magicsih.babycareapp / com.github.magicsih.BabyCareApp) 번들이다.
+		channels: [
+			{ kind: 'google-play', packageName: 'com.github.magicsih.babycareapp' },
+			{ kind: 'app-store', appId: '1494547124' }
+		],
 		media: { icon: '/products/baby-feeding-logger/icon-256.webp' },
 		legal: []
 	},
@@ -656,17 +660,17 @@ export const products: Product[] = [
 	{
 		slug: 'gather-puzzle',
 		order: 108,
-		status: 'upcoming',
+		status: 'live',
 		category: 'game',
 		hasLanding: false,
-		updatedOn: '2026-11-11',
+		updatedOn: '2026-11-21',
 		name: { ko: 'Gather Puzzle', en: 'Gather Puzzle' },
 		tagline: {
 			ko: '흩어진 숲 친구들을 한 무리로 모으고 나만의 작은 숲을 꾸며요.',
 			en: 'Bring forest friends together and decorate your own little woodland.'
 		},
-		badges: { ko: ['출시 준비', '전면광고'], en: ['In preparation', 'Interstitial ads'] },
-		channels: [],
+		badges: { ko: ['게임'], en: ['Game'] },
+		channels: [{ kind: 'google-play', packageName: 'com.seorilabs.gatherpuzzle' }],
 		media: { icon: '/products/gather-puzzle/icon-256.webp' },
 		legal: [
 			{
@@ -725,24 +729,24 @@ export const products: Product[] = [
 	{
 		slug: 'my-little-parasite',
 		order: 112,
-		status: 'upcoming',
+		status: 'live',
 		category: 'game',
 		hasLanding: false,
-		updatedOn: '2026-11-13',
+		updatedOn: '2026-11-21',
 		name: {
 			ko: 'My Little Parasite',
 			en: 'My Little Parasite'
 		},
 		tagline: {
-			ko: '화면 틈에서 만난 작은 생명과 함께하는 일주일',
-			en: 'Share a week with a little life in the seams of your screen'
+			ko: '화면 틈에 찾아온 작은 픽셀 친구와 교감하고, 떠난 뒤에도 다시 만나세요.',
+			en: 'Meet a pixel companion, share little moments, and welcome it back.'
 		},
 		badges: {
-			ko: ['출시 준비 중', '광고 없음'],
-			en: ['In development', 'No ads']
+			ko: ['게임'],
+			en: ['Game']
 		},
-		channels: [],
-		media: {},
+		channels: [{ kind: 'google-play', packageName: 'com.seorilabs.mylittleparasite' }],
+		media: { icon: '/products/my-little-parasite/icon-256.webp' },
 		legal: [
 			{
 				kind: 'privacy',
@@ -765,14 +769,15 @@ export const products: Product[] = [
 	{
 		slug: 'malang',
 		order: 113,
-		status: 'upcoming',
+		status: 'live',
 		category: 'game',
 		hasLanding: false,
-		updatedOn: '2026-11-17',
-		name: { ko: 'Malang: Squishy ASMR Toys', en: 'Malang: Squishy ASMR Toys' },
-		tagline: { ko: '말랑말랑 ASMR 장난감', en: 'Squishy ASMR toys' },
-		badges: { ko: ['출시 준비 중', '광고 없음'], en: ['In preparation', 'No ads'] },
-		channels: [],
+		releasedOn: '2026-11-21',
+		updatedOn: '2026-11-21',
+		name: { ko: '말랑: 말랑이 ASMR', en: 'Malang: Squishy ASMR Toys' },
+		tagline: { ko: '꾹 누르고 쭉 늘리는 손맛 장난감', en: 'Squeeze, stretch and pop' },
+		badges: { ko: ['게임', '광고 없음'], en: ['Game', 'No ads'] },
+		channels: [{ kind: 'app-store', appId: '6835785376' }],
 		media: { icon: '/products/malang/icon-256.webp' },
 		legal: [
 			{
@@ -781,5 +786,180 @@ export const products: Product[] = [
 				updated: '2026-11-17'
 			}
 		]
+	},
+	{
+		slug: 'spiritgate-riftfall',
+		order: 114,
+		status: 'live',
+		category: 'game',
+		hasLanding: false,
+		releasedOn: '2026-11-21',
+		updatedOn: '2026-11-21',
+		name: { ko: 'Spiritgate: Riftfall', en: 'Spiritgate: Riftfall' },
+		tagline: {
+			ko: '밤의 관문에서 살아남고 무기를 진화시키세요. 혼문 봉인의 위험은 직접 선택합니다.',
+			en: 'Survive the night, evolve your weapons and choose the risk of sealing the rift.'
+		},
+		badges: { ko: ['게임', '광고 없음'], en: ['Game', 'No ads'] },
+		channels: [
+			{ kind: 'google-play', packageName: 'com.seorilabs.spiritgateriftfall' },
+			{ kind: 'app-store', appId: '6833014468' }
+		],
+		media: { icon: '/products/spiritgate-riftfall/icon-256.webp' },
+		legal: []
+	},
+	{
+		slug: 'today-challenger',
+		order: 115,
+		status: 'live',
+		category: 'game',
+		hasLanding: false,
+		releasedOn: '2026-11-13',
+		updatedOn: '2026-11-21',
+		name: { ko: '오늘도 도전자', en: 'Today Challenger' },
+		tagline: {
+			ko: '자동 격투를 지켜보고, 6개 핵심 능력을 무료로 다시 배분해 라이벌에 도전하세요.',
+			en: 'Watch automatic fights, reshape 6 core stats, and challenge comic rivals.'
+		},
+		badges: { ko: ['게임'], en: ['Game'] },
+		channels: [
+			{ kind: 'google-play', packageName: 'com.seorilabs.todaychallenger' },
+			{ kind: 'app-store', appId: '6821745875' }
+		],
+		media: { icon: '/products/today-challenger/icon-256.webp' },
+		legal: []
+	},
+	{
+		slug: 'jangi',
+		order: 116,
+		status: 'live',
+		category: 'game',
+		hasLanding: false,
+		updatedOn: '2026-11-21',
+		name: { ko: '한 수 장기', en: 'Janggi: One Move' },
+		tagline: {
+			ko: '원목 장기판에서 AI와 한 수씩. 이동 안내, 힌트, 무르기와 기보 재생을 제공해요.',
+			en: 'Learn Janggi one move at a time, with offline computer play and game replays.'
+		},
+		badges: { ko: ['게임', '광고 없음'], en: ['Game', 'No ads'] },
+		channels: [{ kind: 'google-play', packageName: 'com.seoleeapps.jangi' }],
+		media: { icon: '/products/jangi/icon-256.webp' },
+		legal: [
+			{
+				kind: 'privacy',
+				path: { ko: '/apps/jangi/privacy/', en: '/en/apps/jangi/privacy/' },
+				updated: '2026-11-14'
+			}
+		]
+	},
+	{
+		slug: 'monster-party',
+		order: 117,
+		status: 'live',
+		category: 'game',
+		hasLanding: false,
+		updatedOn: '2026-11-21',
+		name: { ko: '몬스터 파티: 자동 전투 던전', en: 'Monster Party: Auto Battle RPG' },
+		tagline: {
+			ko: '인앱 결제 없음. 몬스터 파티를 꾸려 끝없는 던전을 자동 전투로 내려가는 수집 RPG',
+			en: 'No in-app purchases. Build a monster party and auto-battle down endless floors'
+		},
+		badges: { ko: ['게임'], en: ['Game'] },
+		channels: [{ kind: 'google-play', packageName: 'com.seoleeapps.monsterparty' }],
+		media: { icon: '/products/monster-party/icon-256.webp' },
+		legal: [
+			{
+				kind: 'privacy',
+				path: { ko: '/apps/monster-party/privacy/', en: '/en/apps/monster-party/privacy/' },
+				updated: '2026-10-28'
+			}
+		]
+	},
+	{
+		slug: 'keeum',
+		order: 118,
+		status: 'live',
+		category: 'game',
+		hasLanding: false,
+		updatedOn: '2026-11-21',
+		name: { ko: '내 새끼 대학 보내기', en: '내 새끼 대학 보내기 (Keeum)' },
+		tagline: {
+			ko: '아이의 속도를 살피며, 대학 입시까지 함께 자라는 그림책 육성 게임',
+			en: 'A picture book nurturing game that grows alongside your child all the way to college entrance exams while monitoring their pace'
+		},
+		badges: { ko: ['게임'], en: ['Game'] },
+		channels: [{ kind: 'google-play', packageName: 'com.seorilabs.keeum' }],
+		media: { icon: '/products/keeum/icon-256.webp' },
+		legal: [
+			{
+				kind: 'privacy',
+				path: { ko: '/apps/keeum/privacy/', en: '/en/apps/keeum/privacy/' },
+				updated: '2026-10-21'
+			}
+		]
+	},
+	{
+		slug: 'memorize-all',
+		order: 119,
+		status: 'live',
+		category: 'app',
+		hasLanding: false,
+		updatedOn: '2026-11-21',
+		name: { ko: 'Memorize All', en: 'Memorize All' },
+		tagline: {
+			ko: '짧은 퀴즈와 플래시카드로 배우고, 다시 기억하며 지식 도감을 채워요.',
+			en: 'Learn with quick quizzes and flashcards, then review and grow your collection.'
+		},
+		badges: { ko: ['학습 앱'], en: ['App'] },
+		channels: [{ kind: 'google-play', packageName: 'com.seorilabs.memorizeall' }],
+		media: { icon: '/products/memorize-all/icon-256.webp' },
+		legal: [
+			{
+				kind: 'privacy',
+				path: { ko: '/apps/memorize-all/privacy/', en: '/en/apps/memorize-all/privacy/' },
+				updated: '2026-10-20'
+			}
+		]
+	},
+	{
+		slug: 'paper-craft-print',
+		order: 120,
+		status: 'live',
+		category: 'app',
+		hasLanding: false,
+		updatedOn: '2026-11-21',
+		name: { ko: 'Paper Craft Print', en: 'Paper Craft Print' },
+		tagline: {
+			ko: '사진과 문구로 꾸미는 6종 종이 도안. A4와 Letter PDF로 저장하세요.',
+			en: 'Personalize 6 paper crafts with photos and notes. Export A4 and Letter PDFs.'
+		},
+		badges: { ko: ['생활 앱'], en: ['App'] },
+		channels: [{ kind: 'google-play', packageName: 'com.seoleeapps.papercraftprint' }],
+		media: { icon: '/products/paper-craft-print/icon-256.webp' },
+		legal: [
+			{
+				kind: 'privacy',
+				path: { ko: '/apps/paper-craft-print/privacy/', en: '/en/apps/paper-craft-print/privacy/' },
+				updated: '2026-10-21'
+			}
+		]
+	},
+	{
+		slug: 'royal-academy',
+		order: 121,
+		status: 'live',
+		category: 'game',
+		hasLanding: false,
+		updatedOn: '2026-11-21',
+		// Google Play는 한국어 등록명만 제공한다.
+		name: { ko: '왕립 아카데미: 수련생 육성', en: 'Royal Academy: Raising Trainees' },
+		tagline: {
+			ko: '수련생과 배우고 일하고 숲을 탐험하며, 익숙해지면 자동 진행으로 키우는 픽셀 육성 게임',
+			en: 'A pixel raising game where you study, work, and explore the forest with a trainee, then grow through auto-progress.'
+		},
+		badges: { ko: ['게임', '광고 없음'], en: ['Game', 'No ads'] },
+		channels: [{ kind: 'google-play', packageName: 'com.seoleeapps.princesstycoon' }],
+		media: { icon: '/products/royal-academy/icon-256.webp' },
+		legal: []
 	}
 ];
