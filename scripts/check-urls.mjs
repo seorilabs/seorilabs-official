@@ -22,6 +22,7 @@ const KO_PATHS = [
 	'/apps/babycare/account-deletion/',
 	'/apps/cycle-pair/privacy/',
 	'/apps/cycle-pair/account-deletion/',
+	'/apps/four-alike/privacy/',
 	'/apps/jomul/privacy/',
 	'/apps/lizard-tycoon/privacy/',
 	'/apps/lord-ledger/privacy/',
