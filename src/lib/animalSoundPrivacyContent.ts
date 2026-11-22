@@ -34,7 +34,8 @@ export const animalSoundPrivacyContent: Record<'ko' | 'en', LegalDocContent> = {
 			{
 				title: '광고 개인정보 선택',
 				body: [
-					'광고 동의가 필요한 지역에서는 앱의 동의 화면에서 선택할 수 있습니다. 앱 설정에 광고 개인정보 옵션이 표시되면 그곳에서 선택을 바꿀 수 있습니다.',
+					'Android에서 광고 동의가 필요한 지역에서는 앱의 동의 화면에서 선택할 수 있습니다. 앱 설정에 광고 개인정보 옵션이 표시되면 그곳에서 선택을 바꿀 수 있습니다.',
+					'iOS 버전은 추적 권한과 광고 동의 창을 표시하지 않습니다. 지역과 Google의 설정에 따라 제한 광고가 제공되거나 광고가 표시되지 않을 수 있습니다.',
 					'인터넷 연결 없이도 도감, 녹음, 퀴즈를 이용할 수 있습니다.'
 				]
 			},
@@ -75,7 +76,8 @@ export const animalSoundPrivacyContent: Record<'ko' | 'en', LegalDocContent> = {
 			{
 				title: 'Advertising privacy choices',
 				body: [
-					'Where ad consent is required, you can make your choice in the in-app consent form. If advertising privacy choices appear in the app settings, you can change your choice there.',
+					'On Android, you can make your choice in the app’s consent form where ad consent is required. If advertising privacy choices appear in the app settings, you can change your choice there.',
+					'The iOS version does not ask for tracking permission or show an advertising consent form. Depending on your region and Google’s settings, Google may serve limited ads or no ads.',
 					'The field guide, sounds, and quiz are available offline.'
 				]
 			},
