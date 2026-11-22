@@ -56,11 +56,6 @@ const LEGAL_INDEX_UPDATED = latest(
 const groups: SitemapGroup[] = [
 	{
 		priority: '0.5',
-		lastmod: '2026-11-21',
-		pages: pair('/apps/four-alike/privacy/', '/en/apps/four-alike/privacy/')
-	},
-	{
-		priority: '0.5',
 		lastmod: '2026-11-14',
 		pages: pair('/apps/bakehand/privacy/', '/en/apps/bakehand/privacy/')
 	},
