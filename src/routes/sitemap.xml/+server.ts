@@ -56,6 +56,11 @@ const LEGAL_INDEX_UPDATED = latest(
 const groups: SitemapGroup[] = [
 	{
 		priority: '0.5',
+		lastmod: '2026-11-22',
+		pages: pair('/apps/moment-atlas/privacy/', '/en/apps/moment-atlas/privacy/')
+	},
+	{
+		priority: '0.5',
 		lastmod: '2026-11-14',
 		pages: pair('/apps/bakehand/privacy/', '/en/apps/bakehand/privacy/')
 	},
