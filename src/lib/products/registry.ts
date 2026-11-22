@@ -962,5 +962,29 @@ export const products: Product[] = [
 		channels: [{ kind: 'google-play', packageName: 'com.seoleeapps.princesstycoon' }],
 		media: { icon: '/products/royal-academy/icon-256.webp' },
 		legal: []
+	},
+	{
+		slug: 'four-alike',
+		order: 122,
+		status: 'live',
+		category: 'game',
+		hasLanding: false,
+		releasedOn: '2026-11-22',
+		updatedOn: '2026-11-22',
+		name: { ko: '끼리끼리: 연상 카드 퍼즐', en: 'Four Alike: Card Group Puzzle' },
+		tagline: {
+			ko: '숨은 공통점으로 카드 네 장을 묶어 보세요. 뒤집힌 카드를 열어 판을 비우는 퍼즐',
+			en: 'Find four cards that belong together. Flip hidden cards and clear the table.'
+		},
+		badges: { ko: ['게임'], en: ['Game'] },
+		channels: [{ kind: 'google-play', packageName: 'com.seoleeapps.fouralike' }],
+		media: { icon: '/products/four-alike/icon-256.webp' },
+		legal: [
+			{
+				kind: 'privacy',
+				path: { ko: '/apps/four-alike/privacy/', en: '/en/apps/four-alike/privacy/' },
+				updated: '2026-11-21'
+			}
+		]
 	}
 ];
