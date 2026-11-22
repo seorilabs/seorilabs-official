@@ -1,3 +1,4 @@
+import { animalSoundPrivacyPaths } from '$lib/animalSoundPrivacyContent';
 import { content, site, type Locale } from '$lib/content';
 import { globalLegalDocs } from '$lib/legal/docs';
 import { matchPicturePrivacyPaths } from '$lib/matchPicturePrivacyContent';
@@ -54,6 +55,11 @@ const LEGAL_INDEX_UPDATED = latest(
 );
 
 const groups: SitemapGroup[] = [
+	{
+		priority: '0.5',
+		lastmod: '2026-11-22',
+		pages: animalSoundPrivacyPaths.map(({ key, path }) => ({ path, hreflang: HREFLANG[key] }))
+	},
 	{
 		priority: '0.5',
 		lastmod: '2026-11-22',
