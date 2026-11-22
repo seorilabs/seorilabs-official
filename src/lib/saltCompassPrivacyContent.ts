@@ -6,7 +6,7 @@ export const saltCompassPrivacyContent: Record<'ko' | 'en', PrivacyContent> = {
 		description:
 			'소금과 나침반의 가명 계정, 클라우드 저장, 이용 통계, 오류 보고, 보상형 광고, 인앱 결제와 데이터 삭제 안내입니다.',
 		kicker: 'Salt & Compass Privacy Policy',
-		lastUpdated: '2026년 10월 29일',
+		lastUpdated: '2026년 11월 22일',
 		lastUpdatedLabel: '시행일 및 최종 수정일',
 		backLabel: '서리랩스 홈으로',
 		languageLabel: '언어',
@@ -29,8 +29,9 @@ export const saltCompassPrivacyContent: Record<'ko' | 'en', PrivacyContent> = {
 			{
 				title: '이용 통계',
 				body: [
-					'게임 개선을 위해 항해 시작·도착, 사건 카드 선택, 발견, 거래, 튜토리얼 단계, 화면 이동과 버튼 선택 같은 게임 내 행동 기록과 앱 버전·언어·실행 환경·시각을 가명 계정 식별자와 함께 Seori Platform으로 보내고, Platform은 이를 Google Analytics로 전달해 집계합니다. 이 통계에는 광고 식별자를 넣지 않고 개인화 광고에 사용하지 않습니다.',
-					'설정의 “사용 통계 보내기”를 끄면 이후 이용 통계와 오류 보고 전송을 멈춥니다. 이미 수집한 기록의 삭제는 아래 삭제 요청으로 처리합니다.'
+					'게임을 개선하기 위해 항해, 거래, 발견, 튜토리얼, 화면 이동 같은 게임 내 행동과 앱 버전, 언어, 실행 환경, 시각을 가명 계정 식별자와 함께 Seori Platform에 보냅니다.',
+					'Firebase Analytics가 포함된 iOS와 Android 버전에서는 같은 사용 통계 설정에 따라 앱 실행, 세션, 게임 내 행동을 앱에서 Google Analytics로 직접 보냅니다. Google Analytics는 앱 설치를 구분하는 식별자와 앱 버전, 기기·운영체제 정보, 대략적인 지역 정보를 사용해 이용 양상을 집계합니다. 이 통계에 광고 식별자를 넣거나 개인화 광고에 사용하지 않습니다.',
+					'설정에서 “사용 통계 보내기”를 끄면 두 경로의 이용 통계와 오류 보고 전송을 멈춥니다. 이미 수집한 기록의 삭제에 관한 문의는 아래 절차를 이용해 주세요.'
 				]
 			},
 			{
@@ -105,7 +106,7 @@ export const saltCompassPrivacyContent: Record<'ko' | 'en', PrivacyContent> = {
 		description:
 			'Pseudonymous accounts, cloud saves, usage analytics, error reports, rewarded ads, in-app purchases and data deletion in Salt & Compass.',
 		kicker: 'Salt & Compass Privacy Policy',
-		lastUpdated: 'October 29, 2026',
+		lastUpdated: 'November 22, 2026',
 		lastUpdatedLabel: 'Effective and last updated',
 		backLabel: 'Back to Seori Labs',
 		languageLabel: 'Language',
@@ -128,8 +129,9 @@ export const saltCompassPrivacyContent: Record<'ko' | 'en', PrivacyContent> = {
 			{
 				title: 'Usage analytics',
 				body: [
-					'To improve the game, in-game events such as voyage starts and arrivals, event-card choices, discoveries, trades, tutorial steps, screen changes and button choices, together with app version, language, runtime and timestamps, are sent to Seori Platform with your pseudonymous account identifier, and Platform forwards them to Google Analytics for aggregation. These analytics do not include advertising identifiers and are not used for personalized advertising.',
-					'Turning off “Send usage statistics” in Settings stops further usage analytics and error reports. Deletion of records already collected is handled by the deletion request below.'
+					'To improve the game, we send in-game events such as voyages, trades, discoveries, tutorial progress and screen changes to Seori Platform along with the app version, language, runtime information, timestamps and a pseudonymous account identifier.',
+					'iOS and Android versions with Firebase Analytics also send app launches, sessions and in-game events directly from the app to Google Analytics under the same usage statistics setting. Google Analytics uses an app installation identifier, app version, device and operating system information, and approximate region to report usage patterns. These statistics do not include advertising identifiers and are not used for personalized advertising.',
+					'Turning off “Send usage statistics” in Settings stops further analytics through both channels and stops error reporting. For questions about deleting previously collected records, use the process below.'
 				]
 			},
 			{
