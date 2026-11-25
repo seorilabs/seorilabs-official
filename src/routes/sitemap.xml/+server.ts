@@ -57,6 +57,11 @@ const LEGAL_INDEX_UPDATED = latest(
 const groups: SitemapGroup[] = [
 	{
 		priority: '0.5',
+		lastmod: '2026-11-25',
+		pages: pair('/apps/we-moor/privacy/', '/en/apps/we-moor/privacy/')
+	},
+	{
+		priority: '0.5',
 		lastmod: '2026-11-22',
 		pages: animalSoundPrivacyPaths.map(({ key, path }) => ({ path, hreflang: HREFLANG[key] }))
 	},

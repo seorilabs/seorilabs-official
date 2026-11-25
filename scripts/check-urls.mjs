@@ -31,7 +31,8 @@ const KO_PATHS = [
 	'/apps/merge-lizard/privacy/',
 	'/apps/merge-lizard/account-deletion/',
 	'/apps/ungeul/privacy/',
-	'/apps/ungeul/terms/'
+	'/apps/ungeul/terms/',
+	'/apps/we-moor/privacy/'
 ];
 
 // 영어 미러는 다국어 개인정보처리방침 경로를 제외한 나머지에만 존재한다.
