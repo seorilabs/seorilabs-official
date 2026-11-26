@@ -73,7 +73,7 @@ const groups: SitemapGroup[] = [
 	},
 	{
 		priority: '0.5',
-		lastmod: '2026-10-03',
+		lastmod: '2026-11-26',
 		pages: menierePrivacyPaths.map(({ key, path }) => ({ path, hreflang: HREFLANG[key] }))
 	},
 	{
