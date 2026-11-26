@@ -3,9 +3,9 @@ import type { LegalDocContent } from '$lib/legal/types';
 export const titanstridePrivacyContent: Record<'ko' | 'en', LegalDocContent> = {
 	ko: {
 		title: 'Titanstride 개인정보 처리방침',
-		description: 'Titanstride의 기기 저장, Android 보상형 광고와 개인정보 관리 방법을 안내합니다.',
+		description: 'Titanstride의 기기 저장, Android 보상형 광고와 선택형 사용 통계를 안내합니다.',
 		kicker: 'Titanstride Privacy Policy',
-		lastUpdated: '2026년 11월 25일',
+		lastUpdated: '2026년 11월 26일',
 		intro:
 			'이 방침은 Seori Labs의 Titanstride Android 광고 전용판(com.seorilabs.titanstride.android)과 기존 무료 테스트판(com.seorilabs.titanstride)에 적용됩니다. 두 버전 모두 계정 없이 오프라인으로 플레이할 수 있습니다. Titanstride의 개인정보 처리에는 이 방침이 적용됩니다.',
 		sections: [
@@ -21,6 +21,13 @@ export const titanstridePrivacyContent: Record<'ko' | 'en', LegalDocContent> = {
 					'Android 광고 전용판은 무한 방어에서 분대를 부활시키는 선택형 보상 광고를 제공합니다. 광고 없이도 전투를 종료하고 기록과 보상을 저장할 수 있습니다. 인앱 결제와 계정 연결은 제공하지 않습니다.',
 					'광고에는 Google AdMob과 Google 사용자 메시지 플랫폼(UMP)을 사용합니다. 이 과정에서 Google은 IP 주소(대략적인 위치 추정에 사용), 앱·광고 이용 정보, 성능·진단 정보, Android 광고 ID와 앱 범위 식별자 등 기기 식별자를 광고 게재·측정과 부정 사용 방지에 처리할 수 있습니다. Google SDK의 전송에는 TLS 암호화가 적용됩니다.',
 					'적용되는 지역에서는 Google 광고 동의 화면에서 선택할 수 있습니다. 변경이 필요한 지역에서는 게임 설정의 광고 개인정보 옵션에서 다시 선택할 수 있으며, Android 설정에서 광고 ID를 초기화하거나 삭제할 수도 있습니다. Google의 광고 데이터 처리 안내는 https://policies.google.com/technologies/partner-sites 에서 확인할 수 있습니다.'
+				]
+			},
+			{
+				title: 'Android 사용 통계',
+				body: [
+					'Android 버전에서 설정에 사용 통계 항목이 있는 경우, 해당 항목을 켜면 게임 개선을 위해 Firebase용 Google 애널리틱스로 세션과 전투 시작·결과를 보냅니다. Google은 집계를 위해 앱 인스턴스 식별자, 앱 버전과 기기 정보, IP 주소로 추정한 대략적인 위치를 처리할 수 있습니다.',
+					'사용 통계는 기본으로 꺼져 있습니다. 게임 설정에서 언제든 끌 수 있으며, 사용 통계와 광고 개인정보는 각각 선택할 수 있습니다.'
 				]
 			},
 			{
@@ -67,9 +74,9 @@ export const titanstridePrivacyContent: Record<'ko' | 'en', LegalDocContent> = {
 	en: {
 		title: 'Titanstride Privacy Policy',
 		description:
-			'How Titanstride stores game progress and handles optional rewarded ads on Android.',
+			'How Titanstride stores progress and handles rewarded ads and optional usage statistics on Android.',
 		kicker: 'Titanstride Privacy Policy',
-		lastUpdated: 'November 25, 2026',
+		lastUpdated: 'November 26, 2026',
 		intro:
 			'This policy applies to Titanstride by Seori Labs, including the ad-supported Android edition (com.seorilabs.titanstride.android) and the earlier free test (com.seorilabs.titanstride). Both editions can be played offline without an account.',
 		sections: [
@@ -85,6 +92,13 @@ export const titanstridePrivacyContent: Record<'ko' | 'en', LegalDocContent> = {
 					'The ad-supported Android edition offers an optional ad to revive your squad in endless defense. You can end the run and save your record and rewards without watching an ad. The Android edition offers no in-app purchases or account linking.',
 					'We use Google AdMob and the Google User Messaging Platform (UMP). Google may process your IP address to estimate general location, app and ad interactions, performance and diagnostic data, and identifiers such as the Android advertising ID and app set ID. Google uses this data to serve and measure ads and prevent fraud. The SDK encrypts data in transit with TLS.',
 					'Where applicable, you can make choices in the Google consent prompt and revisit them through Ad privacy options in the game settings. You can also reset or delete your advertising ID in Android settings. See https://policies.google.com/technologies/partner-sites for more about how Google handles ad data.'
+				]
+			},
+			{
+				title: 'Usage statistics on Android',
+				body: [
+					'In Android versions with a Usage statistics option in Settings, you can turn it on to help us improve the game. We use Google Analytics for Firebase to measure sessions, battle starts and battle results. Google may process an app instance identifier, app version and device information, and approximate location derived from your IP address for these reports.',
+					'Usage statistics is off by default. You can turn it off at any time in Settings. Usage statistics and ad privacy are separate choices.'
 				]
 			},
 			{
