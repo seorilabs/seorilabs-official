@@ -59,7 +59,7 @@ export const mergeLizardPrivacyContent: Record<'ko' | 'en', LegalDocContent> = {
 				body: [
 					'게임 행동 지표를 켜 두면 튜토리얼 진행, 합치기와 땅 복원, 레벨 상승, 재화 획득과 사용, 상점 열기, 광고 요청과 결과 같은 게임 이벤트와 언어, 앱 버전, 기기 종류(Android 또는 iOS)를 서리랩스 플랫폼 서버로 보냅니다. 구매 이벤트에는 상품 ID, 금액과 통화, 거래 ID가 들어갑니다. 이벤트는 가명 사용자 ID와 연결해 게임 흐름과 경제 균형을 분석하는 데 씁니다.',
 					'Android에서는 처음 실행할 때 나오는 “시작하기 전에” 화면에서 “게임 서버로 행동 지표 전송”을 고른 경우에만 보내며, 기본값은 꺼짐입니다. iOS에서는 기본으로 켜져 있습니다. 두 플랫폼 모두 설정의 “게임 행동 지표”에서 언제든 끄거나 다시 켤 수 있고, 끄면 새 이벤트를 보내지 않습니다.',
-					'앱에는 Firebase Analytics와 Firebase Crashlytics가 들어 있지 않습니다. 서리랩스 플랫폼 서버는 이 앱의 이벤트를 Google Analytics로 전달하지 않고, 서리랩스가 관리하는 Google Cloud BigQuery에 저장합니다. 행동 지표를 광고 개인화나 다른 앱과의 추적에 쓰지 않습니다.'
+					'서리랩스 플랫폼 서버는 이 앱의 이벤트를 서리랩스가 관리하는 Google Cloud BigQuery에 저장합니다. Firebase Analytics가 포함된 버전에서는 게임 행동 지표를 켠 경우 앱 실행, 세션과 게임 이벤트를 Google Firebase Analytics에도 보냅니다. Google은 앱 설치본에 연결된 분석 식별자와 앱 버전, 기기 유형, 운영체제 등을 처리합니다. 계정과 데이터 삭제를 완료하면 이 기기의 분석 데이터와 설치본 분석 식별자를 초기화합니다. 행동 지표를 광고 개인화나 다른 앱과의 추적에 쓰지 않습니다.'
 				]
 			},
 			{
@@ -103,7 +103,7 @@ export const mergeLizardPrivacyContent: Record<'ko' | 'en', LegalDocContent> = {
 			{
 				title: '보관 기간',
 				body: [
-					'게임 행동 지표 이벤트와 서버 운영 기록(감사 기록)은 서버가 받은 날로부터 최대 400일 보관한 뒤 자동으로 삭제합니다.',
+					'서리랩스 플랫폼 서버에 저장한 게임 행동 지표와 서버 운영 기록(감사 기록)은 받은 날로부터 최대 400일 보관한 뒤 자동으로 삭제합니다. Firebase Analytics에 전송한 지표는 해당 서비스의 보관 설정에 따라 처리합니다.',
 					'광고 보상 확인 기록은 생성 90일 뒤 자동 삭제 대상이 됩니다. 하루 광고 이용 횟수와 지급 기록 같은 나머지 광고 보상 기록, 게스트 계정, 로그인 세션은 계정이 있는 동안 보관하고 계정을 삭제하면 함께 지웁니다.',
 					'구매 원장과 구매로 얻은 권리, 30일 호박 수령 기록, 우편함 기록은 구매 확인, 환불 처리, 회계와 분쟁 대응, 관련 법령의 보관 의무를 위해 필요한 기간 동안 보관합니다.',
 					'계정 삭제를 처리한 뒤에는 처리 상태 확인과 중복 처리 방지를 위한 해시 접수 기록만 완료 후 30일 동안 보관하고 지웁니다.'
@@ -172,7 +172,7 @@ export const mergeLizardPrivacyContent: Record<'ko' | 'en', LegalDocContent> = {
 				body: [
 					'When gameplay analytics are on, the App sends game events such as tutorial progress, merging and restoring land, level-ups, earning and spending currency, opening the shop, and ad requests and results, together with your language, app version, and device type (Android or iOS), to the Seori Labs platform server. Purchase events include the product ID, price and currency, and transaction ID. We link these events to your pseudonymous user ID and use them to analyze game flow and economy balance.',
 					'On Android, events are sent only if you select “Send gameplay events to the game server” on the “Before you play” screen at first launch; it is off by default. On iOS, it is on by default. On both platforms you can turn it off or back on at any time under “Gameplay analytics” in Settings, and no new events are sent while it is off.',
-					'The App does not include Firebase Analytics or Firebase Crashlytics. The Seori Labs platform server does not forward this App’s events to Google Analytics; it stores them in Google Cloud BigQuery managed by Seori Labs. We do not use gameplay analytics for ad personalization or cross-app tracking.'
+					'The Seori Labs Platform server stores these events in Google Cloud BigQuery managed by Seori Labs. In versions that include Firebase Analytics, enabling gameplay analytics also sends app launches, sessions, and gameplay events to Google Firebase Analytics. Google processes an analytics identifier tied to your installation and information such as the app version, device type, and operating system. Completing account and data deletion in the App clears analytics data on this device and resets its installation analytics identifier. We do not use gameplay analytics to personalize ads or track you across other apps.'
 				]
 			},
 			{
@@ -216,7 +216,7 @@ export const mergeLizardPrivacyContent: Record<'ko' | 'en', LegalDocContent> = {
 			{
 				title: 'Retention',
 				body: [
-					'Gameplay analytics events and server operation (audit) records are kept for up to 400 days from the day the server receives them, then deleted automatically.',
+					'Gameplay analytics and operational records stored on the Seori Labs Platform server are kept for up to 400 days from receipt, then deleted automatically. Analytics sent to Firebase are processed according to the service’s retention settings.',
 					'Ad reward verification records are scheduled for automatic deletion 90 days after they are created. Other ad reward records, such as daily ad counts and grant records, as well as the guest account and sign-in sessions, are kept while the account exists and are deleted when you delete the account.',
 					'The purchase ledger, the entitlements you bought, 30-Day Amber claim records, and inbox records are kept as long as needed to confirm purchases, handle refunds, support accounting and disputes, and meet legal retention obligations.',
 					'After an account deletion is processed, only a hashed request record, used to check the deletion status and prevent duplicate processing, is kept for 30 days after completion and then deleted.'
