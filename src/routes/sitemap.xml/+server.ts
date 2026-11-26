@@ -2,6 +2,7 @@ import { animalSoundPrivacyPaths } from '$lib/animalSoundPrivacyContent';
 import { content, site, type Locale } from '$lib/content';
 import { globalLegalDocs } from '$lib/legal/docs';
 import { matchPicturePrivacyPaths } from '$lib/matchPicturePrivacyContent';
+import { menierePrivacyPaths } from '$lib/menierePrivacyContent';
 import { mergeLizardAccountDeletionPaths } from '$lib/mergeLizardAccountDeletionContent';
 import { mergeLizardOddsPaths } from '$lib/mergeLizardOddsContent';
 import { mergeLizardPrivacyPaths } from '$lib/mergeLizardPrivacyContent';
@@ -69,6 +70,11 @@ const groups: SitemapGroup[] = [
 		priority: '0.5',
 		lastmod: '2026-11-22',
 		pages: pair('/apps/moment-atlas/privacy/', '/en/apps/moment-atlas/privacy/')
+	},
+	{
+		priority: '0.5',
+		lastmod: '2026-10-03',
+		pages: menierePrivacyPaths.map(({ key, path }) => ({ path, hreflang: HREFLANG[key] }))
 	},
 	{
 		priority: '0.5',

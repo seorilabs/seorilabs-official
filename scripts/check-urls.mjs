@@ -28,6 +28,7 @@ const KO_PATHS = [
 	'/apps/lord-ledger/privacy/',
 	'/apps/lucid-reversi/privacy/',
 	'/apps/matgo/privacy/',
+	'/apps/meniere-support/privacy/',
 	'/apps/merge-lizard/privacy/',
 	'/apps/merge-lizard/account-deletion/',
 	'/apps/ungeul/privacy/',
