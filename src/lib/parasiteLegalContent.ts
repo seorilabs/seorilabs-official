@@ -2,14 +2,14 @@ import type { LegalDocContent } from '$lib/legal/types';
 
 export const parasitePrivacy: Record<'ko' | 'en', LegalDocContent> = {
 	ko: {
-		lastUpdated: '2026년 11월 14일',
+		lastUpdated: '2026년 11월 26일',
 		lastUpdatedLabel: '시행일 및 최종 수정일',
 		backLabel: '서리랩스 홈으로',
 		languageLabel: '언어',
 		footerNote: '문의와 개인정보 권리 요청: cs@seorilabs.com',
 		title: 'My Little Parasite 개인정보 처리방침',
 		kicker: 'My Little Parasite',
-		description: 'Android 기기 저장과 배너 광고, iOS 선택형 계정과 구매, 위젯의 처리 안내입니다.',
+		description: 'Android 기기 저장, 선택형 플레이 통계, 배너 광고와 위젯의 처리 안내입니다.',
 		intro:
 			'Seori Labs가 제공하는 My Little Parasite에 적용되는 방침입니다. Google Play 개발자 표시명은 Seori Apps이며 앱 식별자는 com.seorilabs.mylittleparasite입니다. 이 게임에는 이 제품별 방침이 공통 방침보다 우선합니다.',
 		sections: [
@@ -34,7 +34,8 @@ export const parasitePrivacy: Record<'ko' | 'en', LegalDocContent> = {
 			{
 				title: '선택형 플레이 통계',
 				body: [
-					'Android에는 플레이 통계 보내기 기능이 없으며 Seori Platform으로 플레이 통계를 전송하지 않습니다. iOS의 플레이 통계 보내기는 기본적으로 꺼져 있습니다. 설정에서 켜면 첫 교감, 성장, 작별, 두 번째 개체 시작, 재회, 위젯 진입과 구매 복원 결과, 광고 요청·노출·실패 상태를 수집합니다. 무작위 설치 식별자, 이벤트 시각, 앱 버전, 언어와 실행 플랫폼을 Seori Platform과 Google Analytics에서 처리합니다. 개체 이름, 개별 추억 내용, 로그인 증명과 구매 토큰은 통계에 넣지 않습니다. 끄면 이후 수집과 전송을 멈추고 아직 보내지 않은 SDK 이벤트를 비웁니다. 전송된 자료의 삭제는 아래 연락처로 요청할 수 있습니다.'
+					'Android의 지원 버전에서는 설정에서 플레이 통계 보내기를 켤 수 있습니다. 기본값은 꺼짐입니다. 켜면 첫 교감, 성장, 작별, 두 번째 개체 시작, 재회, 위젯 열기와 배너 관련 활동을 Google Analytics for Firebase로 보냅니다. Google은 분석을 위해 설치 식별자, 앱 버전, 언어, 기기·운영체제 정보와 이벤트 시각을 처리하며, 세션과 참여 활동을 자동으로 기록합니다. Google은 접속 IP 주소로 대략적인 지역을 추정할 수 있습니다. 이 분석에서는 광고 ID 수집을 끄고 개체 이름과 추억을 보내지 않습니다. 설정에서 끄면 이후 수집을 멈추고 기기에 남은 분석 데이터를 비웁니다.',
+					'iOS의 플레이 통계 보내기는 기본적으로 꺼져 있습니다. 설정에서 켜면 첫 교감, 성장, 작별, 두 번째 개체 시작, 재회, 위젯 진입과 구매 복원 결과, 광고 요청·노출·실패 상태를 수집합니다. 무작위 설치 식별자, 이벤트 시각, 앱 버전, 언어와 실행 플랫폼을 Seori Platform과 Google Analytics에서 처리합니다. 개체 이름, 개별 추억 내용, 로그인 증명과 구매 토큰은 통계에 넣지 않습니다. 끄면 이후 수집과 전송을 멈추고 아직 보내지 않은 SDK 이벤트를 비웁니다. 전송된 자료의 삭제는 아래 연락처로 요청할 수 있습니다.'
 				]
 			},
 			{
@@ -65,7 +66,7 @@ export const parasitePrivacy: Record<'ko' | 'en', LegalDocContent> = {
 		]
 	},
 	en: {
-		lastUpdated: 'November 14, 2026',
+		lastUpdated: 'November 26, 2026',
 		lastUpdatedLabel: 'Effective and last updated',
 		backLabel: 'Back to Seori Labs',
 		languageLabel: 'Language',
@@ -73,7 +74,7 @@ export const parasitePrivacy: Record<'ko' | 'en', LegalDocContent> = {
 		title: 'My Little Parasite Privacy Policy',
 		kicker: 'My Little Parasite',
 		description:
-			'How Android device saves and banner ads, iOS optional accounts and purchases, and widgets are handled.',
+			'How Android device saves, optional play statistics, banner ads and widgets are handled.',
 		intro:
 			'This policy applies to My Little Parasite, provided by Seori Labs. The Google Play developer display name is Seori Apps and the app identifier is com.seorilabs.mylittleparasite. This product policy takes precedence over our general policy for this game.',
 		sections: [
@@ -98,7 +99,8 @@ export const parasitePrivacy: Record<'ko' | 'en', LegalDocContent> = {
 			{
 				title: 'Optional play statistics',
 				body: [
-					'Android does not offer Share play statistics or send play statistics to Seori Platform. On iOS, Share play statistics is off by default. If enabled in Settings, we collect first interaction, growth, farewell, second-creature start, reunion, widget entry, purchase restoration outcomes and ad request, impression or failure states. Seori Platform and Google Analytics process a random installation identifier, event time, app version, language and platform. Creature names, individual memory contents, sign-in proofs and purchase tokens are excluded from analytics. Turning the setting off stops future collection and transmission and clears unsent SDK events. You can request deletion of previously sent information through the contact below.'
+					'On Android versions with this option, you can turn on Share play statistics in Settings. It is off by default. If you turn it on, first interactions, growth, farewells, second-creature starts, reunions, widget opens and banner activity go to Google Analytics for Firebase. Google processes an installation identifier, app version, language, device and operating system details, and event times for analytics. It also records sessions and engagement automatically. Google may use the connection IP address to derive an approximate location. Advertising ID collection is disabled. Creature names and memories stay on the device. Turning the setting off stops future collection and clears analytics data on the device.',
+					'On iOS, Share play statistics is off by default. If enabled in Settings, we collect first interaction, growth, farewell, second-creature start, reunion, widget entry, purchase restoration outcomes and ad request, impression or failure states. Seori Platform and Google Analytics process a random installation identifier, event time, app version, language and platform. Creature names, individual memory contents, sign-in proofs and purchase tokens are excluded from analytics. Turning the setting off stops future collection and transmission and clears unsent SDK events. You can request deletion of previously sent information through the contact below.'
 				]
 			},
 			{
