@@ -28,6 +28,7 @@
 	</nav>
 	<a
 		class="language"
+		data-sveltekit-reload
 		href={otherLocalePath}
 		hreflang={otherLocale(locale)}
 		aria-label={toggle.label}
