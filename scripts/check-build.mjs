@@ -111,7 +111,12 @@ for (const file of pages) {
 
 // Play에는 한 주소를 등록하므로 앱 이름, 패키지 ID, 별도 약관 링크가 정적 HTML에 있어야 한다.
 for (const { path, title, purchaseHeading, prefix } of sharedTerms) {
-	const html = readFileSync(join(buildDir, path, 'index.html'), 'utf8');
+	const file = join(buildDir, path, 'index.html');
+	if (!existsSync(file)) {
+		errors.push(`${path}: 공통 이용약관 페이지가 빌드에 없습니다`);
+		continue;
+	}
+	const html = readFileSync(file, 'utf8');
 	const coveredApps = /<article id="covered-apps"[^>]*>([\s\S]*?)<\/article>/.exec(html)?.[1] ?? '';
 	const heading = /<h1\b[^>]*>([^<]*)<\/h1>/.exec(html)?.[1];
 	const subheadings = [...html.matchAll(/<h2\b[^>]*>([^<]*)<\/h2>/g)];
