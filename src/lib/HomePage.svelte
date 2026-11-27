@@ -106,6 +106,9 @@
 				</div>
 				<div>
 					<p class="studio-body">{c.studio.body}</p>
+					{#if locale === 'en'}
+						<a class="section-cta" href="/en/studio/">See the studio logo and game splash →</a>
+					{/if}
 					<div class="proofs">
 						{#each proofs as proof (proof.label)}
 							<div>

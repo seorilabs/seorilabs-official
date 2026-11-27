@@ -1,91 +1,29 @@
-# Seori Labs BI/CI Guide
+# Seori Labs brand guide
 
-## Brand Idea
+First Light is the studio's English-language identity. The two angular halves join to form an S, echoing the union of Seo and Lee in the Seori Labs name. The English name is written as **Seori Labs** in prose.
 
-`서리`는 두 사람의 성 `서`와 `이`에서 시작해 하나의 이름이 되었습니다. Seori Labs는 모바일 게임과 생활 앱을 직접 만들어 Google Play, Apple App Store, 앱인토스에서 서비스하는 제품 스튜디오이며, 브랜드 아이디어는 **Two surnames. One complete name. One shared foundation.**입니다.
+## Logo
 
-## Logo Concept
+Use the horizontal logo on a light surface and the reverse logo on a dark one. Keep clear space around the lockup equal to at least a quarter of the symbol width. Use the symbol at 24 pixels or larger and the horizontal lockup at 140 pixels or larger.
 
-`Shared Stem` 심볼은 한글 `서`와 `리`를 위아래로 쌓고 오른쪽 세로획을 공유합니다. 두 성을 따로 나열하지 않고 `서리`라는 완성된 이름으로 표현합니다.
+| Asset                     | File in `static/brand/`                                              |
+| ------------------------- | -------------------------------------------------------------------- |
+| Horizontal, light surface | `seori-labs-logo.svg`                                                |
+| Horizontal, dark surface  | `seori-labs-logo-reverse.svg`                                        |
+| Stacked                   | `seori-labs-logo-stacked.svg`, `seori-labs-logo-stacked-reverse.svg` |
+| Symbol                    | `seori-labs-symbol.svg`, `seori-labs-symbol-reverse.svg`             |
+| Monochrome symbol         | `seori-labs-symbol-mono.svg`                                         |
+| Symbol on a dark tile     | `seori-labs-mark.svg`                                                |
+| Light and dark examples   | `seori-labs-brand-board.svg`                                         |
 
-- 위쪽 `서`: 첫 번째 성에서 시작한 음절
-- 아래쪽 `리`: 두 번째 성 `이`를 `서리` 안에 담은 음절
-- `Shared Stem`: 두 음절이 공유하는 오른쪽 세로축
-- `Signal Cyan`: 두 음절이 만나는 유일한 강조 획
-- `ㄹ` 가독성: 우측 상단과 좌측 하단 세로획을 유지해 `피`와 구분
+The light lockup uses Deep Blue Ink `#0D2533` and Dark Cyan `#12657D`. The reverse uses Pale Ice `#D7F8FF` and Crystal Blue `#65D9FF`, with the English wordmark in `#E9F9FF`. Night Navy `#020B16` is the dark tile and splash ground. Keep the geometry, colors and proportions supplied in the source files. The wordmark outlines use [Inter 4.1](https://github.com/rsms/inter/releases/tag/v4.1) under the [SIL Open Font License](../static/brand/Inter-OFL.txt).
 
-## Logo Assets
+## Game splash
 
-- Primary horizontal: `static/brand/seori-labs-logo.svg`
-- Reverse horizontal: `static/brand/seori-labs-logo-reverse.svg`
-- Stacked: `static/brand/seori-labs-logo-stacked.svg`
-- Symbol: `static/brand/seori-labs-symbol.svg`
-- Mark with container: `static/brand/seori-labs-mark.svg`
-- Monochrome symbol: `static/brand/seori-labs-symbol-mono.svg`
-- Brand board: `static/brand/seori-labs-brand-board.svg`
-- Website favicon: `static/favicon.svg`, `static/favicon.png`, `static/favicon.ico`
-- Open Graph 공유 이미지: `static/og/*-1200x630.png` (1200x630 고정, PNG, 200KB 이하)
+Use the landscape or portrait composition that fits the game window. The studio opening uses the same two-piece symbol, English wordmark and separate crystal art for each orientation. The [English studio page](https://www.seorilabs.com/en/studio/) provides 1600 × 900 and 900 × 1600 stills.
 
-## Logo Usage
+Game templates play the splash at cold launch, followed by the game's title. The motion plays without audio and respects reduced motion. Product titles and app icons have their own visual identities.
 
-- 기본 로고는 밝은 배경에서 `seori-labs-logo.svg`를 사용합니다.
-- 어두운 배경에서는 `seori-labs-logo-reverse.svg`를 사용합니다.
-- 밝은 정사각형 공간에는 `seori-labs-symbol.svg`, 앱 아이콘·소셜 프로필에는 컨테이너가 있는 `seori-labs-mark.svg`를 사용합니다.
-- 단색 인쇄, 각인, 워터마크에는 `seori-labs-symbol-mono.svg`를 사용합니다.
-- 로고 주변 최소 여백은 심볼 너비의 25% 이상을 확보합니다.
-- 최소 권장 크기는 심볼 24px, 가로형 로고 140px입니다.
-- 가로형 로고에는 descriptor나 슬로건을 결합하지 않습니다.
+## Brand voice
 
-## Misuse
-
-- 로고 색상을 임의로 바꾸지 않습니다.
-- 심볼과 워드마크 비율을 따로 늘이거나 줄이지 않습니다.
-- 그림자, 외곽선, 과한 그라데이션을 추가하지 않습니다.
-- 심볼의 `서`, `리`, 공유 세로획을 분리하거나 획을 생략하지 않습니다.
-- 복잡한 이미지 위에 충분한 대비 없이 배치하지 않습니다.
-- 문장 안에서 로고 SVG를 텍스트처럼 사용하지 않습니다. 본문에서는 `Seori Labs`로 표기합니다.
-
-## Color System
-
-| Token       | Hex       | Usage                                    |
-| ----------- | --------- | ---------------------------------------- |
-| Seori Ink   | `#112128` | Primary symbol, wordmark, dark surface   |
-| Signal Cyan | `#58C7C4` | The single joining stroke                |
-| Paper       | `#F9FBFB` | Reverse symbol and clean surface         |
-| Frost       | `#EEF2F2` | Brand-board and neutral field background |
-| Muted       | `#52636A` | Supporting copy                          |
-
-로고 자체에는 `Seori Ink`, `Signal Cyan`, `Paper`만 사용합니다. 제품 UI의 상태색은 기능적 의미가 있을 때 별도로 사용할 수 있지만 로고 안에는 넣지 않습니다.
-
-## Typography
-
-- English wordmark: Inter 4.1, weight 780을 path로 변환한 공식 자산
-- English body: Inter 또는 시스템 sans-serif
-- Korean: Pretendard, Apple SD Gothic Neo, Noto Sans KR, 시스템 sans-serif
-- Headlines: 800-900 weight, tight but readable line-height
-- Body: 400-650 weight, generous line-height
-- Letter spacing: 기본값 0. 작은 대문자 라벨에만 제한적으로 사용합니다.
-
-## BI Voice
-
-Seori Labs의 말투는 선명하고 실용적이어야 합니다.
-
-- 짧은 문장으로 목적을 먼저 말합니다.
-- 기술명보다 사용자가 얻는 변화를 먼저 설명합니다.
-- 가능성을 과장하지 않고, 제약과 조건을 함께 말합니다.
-- 회사를 설명하기 전에 만든 제품을 먼저 보여 줍니다.
-- 확인되지 않은 수치는 쓰지 않습니다. 다운로드 수, 사용자 수, 평점은 근거가 있을 때만 씁니다.
-- 광고, 결제, 확률형 아이템, 수집 데이터는 제품 단위로만 말합니다. 앱마다 조건이 다르므로 회사 차원의 일반화는 거짓이 됩니다.
-
-## CI Principles
-
-1. Build: 기획부터 스토어 등록까지 직접 만듭니다.
-2. Disclose: 광고와 결제, 다루는 데이터를 앱마다 먼저 밝힙니다.
-3. Operate: 출시 이후의 업데이트와 문의 응대를 만든 사람이 이어서 합니다.
-
-## Application Rules
-
-- UI 반경은 기존 웹사이트와 맞춰 8px 중심으로 사용합니다.
-- 장식적인 배경보다 정보의 계층, 간격, 대비를 우선합니다.
-- 브랜드 강조선은 `Signal Cyan`을 사용합니다. 제품 UI의 성공·주의 상태색은 로고와 분리합니다.
-- 로고와 함께 쓰는 사진/그래픽은 분위기 이미지보다 실제 앱 화면, 아이콘, 인터페이스가 드러나는 이미지를 우선합니다.
+Describe the games and apps people can use and what they do in concrete language. Keep product features, privacy terms and monetization claims specific to the individual product.
