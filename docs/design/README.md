@@ -3,3 +3,4 @@
 | 승인일     | 설계                                                                                | 실행 티켓                                                          |
 | ---------- | ----------------------------------------------------------------------------------- | ------------------------------------------------------------------ |
 | 2026-11-26 | [메니에르 기록 개인정보 처리방침 복구](2026-11-26-meniere-policy-restore/design.md) | [#145](https://github.com/seorilabs/seorilabs-official/issues/145) |
+| 2026-11-27 | [서리랩스 공통 이용약관](2026-11-27-shared-terms/design.md)                         | [#147](https://github.com/seorilabs/seorilabs-official/issues/147) |

@@ -13,6 +13,8 @@ export type GlobalLegalDoc = {
 	updated: string;
 };
 
+export const sharedTermsUpdated = '2026-11-27';
+
 export const globalLegalDocs: GlobalLegalDoc[] = [
 	{
 		id: 'privacy',
@@ -25,12 +27,12 @@ export const globalLegalDocs: GlobalLegalDoc[] = [
 	},
 	{
 		id: 'terms',
-		label: { ko: '이용약관', en: 'Terms of Service' },
+		label: { ko: '공통 이용약관', en: 'Terms of Service' },
 		paths: [
 			{ hreflang: 'ko-KR', path: '/terms/' },
 			{ hreflang: 'en', path: '/en/terms/' }
 		],
-		updated: '2026-05-16'
+		updated: sharedTermsUpdated
 	},
 	{
 		id: 'support',
