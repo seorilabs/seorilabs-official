@@ -168,6 +168,21 @@
 					{#each section.body as paragraph (paragraph)}
 						<p>{paragraph}</p>
 					{/each}
+					{#if section.items?.length}
+						<ul class="legal-section-items">
+							{#each section.items as item}
+								<li>
+									<strong>{item.name}</strong>
+									{#if item.detail}
+										<code>{item.detail}</code>
+									{/if}
+									{#if item.link}
+										<a href={item.link.href}>{item.link.label}</a>
+									{/if}
+								</li>
+							{/each}
+						</ul>
+					{/if}
 				</article>
 			{/each}
 		</section>
@@ -337,6 +352,23 @@
 
 	.legal-content p:last-child {
 		margin-bottom: 0;
+	}
+
+	.legal-section-items {
+		display: grid;
+		gap: 8px;
+		padding-inline-start: 24px;
+	}
+
+	.legal-section-items code,
+	.legal-section-items a {
+		margin-inline-start: 4px;
+		overflow-wrap: anywhere;
+	}
+
+	.legal-section-items a {
+		color: var(--c-accent);
+		text-decoration: underline;
 	}
 
 	.legal-note {

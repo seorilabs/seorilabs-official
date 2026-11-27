@@ -1,6 +1,6 @@
 <script lang="ts">
 	import LegalDocPage from '$lib/legal/LegalDocPage.svelte';
-	import { legalContent } from '$lib/legalContent';
+	import { sharedTermsContent } from '$lib/legal/sharedTermsContent';
 </script>
 
-<LegalDocPage locale="en" content={legalContent.en.terms} docKind="terms" />
+<LegalDocPage locale="en" content={sharedTermsContent('en')} docKind="terms" />

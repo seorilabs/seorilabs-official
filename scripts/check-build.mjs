@@ -41,6 +41,16 @@ function resolvesInBuild(url) {
  */
 const REQUIRED_ON_EVERY_PAGE = [{ name: 'Seori Tales', href: 'https://seoritales.com/' }];
 
+const sharedTerms = [
+	{ path: '/terms/', title: '서리랩스 공통 이용약관', purchaseHeading: '구매와 구독', prefix: '' },
+	{
+		path: '/en/terms/',
+		title: 'Seori Labs Terms of Service',
+		purchaseHeading: 'Purchases and subscriptions',
+		prefix: '/en'
+	}
+];
+
 const errors = [];
 const pages = htmlFiles(buildDir);
 /** 색인 대상 페이지의 루트 상대 경로. sitemap 누락 검사에 쓴다. */
@@ -96,6 +106,34 @@ for (const file of pages) {
 		if (!noindex) errors.push(`${rel}: og:image가 없습니다`);
 	} else if (!resolvesInBuild(ogImage)) {
 		errors.push(`${rel}: og:image 파일이 없습니다 -> ${ogImage}`);
+	}
+}
+
+// Play에는 한 주소를 등록하므로 앱 이름, 패키지 ID, 별도 약관 링크가 정적 HTML에 있어야 한다.
+for (const { path, title, purchaseHeading, prefix } of sharedTerms) {
+	const file = join(buildDir, path, 'index.html');
+	if (!existsSync(file)) {
+		errors.push(`${path}: 공통 이용약관 페이지가 빌드에 없습니다`);
+		continue;
+	}
+	const html = readFileSync(file, 'utf8');
+	const coveredApps = /<article id="covered-apps"[^>]*>([\s\S]*?)<\/article>/.exec(html)?.[1] ?? '';
+	const heading = /<h1\b[^>]*>([^<]*)<\/h1>/.exec(html)?.[1];
+	const subheadings = [...html.matchAll(/<h2\b[^>]*>([^<]*)<\/h2>/g)];
+	if (heading !== title) errors.push(`${path}: 공통 이용약관 제목이 없습니다`);
+	if (!subheadings.some(([, text]) => text === purchaseHeading)) {
+		errors.push(`${path}: 구매와 구독 조항이 없습니다`);
+	}
+	for (const packageName of ['com.seorilabs.reascend', 'com.seoleeapps.fouralike']) {
+		if (!coveredApps.includes(packageName)) {
+			errors.push(`${path}: 적용 앱 목록에서 ${packageName}을 찾을 수 없습니다`);
+		}
+	}
+	for (const app of ['lizard-tycoon', 'ungeul']) {
+		const termsPath = `${prefix}/apps/${app}/terms/`;
+		if (!coveredApps.includes(`href="${termsPath}"`) || !resolvesInBuild(SITE + termsPath)) {
+			errors.push(`${path}: 적용 앱 목록에서 ${app} 앱별 약관을 열 수 없습니다`);
+		}
 	}
 }
 
