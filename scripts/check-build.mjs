@@ -166,6 +166,22 @@ if (existsSync(sitemapPath)) {
 	}
 }
 
+// Brand downloads are part of the public Studio page contract.
+const studioPath = join(buildDir, 'en/studio/index.html');
+const studioPage = existsSync(studioPath) ? readFileSync(studioPath, 'utf8') : '';
+const homePage = readFileSync(join(buildDir, 'en/index.html'), 'utf8');
+if (!homePage.includes('href="/en/studio/"'))
+	errors.push('The English home page is missing the studio link');
+for (const asset of [
+	'/brand/seori-labs-logo.svg',
+	'/brand/first-light-landscape.webp',
+	'/brand/first-light-portrait.webp'
+]) {
+	if (!studioPage.includes(`href="${asset}"`) || !existsSync(join(buildDir, asset))) {
+		errors.push(`Studio asset is missing from the public downloads: ${asset}`);
+	}
+}
+
 if (errors.length > 0) {
 	console.error(`check-build: 오류 ${errors.length}건`);
 	for (const error of errors.slice(0, 40)) console.error(`  ${error}`);

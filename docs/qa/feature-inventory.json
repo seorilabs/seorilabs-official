@@ -12,6 +12,11 @@
 	],
 	"features": [
 		{
+			"id": "studio-brand",
+			"core": true,
+			"paths": ["src/routes/en/studio/**", "static/brand/**", "static/favicon.*"]
+		},
+		{
 			"id": "home",
 			"core": true,
 			"paths": ["src/lib/HomePage.svelte", "src/routes/+page.svelte", "src/routes/en/+page.svelte"]

@@ -44,6 +44,7 @@ const latest = (...dates: string[]): string => dates.reduce((a, b) => (a > b ? a
  * 상수는 원장과 무관한 문구나 구조를 고쳤을 때의 하한으로만 남긴다.
  */
 const HOME_UPDATED = latest(
+	'2026-11-27',
 	SITE_PAGES_UPDATED,
 	...liveProducts.map((product) => product.updatedOn)
 );
@@ -56,6 +57,11 @@ const LEGAL_INDEX_UPDATED = latest(
 );
 
 const groups: SitemapGroup[] = [
+	{
+		priority: '0.6',
+		lastmod: '2026-11-27',
+		pages: [{ path: '/en/studio/', hreflang: HREFLANG.en }]
+	},
 	{
 		priority: '0.5',
 		lastmod: '2026-11-25',
