@@ -107,7 +107,8 @@ lists every one of them.
 
 ```text
 https://www.seorilabs.com/privacy/          also ja, zh, zh-tw, de, fr, es
-https://www.seorilabs.com/terms/
+https://www.seorilabs.com/terms/              Korean
+https://www.seorilabs.com/en/terms/           shared Google Play terms URL
 https://www.seorilabs.com/support/
 https://www.seorilabs.com/legal/
 ```
@@ -122,7 +123,9 @@ https://www.seorilabs.com/apps/{slug}/account-deletion/   Google Play deletion U
 https://www.seorilabs.com/apps/{slug}/terms/              only when it differs
 ```
 
-English mirrors live under `/en/`.
+English mirrors live under `/en/`. Before using the shared terms URL in Google
+Play, check that the app appears in the covered apps list. The list comes from
+live products in the site registry.
 
 ### URLs that must not move
 

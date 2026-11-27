@@ -1,4 +1,13 @@
-export type LegalDocSection = { id?: string; title: string; body: string[] };
+export type LegalDocSection = {
+	id?: string;
+	title: string;
+	body: string[];
+	items?: Array<{
+		name: string;
+		detail?: string;
+		link?: { label: string; href: string };
+	}>;
+};
 
 /**
  * 개인정보처리방침, 이용약관, 고객지원, 계정 삭제 문서가 공유하는 형태.
