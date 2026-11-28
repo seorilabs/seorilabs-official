@@ -97,7 +97,7 @@
 
 	.frames {
 		display: grid;
-		grid-template-columns: minmax(0, 16fr) minmax(0, 5.0625fr);
+		grid-template-columns: minmax(0, 1fr) minmax(0, 0.2135fr);
 		gap: 12px;
 	}
 

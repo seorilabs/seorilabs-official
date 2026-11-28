@@ -174,12 +174,15 @@ if (!homePage.includes('href="/en/studio/"'))
 	errors.push('The English home page is missing the studio link');
 for (const asset of [
 	'/brand/seori-labs-logo.svg',
-	'/brand/first-light-landscape.webp',
-	'/brand/first-light-portrait.webp'
+	'/brand/seori-labs-logo-stacked-reverse.svg'
 ]) {
 	if (!studioPage.includes(`href="${asset}"`) || !existsSync(join(buildDir, asset))) {
 		errors.push(`Studio asset is missing from the public downloads: ${asset}`);
 	}
+}
+
+if (/first-light-(?:landscape|portrait)\.webp/.test(studioPage)) {
+	errors.push('The Studio page must use the transparent splash logo in both orientations');
 }
 
 if (errors.length > 0) {
