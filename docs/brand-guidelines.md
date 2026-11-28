@@ -20,9 +20,9 @@ The light lockup uses Deep Blue Ink `#0D2533` and Dark Cyan `#12657D`. The rever
 
 ## Game splash
 
-Use the landscape or portrait composition that fits the game window. The studio opening uses the same two-piece symbol, English wordmark and separate crystal art for each orientation. The [English studio page](https://www.seorilabs.com/en/studio/) provides 1600 × 900 and 900 × 1600 stills.
+Center the transparent stacked reverse lockup on Night Navy `#020B16` for both landscape and portrait windows. Keep the full symbol and English wordmark within the safe area. The [English studio page](https://www.seorilabs.com/en/studio/) previews both orientations and provides the transparent SVG.
 
-Game templates play the splash at cold launch, followed by the game's title. The motion plays without audio and respects reduced motion. Product titles and app icons have their own visual identities.
+Game templates hold the silent studio logo for one second from its first visible frame at cold launch while the title prepares. Reduced motion omits the closing fade. Product titles and app icons have their own visual identities.
 
 ## Brand voice
 
