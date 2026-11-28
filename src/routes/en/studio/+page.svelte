@@ -6,11 +6,12 @@
 	import SiteHeader from '$lib/ui/SiteHeader.svelte';
 
 	const path = '/en/studio/';
-	const title = 'First Light | Seori Labs';
-	const description = 'First Light is the Seori Labs studio logo and game opening.';
+	const title = 'Studio | Seori Labs';
+	const description = 'The Seori Labs studio logo and game opening for landscape and portrait screens.';
+	const splashLogo = '/brand/seori-labs-logo-stacked-reverse.svg';
 	const frames = [
-		{ name: 'Landscape', width: 1600, height: 900, image: '/brand/first-light-landscape.webp' },
-		{ name: 'Portrait', width: 900, height: 1600, image: '/brand/first-light-portrait.webp' }
+		{ name: 'Landscape', width: 844, height: 390 },
+		{ name: 'Portrait', width: 390, height: 844 }
 	];
 </script>
 
@@ -19,31 +20,23 @@
 
 <main>
 	<div class="introduction">
-		<h1>First Light</h1>
-		<p>
-			Two angular pieces come together to form the Seori Labs mark. The opening moves through blue
-			crystal before the game begins.
-		</p>
+		<h1>Seori Labs Studio</h1>
+		<p>Our games open with the Seori Labs symbol and wordmark, centered on Night Navy.</p>
 	</div>
 
 	<div class="frames">
-		{#each frames as frame (frame.image)}
+		{#each frames as frame (frame.name)}
 			<figure>
-				<img
-					src={frame.image}
-					width={frame.width}
-					height={frame.height}
-					alt="Seori Labs over blue crystal"
-				/>
-				<figcaption>
-					<span>{frame.name} · {frame.width} × {frame.height}</span>
-					<a href={frame.image} download
-						>Download<span class="visually-hidden"> {frame.name.toLowerCase()} splash</span></a
-					>
-				</figcaption>
+				<div class="splash" style:aspect-ratio={`${frame.width} / ${frame.height}`}>
+					<img src={splashLogo} width="384" height="168" alt="Seori Labs" />
+				</div>
+				<figcaption>{frame.name} · {frame.width} × {frame.height}</figcaption>
 			</figure>
 		{/each}
 	</div>
+	<p class="splash-download">
+		<a href={splashLogo} download>Download transparent splash logo (SVG)</a>
+	</p>
 
 	<section aria-labelledby="logo">
 		<h2 id="logo">Studio logo</h2>
@@ -104,15 +97,23 @@
 
 	.frames {
 		display: grid;
-		grid-template-columns: minmax(0, 16fr) minmax(0, 5.0625fr);
+		grid-template-columns: minmax(0, 1fr) minmax(0, 0.2135fr);
 		gap: 12px;
 	}
 
-	figure img {
-		display: block;
-		width: 100%;
-		height: auto;
+	.splash {
+		display: grid;
+		place-items: center;
+		background: #020b16;
 		border-radius: var(--r-sm);
+	}
+	.splash img {
+		display: block;
+		width: min(56%, 320px);
+		height: auto;
+	}
+	.splash-download {
+		margin-top: 14px;
 	}
 	figcaption,
 	.downloads {
@@ -163,15 +164,6 @@
 	}
 	.reverse {
 		background: #020b16;
-	}
-
-	.visually-hidden {
-		position: absolute;
-		width: 1px;
-		height: 1px;
-		overflow: hidden;
-		clip-path: inset(50%);
-		white-space: nowrap;
 	}
 
 	@media (max-width: 600px) {

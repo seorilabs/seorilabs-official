@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 1,
+  "level": "L3",
+  "baseline": "7e57199d5485f4748ad0da395f28ec596630a4b0",
+  "changedFeatures": ["studio-brand", "home", "navigation-locales", "seo-discovery"],
+  "environments": ["dev"],
+  "redesign": true,
+  "foundationRerun": false,
+  "floorOverrides": [],
+  "release": {"markets": ["web"], "until": "public"}
+}
